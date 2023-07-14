@@ -1,0 +1,9 @@
+<div class="table-container">
+  <table>
+    <tr *ngFor="let row of map">
+      <td *ngFor="let value of row">
+        <app-cell [value]="value"></app-cell>
+      </td>
+    </tr>
+  </table>
+</div>
