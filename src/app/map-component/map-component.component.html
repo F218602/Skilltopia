@@ -1,9 +1,14 @@
-<div class="table-container">
-  <table>
-    <tr *ngFor="let row of map">
-      <td *ngFor="let value of row">
+<div class="flex justify-center items-center h-screen w-screen">
+  <div class="table h-[50vh] w-[50vw]">
+    <div style="background-image: url('assets/Image/Background/grass bg img3.png');" class="table-row-group text-center">
+      <div class="table-row" *ngFor="let row of map">
+        <div
+          class="table-cell"
+          *ngFor="let value of row"
+          style="border: 1px solid black"
+        >
         <app-cell [value]="value"></app-cell>
-      </td>
-    </tr>
-  </table>
+      </div>
+    </div>
+  </div>
 </div>

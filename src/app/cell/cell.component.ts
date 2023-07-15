@@ -7,5 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class CellComponent {
   @Input() value: number = 0 ;
-  cellClass = 'large-green-cell';
 }
