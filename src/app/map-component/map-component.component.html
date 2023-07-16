@@ -1,13 +1,16 @@
-<div class="flex justify-center items-center h-screen w-screen">
-  <div class="table h-[50vh] w-[50vw]">
-    <div style="background-image: url('assets/Image/Background/grass bg img3.png');" class="table-row-group text-center">
-      <div class="table-row" *ngFor="let row of map">
-        <div
-          class="table-cell"
-          *ngFor="let value of row"
-          style="border: 1px solid black"
-        >
-        <app-cell [value]="value"></app-cell>
+<div class="flex items-center justify-center h-screen">
+  <div class="container overflow-scroll no-scrollbar border-2 border-black w-1/2 h-1/2 ">
+    <div class="table">
+      <div style="background-image: url('assets/Image/Background/grass bg img3.png');" class="table-row-group text-center">
+        <div class="table-row" *ngFor="let row of map; let i=index">
+          <div
+            class="table-cell"
+            *ngFor="let value of row; let j= index"
+             (click)="setValue(i,j)"
+            style="border: 1px solid black"
+          >
+          <app-cell class="aspect-w-1 aspect-h-1" [value]="value"></app-cell>
+        </div>
       </div>
     </div>
   </div>

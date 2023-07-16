@@ -20,7 +20,7 @@ export class MapComponentComponent {
   ngOnInit() {
     // Generate a 2D map with random values
     const numRows = 20;
-    const numCols = 20;
+    const numCols = 50;
 
     // Initialize the array with default values (e.g., -1)
     for (let i = 0; i < numRows; i++) {
@@ -44,6 +44,9 @@ export class MapComponentComponent {
       }
     }
   }
-  
+  setValue(i: any, j: any): void {
+    this.map[i][j] =0;
+    throw new Error('Method not implemented.');
+    }
 
 }
