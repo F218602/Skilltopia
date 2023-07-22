@@ -1,11 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { io, Socket } from 'socket.io-client';
 
 @Component({
   selector: 'app-map-component',
   templateUrl: './map-component.component.html',
   styleUrls: ['./map-component.component.scss']
 })
-export class MapComponentComponent {
+export class MapComponentComponent implements OnInit, OnDestroy{
+  socket: Socket= io('http://localhost:3000');;
 
   map: number[][] = [];
 
@@ -18,6 +20,30 @@ export class MapComponentComponent {
   };
   
   ngOnInit() {
+    // Connect to the server
+    this.socket = io('http://localhost:3000');
+    // Join a room
+    const room = 'myRoom';
+    this.socket.emit('join', room);
+
+    // Listen for events
+    this.socket.on('playerJoined', (playerId: string) => {
+      console.log(`Player ${playerId} joined the room`);
+    });
+
+    this.socket.on('playerLeft', (playerId: string) => {
+      console.log(`Player ${playerId} left the room`);
+    });
+
+    this.socket.on('roomFull', () => {
+      console.log(`Room is full`);
+    });
+
+    this.socket.on('changed', (i:any,j:any,val:any) => {
+      console.log(val);
+      this.map[i][j] =val;
+    });
+
     // Generate a 2D map with random values
     const numRows = 20;
     const numCols = 50;
@@ -44,8 +70,14 @@ export class MapComponentComponent {
       }
     }
   }
+
+  ngOnDestroy() {
+    // Disconnect from the server
+    this.socket.disconnect();
+  }
   setValue(i: any, j: any): void {
     this.map[i][j] =0;
+    this.socket.emit('change', 'myRoom', i, j, 0);
     throw new Error('Method not implemented.');
     }
 
