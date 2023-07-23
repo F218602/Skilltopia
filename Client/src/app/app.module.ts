@@ -8,21 +8,25 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabComponentComponent } from './tab-component/tab-component.component';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
+import { ToolbarComponentComponent } from './toolbar-component/toolbar-component.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({
-  declarations: [
-    AppComponent,
-    MapComponentComponent,
-    CellComponent,
-    TabComponentComponent
-  ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    MatTabsModule,
-    MatMenuModule,
-    MatIconModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MapComponentComponent,
+        CellComponent,
+        TabComponentComponent
+    ],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        MatTabsModule,
+        MatMenuModule,
+        MatIconModule,
+        MatToolbarModule,
+        ToolbarComponentComponent
+    ]
 })
 export class AppModule { }
