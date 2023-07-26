@@ -2,13 +2,51 @@ const Express = require('express')();
 const Http = require('http').Server(Express);
 const io = require('socket.io')(Http, {
   cors: {
-    origins: ['http://192.168.100.5:4200', 'http://192.168.0.5:4200'],
+    origins: [],
     methods: ['GET', 'POST'],
   },
 });
 // Store the players in a room
 const players = new Map();
 const maxPlayers = 5;
+// Create a 20x50 array filled with the value 5
+const numRows = 20;
+const numCols = 50;
+const filledValue = -1;
+
+const GameMap = [];
+
+for (let i = 0; i < numRows; i++) {
+  const row = new Array(numCols).fill(filledValue);
+  GameMap.push(row);
+}
+
+// console.log(GameMap);
+//Game map
+let objectTypes = {
+  farm: 0,
+  goldMine: 1,
+  building: 2,
+  docks: 3,
+  // Add more types as needed
+};
+
+// Place objects randomly in n locations
+let count = 0;
+while (count < 300) {
+  let randomRow = Math.floor(Math.random() * numRows);
+  let randomCol = Math.floor(Math.random() * numCols);
+
+  if (GameMap[randomRow][randomCol] === -1) {
+    // Generate a random object type index from 0 to number of types - 1
+    let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
+
+    // Assign the object type to the location
+    GameMap[randomRow][randomCol] = randomTypeIndex;
+
+    count++;
+  }
+}
 
 io.on('connection', (socket) => {
   console.log('A user connected '+ socket.id);
@@ -27,6 +65,8 @@ io.on('connection', (socket) => {
       io.to(room).emit('playerJoined', socket.id);
 
       console.log(`${socket.id} joined room ${room}`);
+      // Send the 20x50 array to the client who just joined
+      socket.emit('Joined', GameMap);
     } else {
       socket.emit('roomFull');
       console.log(`Room ${room} is full`);
@@ -63,6 +103,7 @@ io.on('connection', (socket) => {
   });
 
   socket.on("change", (room, i, j, val) => {
+    GameMap[i][j] = val;
     console.log('Received change event:', room, i, j, val);
     io.to(room).emit('changed', i, j, val);
   });
