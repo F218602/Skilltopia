@@ -11,13 +11,19 @@ import {MatIconModule} from '@angular/material/icon';
 import { ToolbarComponentComponent } from './toolbar-component/toolbar-component.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { FooterComponent } from './footer/footer.component';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+// import {MatListModule} from '@angular/material/list';
+import {MatDialogModule} from '@angular/material/dialog';
+import { QuizComponent } from './quiz/quiz.component';
+import { MatButtonModule } from '@angular/material/button';
 @NgModule({
     declarations: [
         AppComponent,
         MapComponentComponent,
         CellComponent,
         TabComponentComponent,
-        FooterComponent
+        FooterComponent,
+        
     ],
     providers: [],
     bootstrap: [AppComponent],
@@ -28,7 +34,11 @@ import { FooterComponent } from './footer/footer.component';
         MatMenuModule,
         MatIconModule,
         MatToolbarModule,
-        ToolbarComponentComponent
+        ToolbarComponentComponent,
+        MatProgressBarModule,
+        // MatListModule
+        MatDialogModule,
+        MatButtonModule  
     ]
 })
 export class AppModule { }

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tab-component.component.scss']
 })
 export class TabComponentComponent {
+  Buildings: String[]= ['Town Centre', 'Market', 'University', 'Farm']
 
 }

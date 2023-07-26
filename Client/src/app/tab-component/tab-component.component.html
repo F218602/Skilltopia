@@ -1,6 +1,11 @@
 <!-- <p>tab-component works!</p> -->
 <mat-tab-group>
-    <mat-tab label="First">
+    <mat-tab label="Building">  
+      <div class=" bg-orange-200 w-1/3 m-2 p-2">
+        <div *ngFor="let building of Buildings; let j= index" class = "bg-orange-600 p-2 m-2 ">
+          {{building}}
+        </div>
+      </div>    
       <!-- <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
         <mat-icon>more_vert</mat-icon>
       </button>
@@ -19,10 +24,7 @@
         </button>
       </mat-menu> -->
     </mat-tab>
-    <mat-tab label="Second"> Content 2 </mat-tab>
-    <mat-tab label="Third"> Content 3 </mat-tab>
-    <mat-tab>
-      
-    </mat-tab>
+    <mat-tab label="Resources"> Content 2 </mat-tab>
+    <mat-tab label="Upgrade"> Content 3 </mat-tab>
   </mat-tab-group>
   
