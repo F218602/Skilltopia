@@ -10,12 +10,14 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatIconModule} from '@angular/material/icon';
 import { ToolbarComponentComponent } from './toolbar-component/toolbar-component.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
     declarations: [
         AppComponent,
         MapComponentComponent,
         CellComponent,
-        TabComponentComponent
+        TabComponentComponent,
+        FooterComponent
     ],
     providers: [],
     bootstrap: [AppComponent],
