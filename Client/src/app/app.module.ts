@@ -16,6 +16,8 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import { QuizComponent } from './quiz/quiz.component';
 import { MatButtonModule } from '@angular/material/button';
+import { LobbyComponent } from './lobby/lobby.component';
+import { FormsModule } from '@angular/forms'; // Import FormsModule
 @NgModule({
     declarations: [
         AppComponent,
@@ -23,6 +25,7 @@ import { MatButtonModule } from '@angular/material/button';
         CellComponent,
         TabComponentComponent,
         FooterComponent,
+        LobbyComponent,
         
     ],
     providers: [],
@@ -38,7 +41,8 @@ import { MatButtonModule } from '@angular/material/button';
         MatProgressBarModule,
         // MatListModule
         MatDialogModule,
-        MatButtonModule  
+        MatButtonModule,
+        FormsModule  
     ]
 })
 export class AppModule { }

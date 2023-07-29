@@ -1,0 +1,10 @@
+<!-- Lobby Code Input Form -->
+<form (ngSubmit)="onSubmit()">
+    <label for="lobbyCode">Enter Lobby Code:</label>
+    <input type="text" id="lobbyCode" [(ngModel)]="lobbyCode" required>
+    <button type="submit">Join Lobby</button>
+  </form>
+  
+  <!-- Display an error message -->
+  <p *ngIf="errorMessage">{{ errorMessage }}</p>
+  
