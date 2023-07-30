@@ -1,10 +1,9 @@
 <!-- Lobby Code Input Form -->
-<form (ngSubmit)="onSubmit()">
-    <label for="lobbyCode">Enter Lobby Code:</label>
-    <input type="text" id="lobbyCode" [(ngModel)]="lobbyCode" required>
-    <button type="submit">Join Lobby</button>
-  </form>
-  
-  <!-- Display an error message -->
-  <p *ngIf="errorMessage">{{ errorMessage }}</p>
-  
+<div class="flex flex-col items-center justify-center min-h-screen">
+  <input type="text" [(ngModel)]="userName" placeholder="Enter your name" class="mb-4 px-4 py-2 border rounded">
+  <input type="text" [(ngModel)]="roomName" placeholder="Enter your Room ID" class="mb-4 px-4 py-2 border rounded">
+  <button (click)="joinGame()" class="px-4 py-2 bg-blue-500 text-white rounded">Submit</button>
+</div>
+    <!-- <button type="submit">Join Lobby</button> -->
+    
+    

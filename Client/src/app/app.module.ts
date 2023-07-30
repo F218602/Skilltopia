@@ -18,6 +18,9 @@ import { QuizComponent } from './quiz/quiz.component';
 import { MatButtonModule } from '@angular/material/button';
 import { LobbyComponent } from './lobby/lobby.component';
 import { FormsModule } from '@angular/forms'; // Import FormsModule
+import { SocketIOService } from './socket-io.service'; // Import the SocketService
+
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -28,7 +31,7 @@ import { FormsModule } from '@angular/forms'; // Import FormsModule
         LobbyComponent,
         
     ],
-    providers: [],
+    providers: [SocketIOService],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
