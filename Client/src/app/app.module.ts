@@ -17,8 +17,9 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { QuizComponent } from './quiz/quiz.component';
 import { MatButtonModule } from '@angular/material/button';
 import { LobbyComponent } from './lobby/lobby.component';
-import { FormsModule } from '@angular/forms'; // Import FormsModule
-import { SocketIOService } from './socket-io.service'; // Import the SocketService
+import { FormsModule } from '@angular/forms';
+import { SocketIOService } from './socket-io.service';
+import { QuestionPopupComponent } from './question-popup/question-popup.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { SocketIOService } from './socket-io.service'; // Import the SocketServi
         TabComponentComponent,
         FooterComponent,
         LobbyComponent,
+        QuestionPopupComponent,
         
     ],
     providers: [SocketIOService],
