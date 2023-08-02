@@ -8,6 +8,7 @@ import { Observable } from 'rxjs';
 export class SocketIOService {
   private socket: Socket;
   public Created: boolean = false;
+  public roomName: string = 'myRoom';
 
   constructor() {
     // Connect to the server
@@ -18,11 +19,12 @@ export class SocketIOService {
   }
 
   join(userName: string, roomName: string) {
+    this.roomName = roomName;
     this.socket.emit('join', roomName);
   }
 
   change(roomName: string, i: number, j: number, val: number) {
-    this.socket.emit('join', roomName, i, j, val);
+    this.socket.emit('change', roomName, i, j, val);
   }
 
 

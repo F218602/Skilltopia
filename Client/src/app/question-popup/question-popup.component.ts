@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-question-popup',
@@ -8,30 +9,24 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 })
 export class QuestionPopupComponent {
   selectedOption!: string;
-  questionNumber!: number;
-  question!: string;
-  option1!: string;
-  option2!: string;
-  option3!: string;
-  dialog: any;
+  questionNumber: number = 1;
+  question: string = 'nd cdvdd md';
+  option1: string = 'dd1';
+  option2: string = 'dfd';
+  option3: string = 'sd3';
+  correctOption: string = 'option2';
 
   constructor(
     public dialogRef: MatDialogRef<QuestionPopupComponent>,
-    @Inject(MAT_DIALOG_DATA) public data: any
+    @Inject(MAT_DIALOG_DATA) public data: any,
+    private dialog: MatDialog
   ) {}
   
   openProceedPopup() {
     const dialogRef = this.dialog.open(QuestionPopupComponent, {
-      data: {
-        questionNumber: 1,
-        question: 'Sample question 1?',
-        option1: 'Option 1',
-        option2: 'Option 2',
-        option3: 'Option 3',
-        correctOption: 'option2', // Replace this with the correct option for the question
-      },
-    });
 
+    });
+    
     dialogRef.afterClosed().subscribe((proceed: any) => {
       if (proceed) {
         // Proceed to the next question popup or perform any other action

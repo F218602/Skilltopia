@@ -6,6 +6,10 @@ const io = require('socket.io')(Http, {
     methods: ['GET', 'POST'],
   },
 });
+
+const fs = require('fs');
+const questionsData = require('./quiz-questions.json'); // Replace with your JSON file path if necessary
+
 // Store the players in a room
 const players = new Map();
 const maxPlayers = 5;

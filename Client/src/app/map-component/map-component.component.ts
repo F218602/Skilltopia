@@ -50,7 +50,7 @@ export class MapComponentComponent implements OnInit{
   }
   setValue(i: any, j: any): void {
     this.map[i][j] =0;
-    this.socketIOService.change('myRoom', i, j, 0);
+    this.socketIOService.change(this.socketIOService.roomName, i, j, 0);
     throw new Error('Method not implemented.');
     }
 

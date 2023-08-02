@@ -1,0 +1,27 @@
+[
+    {
+      "Question No": 1,
+      "Question": "What is the primary objective of Artificial Intelligence (AI)?",
+      "Option 1": "Automate repetitive tasks",
+      "Option 2": "Enable human-like emotions in machines",
+      "Option 3": "Create advanced gaming graphics",
+      "Correct Option": "Option 1"
+    },
+    {
+      "Question No": 2,
+      "Question": "Which type of AI system is designed to perform a specific task with human-level performance?",
+      "Option 1": "Narrow AI (Weak AI)",
+      "Option 2": "General AI (Strong AI)",
+      "Option 3": "Super AI (Superintelligence)",
+      "Correct Option": "Option 1"
+    },
+    {
+      "Question No": 3,
+      "Question": "What is the main concept behind Machine Learning in AI?",
+      "Option 1": "Human decision-making",
+      "Option 2": "Rule-based systems",
+      "Option 3": "Learning from data",
+      "Correct Option": "Option 3"
+    }
+  ]
+  
