@@ -1,19 +1,12 @@
-<div class="bg-pink-700 flex flex-col items-center p-4">
-    <h3 class="mb-4">Question {{ questionNumber }}</h3>
-    <p class="mb-4">{{ question }}</p>
+<div>
+  <div class="bg-pink-700 flex flex-col items-center p-4">
+    <h3 class="mb-4">Question {{ selectedQuestion.questionNo }}</h3>
+    <p class="mb-4">{{ selectedQuestion.question }}</p>
   
     <div class="flex flex-col">
-      <label class="mb-2">
-        <input type="radio" name="option" [(ngModel)]="selectedOption" value="option1">
-        {{ option1 }}
-      </label>
-      <label class="mb-2">
-        <input type="radio" name="option" [(ngModel)]="selectedOption" value="option2">
-        {{ option2 }}
-      </label>
-      <label>
-        <input type="radio" name="option" [(ngModel)]="selectedOption" value="option3">
-        {{ option3 }}
+      <label *ngFor="let option of selectedQuestion?.options; let i = index" class="mb-2">
+        <input type="radio" name="option" [(ngModel)]="selectedOption" [value]="i + 1">
+        {{ option }}
       </label>
     </div>
     <div class="flex justify-center mt-4">
@@ -21,4 +14,4 @@
       <button mat-raised-button (click)="exitQuiz()">Exit</button>
     </div>  
   </div>
-  
+</div>

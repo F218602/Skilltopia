@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { SocketIOService } from '../socket-io.service';
-
 @Component({
   selector: 'app-lobby',
   templateUrl: './lobby.component.html',
@@ -9,7 +8,9 @@ import { SocketIOService } from '../socket-io.service';
 export class LobbyComponent {
   userName: string = ''; // Variable to store the user name
   roomName: string = ''; // Variable to store Room name
-  constructor(private socketIOService: SocketIOService) {}
+
+  constructor(private socketIOService: SocketIOService) {} 
+  
   ngOnInit() {
 
     // Listen for events
@@ -26,7 +27,7 @@ export class LobbyComponent {
     this.socketIOService.roomFull().subscribe(([])=> {
       console.log(`Room is full`);
     });
-    
+
   }
   joinGame() {
    console.log(this.userName, this.roomName);

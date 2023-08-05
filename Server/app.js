@@ -111,7 +111,14 @@ io.on('connection', (socket) => {
     console.log('Received change event:', room, i, j, val);
     io.to(room).emit('changed', i, j, val);
   });
-
+  
+  socket.on("getQuestion", () => {
+    // Get a random question from the questionsData
+    const randomQuestionIndex = Math.floor(Math.random() * questionsData.length);
+    const randomQuestion = questionsData[randomQuestionIndex];
+    console.log(randomQuestion);
+    io.emit('returnQuestion', randomQuestion);
+  })
 });
 
 Http.listen(3000, () => {

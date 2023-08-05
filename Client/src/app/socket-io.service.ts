@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { io, Socket } from 'socket.io-client';
 import { Observable } from 'rxjs';
+import { QuizQuestion } from './quizQuestion.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -26,8 +27,13 @@ export class SocketIOService {
   change(roomName: string, i: number, j: number, val: number) {
     this.socket.emit('change', roomName, i, j, val);
   }
+  // Quiz question get
+  getQuestion() {
+    this.socket.emit('getQuestion');
+  }
 
 
+// Listeners
   Joined(): Observable<[number[][]]> {
     return new Observable<[number[][]]>((observer) => {
       this.socket.on('Joined', (arrayData: number[][]) => {
@@ -62,5 +68,14 @@ export class SocketIOService {
         observer.next([i, j, val]);
       });
     });
-  }    
+  }
+  
+  returnQuestion() : Observable<[QuizQuestion]> {
+    return new Observable<[QuizQuestion]>((observer) => {
+      this.socket.on('returnQuestion', (selectedQuestion: QuizQuestion) => {
+        observer.next([selectedQuestion]);
+      });
+    });
+  }
+  
 }
