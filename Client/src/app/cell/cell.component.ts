@@ -1,4 +1,7 @@
 import { Component, Input } from '@angular/core';
+import { objectImageMap } from '../object-image-map';
+import { CellInteractionService } from '../cell-interaction.service';
+import { CellInfo } from '../cell-info.interface';
 
 @Component({
   selector: 'app-cell',
@@ -7,15 +10,37 @@ import { Component, Input } from '@angular/core';
 })
 export class CellComponent {
   @Input() value: number = 0 ;
-  numberToImageMapping: any = {
-    1: '/assets/Image/Buildings/House.gif',
-    // 2: 'image2.jpg',
-    // 3: 'image3.jpg',
-    // Add more mappings as needed
-  };
+  @Input() row: number = 0 ;
+  @Input() column: number = 0 ;
+  
+  cellInfo!: CellInfo;
+
+  constructor(public cellInterSer: CellInteractionService) {}
+
+  ngOnInit(): void {
+    if(this.value==11) {
+      this.cellInfo = {
+        row: 1,
+        col: 1,
+        image: 11,
+        tile: {
+          name: 'Forest Waste Gold Mine',
+          type: 'GoldMine',
+          buildingsConnected: 0,
+        }
+      }  
+    }
+  }
   
   getImageUrl(number: number) {
-    return this.numberToImageMapping[number] || null; // Use a default image if mapping not found
+    return objectImageMap[number] || null; // Use a default image if mapping not found
+  }
+
+  sendData() {
+    if(this.value==11){
+      this.cellInterSer.cellData = this.cellInfo;  
+      console.log("Waste");
+    }
   }
 }
 

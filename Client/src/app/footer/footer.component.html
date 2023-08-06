@@ -11,8 +11,8 @@
     
     <div class="flex">
       <div class="square-box w-20 h-20 ml-10 mt-5">
-        <img src="/assets/Image/Buildings/House.gif" alt="Image">
-        <p class="content-center">Image Name</p>
+        <img [src]="getImagePath(selectedCell.image || 99)" alt="Image">
+        <p class="content-center">{{this.cellInterSer.cellData?.tile?.name || "Unknown"}}</p>
       </div>
       <div class="ml-10 mt-10" *ngIf="showBuilding">
         Level: {{Level}}<br>
@@ -21,18 +21,18 @@
         People In Use: {{PeopleInUse}}/{{CurrentPopulation}}<br>
       </div>
       <div class="bg-slate-500 ml-auto mt-5 mb-10 w-1/2">
-        <!-- Progress bar for next level -->
-        <!-- <div class="bg-slate-500 mt-20 p-3">
+        <!-- Progress bar for next level town centre-->
+        <div class="bg-slate-500 mt-20 p-3">
           <p>Progress to Stone 2</p>
           <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
-        </div> -->
+        </div>
         <!-- Market items -->
-        <div class= "mt-20">
+        <!-- <div class= "mt-20">
           <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2">Tomato</button>
           <button mat-raised-button color="primary" class="m-2 bg-orange-400 p-2">Potato</button>
           <button mat-raised-button color="primary" class="m-2 bg-lime-300 p-2">Wood</button>
           <button mat-raised-button color="primary" class="m-2 bg-yellow-700 p-2">Fish</button>
-        </div>
+        </div> -->
       </div>  
       <div class="ml-auto mt-10 mb-10 mr-10 text-xs">
         <div class=" bg-slate-500 p-4">

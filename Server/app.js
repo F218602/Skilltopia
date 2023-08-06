@@ -28,10 +28,24 @@ for (let i = 0; i < numRows; i++) {
 // console.log(GameMap);
 //Game map
 let objectTypes = {
-  farm: 0,
-  goldMine: 1,
-  building: 2,
-  docks: 3,
+  empty: 0,
+  townCentre: 1,
+  hospital: 2,
+  university: 3,
+  church: 4,
+  market: 5,
+  dock: 6,
+  lumberyard: 7,
+  farm: 8,
+  miningCamp: 9,
+  factory: 10,
+  gold: 11,
+  pond: 12,
+  forest: 13,
+  stone: 14,
+  settlement: 15,
+
+
   // Add more types as needed
 };
 

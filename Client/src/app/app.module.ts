@@ -20,6 +20,7 @@ import { LobbyComponent } from './lobby/lobby.component';
 import { FormsModule } from '@angular/forms';
 import { SocketIOService } from './socket-io.service';
 import { QuestionPopupComponent } from './question-popup/question-popup.component';
+import { CellInteractionService } from './cell-interaction.service';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import { QuestionPopupComponent } from './question-popup/question-popup.componen
         QuestionPopupComponent,
         
     ],
-    providers: [SocketIOService],
+    providers: [SocketIOService, CellInteractionService],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
