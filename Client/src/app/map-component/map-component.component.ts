@@ -1,6 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { io, Socket } from 'socket.io-client';
 import { SocketIOService } from '../socket-io.service';
+import { CellInteractionService } from '../cell-interaction.service';
 @Component({
   selector: 'app-map-component',
   templateUrl: './map-component.component.html',
@@ -11,22 +12,6 @@ export class MapComponentComponent implements OnInit{
   map: number[][] = [];
   constructor(public socketIOService: SocketIOService) {}
   ngOnInit() {
-    // // Connect to the server
-    // this.socket = io('http://localhost:3000');
-    // // Join a room
-    // const room = 'myRoom';
-    // this.socket.emit('join', room);
-    // Getting map data from the server
-    // this.socketIOService.socket.on('Joined', (arrayData) => {
-    //   console.log('Received 20x50 array:', arrayData);
-    //   this.socketIOService.Created = true;
-    //   this.map = arrayData;
-    // });
-    // Listen for events
-    // this.socketIOService.socket.on('playerJoined', (playerId: string) => {
-    //   this.socketIOService.sendMessage();
-    //   console.log(`Player ${playerId} joined the room`);
-    // });
     this.socketIOService.Joined().subscribe(([arrayData]) => {
           console.log('Received 20x50 array:', arrayData);
           // this.socketIOService.Created = true;
@@ -49,9 +34,9 @@ export class MapComponentComponent implements OnInit{
     }
   }
   setValue(i: any, j: any): void {
-    this.map[i][j] =0;
-    this.socketIOService.change(this.socketIOService.roomName, i, j, 0);
-    throw new Error('Method not implemented.');
+    // this.map[i][j] =0;
+    // this.socketIOService.change(this.socketIOService.roomName, i, j, 0);
+    
     }
 
 }
