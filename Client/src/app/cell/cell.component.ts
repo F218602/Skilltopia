@@ -24,7 +24,7 @@ export class CellComponent {
         col: 1,
         image: 11,
         tile: {
-          name: 'Forest Waste Gold Mine',
+          name: 'Forest Gold Mine',
           type: 'GoldMine',
           buildingsConnected: 0,
         }
@@ -39,7 +39,7 @@ export class CellComponent {
   sendData() {
     if(this.value==11){
       this.cellInterSer.cellData = this.cellInfo;  
-      console.log("Waste");
+      console.log("Mine");
     }
   }
 }

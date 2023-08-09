@@ -16,7 +16,7 @@ const maxPlayers = 5;
 // Create a 20x50 array filled with the value 5
 const numRows = 20;
 const numCols = 50;
-const filledValue = -1;
+const filledValue = 0;
 
 const GameMap = [];
 
@@ -35,15 +35,14 @@ let objectTypes = {
   church: 4,
   market: 5,
   dock: 6,
-  lumberyard: 7,
+  lumberCamp: 7,
   farm: 8,
   miningCamp: 9,
   factory: 10,
-  gold: 11,
+  goldrock: 11,
   pond: 12,
   forest: 13,
-  stone: 14,
-  settlement: 15,
+  settlement: 14,
 
 
   // Add more types as needed
@@ -55,7 +54,7 @@ while (count < 300) {
   let randomRow = Math.floor(Math.random() * numRows);
   let randomCol = Math.floor(Math.random() * numCols);
 
-  if (GameMap[randomRow][randomCol] === -1) {
+  if (GameMap[randomRow][randomCol] === filledValue) {
     // Generate a random object type index from 0 to number of types - 1
     let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
 

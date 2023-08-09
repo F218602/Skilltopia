@@ -1,5 +1,4 @@
-<button (click)="sendData()" class="text-white font-bold w-6 aspect-square">{{ value }}</button>
 <!-- Image addition to cells  -->
-<div>
+<div (click)="sendData()" class="w-10 aspect-square">
     <img [src]="getImageUrl(value)" alt="Image {{ 1 }}">
 </div>

@@ -2,6 +2,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { io, Socket } from 'socket.io-client';
 import { SocketIOService } from '../socket-io.service';
 import { CellInteractionService } from '../cell-interaction.service';
+import { PlayerGameDataService } from '../player-game-data.service';
 @Component({
   selector: 'app-map-component',
   templateUrl: './map-component.component.html',
@@ -10,12 +11,14 @@ import { CellInteractionService } from '../cell-interaction.service';
 export class MapComponentComponent implements OnInit{
 
   map: number[][] = [];
-  constructor(public socketIOService: SocketIOService) {}
+  constructor(public socketIOService: SocketIOService, public pgd : PlayerGameDataService) {}
   ngOnInit() {
     this.socketIOService.Joined().subscribe(([arrayData]) => {
           console.log('Received 20x50 array:', arrayData);
           // this.socketIOService.Created = true;
           this.map = arrayData;
+          this.pgd.mapTileId = arrayData;
+          this.pgd.initMap();
     });
 
     this.socketIOService.changed().subscribe(([i, j, val]) => {

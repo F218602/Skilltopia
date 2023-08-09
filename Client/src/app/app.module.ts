@@ -21,7 +21,7 @@ import { FormsModule } from '@angular/forms';
 import { SocketIOService } from './socket-io.service';
 import { QuestionPopupComponent } from './question-popup/question-popup.component';
 import { CellInteractionService } from './cell-interaction.service';
-
+import { PlayerGameDataService } from './player-game-data.service';
 
 @NgModule({
     declarations: [
@@ -34,7 +34,7 @@ import { CellInteractionService } from './cell-interaction.service';
         QuestionPopupComponent,
         
     ],
-    providers: [SocketIOService, CellInteractionService],
+    providers: [SocketIOService, CellInteractionService, PlayerGameDataService],
     bootstrap: [AppComponent],
     imports: [
         BrowserModule,
