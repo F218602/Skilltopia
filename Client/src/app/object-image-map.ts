@@ -10,7 +10,7 @@ export const objectImageMap: Record<number, string> = {
     8: '/assets/Image/Buildings/farm_1.png',
     9: '/assets/Image/Buildings/miningcamp_1.png',
     10: '/assets/Image/Buildings/factory_1.png',
-    11: '/assets/Image/Buildings/gold_mine_1.png',
+    11: '/assets/Image/Buildings/goldrock_1.png',
     12: '/assets/Image/Buildings/pond_1.png',
     13: '/assets/Image/Buildings/forest_1 .png',
     14: '/assets/Image/Buildings/settlement-1.png',

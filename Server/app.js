@@ -12,9 +12,9 @@ const questionsData = require('./quiz-questions.json'); // Replace with your JSO
 
 // Store the players in a room
 const players = new Map();
-const maxPlayers = 5;
+const maxPlayers = 4;
 // Create a 20x50 array filled with the value 5
-const numRows = 20;
+const numRows = 50;
 const numCols = 50;
 const filledValue = 0;
 
@@ -43,27 +43,147 @@ let objectTypes = {
   pond: 12,
   forest: 13,
   settlement: 14,
-
-
   // Add more types as needed
 };
 
-// Place objects randomly in n locations
-let count = 0;
-while (count < 300) {
-  let randomRow = Math.floor(Math.random() * numRows);
-  let randomCol = Math.floor(Math.random() * numCols);
+forestCount = Math.floor(0.015*numRows*numCols);
+pondCount = Math.floor(0.015*numRows*numCols);
+goldRockCount = Math.floor(0.04*numRows*numCols);
+settlementCount = maxPlayers*4
+townCentreCount = maxPlayers
 
-  if (GameMap[randomRow][randomCol] === filledValue) {
-    // Generate a random object type index from 0 to number of types - 1
-    let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
 
-    // Assign the object type to the location
-    GameMap[randomRow][randomCol] = randomTypeIndex;
+// functions for resource generation in the map
+function generateTownCentre() {
+  GameMap[3][3] = objectTypes.townCentre
+  GameMap[numRows-4][3] = objectTypes.townCentre
+  GameMap[3][numCols-4] = objectTypes.townCentre
+  GameMap[numRows-4][numCols-4] = objectTypes.townCentre
+}
 
-    count++;
+function generateForest() {
+  let count = 0;
+  while (count < forestCount) {
+    let randomRow = Math.floor(Math.random() * numRows-1);
+    let randomCol = Math.floor(Math.random() * numCols-1);
+    if (randomRow >= 0 && randomRow < GameMap.length &&
+      randomCol >= 0 && randomCol < GameMap[randomRow].length) {
+      if (GameMap[randomRow][randomCol] === filledValue && 
+      GameMap[randomRow+1][randomCol] === filledValue && 
+      GameMap[randomRow][randomCol+1] === filledValue && 
+      GameMap[randomRow+1][randomCol+1] === filledValue ) {
+        GameMap[randomRow][randomCol] = objectTypes.forest;
+        GameMap[randomRow+1][randomCol] = objectTypes.forest;
+        GameMap[randomRow][randomCol+1] = objectTypes.forest;
+        GameMap[randomRow+1][randomCol+1] = objectTypes.forest;
+        count++;
+      }
+    }
   }
 }
+
+function generatePond() {
+  let count = 0;
+  while (count < pondCount) {
+    let randomRow = Math.floor(Math.random() * numRows-1);
+    let randomCol = Math.floor(Math.random() * numCols-1);
+    if (randomRow >= 0 && randomRow < GameMap.length &&
+      randomCol >= 0 && randomCol < GameMap[randomRow].length) {
+      if (GameMap[randomRow][randomCol] === filledValue && 
+      GameMap[randomRow+1][randomCol] === filledValue && 
+      GameMap[randomRow][randomCol+1] === filledValue && 
+      GameMap[randomRow+1][randomCol+1] === filledValue ) {
+        GameMap[randomRow][randomCol] = objectTypes.pond;
+        GameMap[randomRow+1][randomCol] = objectTypes.pond;
+        GameMap[randomRow][randomCol+1] = objectTypes.pond;
+        GameMap[randomRow+1][randomCol+1] = objectTypes.pond;
+        count++;
+      }
+    }
+  }
+}
+
+function generateGoldRock() {
+  let count = 0;
+  while (count < goldRockCount) {
+    let randomRow = Math.floor(Math.random() * numRows);
+    let randomCol = Math.floor(Math.random() * numCols);
+    if (randomRow >= 0 && randomRow < GameMap.length &&
+      randomCol >= 0 && randomCol < GameMap[randomRow].length) {
+      if (GameMap[randomRow][randomCol] === filledValue) {
+        GameMap[randomRow][randomCol] = objectTypes.goldrock;
+        count++;
+      }
+    }
+  }
+}
+
+function generateSettlement() {
+  let count = 0;
+  let maxAttempts = 1000; // Maximum attempts to find a suitable location
+
+  while (count < settlementCount && maxAttempts > 0) {
+    let randomRow = Math.floor(Math.random() * numRows);
+    let randomCol = Math.floor(Math.random() * numCols);
+
+    if (GameMap[randomRow][randomCol] === filledValue) {
+      // Check the surrounding area for existing settlements before placing
+      let isValidLocation = true;
+      let radius = 5; // Adjust the radius as needed
+
+      for (let rowOffset = -radius; rowOffset <= radius; rowOffset++) {
+        for (let colOffset = -radius; colOffset <= radius; colOffset++) {
+          let checkRow = randomRow + rowOffset;
+          let checkCol = randomCol + colOffset;
+
+          if (
+            checkRow >= 0 &&
+            checkRow < numRows &&
+            checkCol >= 0 &&
+            checkCol < numCols &&
+            GameMap[checkRow][checkCol] === objectTypes.settlement
+          ) {
+            isValidLocation = false;
+            break;
+          }
+        }
+
+        if (!isValidLocation) {
+          break;
+        }
+      }
+
+      if (isValidLocation) {
+        GameMap[randomRow][randomCol] = objectTypes.settlement;
+        count++;
+      }
+    }
+
+    maxAttempts--;
+  }
+}
+
+generateTownCentre()
+generateForest();
+generatePond();
+generateGoldRock();
+generateSettlement();
+// Place objects randomly in n locations
+// let count = 0;
+// while (count < 300) {
+//   let randomRow = Math.floor(Math.random() * numRows);
+//   let randomCol = Math.floor(Math.random() * numCols);
+
+//   if (GameMap[randomRow][randomCol] === filledValue) {
+//     // Generate a random object type index from 0 to number of types - 1
+//     let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
+
+//     // Assign the object type to the location
+//     GameMap[randomRow][randomCol] = randomTypeIndex;
+
+//     count++;
+//   }
+// }
 
 io.on('connection', (socket) => {
   console.log('A user connected '+ socket.id);

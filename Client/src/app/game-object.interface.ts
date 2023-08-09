@@ -15,6 +15,21 @@ export interface Materials {
   stone: number;
 
 }
+
+export interface BuildingTypes {
+  townCentre: number,
+  hospital: number,
+  university: number,
+  church: number,
+  market: number,
+  dock: number,
+  lumberCamp: number,
+  farm: number,
+  miningCamp: number,
+  factory: number,
+
+}
+
 export interface Building extends Tile{
 
   playerId: number;  
