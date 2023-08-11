@@ -1,5 +1,4 @@
-import { Building } from "./building.interface";
-import { Resource } from "./resource.interface";
+import { Building, Resource } from "./game-object.interface";
 
 export interface CellInfo {
     row?: number;

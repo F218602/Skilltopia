@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { objectImageMap } from '../object-image-map';
 import { CellInteractionService } from '../cell-interaction.service';
 import { CellInfo } from '../cell-info.interface';
+import { PlayerGameDataService } from '../player-game-data.service';
 
 @Component({
   selector: 'app-cell',
@@ -15,21 +16,10 @@ export class CellComponent {
   
   cellInfo!: CellInfo;
 
-  constructor(public cellInterSer: CellInteractionService) {}
+  constructor(public cellInterSer: CellInteractionService, public pgd: PlayerGameDataService) {}
 
   ngOnInit(): void {
-    if(this.value==11) {
-      this.cellInfo = {
-        row: 1,
-        col: 1,
-        image: 11,
-        tile: {
-          name: 'Forest Gold Mine',
-          type: 'GoldMine',
-          buildingsConnected: 0,
-        }
-      }  
-    }
+    
   }
   
   getImageUrl(number: number) {
@@ -37,10 +27,8 @@ export class CellComponent {
   }
 
   sendData() {
-    if(this.value==11){
-      this.cellInterSer.cellData = this.cellInfo;  
-      console.log("Mine");
-    }
+    this.cellInterSer.selected = this.pgd.map[this.row][this.column];
+    this.cellInterSer.selX = this.row;
+    this.cellInterSer.selY = this.column;  
   }
 }
-

@@ -3,6 +3,7 @@ export interface Tile {
     y: number;
     image: number;
     name: string;
+    type: string;
 }
 
 export interface Materials {
@@ -43,12 +44,13 @@ export interface Resource {
 
 }
 
-export class TownCenter implements Building{
+export class TownCentre implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 1;
     name: string = 'Town Centre';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -56,7 +58,7 @@ export class TownCenter implements Building{
 
     population: number = 10;
     currentPopulation: number = 10;
-    maximumPopulation: number = 10;
+    totalPopulation: number = 10;
     peopleInUse: number = 0;
 
     // cooling time for quiz for all buildings
@@ -67,66 +69,16 @@ export class TownCenter implements Building{
     // town centre
     updatePopulation() {
 
-
     }
-    
-    // hospital
-    updateSafetyScore() {
-
-    }
-    // university
-    updateEducationalScore(){
-
-    }
-    // church
-    updateFaithScore() {
-
-    }
-    // market
-    updateSellingValue() {
-
-    }
-
-    updateBuyingValue() {
-
-    }
-
-    // dock
-    updateFishingSpeed() {
-
-    }
-
-    // lumber camp
-    updateLumberCampSpeed() {
-
-    }
-    // farm
-    updateVegetableGrowth() {
-
-    }
-
-    // mine
-    updateGoldExtractionSpeed() {
-
-    }
-
-    updateStoneExtractionSpeed() {
-
-    }
-
-    //factory
-    updateFoodGenerationSpeed() {
-
-    }
-
 }
 
 export class Hospital implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 2;
     name: string = 'Hospital';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -135,6 +87,11 @@ export class Hospital implements Building{
     peopleRequired: number = 2;
     baseSafetyScore: number = 10;
     safetyMultiplier: number = 100;
+
+    // hospital
+    updateSafetyScore() {
+
+    }
     
 }
 
@@ -142,8 +99,9 @@ export class University implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 3;
     name: string = 'University';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -152,6 +110,11 @@ export class University implements Building{
     peopleRequired: number = 2;
     baseEducationScore: number = 10;
     educationMultiplier: number = 100;
+
+     // university
+     updateEducationalScore(){
+
+     }
     
 }
 
@@ -159,8 +122,9 @@ export class Church implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 4;
     name: string = 'Church';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -169,15 +133,19 @@ export class Church implements Building{
     peopleRequired: number = 2;
     baseFaithScore: number = 10;
     faithMultiplier: number = 100;
-    
+    // church
+    updateFaithScore() {
+
+    }
 }
 
 export class Market implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 5;
     name: string = 'Market';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -189,6 +157,15 @@ export class Market implements Building{
     marketPurchaseRate: number = 100;
     marketSellingRate: number = 100;
     markettingMultiplier: number = 1;
+
+     // market
+     updateSellingValue() {
+
+     }
+ 
+     updateBuyingValue() {
+ 
+     }
     
 }
 
@@ -196,8 +173,9 @@ export class Dock implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 6;
     name: string = 'Dock';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -207,14 +185,19 @@ export class Dock implements Building{
     fishingSpeed: number = 10;
     fishingSpeedMultiplier: number = 100;
     
+    // dock
+    updateFishingSpeed() {
+
+    }
 }
 
 export class LumberCamp implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 7;
     name: string = 'LumberCamp';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -223,15 +206,19 @@ export class LumberCamp implements Building{
     peopleRequired: number = 2;
     cuttingSpeed: number = 10;
     cuttingSpeedMultiplier: number = 100;
-    
+    // lumber camp
+    updateLumberCampSpeed() {
+
+    }
 }
 
 export class Farm implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 8;
     name: string = 'Farm';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -241,7 +228,10 @@ export class Farm implements Building{
     // vegetable: number =10;
     farmingSpeed: number = 10;
     farmingSpeedMultiplier: number = 100;
-    
+    // farm
+    updateVegetableGrowth() {
+
+    }
     
 }
 
@@ -249,8 +239,9 @@ export class MiningCamp implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 9;
     name: string = 'MiningCamp';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -259,15 +250,22 @@ export class MiningCamp implements Building{
     peopleRequired: number = 2;
     miningSpeed: number = 10;
     miningSpeedMultiplier: number = 100;
-    
+    // mine
+    updateGoldExtractionSpeed() {
+
+    }
+    updateStoneExtractionSpeed() {
+
+    }
 }
 
 export class Factory implements Building{
     playerId: number = 1;
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 10;
     name: string = 'Factory';
+    type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -276,7 +274,10 @@ export class Factory implements Building{
     peopleRequired: number = 2;
     generationSpeed: number = 10;
     generationSpeedMultiplier: number = 100;
-        
+    //factory
+    updateFoodGenerationSpeed() {
+
+    }    
 }
 
 export class GoldRock implements Resource{
@@ -284,18 +285,19 @@ export class GoldRock implements Resource{
     y: number = 0;
     image: number = 11;
     name: string = 'GoldRock';
+    type: string = 'Resource';
 
     goldPercent: number = 20;
     rockPercent: number = 80;
     miningCampConnected: boolean = false;
-    
 }
 
 export class Pond implements Resource{
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 12;
     name: string = 'Pond';
+    type: string = 'Resource';
 
     docksConnected: boolean = false;
 }
@@ -303,8 +305,9 @@ export class Pond implements Resource{
 export class Forest implements Resource{
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 13;
     name: string = 'Forest';
+    type: string = 'Resource';
 
     lumberCampConnected: boolean = false;
 }
@@ -312,6 +315,15 @@ export class Forest implements Resource{
 export class Settlement implements Resource{
     x: number = 0;
     y: number = 0;
-    image: number = 11;
+    image: number = 14;
     name: string = 'Settlement';
+    type: string = 'Resource';
+}
+
+export class EmptyTile implements Resource{
+    x: number = 0;
+    y: number = 0;
+    image: number = 0;
+    name: string = 'Empty Tile';
+    type: string = 'Resource';
 }

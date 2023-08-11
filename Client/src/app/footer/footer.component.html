@@ -1,48 +1,110 @@
 <footer>
-    <!-- <div class="footer-content bg-red-800">
-      <p>Contact us at: support@example.com</p>
-      <p>Follow us on social media:</p>
-      <ul>
-        <li><a href="#">Facebook</a></li>
-        <li><a href="#">Twitter</a></li>
-        <li><a href="#">Instagram</a></li>
-      </ul>
-    </div> -->
-    
-    <div class="flex">
-      <div class="square-box w-20 h-20 ml-10 mt-5">
-        <img [src]="getImagePath(selectedCell.image || 99)" alt="Image">
-        <p class="content-center">{{this.cellInterSer.cellData?.tile?.name || "Unknown"}}</p>
+  <div class="flex">
+    <!-- column 1 -->
+    <div class="square-box w-20 h-20 ml-10 mt-5">
+      <div *ngIf="cellInterSer.selected?.type === 'Building'">
+        Player Name: {{pgd.playerName}} <br>
       </div>
-      <div class="ml-10 mt-10" *ngIf="showBuilding">
-        Level: {{Level}}<br>
-        Age: {{Age}}<br>
-        Population: {{CurrentPopulation}}/{{MaximumPopulation}}<br>
-        People In Use: {{PeopleInUse}}/{{CurrentPopulation}}<br>
+      <img [src]="getImagePath(this.cellInterSer.selected.image || 99)" alt="Image">
+      <p class="content-center">{{this.cellInterSer.selected.name}}</p>
+    </div>
+    <!-- column 2 -->
+    <!-- If Town centre  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Town Centre'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      Population: {{TotalPopulation}}<br>
+      People In Use: {{PeopleInUse}}/{{CurrentPopulation}}<br>
+    </div>
+
+    <!-- If Hospital  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Hospital'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getHospitalPeopleRequired()}}<br>
+    </div>
+
+    <!-- If University  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'University'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getUniversityPeopleRequired()}}<br>
+    </div>
+
+    <!-- If Church  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Church'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getChurchPeopleRequired()}}<br>
+    </div>
+
+    <!-- If Market  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Market'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getMarketPeopleRequired()}}<br>
+    </div>
+
+    <!-- If Dock  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Dock'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getDockPeopleRequired()}}<br>
+    </div>
+
+    <!-- If LumberCamp  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'LumberCamp'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getLumberCampPeopleRequired()}}<br>
+    </div>
+
+    <!-- If Farm  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Farm'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getFarmPeopleRequired()}}<br>
+    </div>
+
+    <!-- If Mining Camp  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'MiningCamp'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getMiningCampPeopleRequired()}}<br>
+    </div>
+
+    <!-- If Factory  -->
+    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Factory'">
+      Level: {{ getLevel()}}<br>
+      Age: {{pgd.age}} {{pgd.ageID}}<br>
+      People Required: {{getFactoryPeopleRequired()}}<br>
+    </div>
+    <!-- Column 3 -->
+    <!-- Town Centre -->
+
+    <div class="bg-slate-500 ml-auto mt-5 mb-10 w-1/2">
+      <!-- Progress bar for next level town centre-->
+      <div class="bg-slate-500 mt-20 p-3">
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>
-      <div class="bg-slate-500 ml-auto mt-5 mb-10 w-1/2">
-        <!-- Progress bar for next level town centre-->
-        <div class="bg-slate-500 mt-20 p-3">
-          <p>Progress to Stone 2</p>
-          <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
-        </div>
-        <!-- Market items -->
-        <!-- <div class= "mt-20">
-          <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2">Tomato</button>
-          <button mat-raised-button color="primary" class="m-2 bg-orange-400 p-2">Potato</button>
-          <button mat-raised-button color="primary" class="m-2 bg-lime-300 p-2">Wood</button>
-          <button mat-raised-button color="primary" class="m-2 bg-yellow-700 p-2">Fish</button>
-        </div> -->
-      </div>  
-      <div class="ml-auto mt-10 mb-10 mr-10 text-xs">
-        <div class=" bg-slate-500 p-4">
-          <button mat-raised-button color="primary" (click)="openPopup()">Take Quiz to Upgrade</button>
-        </div>
-        <div class="bg-slate-500 mt-5 p-3">
-          <p>Cooling Time</p>
-          <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
-        </div>
-      </div>
+      <!-- If Market items -->
+      <!-- <div class= "mt-20">
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2">Tomato</button>
+        <button mat-raised-button color="primary" class="m-2 bg-orange-400 p-2">Potato</button>
+        <button mat-raised-button color="primary" class="m-2 bg-lime-300 p-2">Wood</button>
+        <button mat-raised-button color="primary" class="m-2 bg-yellow-700 p-2">Fish</button>
+      </div> -->
     </div>  
-  </footer>
+    <div class="ml-auto mt-10 mb-10 mr-10 text-xs">
+      <div class=" bg-slate-500 p-4">
+        <button mat-raised-button color="primary" (click)="openPopup()">Take Quiz to Upgrade</button>
+      </div>
+      <div class="bg-slate-500 mt-5 p-3">
+        <p>Cooling Time</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+  </div>  
+</footer>
   

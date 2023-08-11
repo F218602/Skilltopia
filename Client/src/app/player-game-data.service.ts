@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { CellInfo } from './cell-info.interface';
-import { Tile, Materials, BuildingTypes, TownCenter, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm } from './game-object.interface';
+import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm, EmptyTile } from './game-object.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -54,14 +54,29 @@ export class PlayerGameDataService {
         const row: number[] = Array(this.numCols).fill(33);
         this.mapTileId.push(row);
     }
+
+    for (let i = 0; i < this.numRows; i++) {
+      this.map[i] = new Array(this.numCols);
   }
+  
+  // Fill the map with Tile instances
+  for (let row = 0; row < this.numRows; row++) {
+      for (let col = 0; col < this.numCols; col++) {
+          this.map[row][col] = new EmptyTile(); // Initialize each tile as needed
+      }
+  }
+  }
+
   // Initialize building and resource data
   initMap(): void {
     for(let i = 0; i < this.numRows; i++) {
       for(let j=0; j< this.numCols; j++){
         switch (this.mapTileId[i][j]) {
+          case 0:
+            this.map[i][j] = new EmptyTile();
+            break;
           case 1:
-            this.map[i][j] = new TownCenter();
+            this.map[i][j] = new TownCentre();
             break;
           case 2:
             this.map[i][j] = new Hospital();
