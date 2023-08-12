@@ -1,16 +1,19 @@
 <footer>
   <div class="flex">
     <!-- column 1 -->
-    <div class="square-box w-20 h-20 ml-10 mt-5">
-      <div *ngIf="cellInterSer.selected?.type === 'Building'">
-        Player Name: {{pgd.playerName}} <br>
+    <div class="square-box w-30 h-20 ml-10">
+      <div *ngIf="cellInterSer.selected?.type === 'Building'" class = "text-center mt-6">
+        {{pgd.playerName}} <br>
       </div>
-      <img [src]="getImagePath(this.cellInterSer.selected.image || 99)" alt="Image">
-      <p class="content-center">{{this.cellInterSer.selected.name}}</p>
+
+      <div *ngIf="cellInterSer.selected?.type === 'Resource'" class = "mt-16"></div>
+
+      <img [src]="getImagePath(this.cellInterSer.selected.image || 99)" alt="Image" class = "mt-6">
+      <p class="text-center">{{this.cellInterSer.selected.name}}</p>
     </div>
     <!-- column 2 -->
     <!-- If Town centre  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Town Centre'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Town Centre'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       Population: {{TotalPopulation}}<br>
@@ -18,93 +21,170 @@
     </div>
 
     <!-- If Hospital  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Hospital'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Hospital'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getHospitalPeopleRequired()}}<br>
     </div>
 
     <!-- If University  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'University'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'University'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getUniversityPeopleRequired()}}<br>
     </div>
 
     <!-- If Church  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Church'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Church'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getChurchPeopleRequired()}}<br>
     </div>
 
     <!-- If Market  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Market'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Market'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getMarketPeopleRequired()}}<br>
     </div>
 
     <!-- If Dock  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Dock'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Dock'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getDockPeopleRequired()}}<br>
     </div>
 
     <!-- If LumberCamp  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'LumberCamp'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Lumber Camp'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getLumberCampPeopleRequired()}}<br>
     </div>
 
     <!-- If Farm  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Farm'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Farm'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getFarmPeopleRequired()}}<br>
     </div>
 
     <!-- If Mining Camp  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'MiningCamp'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Mining Camp'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getMiningCampPeopleRequired()}}<br>
     </div>
 
     <!-- If Factory  -->
-    <div class="ml-10 mt-10" *ngIf= "cellInterSer.selected?.name === 'Factory'">
+    <div class="ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Factory'">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}} {{pgd.ageID}}<br>
       People Required: {{getFactoryPeopleRequired()}}<br>
     </div>
+    <!-- If Resource -->
+    <div class="ml-10 mt-24" *ngIf= "cellInterSer.selected?.type === 'Resource'"> Natural Resource</div>
     <!-- Column 3 -->
     <!-- Town Centre -->
-
-    <div class="bg-slate-500 ml-auto mt-5 mb-10 w-1/2">
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Town Centre'">
       <!-- Progress bar for next level town centre-->
-      <div class="bg-slate-500 mt-20 p-3">
+      <div class="bg-orange-200 mt-5 p-3">
         <p>Progress to Stone 2</p>
         <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>
-      <!-- If Market items -->
-      <!-- <div class= "mt-20">
-        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2">Tomato</button>
-        <button mat-raised-button color="primary" class="m-2 bg-orange-400 p-2">Potato</button>
-        <button mat-raised-button color="primary" class="m-2 bg-lime-300 p-2">Wood</button>
-        <button mat-raised-button color="primary" class="m-2 bg-yellow-700 p-2">Fish</button>
-      </div> -->
-    </div>  
-    <div class="ml-auto mt-10 mb-10 mr-10 text-xs">
-      <div class=" bg-slate-500 p-4">
-        <button mat-raised-button color="primary" (click)="openPopup()">Take Quiz to Upgrade</button>
-      </div>
-      <div class="bg-slate-500 mt-5 p-3">
-        <p>Cooling Time</p>
+    </div>
+    <!-- Hospital -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Hospital'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Safety Score: {{pgd.safety}}</p>
+        <p>Progress to Next Level</p>
         <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>
     </div>
+    <!-- University -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'University'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Education Score: {{pgd.education}}</p>
+        <p>Progress to Next Level</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+    <!-- Church -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Church'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Faith Score: {{pgd.faith}}</p>
+        <p>Progress to Next Level</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+    <!-- If Market items -->
+    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Market'">
+      <div class = " ml-3 mr-3 mt-5 grid grid-cols-2 gap-4">
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2">Buy</button>
+        <button mat-raised-button color="primary" class="m-2 bg-orange-400 p-2">Sell</button>
+      </div>
+      <p class = "mt-10 p-3">Progress to Next Level</p>
+      <div class = "ml-3 mr-3 mt-2">
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>  
+    </div>
+    <!-- Dock -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Dock'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Fish: {{pgd.materials.fish}}</p>
+        <p>Progress to Next Level</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+    <!-- Lumber Camp -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Lumber Camp'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Wood: {{pgd.materials.wood}}</p>
+        <p>Progress to Next Level</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+    <!-- Farm -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Farm'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Vegetables: {{pgd.materials.vegetables}}</p>
+        <p>Progress to Next Level</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+    <!-- Mining Camp -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Mining Camp'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Gold: {{pgd.materials.gold}}</p>
+        <p>Stone: {{pgd.materials.stone}}</p>
+        <p>Progress to Next Level</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+    <!-- Factory -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.name === 'Factory'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <p>Food: {{pgd.materials.food}}</p>
+        <p>Progress to Next Level</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div>
+    <!-- Resources     -->
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2" *ngIf= "cellInterSer.selected?.type === 'Resource'">
+      <div class="bg-orange-200 mt-5 p-3">
+       Data Not Available
+      </div>
+    </div>
+    <!-- column 4 -->
+    <div class="ml-auto mt-5 mb-10 mr-10 text-xs" *ngIf= "cellInterSer.selected?.type === 'Building'">
+      <div class=" bg-orange-200 p-4">
+        <button mat-raised-button color="primary" (click)="openPopup()">Take Quiz to Upgrade</button>
+      </div>
+      <div class="bg-orange-200 mt-5 p-3" *ngIf= "cellInterSer.selected?.type === 'Building'">
+        <p>Cooling Time</p>
+        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+      </div>
+    </div> 
   </div>  
 </footer>
   

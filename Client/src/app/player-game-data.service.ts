@@ -1,10 +1,10 @@
-import { Injectable } from '@angular/core';
-import { CellInfo } from './cell-info.interface';
-import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm, EmptyTile } from './game-object.interface';
+import {Injectable } from '@angular/core';
+import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm, EmptyTile, BuildingDetails, MaterialDetails } from './game-object.interface';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class PlayerGameDataService {
    
   mapTileId: number[][] = [];
@@ -12,7 +12,7 @@ export class PlayerGameDataService {
   numRows: number = 20;
   numCols: number = 50;
   
-  playerName: string = 'player1';
+  playerName: string = 'Player 1';
   playerID: number = 1;
   score: number = 0;
   ageID: number = 1;
@@ -23,7 +23,7 @@ export class PlayerGameDataService {
   education: number = 0;
   faith: number = 0;
   business: number = 0;
-
+  
   materials: Materials = {
     fish: 0,
     wood: 0,
@@ -32,6 +32,14 @@ export class PlayerGameDataService {
     food: 0,
     stone: 0
   }
+
+  materialDetails: MaterialDetails[] = [{name:'Fish', count: this.materials.fish},
+                                        {name:'Wood', count: this.materials.wood}, 
+                                        {name:'Vegetables', count: this.materials.vegetables},
+                                        {name:'Gold', count: this.materials.gold},
+                                        {name:'Food', count: this.materials.food},
+                                        {name:'Stone', count: this.materials.stone},
+                                      ]
 
   // building counter
   buildingCount: BuildingTypes = {
@@ -46,6 +54,17 @@ export class PlayerGameDataService {
     miningCamp: 0,
     factory: 0
   }
+
+  buildingDetails: BuildingDetails[] = [{name:'Town Centre', count: this.buildingCount.townCentre}, 
+                                                        {name:'Hospital', count: this.buildingCount.hospital}, 
+                                                        {name:'University',count:  this.buildingCount.university}, 
+                                                        {name:'Church',count:  this.buildingCount.church}, 
+                                                        {name:'Market',count:  this.buildingCount.market},
+                                                        {name:'Dock',count:  this.buildingCount.dock}, 
+                                                        {name:'Lumber Camp',count:  this.buildingCount.lumberCamp},
+                                                        {name:'Farm', count:  this.buildingCount.farm},
+                                                        {name:'Mining Camp', count:  this.buildingCount.miningCamp},
+                                                        {name:'Factory', count:  this.buildingCount.factory}]
 
   constructor() { 
 

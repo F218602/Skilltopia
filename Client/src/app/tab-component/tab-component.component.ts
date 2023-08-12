@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { PlayerGameDataService } from '../player-game-data.service';
+import { BuildingDetails } from '../game-object.interface';
 
 @Component({
   selector: 'app-tab-component',
@@ -6,6 +8,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./tab-component.component.scss']
 })
 export class TabComponentComponent {
-  Buildings: String[]= ['Town Centre', 'Market', 'University', 'Farm']
-
+  
+constructor(public pgd: PlayerGameDataService) {}
 }

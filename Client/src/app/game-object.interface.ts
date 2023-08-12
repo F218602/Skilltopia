@@ -17,6 +17,11 @@ export interface Materials {
 
 }
 
+export interface MaterialDetails {
+    name: string,
+    count: number
+}
+
 export interface BuildingTypes {
   townCentre: number,
   hospital: number,
@@ -29,6 +34,12 @@ export interface BuildingTypes {
   miningCamp: number,
   factory: number,
 
+}
+
+export interface BuildingDetails {
+
+    name: string,
+    count: number
 }
 
 export interface Building extends Tile{
@@ -196,7 +207,7 @@ export class LumberCamp implements Building{
     x: number = 0;
     y: number = 0;
     image: number = 7;
-    name: string = 'LumberCamp';
+    name: string = 'Lumber Camp';
     type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
@@ -240,7 +251,7 @@ export class MiningCamp implements Building{
     x: number = 0;
     y: number = 0;
     image: number = 9;
-    name: string = 'MiningCamp';
+    name: string = 'Mining Camp';
     type: string = 'Building';
     level: number = 1;
     upgradingTimeCurrent: number = 0;
@@ -284,7 +295,7 @@ export class GoldRock implements Resource{
     x: number = 0;
     y: number = 0;
     image: number = 11;
-    name: string = 'GoldRock';
+    name: string = 'Gold Rock';
     type: string = 'Resource';
 
     goldPercent: number = 20;

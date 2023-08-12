@@ -1,4 +1,4 @@
-<div class=" bg-slate-500">
+<div class=" bg-orange-200">
     <app-lobby *ngIf="!this.socketIOService.Created"> </app-lobby>
     <div *ngIf="this.socketIOService.Created">
         <div class="fixed top-0 right-0 left-0">
@@ -6,6 +6,6 @@
             <app-tab-component></app-tab-component>
         </div>
         <app-map-component></app-map-component>
-        <app-footer class="fixed right-0 left-0 bottom-0 bg-pink-700 text-white h-1/4"></app-footer>
+        <app-footer class="fixed right-0 left-0 bottom-0 bg-red-800 text-white h-1/4"></app-footer>
     </div>
 </div>
