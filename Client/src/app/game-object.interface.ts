@@ -1,3 +1,16 @@
+enum Build {
+    TownCentre = "Town Centre",
+    Hospital = "Hospital",
+    University = "University",
+    Church ='Church',
+    Market ='Market',
+    Dock ='Dock',
+    LumberCamp = 'Lumber Camp',
+    Farm = 'Farm',
+    MiningCamp = 'Mining Camp',
+    Factory ='Factory'
+}
+
 export interface Tile {
     x: number;
     y: number;
@@ -236,7 +249,6 @@ export class Farm implements Building{
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
-    // vegetable: number =10;
     farmingSpeed: number = 10;
     farmingSpeedMultiplier: number = 100;
     // farm
@@ -336,5 +348,5 @@ export class EmptyTile implements Resource{
     y: number = 0;
     image: number = 0;
     name: string = 'Empty Tile';
-    type: string = 'Resource';
+    type: string = 'Empty';
 }

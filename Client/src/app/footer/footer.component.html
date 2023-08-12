@@ -8,7 +8,7 @@
 
       <div *ngIf="cellInterSer.selected?.type === 'Resource'" class = "mt-16"></div>
 
-      <img [src]="getImagePath(this.cellInterSer.selected.image || 99)" alt="Image" class = "mt-6">
+      <img [src]="getImagePath(this.cellInterSer.selected.image)" alt="Image" class = "mt-6">
       <p class="text-center">{{this.cellInterSer.selected.name}}</p>
     </div>
     <!-- column 2 -->
@@ -84,6 +84,9 @@
     </div>
     <!-- If Resource -->
     <div class="w-40 ml-10 mt-24" *ngIf= "cellInterSer.selected?.type === 'Resource'"> Natural Resource</div>
+
+    <!-- If Emprt tile -->
+    <div class="w-40 ml-10 mt-24" *ngIf= "cellInterSer.selected?.type === 'Empty'"> Natural Resource</div>
     <!-- Column 3 -->
     <!-- Town Centre -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Town Centre'">
@@ -169,6 +172,14 @@
         <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>
     </div>
+    <!-- EmptyTile     -->
+    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.type === 'Empty'">
+      <div class="bg-orange-200 mt-5 p-3">
+          <div>
+              <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" *ngFor="let building of pgd.buildingList" (click)="cellInterSer.showResources(building)">{{ building }}</button>
+          </div>    
+      </div>
+    </div>
     <!-- Resources     -->
     <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.type === 'Resource'">
       <div class="bg-orange-200 mt-5 p-3">
@@ -185,6 +196,13 @@
         <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>
     </div> 
+    <div *ngIf="cellInterSer.selectedBuilding && cellInterSer.selected?.type === 'Empty'">
+    <h2>Required Resources for {{ cellInterSer.selectedBuilding }}</h2>              
+        <span *ngFor="let material of pgd.getRequiredMaterials[cellInterSer.selectedBuilding] | keyvalue">
+            {{ material.key }}: {{ material.value }}
+        </span>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="pgd.createTile(cellInterSer.selX, cellInterSer.selY, pgd.getBuildingId[cellInterSer.selectedBuilding])">Build</button>
+    </div>  
   </div>  
 </footer>
   

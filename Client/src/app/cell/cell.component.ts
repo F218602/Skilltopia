@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
 import { objectImageMap } from '../object-image-map';
 import { CellInteractionService } from '../cell-interaction.service';
 import { CellInfo } from '../cell-info.interface';
@@ -21,14 +21,24 @@ export class CellComponent {
   ngOnInit(): void {
     
   }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes['value']) {
+      // console.log(`Value changed to: ${changes['value'].currentValue}`);
+      // Perform any necessary actions when value changes
+    }
+  }
   
   getImageUrl(number: number) {
     return objectImageMap[number] || null; // Use a default image if mapping not found
+    // return objectImageMap[this.pgd.map[this.row][ this.column].image] || null;
   }
 
   sendData() {
     this.cellInterSer.selected = this.pgd.map[this.row][this.column];
     this.cellInterSer.selX = this.row;
-    this.cellInterSer.selY = this.column;  
+    this.cellInterSer.selY = this.column;
+    this.cellInterSer.tileId = this.value;  
+    this.cellInterSer.selectedBuilding = null;
   }
 }

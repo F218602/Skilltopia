@@ -10,26 +10,6 @@ import { PlayerGameDataService } from '../player-game-data.service';
 import { Church, Dock, Factory, Farm, Hospital, LumberCamp, Market, MiningCamp, TownCentre, University } from '../game-object.interface';
 import { Building } from '../game-object.interface';
 
-class X {
-  x1: string= '1';
-  x2: string= '1';
-}
-
-class Y {
-  y1: string= '1';
-  y2: string= '1';
-}
-
-class Z {
-  z1: string = '1';
-  z2: string ='1';
-}
-
-// Create a custom union type
-type CustomUnionType = X | Y | Z;
-
-
-
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -42,18 +22,6 @@ CurrentPopulation: number = 20;
 TotalPopulation: number = 100;
 PeopleInUse: number = 50;
 showBuilding: boolean = true;
-a: CustomUnionType = new Z; // Variable a can hold instances of X, Y, or Z
-selectedCell: CellInfo = {
-  row: 1,
-  col: 1,
-  image: 11,
-  tile: {
-    name: 'Forest Gold Mine',
-    type: 'GoldMine',
-    buildingsConnected: 0,
-  },
-  
-};
 
 constructor(private dialog: MatDialog, public cellInterSer: CellInteractionService, public pgd: PlayerGameDataService) {}
 

@@ -10,20 +10,20 @@ import { PlayerGameDataService } from '../player-game-data.service';
 })
 export class MapComponentComponent implements OnInit{
 
-  map: number[][] = [];
+  // map: number[][] = [];
   constructor(public socketIOService: SocketIOService, public pgd : PlayerGameDataService) {}
   ngOnInit() {
     this.socketIOService.Joined().subscribe(([arrayData]) => {
           console.log('Received 20x50 array:', arrayData);
           // this.socketIOService.Created = true;
-          this.map = arrayData;
+          // this.map = arrayData;
           this.pgd.mapTileId = arrayData;
           this.pgd.initMap();
     });
 
     this.socketIOService.changed().subscribe(([i, j, val]) => {
       console.log(val);
-      this.map[i][j] =val;
+      // this.map[i][j] =val;
     });
 
     // Generate a 2D map with random values
@@ -33,7 +33,7 @@ export class MapComponentComponent implements OnInit{
     // Initialize the array with default values (e.g., -1)
     for (let i = 0; i < numRows; i++) {
       const row: number[] = Array(numCols).fill(33);
-      this.map.push(row);
+      // this.map.push(row);
     }
   }
   setValue(i: any, j: any): void {
