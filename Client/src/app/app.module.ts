@@ -22,6 +22,7 @@ import { SocketIOService } from './socket-io.service';
 import { QuestionPopupComponent } from './question-popup/question-popup.component';
 import { CellInteractionService } from './cell-interaction.service';
 import { PlayerGameDataService } from './player-game-data.service';
+import { DisplayProgressPipe } from './display-progress.pipe';
 
 @NgModule({
     declarations: [
@@ -32,6 +33,7 @@ import { PlayerGameDataService } from './player-game-data.service';
         FooterComponent,
         LobbyComponent,
         QuestionPopupComponent,
+        DisplayProgressPipe,
         
     ],
     providers: [SocketIOService, CellInteractionService, PlayerGameDataService],

@@ -9,7 +9,7 @@ export class PlayerGameDataService {
    
   mapTileId: number[][] = [];
   map: Tile[][] = [];
-  numRows: number = 20;
+  numRows: number = 50;
   numCols: number = 50;
   
   playerName: string = 'Player 1';
@@ -19,10 +19,10 @@ export class PlayerGameDataService {
   age: string = 'Stone'
   level: number = 1;
   population: number = 15;
-  safety: number = 0;
-  education: number = 0;
-  faith: number = 0;
-  business: number = 0;
+  safety: number = 100;
+  education: number = 100;
+  faith: number = 100;
+  business: number = 100;
   
   materials: Materials = {
     fish: 0,
@@ -39,11 +39,11 @@ export class PlayerGameDataService {
                                         {name:'Gold', count: this.materials.gold},
                                         {name:'Food', count: this.materials.food},
                                         {name:'Stone', count: this.materials.stone},
-                                      ]
+                                      ]                                    
 
   // building counter
   buildingCount: BuildingTypes = {
-    townCentre: 1,
+    townCentre: 0,
     hospital: 0,
     university: 0,
     church: 0,
@@ -127,63 +127,61 @@ export class PlayerGameDataService {
   // Fill the map with Tile instances
   for (let row = 0; row < this.numRows; row++) {
       for (let col = 0; col < this.numCols; col++) {
-          this.map[row][col] = new EmptyTile(); // Initialize each tile as needed
+          this.map[row][col] = new EmptyTile(this); // Initialize each tile as needed
       }
   }
   }
   createTile(i:number, j:number, tileId:number){
-    console.log(i,j);
     switch (tileId) {
       case 0:
-        this.map[i][j] = new EmptyTile();
+        this.map[i][j] = new EmptyTile(this);
         break;
       case 1:
-        this.map[i][j] = new TownCentre();
+        this.map[i][j] = new TownCentre(this);
         break;
       case 2:
-        this.map[i][j] = new Hospital();
+        this.map[i][j] = new Hospital(this);
         break;
       case 3:
-        this.map[i][j] = new University();
+        this.map[i][j] = new University(this);
         break;
       case 4:
-        this.map[i][j] = new Church();
+        this.map[i][j] = new Church(this);
         break;
       case 5:
-        this.map[i][j] = new Market();
+        this.map[i][j] = new Market(this);
         break;
       case 6:
-        this.map[i][j] = new Dock();
+        this.map[i][j] = new Dock(this);
         break;
       case 7:
-        this.map[i][j] = new LumberCamp();
+        this.map[i][j] = new LumberCamp(this);
         break;
       case 8:
-        this.map[i][j] = new Farm();
+        this.map[i][j] = new Farm(this);
         break;
       case 9:
-        this.map[i][j] = new MiningCamp();
+        this.map[i][j] = new MiningCamp(this);
         break;
       case 10:
-        this.map[i][j] = new Factory();
+        this.map[i][j] = new Factory(this);
         break;
       case 11:
-        this.map[i][j] = new GoldRock();
+        this.map[i][j] = new GoldRock(this);
         break;
       case 12:
-        this.map[i][j] = new Pond();
+        this.map[i][j] = new Pond(this);
         break;
       case 13:
-        this.map[i][j] = new Forest();
+        this.map[i][j] = new Forest(this);
         break;
       case 14:
-        this.map[i][j] = new Settlement();
+        this.map[i][j] = new Settlement(this);
         break;  
         
       // Add cases for other classes here
       default:
     }
-    console.log(this.map[i][j].image)
   }
   // Initialize building and resource data
   initMap(): void {

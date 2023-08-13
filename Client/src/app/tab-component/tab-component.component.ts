@@ -10,4 +10,16 @@ import { BuildingDetails } from '../game-object.interface';
 export class TabComponentComponent {
   
 constructor(public pgd: PlayerGameDataService) {}
+
+capitalize(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1);
 }
+capitalizeAndSpace(name: string): string {
+  return name
+    .replace(/([A-Z])/g, ' $1')
+    .replace(/^./, (str) => str.toUpperCase())
+    .trim();
+}
+}
+
+

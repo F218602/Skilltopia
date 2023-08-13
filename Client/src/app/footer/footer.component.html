@@ -92,32 +92,36 @@
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Town Centre'">
       <!-- Progress bar for next level town centre-->
       <div class="bg-orange-200 mt-5 p-3">
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
         <p>Progress to Stone 2</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- Hospital -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Hospital'">
       <div class="bg-orange-200 mt-5 p-3">
         <p>Safety Score: {{pgd.safety}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- University -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'University'">
       <div class="bg-orange-200 mt-5 p-3">
         <p>Education Score: {{pgd.education}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- Church -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Church'">
       <div class="bg-orange-200 mt-5 p-3">
         <p>Faith Score: {{pgd.faith}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- If Market items -->
@@ -126,7 +130,9 @@
         <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2">Buy</button>
         <button mat-raised-button color="primary" class="m-2 bg-orange-400 p-2">Sell</button>
       </div>
-      <p class = "mt-10 p-3">Progress to Next Level</p>
+      <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       <div class = "ml-3 mr-3 mt-2">
         <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>  
@@ -135,24 +141,27 @@
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Dock'">
       <div class="bg-orange-200 mt-5 p-3">
         <p>Fish: {{pgd.materials.fish}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- Lumber Camp -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Lumber Camp'">
       <div class="bg-orange-200 mt-5 p-3">
         <p>Wood: {{pgd.materials.wood}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- Farm -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Farm'">
       <div class="bg-orange-200 mt-5 p-3">
         <p>Vegetables: {{pgd.materials.vegetables}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- Mining Camp -->
@@ -160,30 +169,60 @@
       <div class="bg-orange-200 mt-5 p-3">
         <p>Gold: {{pgd.materials.gold}}</p>
         <p>Stone: {{pgd.materials.stone}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- Factory -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Factory'">
       <div class="bg-orange-200 mt-5 p-3">
         <p>Food: {{pgd.materials.food}}</p>
-        <p>Progress to Next Level</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
-      </div>
-    </div>
-    <!-- EmptyTile     -->
-    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.type === 'Empty'">
-      <div class="bg-orange-200 mt-5 p-3">
-          <div>
-              <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" *ngFor="let building of pgd.buildingList" (click)="cellInterSer.showResources(building)">{{ building }}</button>
-          </div>    
+        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
+        <p>Progress to Stone 2</p>
+        <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>
     <!-- Resources     -->
-    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.type === 'Resource'">
+    <!-- Settlement     -->
+    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Settlement'">
+      <div class="bg-orange-200 mt-5 p-3">
+          <div>
+              <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="cellInterSer.showResources('Town Centre')">Town Centre</button>
+          </div>    
+      </div>
+    </div>
+    <!-- GoldRock -->
+    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Gold Rock'">
       <div class="bg-orange-200 mt-5 p-3">
        Data Not Available
+      </div>
+    </div>
+    <!-- Pond -->
+    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Pond'">
+      <div class="bg-orange-200 mt-5 p-3">
+       Data Not Available
+      </div>
+    </div>
+    <!-- Forest -->
+    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Forest'">
+      <div class="bg-orange-200 mt-5 p-3">
+       Data Not Available
+      </div>
+    </div>
+    <!-- empty tile -->
+    <div class="bg-orange-200 ml-20 mt-10 mb-10 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Empty Tile'">
+      <div class="bg-orange-200 mt-5 p-3">
+        <div>
+            <ng-container *ngFor="let building of pgd.buildingList">
+              <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2"
+                      *ngIf="building !== 'Town Centre'"
+                      (click)="cellInterSer.showResources(building)">
+                {{ building }}
+              </button>
+            </ng-container>
+            
+        </div>
       </div>
     </div>
     <!-- column 4 -->
@@ -196,7 +235,7 @@
         <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>
     </div> 
-    <div *ngIf="cellInterSer.selectedBuilding && cellInterSer.selected?.type === 'Empty'">
+    <div *ngIf="cellInterSer.selectedBuilding && (cellInterSer.selected?.name === 'Empty Tile' || cellInterSer.selected?.name === 'Settlement')">
     <h2>Required Resources for {{ cellInterSer.selectedBuilding }}</h2>              
         <span *ngFor="let material of pgd.getRequiredMaterials[cellInterSer.selectedBuilding] | keyvalue">
             {{ material.key }}: {{ material.value }}

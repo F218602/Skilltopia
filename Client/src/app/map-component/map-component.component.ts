@@ -27,7 +27,7 @@ export class MapComponentComponent implements OnInit{
     });
 
     // Generate a 2D map with random values
-    const numRows = 20;
+    const numRows = 50;
     const numCols = 50;
 
     // Initialize the array with default values (e.g., -1)

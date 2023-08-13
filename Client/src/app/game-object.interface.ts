@@ -1,3 +1,6 @@
+import { interval } from "rxjs";
+import { PlayerGameDataService } from "./player-game-data.service";
+
 enum Build {
     TownCentre = "Town Centre",
     Hospital = "Hospital",
@@ -62,6 +65,9 @@ export interface Building extends Tile{
   upgradingTimeCurrent: number;
   upgradingTimeMax: number;
   requiredMaterials: Materials;
+  progressStart: boolean;
+
+  updateLevel() : void;
 }
 
 export interface Resource {
@@ -78,13 +84,35 @@ export class TownCentre implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     population: number = 10;
     currentPopulation: number = 10;
     totalPopulation: number = 10;
     peopleInUse: number = 0;
+    private subscription: any;
+    
 
+    constructor(public pgd: PlayerGameDataService) {
+        this.pgd.buildingCount.townCentre += 1; 
+    }
+    
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
     // cooling time for quiz for all buildings
     updateCoolingTime(){
 
@@ -93,6 +121,15 @@ export class TownCentre implements Building{
     // town centre
     updatePopulation() {
 
+    }
+
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
     }
 }
 
@@ -106,17 +143,47 @@ export class Hospital implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     baseSafetyScore: number = 10;
     safetyMultiplier: number = 100;
 
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+        this.pgd.buildingCount.hospital += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+
     // hospital
     updateSafetyScore() {
 
     }
-    
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
+    }
 }
 
 export class University implements Building{
@@ -129,17 +196,47 @@ export class University implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     baseEducationScore: number = 10;
     educationMultiplier: number = 100;
 
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+        this.pgd.buildingCount.university += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+
      // university
      updateEducationalScore(){
 
      }
-    
+     updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
+    }
 }
 
 export class Church implements Building{
@@ -152,14 +249,45 @@ export class Church implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     baseFaithScore: number = 10;
     faithMultiplier: number = 100;
+
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+        this.pgd.buildingCount.church += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
     // church
     updateFaithScore() {
 
+    }
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
     }
 }
 
@@ -173,6 +301,7 @@ export class Market implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
@@ -182,6 +311,28 @@ export class Market implements Building{
     marketSellingRate: number = 100;
     markettingMultiplier: number = 1;
 
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+        this.pgd.buildingCount.market += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+
      // market
      updateSellingValue() {
 
@@ -190,7 +341,14 @@ export class Market implements Building{
      updateBuyingValue() {
  
      }
-    
+     updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
+    }
 }
 
 export class Dock implements Building{
@@ -203,15 +361,52 @@ export class Dock implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     fishingSpeed: number = 10;
     fishingSpeedMultiplier: number = 100;
+
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        this.subscription = interval(1000)
+            .subscribe(() => {
+                this.increaseFish();
+            });
+        this.pgd.buildingCount.dock += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
     
     // dock
     updateFishingSpeed() {
 
+    }
+    increaseFish(){
+        this.pgd.materials.fish += 1;
+    }
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
     }
 }
 
@@ -225,14 +420,51 @@ export class LumberCamp implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     cuttingSpeed: number = 10;
     cuttingSpeedMultiplier: number = 100;
+
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        this.subscription = interval(1000)
+            .subscribe(() => {
+                this.increaseWood();
+            });
+        this.pgd.buildingCount.lumberCamp += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
     // lumber camp
     updateLumberCampSpeed() {
 
+    }
+    increaseWood(){
+        this.pgd.materials.wood += 1;
+    }
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
     }
 }
 
@@ -246,16 +478,53 @@ export class Farm implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     farmingSpeed: number = 10;
     farmingSpeedMultiplier: number = 100;
+
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        this.subscription = interval(1000)
+            .subscribe(() => {
+                this.increaseVegetable();
+            });
+        this.pgd.buildingCount.farm += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+
     // farm
     updateVegetableGrowth() {
-
-    }
     
+    }
+    increaseVegetable(){
+        this.pgd.materials.vegetables += 1;
+    }
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
+    }
 }
 
 export class MiningCamp implements Building{
@@ -268,17 +537,60 @@ export class MiningCamp implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     miningSpeed: number = 10;
     miningSpeedMultiplier: number = 100;
+
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        this.subscription = interval(1000)
+            .subscribe(() => {
+                this.increaseGold();
+                this.increaseStone();
+            });
+        this.pgd.buildingCount.miningCamp += 1; 
+    }
+
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+
     // mine
     updateGoldExtractionSpeed() {
 
     }
     updateStoneExtractionSpeed() {
 
+    }
+    increaseGold(){
+        this.pgd.materials.gold += 1;
+    }
+    increaseStone(){
+        this.pgd.materials.stone += 1;
+    }
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
     }
 }
 
@@ -292,15 +604,61 @@ export class Factory implements Building{
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
+    progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
     generationSpeed: number = 10;
     generationSpeedMultiplier: number = 100;
+
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        this.subscription = interval(1000)
+            .subscribe(() => {
+                this.increaseFood();
+            });
+        this.pgd.buildingCount.factory += 1; 
+    }
+    incrementLevelProgress(){
+        
+        if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+            console.log("moshi mushi");
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.level += 1;
+            this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            console.log("ja ne");
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+
     //factory
     updateFoodGenerationSpeed() {
 
-    }    
+    }
+    increaseFood(){
+
+        if (this.pgd.materials.vegetables >= 5 && this.pgd.materials.vegetables > this.pgd.materials.fish ) {
+            this.pgd.materials.vegetables -= 5;
+            this.pgd.materials.food += 1;
+        }
+        else if(this.pgd.materials.fish >= 5){
+            this.pgd.materials.fish -= 5;
+            this.pgd.materials.food += 1;
+        }
+    }
+    updateLevel() {
+        this.progressStart = true;
+        console.log("Konichiwa");
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.incrementLevelProgress();
+        });
+    }
 }
 
 export class GoldRock implements Resource{
@@ -313,6 +671,11 @@ export class GoldRock implements Resource{
     goldPercent: number = 20;
     rockPercent: number = 80;
     miningCampConnected: boolean = false;
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+    }
 }
 
 export class Pond implements Resource{
@@ -323,6 +686,11 @@ export class Pond implements Resource{
     type: string = 'Resource';
 
     docksConnected: boolean = false;
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+    }
 }
 
 export class Forest implements Resource{
@@ -333,6 +701,11 @@ export class Forest implements Resource{
     type: string = 'Resource';
 
     lumberCampConnected: boolean = false;
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+    }
 }
 
 export class Settlement implements Resource{
@@ -341,6 +714,11 @@ export class Settlement implements Resource{
     image: number = 14;
     name: string = 'Settlement';
     type: string = 'Resource';
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+        
+    }
 }
 
 export class EmptyTile implements Resource{
@@ -349,4 +727,9 @@ export class EmptyTile implements Resource{
     image: number = 0;
     name: string = 'Empty Tile';
     type: string = 'Empty';
+    private subscription: any;
+
+    constructor(public pgd: PlayerGameDataService) {
+           
+    }
 }

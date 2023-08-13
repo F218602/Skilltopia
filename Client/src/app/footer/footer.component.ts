@@ -31,7 +31,7 @@ ngOnInit(): void {
 
   // Use interval to update the progress value over time
   const updateInterval = interval(this.intervalDuration / this.steps);
-  (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY] as TownCentre).level
+  // (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY] as TownCentre).level
   // Subscribe to the interval and update the progress value
   updateInterval.subscribe(() => {
     if (this.progress < 100) {
@@ -55,9 +55,10 @@ ngOnInit(): void {
 
   //Buildings
   getLevel() { return (this.cellInterSer.selected as Building).level;}
-
+  getProgress() { return (this.cellInterSer.selected as Building).upgradingTimeCurrent;}
+  updateLevel() {(this.cellInterSer.selected as Building).updateLevel();}
   //Town centre
-
+  
   //Hospital
   getHospitalPeopleRequired() {return (this.cellInterSer.selected as Hospital).peopleRequired;}
 

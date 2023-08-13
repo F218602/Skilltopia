@@ -168,22 +168,22 @@ generateForest();
 generatePond();
 generateGoldRock();
 generateSettlement();
-// Place objects randomly in n locations
-let count = 0;
-while (count < 300) {
-  let randomRow = Math.floor(Math.random() * numRows);
-  let randomCol = Math.floor(Math.random() * numCols);
+// // Place objects randomly in n locations
+// let count = 0;
+// while (count < 300) {
+//   let randomRow = Math.floor(Math.random() * numRows);
+//   let randomCol = Math.floor(Math.random() * numCols);
 
-  if (GameMap[randomRow][randomCol] === filledValue) {
-    // Generate a random object type index from 0 to number of types - 1
-    let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
+//   if (GameMap[randomRow][randomCol] === filledValue) {
+//     // Generate a random object type index from 0 to number of types - 1
+//     let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
 
-    // Assign the object type to the location
-    GameMap[randomRow][randomCol] = randomTypeIndex;
+//     // Assign the object type to the location
+//     GameMap[randomRow][randomCol] = randomTypeIndex;
 
-    count++;
-  }
-}
+//     count++;
+//   }
+// }
 
 io.on('connection', (socket) => {
   console.log('A user connected '+ socket.id);
