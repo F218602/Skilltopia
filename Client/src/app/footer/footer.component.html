@@ -126,10 +126,30 @@
     </div>
     <!-- If Market items -->
     <div class="bg-orange-200 ml-20 mt-10 mb-5 w-1/2 h-36" *ngIf= "cellInterSer.selected?.name === 'Market'">
-      <div class = " ml-3 mr-3 mt-5 grid grid-cols-2 gap-4">
-        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2">Buy</button>
-        <button mat-raised-button color="primary" class="m-2 bg-orange-400 p-2">Sell</button>
-      </div>
+      <div class="ml-3 mr-3 mt-5">
+        <div class="ml-3 mr-3 mt-5">
+          <div class="flex justify-between">
+            <div>
+              <span class="font-bold">Buy:</span>
+              <button mat-raised-button color="primary" class="bg-red-500 p-1 text-sm" (click)="buy('vegetables')">Vegetables</button>
+              <button mat-raised-button color="primary" class="bg-orange-400 p-1 m-2 text-sm" (click)="buy('fish')">Fish</button>
+              <button mat-raised-button color="primary" class="bg-blue-500 p-1 m-2 text-sm" (click)="buy('food')">Food</button>
+              <button mat-raised-button color="primary" class="bg-green-400 p-1 m-2 text-sm" (click)="buy('wood')">Wood</button>
+              <button mat-raised-button color="primary" class="bg-purple-500 p-1 text-sm" (click)="buy('stone')">Stone</button>
+            </div>
+          </div>
+          <div class="flex justify-between mt-2">
+            <div>
+              <span class="font-bold">Sell:</span>
+              <button mat-raised-button color="primary" class="bg-red-500 p-1 text-sm" (click)="sell('vegetables')">Vegetables</button>
+              <button mat-raised-button color="primary" class="bg-orange-400 p-1 m-2 text-sm" (click)="sell('fish')">Fish</button>
+              <button mat-raised-button color="primary" class="bg-blue-500 p-1 m-2 text-sm" (click)="sell('food')">Food</button>
+              <button mat-raised-button color="primary" class="bg-green-400 p-1 m-2 text-sm" (click)="sell('wood')">Wood</button>
+              <button mat-raised-button color="primary" class="bg-purple-500 p-1 text-sm" (click)="sell('stone')">Stone</button>
+            </div>
+          </div>
+        </div>
+      </div>  
       <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="updateLevel()">{{getProgress()}}</button>
         <p>Progress to Stone 2</p>
         <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
@@ -235,12 +255,18 @@
         <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
       </div>
     </div> 
-    <div *ngIf="cellInterSer.selectedBuilding && (cellInterSer.selected?.name === 'Empty Tile' || cellInterSer.selected?.name === 'Settlement')">
-    <h2>Required Resources for {{ cellInterSer.selectedBuilding }}</h2>              
+    <div class="ml-10 mt-10 mb-10 mr-10 p-4 bg-orange-200" *ngIf="cellInterSer.selectedBuilding && (cellInterSer.selected?.name === 'Empty Tile' || cellInterSer.selected?.name === 'Settlement')">
+    <div>Required Resources for {{ cellInterSer.selectedBuilding }}</div>              
         <span *ngFor="let material of pgd.getRequiredMaterials[cellInterSer.selectedBuilding] | keyvalue">
             {{ material.key }}: {{ material.value }}
         </span>
-        <button mat-raised-button color="primary" class="m-2 bg-red-500 p-2" (click)="pgd.createTile(cellInterSer.selX, cellInterSer.selY, pgd.getBuildingId[cellInterSer.selectedBuilding])">Build</button>
+        <button mat-raised-button color="primary" 
+                class="m-2 bg-red-500 p-2" 
+                [disabled]="!checkResources(cellInterSer.selectedBuilding)"
+                (click)="buildBuilding(cellInterSer.selectedBuilding)">
+                Build
+
+        </button>
     </div>  
   </div>  
 </footer>

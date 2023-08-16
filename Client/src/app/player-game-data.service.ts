@@ -25,12 +25,12 @@ export class PlayerGameDataService {
   business: number = 100;
   
   materials: Materials = {
-    fish: 0,
-    wood: 0,
-    vegetables: 0,
-    gold: 0,
-    food: 0,
-    stone: 0
+    fish: 1000,
+    wood: 1000,
+    vegetables: 1000,
+    gold: 1000,
+    food: 1000,
+    stone: 1000
   }
 
   materialDetails: MaterialDetails[] = [{name:'Fish', count: this.materials.fish},

@@ -30,6 +30,7 @@ export interface Materials {
   gold: number;
   food: number;
   stone: number;
+  [key: string]: number;
 
 }
 
@@ -125,7 +126,6 @@ export class TownCentre implements Building{
 
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
@@ -147,25 +147,26 @@ export class Hospital implements Building{
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
 
     peopleRequired: number = 2;
-    baseSafetyScore: number = 10;
-    safetyMultiplier: number = 100;
+    baseSafetyScore: number = 100;
+
+    safetyMultiplier: number = 10;
 
     private subscription: any;
 
     constructor(public pgd: PlayerGameDataService) {
         
         this.pgd.buildingCount.hospital += 1; 
+        this.pgd.safety += this.baseSafetyScore;
     }
     incrementLevelProgress(){
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.pgd.safety += this.safetyMultiplier;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -208,17 +209,17 @@ export class University implements Building{
     constructor(public pgd: PlayerGameDataService) {
         
         this.pgd.buildingCount.university += 1; 
+        this.pgd.education += this.baseEducationScore;
     }
     incrementLevelProgress(){
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.pgd.education += this.educationMultiplier;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -231,7 +232,6 @@ export class University implements Building{
      }
      updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
@@ -260,18 +260,18 @@ export class Church implements Building{
 
     constructor(public pgd: PlayerGameDataService) {
         
-        this.pgd.buildingCount.church += 1; 
+        this.pgd.buildingCount.church += 1;
+        this.pgd.education += this.baseFaithScore;
     }
     incrementLevelProgress(){
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.pgd.faith += this.faithMultiplier;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -283,7 +283,6 @@ export class Church implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
@@ -315,18 +314,18 @@ export class Market implements Building{
 
     constructor(public pgd: PlayerGameDataService) {
         
-        this.pgd.buildingCount.market += 1; 
+        this.pgd.buildingCount.market += 1;
+        this.pgd.business += this.basebusinessScore; 
     }
     incrementLevelProgress(){
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.pgd.business += this.businessMultiplier;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -343,12 +342,25 @@ export class Market implements Building{
      }
      updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
         });
     }
+
+    buy(material: string) {
+        if (this.pgd.materials[material] !== undefined && this.pgd.materials.gold >= 100) {
+            this.pgd.materials.gold -= 100;
+            this.pgd.materials[material] += 100;
+            
+        }
+    }
+    sell(material: string) {
+        if (this.pgd.materials[material] !== undefined && this.pgd.materials[material] >= 100) {
+            this.pgd.materials[material] -= 100;
+            this.pgd.materials.gold += 100;
+        }
+    }  
 }
 
 export class Dock implements Building{
@@ -381,12 +393,10 @@ export class Dock implements Building{
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }

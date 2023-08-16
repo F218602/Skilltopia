@@ -8,7 +8,7 @@ import { objectImageMap } from '../object-image-map'; // Adjust the import path 
 import { CellInteractionService } from '../cell-interaction.service';
 import { PlayerGameDataService } from '../player-game-data.service';
 import { Church, Dock, Factory, Farm, Hospital, LumberCamp, Market, MiningCamp, TownCentre, University } from '../game-object.interface';
-import { Building } from '../game-object.interface';
+import { Building, Materials } from '../game-object.interface';
 
 @Component({
   selector: 'app-footer',
@@ -57,6 +57,28 @@ ngOnInit(): void {
   getLevel() { return (this.cellInterSer.selected as Building).level;}
   getProgress() { return (this.cellInterSer.selected as Building).upgradingTimeCurrent;}
   updateLevel() {(this.cellInterSer.selected as Building).updateLevel();}
+  
+  checkResources(buildingName: string): boolean {
+    
+    for (const resource in this.pgd.getRequiredMaterials[buildingName]) {
+      if (this.pgd.getRequiredMaterials[buildingName][resource] > this.pgd.materials[resource]) {
+        return false; // Disable the button if any resource is insufficient
+      }
+    }
+
+    return true; // Enable the button if all resources are sufficient
+  }
+
+  buildBuilding(buildingName: string): void {
+      if (this.checkResources(buildingName)) {
+        // Subtract required resources from available resources
+        const requiredMaterials = this.pgd.getRequiredMaterials[buildingName];
+        for (const resource in requiredMaterials) {
+          this.pgd.materials[resource] -= requiredMaterials[resource];
+        }
+        this.pgd.createTile(this.cellInterSer.selX, this.cellInterSer.selY, this.pgd.getBuildingId[buildingName]);
+      }
+  }
   //Town centre
   
   //Hospital
@@ -72,6 +94,9 @@ ngOnInit(): void {
   //market
 
   getMarketPeopleRequired() {return (this.cellInterSer.selected as Market).peopleRequired;}
+
+  buy(materials: string) {(this.cellInterSer.selected as Market).buy(materials);}
+  sell(materials: string) {(this.cellInterSer.selected as Market).sell(materials);}
 
   //dock
 
