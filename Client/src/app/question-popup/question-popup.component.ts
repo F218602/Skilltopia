@@ -4,6 +4,9 @@ import { MatDialog } from '@angular/material/dialog';
 import { SocketIOService } from '../socket-io.service';
 import { QuizQuestion } from '../quizQuestion.interface';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { CellInteractionService } from '../cell-interaction.service';
+import { PlayerGameDataService } from '../player-game-data.service';
+import { TownCentre } from '../game-object.interface';
 
 @Component({
   selector: 'app-question-popup',
@@ -27,7 +30,8 @@ export class QuestionPopupComponent implements OnInit {
     @Inject(MAT_DIALOG_DATA) public data: any,
     private dialog: MatDialog,
     private socketIOService: SocketIOService,
-    // private snackBar: MatSnackBar,
+    public cellInterSer: CellInteractionService,
+    public pgd: PlayerGameDataService,
   ) {}
 
   ngOnInit() {
@@ -48,7 +52,7 @@ export class QuestionPopupComponent implements OnInit {
       if (proceed) {
         // Proceed to the next question popup or perform any other action
       } else {
-        // Display "Try again" message or perform any other action
+        
       }
     });
   } 
@@ -56,15 +60,20 @@ export class QuestionPopupComponent implements OnInit {
     if (this.selectedQuestion.correctOption === this.selectedOption) {
       // Proceed to next question
       this.selectedOption = 999;
-      this.noOfQuestionsAnswered += 1; 
-       if (this.noOfQuestionsAnswered <= 3) {
-            this.socketIOService.getQuestion();
-        }
-        else {
-          // Display "Try again" message
-          this.dialogRef.close(true);
-        }
-   }
+      this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered += 1; 
+      if (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered <= 3) {
+        this.socketIOService.getQuestion();
+      }
+      else {
+        // Display "Try again" message
+        this.dialogRef.close(true);
+      }
+    }
+    else {
+      this.dialogRef.close(true);
+      this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].startCooldownTimer();
+      // trigger cooling time
+    }
   }
   // quizCompleted(){
   //   this.snackBar.open('Quiz completed', 'Close', {

@@ -20,6 +20,12 @@ export interface Tile {
     image: number;
     name: string;
     type: string;
+    noOfQuestionsAnswered: number;
+    coolingTimeCurrent: number;
+    coolingTimeMax: number;
+    cooldownStart: boolean;
+    startCooldownTimer(): void;
+    cooldownProgress(): void;
 }
 
 export interface Materials {
@@ -82,6 +88,11 @@ export class TownCentre implements Building{
     image: number = 1;
     name: string = 'Town Centre';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -103,20 +114,37 @@ export class TownCentre implements Building{
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
         }
     }
-    // cooling time for quiz for all buildings
-    updateCoolingTime(){
 
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
     }
 
     // town centre
@@ -140,6 +168,11 @@ export class Hospital implements Building{
     image: number = 2;
     name: string = 'Hospital';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -179,10 +212,31 @@ export class Hospital implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
+        });
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
         });
     }
 }
@@ -194,6 +248,11 @@ export class University implements Building{
     image: number = 3;
     name: string = 'University';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -237,6 +296,28 @@ export class University implements Building{
                 this.incrementLevelProgress();
         });
     }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
+    }
 }
 
 export class Church implements Building{
@@ -246,6 +327,11 @@ export class Church implements Building{
     image: number = 4;
     name: string = 'Church';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -288,6 +374,28 @@ export class Church implements Building{
                 this.incrementLevelProgress();
         });
     }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
+    }
 }
 
 export class Market implements Building{
@@ -297,6 +405,11 @@ export class Market implements Building{
     image: number = 5;
     name: string = 'Market';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -360,6 +473,28 @@ export class Market implements Building{
             this.pgd.materials[material] -= 100;
             this.pgd.materials.gold += 100;
         }
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
     }  
 }
 
@@ -370,6 +505,11 @@ export class Dock implements Building{
     image: number = 6;
     name: string = 'Dock';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -412,10 +552,31 @@ export class Dock implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
+        });
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
         });
     }
 }
@@ -427,6 +588,11 @@ export class LumberCamp implements Building{
     image: number = 7;
     name: string = 'Lumber Camp';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -450,12 +616,10 @@ export class LumberCamp implements Building{
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -470,10 +634,31 @@ export class LumberCamp implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
+        });
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
         });
     }
 }
@@ -485,6 +670,11 @@ export class Farm implements Building{
     image: number = 8;
     name: string = 'Farm';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -508,12 +698,10 @@ export class Farm implements Building{
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -529,10 +717,31 @@ export class Farm implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
+        });
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
         });
     }
 }
@@ -544,6 +753,11 @@ export class MiningCamp implements Building{
     image: number = 9;
     name: string = 'Mining Camp';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -569,12 +783,10 @@ export class MiningCamp implements Building{
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -596,10 +808,31 @@ export class MiningCamp implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
+        });
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
         });
     }
 }
@@ -611,6 +844,11 @@ export class Factory implements Building{
     image: number = 10;
     name: string = 'Factory';
     type: string = 'Building';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
     level: number = 1;
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
@@ -634,12 +872,10 @@ export class Factory implements Building{
         
         if(this.progressStart && this.upgradingTimeCurrent < this.upgradingTimeMax){
             this.upgradingTimeCurrent += 1;
-            console.log("moshi mushi");
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
-            console.log("ja ne");
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
             }
@@ -663,10 +899,31 @@ export class Factory implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        console.log("Konichiwa");
         this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
+        });
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
         });
     }
 }
@@ -677,6 +934,10 @@ export class GoldRock implements Resource{
     image: number = 11;
     name: string = 'Gold Rock';
     type: string = 'Resource';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
 
     goldPercent: number = 20;
     rockPercent: number = 80;
@@ -686,6 +947,28 @@ export class GoldRock implements Resource{
     constructor(public pgd: PlayerGameDataService) {
         
     }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
+    }
 }
 
 export class Pond implements Resource{
@@ -694,12 +977,38 @@ export class Pond implements Resource{
     image: number = 12;
     name: string = 'Pond';
     type: string = 'Resource';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
 
     docksConnected: boolean = false;
     private subscription: any;
 
     constructor(public pgd: PlayerGameDataService) {
         
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
     }
 }
 
@@ -709,12 +1018,38 @@ export class Forest implements Resource{
     image: number = 13;
     name: string = 'Forest';
     type: string = 'Resource';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
 
     lumberCampConnected: boolean = false;
     private subscription: any;
 
     constructor(public pgd: PlayerGameDataService) {
         
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
     }
 }
 
@@ -724,10 +1059,37 @@ export class Settlement implements Resource{
     image: number = 14;
     name: string = 'Settlement';
     type: string = 'Resource';
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
     private subscription: any;
+
 
     constructor(public pgd: PlayerGameDataService) {
         
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
     }
 }
 
@@ -738,8 +1100,36 @@ export class EmptyTile implements Resource{
     name: string = 'Empty Tile';
     type: string = 'Empty';
     private subscription: any;
+    noOfQuestionsAnswered= 0;
+    coolingTimeCurrent= 0;
+    coolingTimeMax= 120;
+    cooldownStart= false;
+
+
 
     constructor(public pgd: PlayerGameDataService) {
            
+    }
+    cooldownProgress(){
+        
+        if(this.cooldownStart && this.coolingTimeCurrent < this.coolingTimeMax){
+            this.coolingTimeCurrent += 1;
+        } else if (this.coolingTimeCurrent >= this.coolingTimeMax) {
+            // this.level += 1; enable cooling button code
+            this.cooldownStart = false;
+            this.coolingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+    
+    // cooling time for quiz for all buildings
+    startCooldownTimer(){
+        this.cooldownStart = true;
+        this.subscription = interval(1000) // Every second
+            .subscribe(() => {
+                this.cooldownProgress();
+        });
     }
 }

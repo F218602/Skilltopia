@@ -24,7 +24,7 @@ export class QuizComponent {
       width: '1200px', // Adjust the width as per your requirement
       height: '600px', // Adjust the height as per your requirement
       disableClose: true, // To prevent closing the popup by clicking outside
-      
     });
+    this.dialogRef.close();
   }
 }

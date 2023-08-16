@@ -248,11 +248,11 @@
     <!-- column 4 -->
     <div class="ml-auto mt-5 mb-10 mr-10 text-xs" *ngIf= "cellInterSer.selected?.type === 'Building'">
       <div class=" bg-orange-200 p-4">
-        <button mat-raised-button color="primary" (click)="openPopup()">Take Quiz to Upgrade</button>
+        <button mat-raised-button color="primary" [disabled]="cellInterSer.selected.cooldownStart" (click)="openPopup()">Take Quiz to Upgrade</button>
       </div>
-      <div class="bg-orange-200 mt-5 p-3" *ngIf= "cellInterSer.selected?.type === 'Building'">
+      <div class="bg-orange-200 mt-5 p-3" *ngIf= "cellInterSer.selected?.type === 'Building' && cellInterSer.selected.cooldownStart ">
         <p>Cooling Time</p>
-        <mat-progress-bar mode="determinate" [value]="progress"></mat-progress-bar>
+        <mat-progress-bar mode="determinate" [value]="cellInterSer.selected.coolingTimeCurrent"></mat-progress-bar>
       </div>
     </div> 
     <div class="ml-10 mt-10 mb-10 mr-10 p-4 bg-orange-200" *ngIf="cellInterSer.selectedBuilding && (cellInterSer.selected?.name === 'Empty Tile' || cellInterSer.selected?.name === 'Settlement')">
