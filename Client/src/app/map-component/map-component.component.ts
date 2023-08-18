@@ -13,11 +13,13 @@ export class MapComponentComponent implements OnInit{
   // map: number[][] = [];
   constructor(public socketIOService: SocketIOService, public pgd : PlayerGameDataService) {}
   ngOnInit() {
-    this.socketIOService.Joined().subscribe(([arrayData]) => {
+    this.socketIOService.Joined().subscribe(([playerID, arrayData, tileOwner]) => {
           console.log('Received 20x50 array:', arrayData);
           // this.socketIOService.Created = true;
           // this.map = arrayData;
+          this.pgd.playerID = playerID;
           this.pgd.mapTileId = arrayData;
+          this.pgd.tileOwner = tileOwner;
           this.pgd.initMap();
     });
 

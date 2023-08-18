@@ -6,7 +6,7 @@ import { QuizQuestion } from '../quizQuestion.interface';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CellInteractionService } from '../cell-interaction.service';
 import { PlayerGameDataService } from '../player-game-data.service';
-import { TownCentre } from '../game-object.interface';
+import { Building, TownCentre } from '../game-object.interface';
 
 @Component({
   selector: 'app-question-popup',
@@ -32,6 +32,7 @@ export class QuestionPopupComponent implements OnInit {
     private socketIOService: SocketIOService,
     public cellInterSer: CellInteractionService,
     public pgd: PlayerGameDataService,
+    private snackBar: MatSnackBar
   ) {}
 
   ngOnInit() {
@@ -56,32 +57,39 @@ export class QuestionPopupComponent implements OnInit {
       }
     });
   } 
+
   checkAnswer() {
     if (this.selectedQuestion.correctOption === this.selectedOption) {
       // Proceed to next question
       this.selectedOption = 999;
       this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered += 1; 
-      if (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered <= 3) {
+      if (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered < 3) {
         this.socketIOService.getQuestion();
       }
       else {
-        // Display "Try again" message
+        this.showNotification('You have successfully completed the Quiz');
+        this.updateLevel();
         this.dialogRef.close(true);
       }
     }
     else {
+      this.showNotification('Oops!! Try taking the quiz after some time')
       this.dialogRef.close(true);
       this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].startCooldownTimer();
-      // trigger cooling time
     }
   }
-  // quizCompleted(){
-  //   this.snackBar.open('Quiz completed', 'Close', {
-  //     duration: 3000, // Set the duration for the snackbar to be displayed (in milliseconds)
-  //   });
-  // }
+  
   exitQuiz(){
     // Close the dialog when the "Exit" button is clicked
     this.dialogRef.close(true);
   }
+
+  showNotification(message: string) {
+    this.snackBar.open(message, 'Dismiss', {
+      duration: 3000, // Time in milliseconds (e.g., 3000ms = 3 seconds)
+      panelClass: ['mat-toolbar', 'mat-primary'] // Optional custom CSS classes
+    });
+  }
+  
+  updateLevel() {(this.cellInterSer.selected as Building).updateLevel();}
 }

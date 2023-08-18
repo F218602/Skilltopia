@@ -34,10 +34,10 @@ export class SocketIOService {
 
 
 // Listeners
-  Joined(): Observable<[number[][]]> {
-    return new Observable<[number[][]]>((observer) => {
-      this.socket.on('Joined', (arrayData: number[][]) => {
-        observer.next([arrayData]);
+  Joined(): Observable<[number, number[][], number[][]]> {
+    return new Observable<[number, number[][], number[][]]>((observer) => {
+      this.socket.on('Joined', (playerID: number, arrayData: number[][], tileOwner: number[][]) => {
+        observer.next([playerID, arrayData, tileOwner]);
       });
     });
   }

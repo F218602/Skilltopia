@@ -8,6 +8,7 @@ import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, Lumbe
 export class PlayerGameDataService {
    
   mapTileId: number[][] = [];
+  tileOwner: number[][] = [];
   map: Tile[][] = [];
   numRows: number = 50;
   numCols: number = 50;
@@ -131,40 +132,40 @@ export class PlayerGameDataService {
       }
   }
   }
-  createTile(i:number, j:number, tileId:number){
+  createTile(i:number, j:number, tileId:number, tileOwner: number = 0){
     switch (tileId) {
       case 0:
         this.map[i][j] = new EmptyTile(this);
         break;
       case 1:
-        this.map[i][j] = new TownCentre(this);
+        this.map[i][j] = new TownCentre(this, tileOwner);
         break;
       case 2:
-        this.map[i][j] = new Hospital(this);
+        this.map[i][j] = new Hospital(this, tileOwner);
         break;
       case 3:
-        this.map[i][j] = new University(this);
+        this.map[i][j] = new University(this, tileOwner);
         break;
       case 4:
-        this.map[i][j] = new Church(this);
+        this.map[i][j] = new Church(this, tileOwner);
         break;
       case 5:
-        this.map[i][j] = new Market(this);
+        this.map[i][j] = new Market(this, tileOwner);
         break;
       case 6:
-        this.map[i][j] = new Dock(this);
+        this.map[i][j] = new Dock(this, tileOwner);
         break;
       case 7:
-        this.map[i][j] = new LumberCamp(this);
+        this.map[i][j] = new LumberCamp(this, tileOwner);
         break;
       case 8:
-        this.map[i][j] = new Farm(this);
+        this.map[i][j] = new Farm(this, tileOwner);
         break;
       case 9:
-        this.map[i][j] = new MiningCamp(this);
+        this.map[i][j] = new MiningCamp(this, tileOwner);
         break;
       case 10:
-        this.map[i][j] = new Factory(this);
+        this.map[i][j] = new Factory(this, tileOwner);
         break;
       case 11:
         this.map[i][j] = new GoldRock(this);
@@ -187,7 +188,7 @@ export class PlayerGameDataService {
   initMap(): void {
     for(let i = 0; i < this.numRows; i++) {
       for(let j=0; j< this.numCols; j++){
-        this.createTile(i,j,this.mapTileId[i][j])
+        this.createTile(i,j,this.mapTileId[i][j], this.tileOwner[i][j]);
       } 
     }
   } 

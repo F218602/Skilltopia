@@ -13,6 +13,7 @@ export class CellInteractionService {
   public selY: number = 0;
   public tileId: number = 0;
   public selectedBuilding: string | null = null;
+  // public playerID: number = 0;
   
   constructor(public pgd: PlayerGameDataService) { }
 

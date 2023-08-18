@@ -23,6 +23,7 @@ import { QuestionPopupComponent } from './question-popup/question-popup.componen
 import { CellInteractionService } from './cell-interaction.service';
 import { PlayerGameDataService } from './player-game-data.service';
 import { DisplayProgressPipe } from './display-progress.pipe';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 @NgModule({
     declarations: [
@@ -50,7 +51,8 @@ import { DisplayProgressPipe } from './display-progress.pipe';
         // MatListModule
         MatDialogModule,
         MatButtonModule,
-        FormsModule  
+        FormsModule,
+        MatSnackBarModule  
     ]
 })
 export class AppModule { }

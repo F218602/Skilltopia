@@ -4,11 +4,12 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { QuizComponent } from '../quiz/quiz.component';
 import { interval } from 'rxjs';
 import { CellInfo } from '../cell-info.interface';
-import { objectImageMap } from '../object-image-map'; // Adjust the import path based on the actual location of the file
+import { objectImageMap } from '../object-image-map';
 import { CellInteractionService } from '../cell-interaction.service';
 import { PlayerGameDataService } from '../player-game-data.service';
 import { Church, Dock, Factory, Farm, Hospital, LumberCamp, Market, MiningCamp, TownCentre, University } from '../game-object.interface';
 import { Building, Materials } from '../game-object.interface';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-footer',
@@ -25,13 +26,13 @@ showBuilding: boolean = true;
 
 constructor(private dialog: MatDialog, public cellInterSer: CellInteractionService, public pgd: PlayerGameDataService) {}
 
+
 ngOnInit(): void {
   // Calculate the increment value for each step
   const incrementValue = 100 / this.steps;
 
   // Use interval to update the progress value over time
   const updateInterval = interval(this.intervalDuration / this.steps);
-  // (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY] as TownCentre).level
   // Subscribe to the interval and update the progress value
   updateInterval.subscribe(() => {
     if (this.progress < 100) {
@@ -54,10 +55,11 @@ ngOnInit(): void {
   }
 
   //Buildings
-  getLevel() { return (this.cellInterSer.selected as Building).level;}
-  getProgress() { return (this.cellInterSer.selected as Building).upgradingTimeCurrent;}
+  getOwnerID() {return (this.cellInterSer.selected as Building).playerId;}
+  getLevel() {return (this.cellInterSer.selected as Building).level;}
+  getProgress() {return (this.cellInterSer.selected as Building).upgradingTimeCurrent;}
   updateLevel() {(this.cellInterSer.selected as Building).updateLevel();}
-  
+  progressStart() {return (this.cellInterSer.selected as Building).progressStart;}
   checkResources(buildingName: string): boolean {
     
     for (const resource in this.pgd.getRequiredMaterials[buildingName]) {
@@ -69,6 +71,30 @@ ngOnInit(): void {
     return true; // Enable the button if all resources are sufficient
   }
 
+  checkSpecialLocation(buildingName: string): boolean {
+    let locationId: number  = 0;
+    if (buildingName !== 'Mining Camp' && buildingName !== 'Dock' && buildingName !== 'Lumber Camp') {
+      return true;
+    }
+    switch (buildingName) {
+      case 'Mining Camp':
+        locationId = 11;
+        break;
+      case 'Dock':
+        locationId = 12;
+        break;  
+      case 'Lumber Camp':
+        locationId = 13;
+        break;
+    }
+    console.log(locationId);
+    return ((this.pgd.numRows > this.cellInterSer.selX+1 &&  this.pgd.map[this.cellInterSer.selX+1][this.cellInterSer.selY].image == locationId)||
+    (0 <= this.cellInterSer.selX-1 && this.pgd.map[this.cellInterSer.selX-1][this.cellInterSer.selY].image == locationId)||
+    (this.pgd.numCols > this.cellInterSer.selY+1 && this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY+1].image == locationId)||
+    (0 <= this.cellInterSer.selY-1 && this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY-1].image == locationId));    
+    // return true; 
+  }
+
   buildBuilding(buildingName: string): void {
       if (this.checkResources(buildingName)) {
         // Subtract required resources from available resources
@@ -76,7 +102,7 @@ ngOnInit(): void {
         for (const resource in requiredMaterials) {
           this.pgd.materials[resource] -= requiredMaterials[resource];
         }
-        this.pgd.createTile(this.cellInterSer.selX, this.cellInterSer.selY, this.pgd.getBuildingId[buildingName]);
+        this.pgd.createTile(this.cellInterSer.selX, this.cellInterSer.selY, this.pgd.getBuildingId[buildingName], this.pgd.playerID);
       }
   }
   //Town centre

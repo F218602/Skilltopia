@@ -106,7 +106,8 @@ export class TownCentre implements Building{
     private subscription: any;
     
 
-    constructor(public pgd: PlayerGameDataService) {
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;
         this.pgd.buildingCount.townCentre += 1; 
     }
     
@@ -186,8 +187,8 @@ export class Hospital implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
-        
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;
         this.pgd.buildingCount.hospital += 1; 
         this.pgd.safety += this.baseSafetyScore;
     }
@@ -265,8 +266,8 @@ export class University implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
-        
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;
         this.pgd.buildingCount.university += 1; 
         this.pgd.education += this.baseEducationScore;
     }
@@ -344,8 +345,8 @@ export class Church implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
-        
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;
         this.pgd.buildingCount.church += 1;
         this.pgd.education += this.baseFaithScore;
     }
@@ -425,8 +426,8 @@ export class Market implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
-        
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;
         this.pgd.buildingCount.market += 1;
         this.pgd.business += this.basebusinessScore; 
     }
@@ -522,8 +523,8 @@ export class Dock implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
-        this.subscription = interval(1000)
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;this.subscription = interval(1000)
             .subscribe(() => {
                 this.increaseFish();
             });
@@ -605,8 +606,8 @@ export class LumberCamp implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
-        this.subscription = interval(1000)
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;this.subscription = interval(1000)
             .subscribe(() => {
                 this.increaseWood();
             });
@@ -687,7 +688,8 @@ export class Farm implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;
         this.subscription = interval(1000)
             .subscribe(() => {
                 this.increaseVegetable();
@@ -770,7 +772,8 @@ export class MiningCamp implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;
         this.subscription = interval(1000)
             .subscribe(() => {
                 this.increaseGold();
@@ -861,8 +864,8 @@ export class Factory implements Building{
 
     private subscription: any;
 
-    constructor(public pgd: PlayerGameDataService) {
-        this.subscription = interval(1000)
+    constructor(public pgd: PlayerGameDataService, tileOwner: number) {
+        this.playerId = tileOwner;this.subscription = interval(1000)
             .subscribe(() => {
                 this.increaseFood();
             });

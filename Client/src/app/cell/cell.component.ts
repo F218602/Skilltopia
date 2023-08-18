@@ -40,5 +40,6 @@ export class CellComponent {
     this.cellInterSer.selY = this.column;
     this.cellInterSer.tileId = this.value;  
     this.cellInterSer.selectedBuilding = null;
+    // this.cellInterSer.playerID = Math.floor(this.value / 1000);
   }
 }

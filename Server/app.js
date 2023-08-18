@@ -19,10 +19,15 @@ const numCols = 50;
 const filledValue = 0;
 
 const GameMap = [];
+const TileOwner = [];
 
 for (let i = 0; i < numRows; i++) {
   const row = new Array(numCols).fill(filledValue);
   GameMap.push(row);
+}
+for (let i = 0; i < numRows; i++) {
+  const row = new Array(numCols).fill(filledValue);
+  TileOwner.push(row);
 }
 
 // console.log(GameMap);
@@ -55,10 +60,14 @@ townCentreCount = maxPlayers
 
 // functions for resource generation in the map
 function generateTownCentre() {
-  GameMap[3][3] = objectTypes.townCentre
-  GameMap[numRows-4][3] = objectTypes.townCentre
-  GameMap[3][numCols-4] = objectTypes.townCentre
-  GameMap[numRows-4][numCols-4] = objectTypes.townCentre
+  GameMap[3][3] = objectTypes.townCentre;
+  TileOwner[3][3] = 1;
+  GameMap[numRows-4][3] = objectTypes.townCentre;
+  TileOwner[numRows-4][3] = 2;
+  GameMap[3][numCols-4] = objectTypes.townCentre;
+  TileOwner[3][numCols-4] = 3;
+  GameMap[numRows-4][numCols-4] = objectTypes.townCentre;
+  TileOwner[numRows-4][numCols-4] = 4;
 }
 
 function generateForest() {
@@ -168,22 +177,24 @@ generateForest();
 generatePond();
 generateGoldRock();
 generateSettlement();
+
+
 // // Place objects randomly in n locations
-// let count = 0;
-// while (count < 300) {
-//   let randomRow = Math.floor(Math.random() * numRows);
-//   let randomCol = Math.floor(Math.random() * numCols);
+let count = 0;
+while (count < 300) {
+  let randomRow = Math.floor(Math.random() * numRows);
+  let randomCol = Math.floor(Math.random() * numCols);
+  let randomPlayer = 1 + Math.floor(Math.random() * maxPlayers);
+  if (GameMap[randomRow][randomCol] === filledValue) {
+    // Generate a random object type index from 0 to number of types - 1
+    let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
 
-//   if (GameMap[randomRow][randomCol] === filledValue) {
-//     // Generate a random object type index from 0 to number of types - 1
-//     let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
-
-//     // Assign the object type to the location
-//     GameMap[randomRow][randomCol] = randomTypeIndex;
-
-//     count++;
-//   }
-// }
+    // Assign the object type to the location
+    GameMap[randomRow][randomCol] = randomTypeIndex;
+    TileOwner[randomRow][randomCol] = randomPlayer;
+    count++;
+  }
+}
 
 io.on('connection', (socket) => {
   console.log('A user connected '+ socket.id);
@@ -203,7 +214,7 @@ io.on('connection', (socket) => {
 
       console.log(`${socket.id} joined room ${room}`);
       // Send the 20x50 array to the client who just joined
-      socket.emit('Joined', GameMap);
+      socket.emit('Joined', players.get(room).length, GameMap, TileOwner);
     } else {
       socket.emit('roomFull');
       console.log(`Room ${room} is full`);
