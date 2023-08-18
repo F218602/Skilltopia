@@ -23,6 +23,13 @@ export class MapComponentComponent implements OnInit{
           this.pgd.initMap();
     });
 
+    this.socketIOService.syncBuildingReceive().subscribe(([x, y, tileID, tileOwner]) => {
+      console.log(x, y, tileID, tileOwner);
+      if(this.pgd.playerID != tileOwner){
+        this.pgd.createTile(x, y, tileID, tileOwner);
+      }
+    });
+
     this.socketIOService.changed().subscribe(([i, j, val]) => {
       console.log(val);
       // this.map[i][j] =val;

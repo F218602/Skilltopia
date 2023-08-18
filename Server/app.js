@@ -180,21 +180,21 @@ generateSettlement();
 
 
 // // Place objects randomly in n locations
-let count = 0;
-while (count < 300) {
-  let randomRow = Math.floor(Math.random() * numRows);
-  let randomCol = Math.floor(Math.random() * numCols);
-  let randomPlayer = 1 + Math.floor(Math.random() * maxPlayers);
-  if (GameMap[randomRow][randomCol] === filledValue) {
-    // Generate a random object type index from 0 to number of types - 1
-    let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
+// let count = 0;
+// while (count < 300) {
+//   let randomRow = Math.floor(Math.random() * numRows);
+//   let randomCol = Math.floor(Math.random() * numCols);
+//   let randomPlayer = 1 + Math.floor(Math.random() * maxPlayers);
+//   if (GameMap[randomRow][randomCol] === filledValue) {
+//     // Generate a random object type index from 0 to number of types - 1
+//     let randomTypeIndex = Math.floor(Math.random() * Object.keys(objectTypes).length);
 
-    // Assign the object type to the location
-    GameMap[randomRow][randomCol] = randomTypeIndex;
-    TileOwner[randomRow][randomCol] = randomPlayer;
-    count++;
-  }
-}
+//     // Assign the object type to the location
+//     GameMap[randomRow][randomCol] = randomTypeIndex;
+//     TileOwner[randomRow][randomCol] = randomPlayer;
+//     count++;
+//   }
+// }
 
 io.on('connection', (socket) => {
   console.log('A user connected '+ socket.id);
@@ -254,6 +254,13 @@ io.on('connection', (socket) => {
     GameMap[i][j] = val;
     console.log('Received change event:', room, i, j, val);
     io.to(room).emit('changed', i, j, val);
+  });
+
+  socket.on("syncBuildingSend", (roomName, x, y, tileID, tileOwner) => {
+    GameMap[x][y] = tileID;
+    TileOwner[x][y] = tileOwner;
+    console.log('Received change event:', roomName, x, y, tileID, tileOwner);
+    io.to(roomName).emit('syncBuildingReceive', x, y, tileID, tileOwner);
   });
   
   socket.on("getQuestion", () => {

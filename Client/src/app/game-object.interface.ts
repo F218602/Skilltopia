@@ -108,7 +108,9 @@ export class TownCentre implements Building{
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
-        this.pgd.buildingCount.townCentre += 1; 
+        if(pgd.playerID==this.playerId){
+            this.pgd.buildingCount.townCentre += 1;
+        } 
     }
     
     incrementLevelProgress(){
@@ -189,8 +191,10 @@ export class Hospital implements Building{
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
-        this.pgd.buildingCount.hospital += 1; 
-        this.pgd.safety += this.baseSafetyScore;
+        if(pgd.playerID==this.playerId){
+            this.pgd.buildingCount.hospital += 1; 
+            this.pgd.safety += this.baseSafetyScore;
+        }
     }
     incrementLevelProgress(){
         
@@ -268,8 +272,10 @@ export class University implements Building{
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
-        this.pgd.buildingCount.university += 1; 
-        this.pgd.education += this.baseEducationScore;
+        if(pgd.playerID==this.playerId){
+            this.pgd.buildingCount.university += 1; 
+            this.pgd.education += this.baseEducationScore;
+        }    
     }
     incrementLevelProgress(){
         
@@ -347,8 +353,10 @@ export class Church implements Building{
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
-        this.pgd.buildingCount.church += 1;
-        this.pgd.education += this.baseFaithScore;
+        if(pgd.playerID==this.playerId){
+            this.pgd.buildingCount.church += 1;
+            this.pgd.faith += this.baseFaithScore;
+        }
     }
     incrementLevelProgress(){
         
@@ -428,8 +436,10 @@ export class Market implements Building{
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
-        this.pgd.buildingCount.market += 1;
-        this.pgd.business += this.basebusinessScore; 
+        if(pgd.playerID==this.playerId){
+            this.pgd.buildingCount.market += 1;
+            this.pgd.business += this.basebusinessScore;
+        } 
     }
     incrementLevelProgress(){
         
@@ -524,11 +534,14 @@ export class Dock implements Building{
     private subscription: any;
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
-        this.playerId = tileOwner;this.subscription = interval(1000)
-            .subscribe(() => {
-                this.increaseFish();
-            });
-        this.pgd.buildingCount.dock += 1; 
+        this.playerId = tileOwner;
+        if(pgd.playerID==this.playerId){
+            this.subscription = interval(1000)
+                .subscribe(() => {
+                    this.increaseFish();
+                });
+            this.pgd.buildingCount.dock += 1; 
+        }
     }
     incrementLevelProgress(){
         
@@ -607,11 +620,14 @@ export class LumberCamp implements Building{
     private subscription: any;
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
-        this.playerId = tileOwner;this.subscription = interval(1000)
-            .subscribe(() => {
-                this.increaseWood();
-            });
-        this.pgd.buildingCount.lumberCamp += 1; 
+        this.playerId = tileOwner;
+        if(pgd.playerID==this.playerId){
+            this.subscription = interval(1000)
+                .subscribe(() => {
+                    this.increaseWood();
+                });
+            this.pgd.buildingCount.lumberCamp += 1; 
+        }
     }
     incrementLevelProgress(){
         
@@ -690,11 +706,13 @@ export class Farm implements Building{
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
-        this.subscription = interval(1000)
-            .subscribe(() => {
-                this.increaseVegetable();
-            });
-        this.pgd.buildingCount.farm += 1; 
+        if(pgd.playerID==this.playerId){
+            this.subscription = interval(1000)
+                .subscribe(() => {
+                    this.increaseVegetable();
+                });
+            this.pgd.buildingCount.farm += 1; 
+        }
     }
     incrementLevelProgress(){
         
@@ -774,12 +792,14 @@ export class MiningCamp implements Building{
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
-        this.subscription = interval(1000)
-            .subscribe(() => {
-                this.increaseGold();
-                this.increaseStone();
-            });
-        this.pgd.buildingCount.miningCamp += 1; 
+        if(pgd.playerID==this.playerId){
+            this.subscription = interval(1000)
+                .subscribe(() => {
+                    this.increaseGold();
+                    this.increaseStone();
+                });
+            this.pgd.buildingCount.miningCamp += 1; 
+        }
     }
 
     incrementLevelProgress(){
@@ -865,11 +885,14 @@ export class Factory implements Building{
     private subscription: any;
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
-        this.playerId = tileOwner;this.subscription = interval(1000)
-            .subscribe(() => {
-                this.increaseFood();
-            });
-        this.pgd.buildingCount.factory += 1; 
+        this.playerId = tileOwner;
+        if(pgd.playerID==this.playerId){
+            this.subscription = interval(1000)
+                .subscribe(() => {
+                    this.increaseFood();
+                });
+            this.pgd.buildingCount.factory += 1; 
+        }
     }
     incrementLevelProgress(){
         

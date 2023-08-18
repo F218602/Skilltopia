@@ -27,6 +27,10 @@ export class SocketIOService {
   change(roomName: string, i: number, j: number, val: number) {
     this.socket.emit('change', roomName, i, j, val);
   }
+
+  syncBuildingSend(roomName: string, x: number, y: number, tileID: number, tileOwner: number) {
+    this.socket.emit('syncBuildingSend', roomName, x, y, tileID, tileOwner);
+  }
   // Quiz question get
   getQuestion() {
     this.socket.emit('getQuestion');
@@ -66,6 +70,14 @@ export class SocketIOService {
     return new Observable<[number, number, number]>((observer) => {
       this.socket.on('changed', (i: number, j: number, val: number) => {
         observer.next([i, j, val]);
+      });
+    });
+  }
+
+  syncBuildingReceive() : Observable<[number, number, number, number]> {
+    return new Observable<[number,number, number, number]>((observer) => {
+      this.socket.on('syncBuildingReceive', (x: number, y: number, tileID: number, tileOwner: number) => {
+        observer.next([x, y, tileID, tileOwner]);
       });
     });
   }

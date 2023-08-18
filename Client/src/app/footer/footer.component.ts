@@ -10,6 +10,7 @@ import { PlayerGameDataService } from '../player-game-data.service';
 import { Church, Dock, Factory, Farm, Hospital, LumberCamp, Market, MiningCamp, TownCentre, University } from '../game-object.interface';
 import { Building, Materials } from '../game-object.interface';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { SocketIOService } from '../socket-io.service';
 
 @Component({
   selector: 'app-footer',
@@ -24,7 +25,7 @@ TotalPopulation: number = 100;
 PeopleInUse: number = 50;
 showBuilding: boolean = true;
 
-constructor(private dialog: MatDialog, public cellInterSer: CellInteractionService, public pgd: PlayerGameDataService) {}
+constructor(private dialog: MatDialog, public cellInterSer: CellInteractionService, public pgd: PlayerGameDataService, public socketIOService: SocketIOService) {}
 
 
 ngOnInit(): void {
@@ -102,6 +103,7 @@ ngOnInit(): void {
         for (const resource in requiredMaterials) {
           this.pgd.materials[resource] -= requiredMaterials[resource];
         }
+        this.socketIOService.syncBuildingSend(this.socketIOService.roomName, this.cellInterSer.selX, this.cellInterSer.selY, this.pgd.getBuildingId[buildingName], this.pgd.playerID);
         this.pgd.createTile(this.cellInterSer.selX, this.cellInterSer.selY, this.pgd.getBuildingId[buildingName], this.pgd.playerID);
       }
   }
