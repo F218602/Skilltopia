@@ -20,6 +20,7 @@ export class MapComponentComponent implements OnInit{
           this.pgd.playerID = playerID;
           this.pgd.mapTileId = arrayData;
           this.pgd.tileOwner = tileOwner;
+          this.pgd.age = this.pgd.AgeList[this.pgd.ageID];
           this.pgd.initMap();
     });
 

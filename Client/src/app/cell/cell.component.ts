@@ -18,6 +18,8 @@ export class CellComponent {
 
   constructor(public cellInterSer: CellInteractionService, public pgd: PlayerGameDataService) {}
 
+  changeBorder: boolean = false;
+  
   ngOnInit(): void {
     
   }

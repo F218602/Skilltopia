@@ -16,14 +16,14 @@ export class PlayerGameDataService {
   playerName: string = 'Player 1';
   playerID: number = 1;
   score: number = 0;
-  ageID: number = 1;
-  age: string = 'Stone'
+  ageID: number = 0;
+  age: string = 'Nyanpassu';
   level: number = 1;
-  population: number = 15;
-  safety: number = 100;
-  education: number = 100;
-  faith: number = 100;
-  business: number = 100;
+  peopleInUse: number = 0;
+  safety: number = 0;
+  education: number = 0;
+  faith: number = 0;
+  business: number = 0;
   
   materials: Materials = {
     fish: 1000,
@@ -31,7 +31,8 @@ export class PlayerGameDataService {
     vegetables: 1000,
     gold: 1000,
     food: 1000,
-    stone: 1000
+    stone: 1000,
+    people: 0
   }
 
   materialDetails: MaterialDetails[] = [{name:'Fish', count: this.materials.fish},
@@ -40,6 +41,7 @@ export class PlayerGameDataService {
                                         {name:'Gold', count: this.materials.gold},
                                         {name:'Food', count: this.materials.food},
                                         {name:'Stone', count: this.materials.stone},
+                                        {name:'People', count: this.materials.people}
                                       ]                                    
 
   // building counter
@@ -88,6 +90,9 @@ export class PlayerGameDataService {
     "Factory"
 ];
 
+AgeList: string[] = ["Stone Age", "Bronze Age", "Iron Age", "Middle Ages", "Renaissance", "Industrial Age", "Modern Age"];
+
+
   buildingDetails: BuildingDetails[] = [{name:'Town Centre', count: this.buildingCount.townCentre}, 
                                                         {name:'Hospital', count: this.buildingCount.hospital}, 
                                                         {name:'University',count:  this.buildingCount.university}, 
@@ -101,16 +106,16 @@ export class PlayerGameDataService {
 
 
   getRequiredMaterials: Record<string, Materials> = {
-    "Town Centre": { fish: 0, wood: 200, vegetables: 0, gold: 100, food: 300, stone: 100 },
-    "Hospital": { fish: 0, wood: 500, vegetables: 0, gold: 300, food: 200, stone: 300 },
-    "University": { fish: 0, wood: 800, vegetables: 0, gold: 600, food: 400, stone: 500 },
-    "Church": { fish: 0, wood: 150, vegetables: 0, gold: 100, food: 50, stone: 100 },
-    "Market": { fish: 0, wood: 300, vegetables: 0, gold: 200, food: 100, stone: 200 },
-    "Dock": { fish: 100, wood: 100, vegetables: 0, gold: 150, food: 50, stone: 50 },
-    "Lumber Camp": { fish: 0, wood: 300, vegetables: 0, gold: 100, food: 100, stone: 200 },
-    "Farm": { fish: 0, wood: 50, vegetables: 0, gold: 25, food: 0, stone: 25 },
-    "Mining Camp": { fish: 0, wood: 100, vegetables: 0, gold: 75, food: 0, stone: 200 },
-    "Factory": { fish: 0, wood: 500, vegetables: 0, gold: 300, food: 200, stone: 300 },
+    "Town Centre": { fish: 0, wood: 200, vegetables: 0, gold: 100, food: 300, stone: 100, people: 0 },
+    "Hospital": { fish: 0, wood: 500, vegetables: 0, gold: 300, food: 200, stone: 300, people: 10 },
+    "University": { fish: 0, wood: 800, vegetables: 0, gold: 600, food: 400, stone: 500, people: 15 },
+    "Church": { fish: 0, wood: 150, vegetables: 0, gold: 100, food: 50, stone: 100, people: 2 },
+    "Market": { fish: 0, wood: 300, vegetables: 0, gold: 200, food: 100, stone: 200, people: 5 },
+    "Dock": { fish: 100, wood: 100, vegetables: 0, gold: 150, food: 50, stone: 50, people: 8 },
+    "Lumber Camp": { fish: 0, wood: 300, vegetables: 0, gold: 100, food: 100, stone: 200, people: 6 },
+    "Farm": { fish: 0, wood: 50, vegetables: 0, gold: 25, food: 0, stone: 25, people: 3 },
+    "Mining Camp": { fish: 0, wood: 100, vegetables: 0, gold: 75, food: 0, stone: 200, people: 7 },
+    "Factory": { fish: 0, wood: 500, vegetables: 0, gold: 300, food: 200, stone: 300, people: 12 },
   };
 
   constructor() { 

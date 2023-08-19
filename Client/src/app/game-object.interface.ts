@@ -36,6 +36,7 @@ export interface Materials {
   gold: number;
   food: number;
   stone: number;
+  people: number;
   [key: string]: number;
 
 }
@@ -97,19 +98,22 @@ export class TownCentre implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:0};
 
     population: number = 10;
     currentPopulation: number = 10;
     totalPopulation: number = 10;
     peopleInUse: number = 0;
+    progressStartAge: boolean = false;
     private subscription: any;
+    
     
 
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
         if(pgd.playerID==this.playerId){
             this.pgd.buildingCount.townCentre += 1;
+            this.pgd.materials.people += 50;
         } 
     }
     
@@ -120,6 +124,21 @@ export class TownCentre implements Building{
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
             this.progressStart = false;
+            this.upgradingTimeCurrent = 0;
+            if (this.subscription && !this.subscription.closed) {
+                this.subscription.unsubscribe();
+            }
+        }
+    }
+
+    incrementAgeProgress(){
+        
+        if(this.progressStartAge && this.upgradingTimeCurrent < this.upgradingTimeMax){
+            this.upgradingTimeCurrent += 1;
+        } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
+            this.pgd.ageID += 1;
+            this.pgd.age = this.pgd.AgeList[this.pgd.ageID];
+            this.progressStartAge = false;
             this.upgradingTimeCurrent = 0;
             if (this.subscription && !this.subscription.closed) {
                 this.subscription.unsubscribe();
@@ -162,6 +181,13 @@ export class TownCentre implements Building{
                 this.incrementLevelProgress();
         });
     }
+    updateAge() {
+        this.progressStartAge = true;
+        this.subscription = interval(100) // Every second
+            .subscribe(() => {
+                this.incrementAgeProgress();
+        });
+    }
 }
 
 export class Hospital implements Building{
@@ -180,7 +206,7 @@ export class Hospital implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:10};
 
     peopleRequired: number = 2;
     baseSafetyScore: number = 100;
@@ -244,6 +270,13 @@ export class Hospital implements Building{
                 this.cooldownProgress();
         });
     }
+
+    appointDoctor() {
+        if(this.pgd.materials.people - this.pgd.peopleInUse >= this.peopleRequired){
+            this.pgd.peopleInUse += this.peopleRequired;
+            
+        }
+    }
 }
 
 export class University implements Building{
@@ -262,7 +295,7 @@ export class University implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:15};
 
     peopleRequired: number = 2;
     baseEducationScore: number = 10;
@@ -343,7 +376,7 @@ export class Church implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:2};
 
     peopleRequired: number = 2;
     baseFaithScore: number = 10;
@@ -423,7 +456,7 @@ export class Market implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:5};
 
     peopleRequired: number = 2;
     basebusinessScore: number = 10;
@@ -525,7 +558,7 @@ export class Dock implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:8};
 
     peopleRequired: number = 2;
     fishingSpeed: number = 10;
@@ -611,7 +644,7 @@ export class LumberCamp implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:6};
 
     peopleRequired: number = 2;
     cuttingSpeed: number = 10;
@@ -696,7 +729,7 @@ export class Farm implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:3};
 
     peopleRequired: number = 2;
     farmingSpeed: number = 10;
@@ -782,7 +815,7 @@ export class MiningCamp implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:7};
 
     peopleRequired: number = 2;
     miningSpeed: number = 10;
@@ -876,7 +909,7 @@ export class Factory implements Building{
     upgradingTimeCurrent: number = 0;
     upgradingTimeMax: number = 120;
     progressStart: boolean = false;
-    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100};
+    requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:12};
 
     peopleRequired: number = 2;
     generationSpeed: number = 10;

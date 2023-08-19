@@ -21,72 +21,62 @@
     <!-- If Town centre  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Town Centre' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      Population: {{TotalPopulation}}<br>
-      People In Use: {{PeopleInUse}}/{{CurrentPopulation}}<br>
+      Age: {{pgd.age}}<br>
+      People In Use: {{pgd.peopleInUse}}/{{pgd.materials.people}}<br>
     </div>
 
     <!-- If Hospital  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Hospital' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getHospitalPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If University  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'University' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getUniversityPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If Church  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Church' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getChurchPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If Market  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Market' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getMarketPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If Dock  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Dock' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getDockPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If LumberCamp  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Lumber Camp' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getLumberCampPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If Farm  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Farm' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getFarmPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If Mining Camp  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Mining Camp' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getMiningCampPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
 
     <!-- If Factory  -->
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Factory' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
-      Age: {{pgd.age}} {{pgd.ageID}}<br>
-      People Required: {{getFactoryPeopleRequired()}}<br>
+      Age: {{pgd.age}}<br>
     </div>
     <!-- If Resource -->
     <div class="w-40 ml-10 mt-24" *ngIf= "cellInterSer.selected?.type === 'Resource'"> Natural Resource</div>
@@ -105,17 +95,19 @@
 
     <!-- Column 3 -->
     <!-- Town Centre -->
-    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36 flex justify-center items-center" *ngIf="cellInterSer.selected?.name === 'Town Centre' && pgd.playerID === getOwnerID()">
-      <!-- Progress bars for next levels -->
-      <div class="bg-orange-200 p-3 flex space-x-4">
-        <div class="flex flex-col items-center">
-          <p>Progress to Next Level</p>
-          <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
+    <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf="cellInterSer.selected?.name === 'Town Centre' && pgd.playerID === getOwnerID()">
+      <div class="flex items-start">
+        <div class="p-3">
+          <p style="color: #B91C1C; font-weight: bold;">Progress to Stone Age</p>
+          <mat-progress-bar style="width: 400px;" mode="determinate" [value]="getAgeProgress()"></mat-progress-bar>
         </div>
-        <div class="flex flex-col items-center">
-          <p>Progress to Stone 3</p>
-          <mat-progress-bar mode="determinate" [value]="getProgress()"></mat-progress-bar>
+        <div class="p-3 flex items-center">
+          <button class="bg-red-800 text-white px-4 py-2 rounded-md"  (click)="updateAge()">Next Age Quiz</button>
         </div>
+      </div>
+      <div class="p-3">
+        <p style="color: #B91C1C; font-weight: bold;">Progress to Next Level</p>
+        <mat-progress-bar style="width: 400px;" mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>
     </div>    
     <!-- Hospital -->
@@ -129,7 +121,11 @@
       </div>
       <div class="top-2/3 mt-7 bg-orange-200 p-3" style="margin-right: 80px;">
         <p style="color: #B91C1C; font-weight: bold;">Progress to Next Level</p>
-        <mat-progress-bar style="width: 400px;" mode="determinate" [value]="getProgress()"></mat-progress-bar>
+        <mat-progress-bar style="width: 300px;" mode="determinate" [value]="getProgress()"></mat-progress-bar>
+      </div>
+      <div class="p-3 flex items-center">
+        <button class="bg-red-800 text-white rounded-md p-2 mr-10"  (click)="appointDoctor()">Appoint Doc</button>
+        {{pgd.peopleInUse}}
       </div>
     </div>
     <!-- University -->
@@ -322,9 +318,9 @@
       </div>
     </div> 
     <div class="ml-10 mt-10 mb-10 mr-10 p-4 bg-orange-200" *ngIf="cellInterSer.selectedBuilding && (cellInterSer.selected?.name === 'Empty Tile' || cellInterSer.selected?.name === 'Settlement')">
-    <div>Required Resources for {{ cellInterSer.selectedBuilding }}</div>              
-        <span *ngFor="let material of pgd.getRequiredMaterials[cellInterSer.selectedBuilding] | keyvalue">
-            {{ material.key }}: {{ material.value }}
+    <div class="font-bold text-red-800">Required Resources for {{ cellInterSer.selectedBuilding }}</div>              
+        <span class="text-red-800" *ngFor="let material of pgd.getRequiredMaterials[cellInterSer.selectedBuilding] | keyvalue">
+          {{ capitalize(material.key) }}: {{ material.value }}
         </span>
         <button mat-raised-button color="primary" 
                 class="m-2 bg-red-500 p-2" 

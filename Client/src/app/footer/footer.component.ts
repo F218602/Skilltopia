@@ -27,6 +27,9 @@ showBuilding: boolean = true;
 
 constructor(private dialog: MatDialog, public cellInterSer: CellInteractionService, public pgd: PlayerGameDataService, public socketIOService: SocketIOService) {}
 
+capitalize(str: string): string {
+  return str.charAt(0).toUpperCase() + str.slice(1);
+}
 
 ngOnInit(): void {
   // Calculate the increment value for each step
@@ -108,9 +111,13 @@ ngOnInit(): void {
       }
   }
   //Town centre
+  getAgeProgress() {return (this.cellInterSer.selected as TownCentre).upgradingTimeCurrent;}
+  updateAge() {(this.cellInterSer.selected as TownCentre).updateAge();}
   
   //Hospital
   getHospitalPeopleRequired() {return (this.cellInterSer.selected as Hospital).peopleRequired;}
+
+  appointDoctor() {(this.cellInterSer.selected as Hospital).appointDoctor();}
 
   //university
   getUniversityPeopleRequired() {return (this.cellInterSer.selected as University).peopleRequired;}
