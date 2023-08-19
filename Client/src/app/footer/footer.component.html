@@ -22,7 +22,7 @@
     <div class="w-40 ml-10 mt-16" *ngIf= "cellInterSer.selected?.name === 'Town Centre' && pgd.playerID === getOwnerID()">
       Level: {{ getLevel()}}<br>
       Age: {{pgd.age}}<br>
-      People In Use: {{pgd.peopleInUse}}/{{pgd.materials.people}}<br>
+      People Available: {{pgd.materials.people}}<br>
     </div>
 
     <!-- If Hospital  -->
@@ -122,10 +122,6 @@
       <div class="top-2/3 mt-7 bg-orange-200 p-3" style="margin-right: 80px;">
         <p style="color: #B91C1C; font-weight: bold;">Progress to Next Level</p>
         <mat-progress-bar style="width: 300px;" mode="determinate" [value]="getProgress()"></mat-progress-bar>
-      </div>
-      <div class="p-3 flex items-center">
-        <button class="bg-red-800 text-white rounded-md p-2 mr-10"  (click)="appointDoctor()">Appoint Doc</button>
-        {{pgd.peopleInUse}}
       </div>
     </div>
     <!-- University -->
@@ -310,7 +306,7 @@
     <!-- column 4 -->
     <div class="ml-auto mt-5 mb-10 mr-10 text-xs" *ngIf= "cellInterSer.selected?.type === 'Building' && pgd.playerID === getOwnerID()">
       <div class=" bg-orange-200 p-4">
-        <button mat-raised-button color="primary" [disabled]="cellInterSer.selected.cooldownStart || progressStart()"  (click)="openPopup()">Take Quiz to Upgrade</button>
+        <button mat-raised-button color="primary" [disabled]="cellInterSer.selected.cooldownStart || progressStart() || maxLevelCheck()"  (click)="openPopup()">Take Quiz to Upgrade</button>
       </div>
       <div class="bg-orange-200 mt-5 p-3" *ngIf= "cellInterSer.selected?.type === 'Building' && cellInterSer.selected.cooldownStart && pgd.playerID === getOwnerID()">
         <p>Cooling Time</p>

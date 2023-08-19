@@ -96,7 +96,7 @@ export class TownCentre implements Building{
 
     level: number = 1;
     upgradingTimeCurrent: number = 0;
-    upgradingTimeMax: number = 120;
+    upgradingTimeMax: number = 10;
     progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:0};
 
@@ -137,6 +137,7 @@ export class TownCentre implements Building{
             this.upgradingTimeCurrent += 1;
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.pgd.ageID += 1;
+            this.pgd.maxLevel = 10 + this.pgd.ageID * 10;
             this.pgd.age = this.pgd.AgeList[this.pgd.ageID];
             this.progressStartAge = false;
             this.upgradingTimeCurrent = 0;
@@ -163,7 +164,7 @@ export class TownCentre implements Building{
     // cooling time for quiz for all buildings
     startCooldownTimer(){
         this.cooldownStart = true;
-        this.subscription = interval(1000) // Every second
+        this.subscription = interval(10) // Every second
             .subscribe(() => {
                 this.cooldownProgress();
         });
@@ -176,14 +177,14 @@ export class TownCentre implements Building{
 
     updateLevel() {
         this.progressStart = true;
-        this.subscription = interval(1000) // Every second
+        this.subscription = interval(10) // Every second
             .subscribe(() => {
                 this.incrementLevelProgress();
         });
     }
     updateAge() {
         this.progressStartAge = true;
-        this.subscription = interval(100) // Every second
+        this.subscription = interval(1000) // Every second
             .subscribe(() => {
                 this.incrementAgeProgress();
         });
@@ -204,7 +205,7 @@ export class Hospital implements Building{
 
     level: number = 1;
     upgradingTimeCurrent: number = 0;
-    upgradingTimeMax: number = 120;
+    upgradingTimeMax: number = 1;
     progressStart: boolean = false;
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:10};
 

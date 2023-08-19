@@ -18,7 +18,8 @@ export class PlayerGameDataService {
   score: number = 0;
   ageID: number = 0;
   age: string = 'Nyanpassu';
-  level: number = 1;
+  maxLevel: number = 10;
+  // level: number = 1;
   peopleInUse: number = 0;
   safety: number = 0;
   education: number = 0;

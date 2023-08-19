@@ -63,7 +63,7 @@ export class QuestionPopupComponent implements OnInit {
       // Proceed to next question
       this.selectedOption = 999;
       this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered += 1; 
-      if (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered < 3) {
+      if (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered < 1) {
         this.socketIOService.getQuestion();
       }
       else {

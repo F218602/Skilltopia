@@ -64,6 +64,7 @@ ngOnInit(): void {
   getProgress() {return (this.cellInterSer.selected as Building).upgradingTimeCurrent;}
   updateLevel() {(this.cellInterSer.selected as Building).updateLevel();}
   progressStart() {return (this.cellInterSer.selected as Building).progressStart;}
+  maxLevelCheck() {return (this.cellInterSer.selected as Building).level >= this.pgd.maxLevel;}
   checkResources(buildingName: string): boolean {
     
     for (const resource in this.pgd.getRequiredMaterials[buildingName]) {
