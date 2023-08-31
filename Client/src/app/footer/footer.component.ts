@@ -49,8 +49,9 @@ ngOnInit(): void {
   intervalDuration: number = 60000; // 1 minute in milliseconds
   steps: number = 100; // Number of steps to reach 100% progress
 
-  openPopup() {
+  openPopup( difficulty: string = 'easy') {
     // Open the popup when the button is clicked
+    this.pgd.difficulty = difficulty;
     this.dialog.open(QuizComponent);
   }
   
@@ -114,6 +115,7 @@ ngOnInit(): void {
   //Town centre
   getAgeProgress() {return (this.cellInterSer.selected as TownCentre).upgradingTimeCurrent;}
   updateAge() {(this.cellInterSer.selected as TownCentre).updateAge();}
+  progressAgeStart() {return (this.cellInterSer.selected as TownCentre).progressStartAge;}
   
   //Hospital
   getHospitalPeopleRequired() {return (this.cellInterSer.selected as Hospital).peopleRequired;}

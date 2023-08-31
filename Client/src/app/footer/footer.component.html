@@ -97,15 +97,15 @@
     <!-- Town Centre -->
     <div class="bg-orange-200 ml-20 mt-5 mb-10 w-1/2 h-36" *ngIf="cellInterSer.selected?.name === 'Town Centre' && pgd.playerID === getOwnerID()">
       <div class="flex items-start">
-        <div class="p-3">
-          <p style="color: #B91C1C; font-weight: bold;">Progress to Stone Age</p>
+        <div class="p-3" *ngIf= "progressAgeStart()">
+          <p style="color: #B91C1C; font-weight: bold;">Progress to Next Age</p>
           <mat-progress-bar style="width: 400px;" mode="determinate" [value]="getAgeProgress()"></mat-progress-bar>
         </div>
         <div class="p-3 flex items-center">
-          <button class="bg-red-800 text-white px-4 py-2 rounded-md"  (click)="updateAge()">Next Age Quiz</button>
+          <button mat-raised-button color="primary" [disabled]="cellInterSer.selected.cooldownStart || progressStart() || !maxLevelCheck()"  (click)="openPopup('hard')">Next Age Quiz</button>
         </div>
       </div>
-      <div class="p-3">
+      <div class="p-3" *ngIf= "!maxLevelCheck()">
         <p style="color: #B91C1C; font-weight: bold;">Progress to Next Level</p>
         <mat-progress-bar style="width: 400px;" mode="determinate" [value]="getProgress()"></mat-progress-bar>
       </div>

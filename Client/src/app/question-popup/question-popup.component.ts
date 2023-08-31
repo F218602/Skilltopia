@@ -70,8 +70,14 @@ export class QuestionPopupComponent implements OnInit {
         // this.socketIOService.getQuestion();
       }
       else {
-        this.showNotification('You have successfully completed the Quiz');
-        this.updateLevel();
+        if(this.pgd.difficulty === 'easy'){
+          this.showNotification('You have successfully completed the Quiz');
+          this.updateLevel();
+        }
+        else {
+          this.showNotification('You have evolved to next age');
+          this.updateAge();
+        }
         this.pgd.selectedQuestion = 0;
         this.dialogRef.close(true);
       }
@@ -97,4 +103,5 @@ export class QuestionPopupComponent implements OnInit {
   }
   
   updateLevel() {(this.cellInterSer.selected as Building).updateLevel();}
+  updateAge() {(this.cellInterSer.selected as TownCentre).updateAge();}
 }

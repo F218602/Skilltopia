@@ -21,7 +21,8 @@ export class PlayerGameDataService {
     questions: []
   };
   selectedQuestion = 0;
-  
+  difficulty: string = 'easy';
+
   playerName: string = 'Player 1';
   playerID: number = 1;
   score: number = 0;

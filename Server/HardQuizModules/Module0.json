@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is 8 - 3?",
+    "options": ["5", "3", "6"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 2,
+    "question": "What is 12 - 5?",
+    "options": ["7", "6", "8"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 3,
+    "question": "What is 15 - 7?",
+    "options": ["8", "9", "6"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 4,
+    "question": "What is 10 - 2?",
+    "options": ["7", "8", "6"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "What is 9 - 4?",
+    "options": ["5", "3", "6"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "What is 20 - 6?",
+    "options": ["14", "15", "13"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 7,
+    "question": "What is 14 - 3?",
+    "options": ["10", "11", "9"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 8,
+    "question": "What is 18 - 9?",
+    "options": ["7", "8", "9"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 9,
+    "question": "What is 25 - 12?",
+    "options": ["12", "13", "14"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 10,
+    "question": "What is 16 - 7?",
+    "options": ["9", "10", "8"],
+    "correctOption": 1
+  }
+]

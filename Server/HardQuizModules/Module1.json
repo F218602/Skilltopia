@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "Which shape has four equal sides and four right angles?",
+    "options": ["Circle", "Triangle", "Rectangle"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 2,
+    "question": "Which shape has three sides?",
+    "options": ["Pentagon", "Hexagon", "Triangle"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 3,
+    "question": "Which shape has no sides or corners?",
+    "options": ["Circle", "Square", "Octagon"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 4,
+    "question": "Which shape has five sides?",
+    "options": ["Rectangle", "Triangle", "Pentagon"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 5,
+    "question": "Which shape has six sides?",
+    "options": ["Hexagon", "Octagon", "Square"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "Which shape has eight sides?",
+    "options": ["Triangle", "Hexagon", "Octagon"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 7,
+    "question": "Which shape has all sides of equal length and all angles of equal measure?",
+    "options": ["Rectangle", "Square", "Rhombus"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 8,
+    "question": "Which shape has ten sides?",
+    "options": ["Decagon", "Hexagon", "Pentagon"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 9,
+    "question": "Which shape has three sides, including one right angle?",
+    "options": ["Triangle", "Square", "Circle"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 10,
+    "question": "Which shape has four sides and only one pair of parallel sides?",
+    "options": ["Parallelogram", "Rectangle", "Square"],
+    "correctOption": 1
+  }
+]

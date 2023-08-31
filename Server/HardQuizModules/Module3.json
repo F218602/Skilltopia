@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "Which member of BTS is known for his amazing dance skills and his stage name J-Hope?",
+    "options": ["Jin", "Suga", "J-Hope"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 2,
+    "question": "BTS debuted under which entertainment company?",
+    "options": ["YG Entertainment", "SM Entertainment", "Big Hit Entertainment"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 3,
+    "question": "What is the name of BTS's fandom?",
+    "options": ["ARMY", "EXO-L", "ONCE"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 4,
+    "question": "Which BTS member is known for his deep and melodic voice, and his real name is Kim Namjoon?",
+    "options": ["V", "RM", "Jungkook"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "BTS's 2013 debut single album is titled?",
+    "options": ["2 Cool 4 Skool", "Dark & Wild", "Love Yourself: Her"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "What is the name of BTS's leader and main rapper, known for his intelligent lyrics?",
+    "options": ["Suga", "J-Hope", "RM"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 7,
+    "question": "Which BTS member is known for his boxy smile, cute personality, and his real name is Park Jimin?",
+    "options": ["Jimin", "Jin", "Jungkook"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 8,
+    "question": "BTS's first English-language single, released in 2020, is titled?",
+    "options": ["Dynamite", "Butter", "DNA"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 9,
+    "question": "How many members are there in BTS?",
+    "options": ["5", "6", "7"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 10,
+    "question": "BTS's 2020 album that explores themes of uncertainty and growth is called?",
+    "options": ["Map of the Soul: Persona", "Love Yourself: Tear", "Map of the Soul: 7"],
+    "correctOption": 3
+  }
+]

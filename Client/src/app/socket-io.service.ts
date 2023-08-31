@@ -32,12 +32,12 @@ export class SocketIOService {
     this.socket.emit('syncBuildingSend', roomName, x, y, tileID, tileOwner);
   }
   // Quiz question get
-  getQuestion() {
-    this.socket.emit('getQuestion');
-  }
+  // getQuestion() {
+  //   this.socket.emit('getQuestion');
+  // }
 
-  getQuiz() {
-    this.socket.emit('getQuiz');
+  getQuiz(difficulty: string) {
+    this.socket.emit('getQuiz', difficulty);
   }
 
 
@@ -86,13 +86,13 @@ export class SocketIOService {
     });
   }
   
-  returnQuestion() : Observable<[QuizQuestion]> {
-    return new Observable<[QuizQuestion]>((observer) => {
-      this.socket.on('returnQuestion', (selectedQuestion: QuizQuestion) => {
-        observer.next([selectedQuestion]);
-      });
-    });
-  }
+  // returnQuestion() : Observable<[QuizQuestion]> {
+  //   return new Observable<[QuizQuestion]>((observer) => {
+  //     this.socket.on('returnQuestion', (selectedQuestion: QuizQuestion) => {
+  //       observer.next([selectedQuestion]);
+  //     });
+  //   });
+  // }
 
   returnQuiz() : Observable<[Quiz]> {
     return new Observable<[Quiz]>((observer) => {

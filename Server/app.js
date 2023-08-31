@@ -12,14 +12,19 @@ const questionsData = require('./quiz-questions.json'); // Replace with your JSO
 // Module name
 const moduleMapping = {
   0: 'Addition',
-  1: 'Artificial Intelligence', 
+  1: 'Honkai', 
   2: 'Fruits color',
   3: 'Anime'
   // ... add more mappings as needed
 };
 
-function getQuizPath(moduleID) {
+function getQuizPath(moduleID, difficulty) {
+  if(difficulty === 'easy'){
   return `./QuizModules/Module${moduleID}.json`;
+  }
+  else {
+    return `./HardQuizModules/Module${moduleID}.json`;  
+  }
 }
 
 function getRandomQuestion(questions) {
@@ -291,18 +296,18 @@ io.on('connection', (socket) => {
     io.to(roomName).emit('syncBuildingReceive', x, y, tileID, tileOwner);
   });
   
-  socket.on("getQuestion", () => {
-    // Get a random question from the questionsData
-    const randomQuestionIndex = Math.floor(Math.random() * questionsData.length);
-    const randomQuestion = questionsData[randomQuestionIndex];
-    console.log(randomQuestion);
-    io.emit('returnQuestion', randomQuestion);
-  });
+  // socket.on("getQuestion", () => {
+  //   // Get a random question from the questionsData
+  //   const randomQuestionIndex = Math.floor(Math.random() * questionsData.length);
+  //   const randomQuestion = questionsData[randomQuestionIndex];
+  //   console.log(randomQuestion);
+  //   io.emit('returnQuestion', randomQuestion);
+  // });
 
-  socket.on("getQuiz", () => {
+  socket.on("getQuiz", (difficulty) => {
     // Get a random question from the questionsData
     const moduleID = Math.floor(Math.random() * 4);
-    const quizPath = getQuizPath(moduleID);
+    const quizPath = getQuizPath(moduleID, difficulty);
     const jsonData = fs.readFileSync(quizPath, 'utf-8');
     const questions = JSON.parse(jsonData);
     const quiz = getFormattedQuiz(moduleID, questions);

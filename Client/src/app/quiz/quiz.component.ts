@@ -22,13 +22,15 @@ export class QuizComponent {
     questionCount: 0,
     questions: []
   };
+
+  selectedDifficulty: string = 'Default';
   
   constructor(private dialogRef: MatDialogRef<QuizComponent>, private dialog: MatDialog, public socketIOService: SocketIOService, public pgd: PlayerGameDataService) {}
 
 
   ngOnInit() {
-    this.socketIOService.getQuiz();
-    this.socketIOService.getQuestion();
+    this.selectedDifficulty = this.pgd.difficulty;
+    this.socketIOService.getQuiz(this.selectedDifficulty);
 
     this.socketIOService.returnQuiz().subscribe(([sM]) => {
       console.log(`Quiz Data: ${sM}`);
