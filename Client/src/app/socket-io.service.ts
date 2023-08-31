@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { io, Socket } from 'socket.io-client';
 import { Observable } from 'rxjs';
-import { QuizQuestion } from './quizQuestion.interface';
+import { Quiz, QuizQuestion } from './quizQuestion.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -34,6 +34,10 @@ export class SocketIOService {
   // Quiz question get
   getQuestion() {
     this.socket.emit('getQuestion');
+  }
+
+  getQuiz() {
+    this.socket.emit('getQuiz');
   }
 
 
@@ -86,6 +90,14 @@ export class SocketIOService {
     return new Observable<[QuizQuestion]>((observer) => {
       this.socket.on('returnQuestion', (selectedQuestion: QuizQuestion) => {
         observer.next([selectedQuestion]);
+      });
+    });
+  }
+
+  returnQuiz() : Observable<[Quiz]> {
+    return new Observable<[Quiz]>((observer) => {
+      this.socket.on('returnQuiz', (selectedModule: Quiz) => {
+        observer.next([selectedModule]);
       });
     });
   }

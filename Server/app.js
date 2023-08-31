@@ -9,6 +9,34 @@ const io = require('socket.io')(Http, {
 
 const fs = require('fs');
 const questionsData = require('./quiz-questions.json'); // Replace with your JSON file path if necessary
+// Module name
+const moduleMapping = {
+  0: 'Addition',
+  1: 'Artificial Intelligence', 
+  2: 'Fruits color',
+  3: 'Anime'
+  // ... add more mappings as needed
+};
+
+function getQuizPath(moduleID) {
+  return `./QuizModules/Module${moduleID}.json`;
+}
+
+function getRandomQuestion(questions) {
+  const randomIndex = Math.floor(Math.random() * questions.length);
+  return questions[randomIndex];
+}
+
+function getFormattedQuiz(moduleID, questions) {
+  const moduleName = moduleMapping[moduleID];
+  return {
+    moduleID,
+    moduleName,
+    questionCount: questions.length,
+    questions
+  };
+}
+
 
 // Store the players in a room
 const players = new Map();
@@ -269,8 +297,21 @@ io.on('connection', (socket) => {
     const randomQuestion = questionsData[randomQuestionIndex];
     console.log(randomQuestion);
     io.emit('returnQuestion', randomQuestion);
+  });
+
+  socket.on("getQuiz", () => {
+    // Get a random question from the questionsData
+    const moduleID = Math.floor(Math.random() * 4);
+    const quizPath = getQuizPath(moduleID);
+    const jsonData = fs.readFileSync(quizPath, 'utf-8');
+    const questions = JSON.parse(jsonData);
+    const quiz = getFormattedQuiz(moduleID, questions);
+    io.emit('returnQuiz', quiz);
   })
+
 });
+
+
 
 Http.listen(3000, () => {
   console.log('Listening at Port :3000...');

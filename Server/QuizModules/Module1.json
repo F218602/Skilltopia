@@ -1,0 +1,90 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is the primary objective of Artificial Intelligence (AI)?",
+    "options": ["Automate repetitive tasks", "Enable human-like emotions in machines", "Create advanced gaming graphics"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 2,
+    "question": "Which type of AI system is designed to perform a specific task with human-level performance?",
+    "options": ["Narrow AI (Weak AI)", "General AI (Strong AI)", "Super AI (Superintelligence)"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 3,
+    "question": "What is the main concept behind Machine Learning in AI?",
+    "options": ["Human decision-making", "Rule-based systems", "Learning from data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 4,
+    "question": "Which AI technique aims to mimic the functioning of the human brain?",
+    "options": [
+      "Expert systems",
+      "Genetic algorithms",
+      "Neural networks"
+    ],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 5,
+    "question": "In AI, what does the term \"supervised learning\" refer to?",
+    "options": [
+      "Training models with labeled data",
+      "Machines learning from observation",
+      "Self-improvement of AI models"
+    ],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "What are the potential risks associated with AI development and deployment?",
+    "options": [
+      "Limited job displacement",
+      "Enhanced human safety",
+      "Ethical concerns and biases"
+    ],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 7,
+    "question": "What does Natural Language Processing (NLP) enable AI systems to do?",
+    "options": [
+      "Understand and process human language",
+      "Create visual art and graphics",
+      "Generate random patterns"
+    ],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 8,
+    "question": "Which AI learning technique uses rewards and punishments to optimize actions in a given environment?",
+    "options": [
+      "Unsupervised learning",
+      "Reinforcement learning",
+      "Semi-supervised learning"
+    ],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 9,
+    "question": "How does AI contribute to the field of healthcare?",
+    "options": [
+      "Providing entertainment and leisure",
+      "Diagnosing diseases and aiding treatments",
+      "Managing financial investments"
+    ],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 10,
+    "question": "Which industries commonly use AI to automate customer interactions through chatbots and virtual assistants?",
+    "options": [
+      "Agriculture and farming",
+      "Retail and e-commerce",
+      "Transportation and logistics"
+    ],
+    "correctOption": 2
+  }  
+]

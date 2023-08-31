@@ -3,6 +3,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule, MatDialogRef } from '@angular/material/dialog';
 import { MatDialog } from '@angular/material/dialog';
 import { QuestionPopupComponent } from '../question-popup/question-popup.component';
+import { SocketIOService } from '../socket-io.service';
+import { Quiz } from '../quizQuestion.interface';
+import { PlayerGameDataService } from '../player-game-data.service';
 
 @Component({
   selector: 'app-quiz',
@@ -12,8 +15,30 @@ import { QuestionPopupComponent } from '../question-popup/question-popup.compone
   imports: [MatButtonModule, MatDialogModule],
 })
 export class QuizComponent {
+
+  selectedModule: Quiz = {
+    moduleID: 999,
+    moduleName: 'Loading...',
+    questionCount: 0,
+    questions: []
+  };
   
-  constructor(private dialogRef: MatDialogRef<QuizComponent>, private dialog: MatDialog) {}
+  constructor(private dialogRef: MatDialogRef<QuizComponent>, private dialog: MatDialog, public socketIOService: SocketIOService, public pgd: PlayerGameDataService) {}
+
+
+  ngOnInit() {
+    this.socketIOService.getQuiz();
+    this.socketIOService.getQuestion();
+
+    this.socketIOService.returnQuiz().subscribe(([sM]) => {
+      console.log(`Quiz Data: ${sM}`);
+      this.selectedModule = sM;
+      this.pgd.selectedQuiz = sM;
+    });
+  }
+  
+   
+
   closeDialog() {
     // Close the dialog when the "Close" button is clicked
     this.dialogRef.close();

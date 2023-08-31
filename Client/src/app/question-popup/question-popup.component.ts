@@ -36,12 +36,13 @@ export class QuestionPopupComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.socketIOService.getQuestion();
+    // this.socketIOService.getQuestion();
 
-    this.socketIOService.returnQuestion().subscribe(([sQ]) => {
-      console.log(`Question Data: ${sQ}`);
-      this.selectedQuestion = sQ;
-    });
+    // this.socketIOService.returnQuestion().subscribe(([sQ]) => {
+    //   console.log(`Question Data: ${sQ}`);
+    //   this.selectedQuestion = sQ;
+    // });
+    this.selectedQuestion = this.pgd.selectedQuiz.questions[this.pgd.selectedQuestion];
   }
   
   openProceedPopup() {
@@ -62,18 +63,22 @@ export class QuestionPopupComponent implements OnInit {
     if (this.selectedQuestion.correctOption === this.selectedOption) {
       // Proceed to next question
       this.selectedOption = 999;
-      this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered += 1; 
-      if (this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered < 1) {
-        this.socketIOService.getQuestion();
+      this.pgd.selectedQuestion += 1;
+      if (this.pgd.selectedQuestion < this.pgd.selectedQuiz.questionCount) {
+        console.log(this.pgd.selectedQuestion);
+        this.selectedQuestion = this.pgd.selectedQuiz.questions[this.pgd.selectedQuestion];
+        // this.socketIOService.getQuestion();
       }
       else {
         this.showNotification('You have successfully completed the Quiz');
         this.updateLevel();
+        this.pgd.selectedQuestion = 0;
         this.dialogRef.close(true);
       }
     }
     else {
       this.showNotification('Oops!! Try taking the quiz after some time')
+      this.pgd.selectedQuestion = 0;
       this.dialogRef.close(true);
       this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].startCooldownTimer();
     }

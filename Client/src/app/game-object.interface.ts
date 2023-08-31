@@ -91,7 +91,7 @@ export class TownCentre implements Building{
     type: string = 'Building';
     noOfQuestionsAnswered= 0;
     coolingTimeCurrent= 0;
-    coolingTimeMax= 120;
+    coolingTimeMax= 10;
     cooldownStart= false;
 
     level: number = 1;
@@ -200,7 +200,7 @@ export class Hospital implements Building{
     type: string = 'Building';
     noOfQuestionsAnswered= 0;
     coolingTimeCurrent= 0;
-    coolingTimeMax= 120;
+    coolingTimeMax= 10;
     cooldownStart= false;
 
     level: number = 1;

@@ -7,3 +7,9 @@ export interface QuizQuestion {
     correctOption: number;
   }
   
+  export interface Quiz {
+    moduleID: number;
+    moduleName: string;
+    questionCount: number;
+    questions: QuizQuestion[];
+  }

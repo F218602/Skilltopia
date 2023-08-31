@@ -1,5 +1,6 @@
 import {Injectable } from '@angular/core';
 import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm, EmptyTile, BuildingDetails, MaterialDetails } from './game-object.interface';
+import { Quiz } from './quizQuestion.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -12,12 +13,20 @@ export class PlayerGameDataService {
   map: Tile[][] = [];
   numRows: number = 50;
   numCols: number = 50;
+
+  selectedQuiz: Quiz = {
+    moduleID: 999,
+    moduleName: 'SampleModule',
+    questionCount: 0,
+    questions: []
+  };
+  selectedQuestion = 0;
   
   playerName: string = 'Player 1';
   playerID: number = 1;
   score: number = 0;
   ageID: number = 0;
-  age: string = 'Nyanpassu';
+  age: string = 'Age';
   maxLevel: number = 10;
   // level: number = 1;
   peopleInUse: number = 0;
