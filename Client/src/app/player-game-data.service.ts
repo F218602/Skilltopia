@@ -1,6 +1,7 @@
 import {Injectable } from '@angular/core';
 import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm, EmptyTile, BuildingDetails, MaterialDetails } from './game-object.interface';
 import { Quiz } from './quizQuestion.interface';
+import { SocketIOService } from './socket-io.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,9 @@ export class PlayerGameDataService {
   map: Tile[][] = [];
   numRows: number = 50;
   numCols: number = 50;
+
+  timeStart: Date = new Date('2023-09-01T12:00:00');
+  winner: number = 100;
 
   selectedQuiz: Quiz = {
     moduleID: 999,
@@ -37,12 +41,12 @@ export class PlayerGameDataService {
   business: number = 0;
   
   materials: Materials = {
-    fish: 1000,
-    wood: 1000,
-    vegetables: 1000,
-    gold: 1000,
-    food: 1000,
-    stone: 1000,
+    fish: 10000,
+    wood: 10000,
+    vegetables: 10000,
+    gold: 10000,
+    food: 10000,
+    stone: 10000,
     people: 0
   }
 
@@ -129,8 +133,8 @@ AgeList: string[] = ["Stone Age", "Bronze Age", "Iron Age", "Middle Ages", "Rena
     "Factory": { fish: 0, wood: 500, vegetables: 0, gold: 300, food: 200, stone: 300, people: 12 },
   };
 
-  constructor() { 
-
+  constructor(public socketIOService: SocketIOService) { 
+    
     // Initialize the array with default values (e.g., -1)
     for (let i = 0; i < this.numRows; i++) {
         const row: number[] = Array(this.numCols).fill(33);
@@ -207,5 +211,19 @@ AgeList: string[] = ["Stone Age", "Bronze Age", "Iron Age", "Middle Ages", "Rena
         this.createTile(i,j,this.mapTileId[i][j], this.tileOwner[i][j]);
       } 
     }
-  } 
+  }
+  public startScoreCalculation(): void {
+    setInterval(() => {
+      this.calculateScore();
+    }, 10000);
+  }
+
+  public calculateScore(): void {
+    this.score = 5*(this.safety + this.education + this.faith + this.business) 
+      + 0.2*(this.materials.fish) + 2*(this.materials.food) + 0.2*(this.materials.vegetables) 
+      + 0.2*(this.materials.stone) + 2*(this.materials.gold) + 2*(this.materials.people);
+    this.socketIOService.updateScore(this.score);
+  }
+  
+
 }

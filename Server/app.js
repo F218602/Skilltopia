@@ -53,6 +53,7 @@ const filledValue = 0;
 
 const GameMap = [];
 const TileOwner = [];
+const playerScores = {};
 
 for (let i = 0; i < numRows; i++) {
   const row = new Array(numCols).fill(filledValue);
@@ -204,6 +205,31 @@ function generateSettlement() {
     maxAttempts--;
   }
 }
+function determineWinner() {
+  let maxScore = -1;
+  let winner = 99; // Set an initial value for the winner
+  let index = 0;
+
+  // Get the array of player IDs associated with the key '1'
+  const playerIds = players.get('1');
+
+  // Iterate through the player IDs and their scores
+  if (playerIds && Array.isArray(playerIds)) {
+    playerIds.forEach((playerId) => {
+      index += 1;
+      const playerScore = playerScores[playerId];
+      if (playerScore > maxScore) {
+        maxScore = playerScore;
+        winner = index; // Update the winner's index
+      }
+    });
+  }
+
+  // Now, winner contains the index of the winning player
+  console.log(`The winner is ${winner}`);
+  io.emit('gameOver', winner);
+}
+
 
 generateTownCentre()
 generateForest();
@@ -240,14 +266,22 @@ io.on('connection', (socket) => {
       if (!players.has(room)) {
         players.set(room, []);
       }
+      playerScores[socket.id] = 0;
       players.get(room).push(socket.id);
       console.log(players.get(room).length); 
       // Emit event to the room
       io.to(room).emit('playerJoined', socket.id);
 
       console.log(`${socket.id} joined room ${room}`);
+      // socket.emit('Joined', players.get(room).length, GameMap, TileOwner);
       // Send the 20x50 array to the client who just joined
-      socket.emit('Joined', players.get(room).length, GameMap, TileOwner);
+      if(players.get(room).length == maxPlayers){
+        io.to(room).emit('Joined', players.get(room).length, GameMap, TileOwner);
+        setTimeout(() => {
+          determineWinner();
+        }, 1 * 1 * 30 * 1000);
+        console.log(players, playerScores);
+      }
     } else {
       socket.emit('roomFull');
       console.log(`Room ${room} is full`);
@@ -312,11 +346,16 @@ io.on('connection', (socket) => {
     const questions = JSON.parse(jsonData);
     const quiz = getFormattedQuiz(moduleID, questions);
     io.emit('returnQuiz', quiz);
-  })
+  });
+
+  // Listen for overall score updates from the client
+  socket.on('updateScore', (score) => {
+    // Update the player's overall score in the playerScores object
+    playerScores[socket.id] = score;
+    // console.log(playerScores);
+  });
 
 });
-
-
 
 Http.listen(3000, () => {
   console.log('Listening at Port :3000...');

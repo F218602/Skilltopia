@@ -299,8 +299,8 @@ export class University implements Building{
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:15};
 
     peopleRequired: number = 2;
-    baseEducationScore: number = 10;
-    educationMultiplier: number = 100;
+    baseEducationScore: number = 100;
+    educationMultiplier: number = 10;
 
     private subscription: any;
 
@@ -380,8 +380,8 @@ export class Church implements Building{
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:2};
 
     peopleRequired: number = 2;
-    baseFaithScore: number = 10;
-    faithMultiplier: number = 100;
+    baseFaithScore: number = 100;
+    faithMultiplier: number = 10;
 
     private subscription: any;
 
@@ -460,11 +460,10 @@ export class Market implements Building{
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:5};
 
     peopleRequired: number = 2;
-    basebusinessScore: number = 10;
-    businessMultiplier: number = 100;
-    marketPurchaseRate: number = 100;
-    marketSellingRate: number = 100;
-    markettingMultiplier: number = 1;
+    basebusinessScore: number = 100;
+    businessMultiplier: number = 10;
+    marketRate: number = 100;
+    markettingMultiplier: number = 10;
 
     private subscription: any;
 
@@ -481,6 +480,7 @@ export class Market implements Building{
             this.upgradingTimeCurrent += 1;
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.updateMarketValue();
             this.pgd.business += this.businessMultiplier;
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
@@ -491,11 +491,12 @@ export class Market implements Building{
     }
 
      // market
-     updateSellingValue() {
-
-     }
  
-     updateBuyingValue() {
+     updateMarketValue() {
+        const initialCost = 100;
+        const costIncreasePerLevel = 5;
+        const updatedBuyingValue = initialCost + (costIncreasePerLevel * (this.level - 1));
+        this.marketRate = updatedBuyingValue;
  
      }
      updateLevel() {
@@ -509,14 +510,14 @@ export class Market implements Building{
     buy(material: string) {
         if (this.pgd.materials[material] !== undefined && this.pgd.materials.gold >= 100) {
             this.pgd.materials.gold -= 100;
-            this.pgd.materials[material] += 100;
+            this.pgd.materials[material] += this.marketRate;
             
         }
     }
     sell(material: string) {
         if (this.pgd.materials[material] !== undefined && this.pgd.materials[material] >= 100) {
             this.pgd.materials[material] -= 100;
-            this.pgd.materials.gold += 100;
+            this.pgd.materials.gold += this.marketRate;
         }
     }
     cooldownProgress(){
@@ -570,7 +571,7 @@ export class Dock implements Building{
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
         if(pgd.playerID==this.playerId){
-            this.subscription = interval(1000)
+            this.subscription = interval(10000)
                 .subscribe(() => {
                     this.increaseFish();
                 });
@@ -583,6 +584,7 @@ export class Dock implements Building{
             this.upgradingTimeCurrent += 1;
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.updateFishingSpeed();
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
             if (this.subscription && !this.subscription.closed) {
@@ -593,10 +595,14 @@ export class Dock implements Building{
     
     // dock
     updateFishingSpeed() {
+        const initialSpeed = 10;
+        const speedIncreasePerLevel = 1;
+        const updatedFishingSpeed = initialSpeed + (speedIncreasePerLevel * (this.level - 1));
+        this.fishingSpeed = updatedFishingSpeed;
 
     }
     increaseFish(){
-        this.pgd.materials.fish += 1;
+        this.pgd.materials.fish += this.fishingSpeed;
     }
     updateLevel() {
         this.progressStart = true;
@@ -656,7 +662,7 @@ export class LumberCamp implements Building{
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
         if(pgd.playerID==this.playerId){
-            this.subscription = interval(1000)
+            this.subscription = interval(10000)
                 .subscribe(() => {
                     this.increaseWood();
                 });
@@ -669,6 +675,7 @@ export class LumberCamp implements Building{
             this.upgradingTimeCurrent += 1;
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.updateLumberCampSpeed();
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
             if (this.subscription && !this.subscription.closed) {
@@ -678,10 +685,14 @@ export class LumberCamp implements Building{
     }
     // lumber camp
     updateLumberCampSpeed() {
+        const initialSpeed = 10;
+        const speedIncreasePerLevel = 1;
+        const updatedCuttingSpeed = initialSpeed + (speedIncreasePerLevel * (this.level - 1));
+        this.cuttingSpeed = updatedCuttingSpeed;
 
     }
     increaseWood(){
-        this.pgd.materials.wood += 1;
+        this.pgd.materials.wood += this.cuttingSpeed;
     }
     updateLevel() {
         this.progressStart = true;
@@ -741,7 +752,7 @@ export class Farm implements Building{
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
         if(pgd.playerID==this.playerId){
-            this.subscription = interval(1000)
+            this.subscription = interval(10000)
                 .subscribe(() => {
                     this.increaseVegetable();
                 });
@@ -754,6 +765,7 @@ export class Farm implements Building{
             this.upgradingTimeCurrent += 1;
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.updateVegetableGrowth();
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
             if (this.subscription && !this.subscription.closed) {
@@ -764,10 +776,14 @@ export class Farm implements Building{
 
     // farm
     updateVegetableGrowth() {
+        const initialGrowthRate = 10;
+        const growthRateIncreasePerLevel = 1;
+        const updatedGrowthRate = initialGrowthRate + (growthRateIncreasePerLevel * (this.level - 1));
+        this.farmingSpeed = updatedGrowthRate;
     
     }
     increaseVegetable(){
-        this.pgd.materials.vegetables += 1;
+        this.pgd.materials.vegetables += this.farmingSpeed;
     }
     updateLevel() {
         this.progressStart = true;
@@ -819,7 +835,8 @@ export class MiningCamp implements Building{
     requiredMaterials: Materials = {fish:0, wood:200, vegetables:0, gold:100, food:300, stone:100, people:7};
 
     peopleRequired: number = 2;
-    miningSpeed: number = 10;
+    goldSpeed: number = 1;
+    stoneSpeed: number = 10;
     miningSpeedMultiplier: number = 100;
 
     private subscription: any;
@@ -827,7 +844,7 @@ export class MiningCamp implements Building{
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
         if(pgd.playerID==this.playerId){
-            this.subscription = interval(1000)
+            this.subscription = interval(10000)
                 .subscribe(() => {
                     this.increaseGold();
                     this.increaseStone();
@@ -842,6 +859,8 @@ export class MiningCamp implements Building{
             this.upgradingTimeCurrent += 1;
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.updateGoldExtractionSpeed();
+            this.updateStoneExtractionSpeed(); 
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
             if (this.subscription && !this.subscription.closed) {
@@ -852,16 +871,24 @@ export class MiningCamp implements Building{
 
     // mine
     updateGoldExtractionSpeed() {
+        const initialExtractionSpeed = 1;
+        const extractionSpeedIncreasePerLevel = 0.2;
+        const updatedExtractionSpeed = initialExtractionSpeed + (extractionSpeedIncreasePerLevel * (this.level - 1));
+        this.goldSpeed = Math.floor(updatedExtractionSpeed);
 
     }
     updateStoneExtractionSpeed() {
+        const initialExtractionSpeed = 10;
+        const extractionSpeedIncreasePerLevel = 1;
+        const updatedExtractionSpeed = initialExtractionSpeed + (extractionSpeedIncreasePerLevel * (this.level - 1));
+        this.stoneSpeed = updatedExtractionSpeed;
 
     }
     increaseGold(){
-        this.pgd.materials.gold += 1;
+        this.pgd.materials.gold += this.goldSpeed;
     }
     increaseStone(){
-        this.pgd.materials.stone += 1;
+        this.pgd.materials.stone += this.stoneSpeed;
     }
     updateLevel() {
         this.progressStart = true;
@@ -921,7 +948,7 @@ export class Factory implements Building{
     constructor(public pgd: PlayerGameDataService, tileOwner: number) {
         this.playerId = tileOwner;
         if(pgd.playerID==this.playerId){
-            this.subscription = interval(1000)
+            this.subscription = interval(10000)
                 .subscribe(() => {
                     this.increaseFood();
                 });
@@ -934,6 +961,7 @@ export class Factory implements Building{
             this.upgradingTimeCurrent += 1;
         } else if (this.upgradingTimeCurrent >= this.upgradingTimeMax) {
             this.level += 1;
+            this.updateFoodGenerationSpeed();
             this.progressStart = false;
             this.upgradingTimeCurrent = 0;
             if (this.subscription && !this.subscription.closed) {
@@ -944,17 +972,21 @@ export class Factory implements Building{
 
     //factory
     updateFoodGenerationSpeed() {
+        const initialGenerationSpeed = 10;
+        const generationSpeedIncreasePerLevel = 1;
+        const updatedGenerationSpeed = initialGenerationSpeed + (generationSpeedIncreasePerLevel * (this.level - 1));
+        this.generationSpeed = updatedGenerationSpeed;
 
     }
     increaseFood(){
 
         if (this.pgd.materials.vegetables >= 5 && this.pgd.materials.vegetables > this.pgd.materials.fish ) {
-            this.pgd.materials.vegetables -= 5;
-            this.pgd.materials.food += 1;
+            this.pgd.materials.vegetables -= (5*this.generationSpeed);
+            this.pgd.materials.food += this.generationSpeed;
         }
         else if(this.pgd.materials.fish >= 5){
-            this.pgd.materials.fish -= 5;
-            this.pgd.materials.food += 1;
+            this.pgd.materials.fish -= (5*this.generationSpeed);
+            this.pgd.materials.food += this.generationSpeed;
         }
     }
     updateLevel() {

@@ -24,6 +24,7 @@ import { CellInteractionService } from './cell-interaction.service';
 import { PlayerGameDataService } from './player-game-data.service';
 import { DisplayProgressPipe } from './display-progress.pipe';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { EndGamePopUpComponent } from './end-game-pop-up/end-game-pop-up.component';
 
 @NgModule({
     declarations: [
@@ -35,6 +36,7 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
         LobbyComponent,
         QuestionPopupComponent,
         DisplayProgressPipe,
+        EndGamePopUpComponent,
         
     ],
     providers: [SocketIOService, CellInteractionService, PlayerGameDataService],

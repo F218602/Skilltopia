@@ -39,7 +39,9 @@ export class SocketIOService {
   getQuiz(difficulty: string) {
     this.socket.emit('getQuiz', difficulty);
   }
-
+  updateScore(score: number) {
+    this.socket.emit('updateScore', score);
+  }
 
 // Listeners
   Joined(): Observable<[number, number[][], number[][]]> {
@@ -98,6 +100,15 @@ export class SocketIOService {
     return new Observable<[Quiz]>((observer) => {
       this.socket.on('returnQuiz', (selectedModule: Quiz) => {
         observer.next([selectedModule]);
+      });
+    });
+  }
+
+  gameOver() : Observable<[number]> {
+    return new Observable<[number]>((observer) => {
+      this.socket.on('gameOver', (winner: number) => {
+        console.log(winner);
+        observer.next([winner]);
       });
     });
   }
