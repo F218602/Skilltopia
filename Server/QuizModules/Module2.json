@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What color is an apple?",
+    "options": ["Red", "Yellow", "Green"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 2,
+    "question": "What color is a banana?",
+    "options": ["Yellow", "Green", "Red"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 3,
+    "question": "What color is a blueberry?",
+    "options": ["Blue", "Purple", "Black"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 4,
+    "question": "What color is a strawberry?",
+    "options": ["Red", "Green", "Yellow"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 5,
+    "question": "What color is a lemon?",
+    "options": ["Yellow", "Green", "Orange"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "What color is an orange?",
+    "options": ["Orange", "Yellow", "Green"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 7,
+    "question": "What color is a grape?",
+    "options": ["Purple", "Red", "Green"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 8,
+    "question": "What color is a watermelon?",
+    "options": ["Green", "Red", "Yellow"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 9,
+    "question": "What color is a plum?",
+    "options": ["Purple", "Red", "Orange"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 10,
+    "question": "What color is a kiwi?",
+    "options": ["Green", "Brown", "Yellow"],
+    "correctOption": 1
+  }
+]

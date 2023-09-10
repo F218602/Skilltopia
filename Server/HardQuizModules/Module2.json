@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What letter comes after 'B'?",
+    "options": ["A", "C", "D"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 2,
+    "question": "Which letter is a vowel?",
+    "options": ["B", "C", "A"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 3,
+    "question": "Which letter is often used to represent a number?",
+    "options": ["N", "Z", "X"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 4,
+    "question": "What letter is the first letter in the word 'Apple'?",
+    "options": ["A", "B", "C"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 5,
+    "question": "What letter is the last letter in the word 'Jump'?",
+    "options": ["P", "M", "J"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "Which letter is the 15th letter of the English alphabet?",
+    "options": ["O", "M", "P"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 7,
+    "question": "What letter comes before 'F'?",
+    "options": ["E", "G", "H"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 8,
+    "question": "Which letter is a consonant?",
+    "options": ["A", "I", "K"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 9,
+    "question": "What letter is the second letter in the word 'Yellow'?",
+    "options": ["E", "L", "W"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 10,
+    "question": "What letter comes after 'R'?",
+    "options": ["S", "Q", "T"],
+    "correctOption": 1
+  }
+]

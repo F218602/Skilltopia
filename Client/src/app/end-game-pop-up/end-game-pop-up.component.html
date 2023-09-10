@@ -1,0 +1,12 @@
+<div class="bg-red-800 h-full flex justify-center items-center">
+  <div class="bg-red-800 rounded-lg p-6 shadow-md">
+    <div class="popup-container">
+      <div class="popup flex flex-col items-center"> <!-- Center-align items -->
+        <h1 class="popup-title text-white">Congratulations you have completed the game!!!</h1>
+        <h2 class="popup-title text-white">Please find the score below</h2>
+        <p class="winner-text text-white" *ngFor="let player of pgd.rankedPlayers">Player {{ player.playerNumber }} : {{player.score}}</p>
+        <button mat-raised-button class="mr-4 mt-4" (click)="closeDialog()">Close</button> <!-- Added "mt-4" for margin-top -->
+      </div>
+    </div>
+  </div>
+</div>

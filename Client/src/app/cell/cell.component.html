@@ -1,0 +1,7 @@
+<!-- Image addition to cells  -->
+<div (click)="sendData()" class="w-10 aspect-square" 
+    [class.border-2]="(cellInterSer.selX===row) && (cellInterSer.selY===column)"
+    [class.border-black]="(cellInterSer.selX===row) && (cellInterSer.selY===column)"
+    >
+    <img [src]="getImageUrl(value)" alt="Image {{ 1 }}">
+</div>
