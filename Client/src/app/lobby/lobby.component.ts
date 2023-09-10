@@ -36,5 +36,6 @@ export class LobbyComponent {
    console.log(this.userName, this.roomName);
    this.socketIOService.join(this.userName, this.roomName);
    this.pgd.playerName = this.userName;
+   this.pgd.roomName = this.roomName;
   }
 }

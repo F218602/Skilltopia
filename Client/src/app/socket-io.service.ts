@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { io, Socket } from 'socket.io-client';
 import { Observable } from 'rxjs';
 import { Quiz, QuizQuestion } from './quizQuestion.interface';
+import { playerDetails } from './game-object.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -39,8 +40,8 @@ export class SocketIOService {
   getQuiz(difficulty: string) {
     this.socket.emit('getQuiz', difficulty);
   }
-  updateScore(score: number) {
-    this.socket.emit('updateScore', score);
+  updateScore(score: number, room: string) {
+    this.socket.emit('updateScore', score, room);
   }
 
 // Listeners
@@ -104,11 +105,11 @@ export class SocketIOService {
     });
   }
 
-  gameOver() : Observable<[number]> {
-    return new Observable<[number]>((observer) => {
-      this.socket.on('gameOver', (winner: number) => {
-        console.log(winner);
-        observer.next([winner]);
+  gameOver() : Observable<[playerDetails[]]> {
+    return new Observable<[playerDetails[]]>((observer) => {
+      this.socket.on('gameOver', (rankedPlayers: playerDetails[]) => {
+        console.log(rankedPlayers);
+        observer.next([rankedPlayers]);
       });
     });
   }

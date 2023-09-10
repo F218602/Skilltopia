@@ -148,7 +148,7 @@ ngOnInit(): void {
 
   //miningcamp
   getMiningCampPeopleRequired() {return (this.cellInterSer.selected as MiningCamp).peopleRequired;}
-
+        
   //factory
   getFactoryPeopleRequired() {return (this.cellInterSer.selected as Factory).peopleRequired;}
 

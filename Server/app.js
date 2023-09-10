@@ -11,10 +11,10 @@ const fs = require('fs');
 const questionsData = require('./quiz-questions.json'); // Replace with your JSON file path if necessary
 // Module name
 const moduleMapping = {
-  0: 'Addition',
-  1: 'Honkai', 
-  2: 'Fruits color',
-  3: 'Anime'
+  0: 'AI',
+  1: 'Cloud', 
+  2: 'Agile',
+  3: 'Machine Learning'
   // ... add more mappings as needed
 };
 
@@ -205,30 +205,27 @@ function generateSettlement() {
     maxAttempts--;
   }
 }
+
+// Function to determine the winner for the first available room
+// Function to determine and send all winners sorted by rank for the first available room
 function determineWinner() {
-  let maxScore = -1;
-  let winner = 99; // Set an initial value for the winner
-  let index = 0;
+  // Create a function to compare players by score in descending order
+  const compareByScoreDescending = (a, b) => b.score - a.score;
 
-  // Get the array of player IDs associated with the key '1'
-  const playerIds = players.get('1');
+  // Iterate through all rooms
+  players.forEach((roomPlayers, room) => {
+    if (roomPlayers.length > 0) {
+      // Sort the players in the room by score in descending order
+      const rankedPlayers = roomPlayers.sort(compareByScoreDescending);
+      console.log(rankedPlayers);
 
-  // Iterate through the player IDs and their scores
-  if (playerIds && Array.isArray(playerIds)) {
-    playerIds.forEach((playerId) => {
-      index += 1;
-      const playerScore = playerScores[playerId];
-      if (playerScore > maxScore) {
-        maxScore = playerScore;
-        winner = index; // Update the winner's index
-      }
-    });
-  }
-
-  // Now, winner contains the index of the winning player
-  console.log(`The winner is ${winner}`);
-  io.emit('gameOver', winner);
+      // Send the list of ranked winners for the first available room
+      io.to(room).emit('gameOver', rankedPlayers);
+      return; // Exit the loop after processing the first available room
+    }
+  });
 }
+
 
 
 generateTownCentre()
@@ -267,14 +264,21 @@ io.on('connection', (socket) => {
         players.set(room, []);
       }
       playerScores[socket.id] = 0;
-      players.get(room).push(socket.id);
+      const playerNumber = players.get(room).length + 1;
+      const playerData = {
+        socketId: socket.id,
+        playerNumber: playerNumber,
+        score: 0
+      };
+      players.get(room).push(playerData);
       console.log(players.get(room).length); 
-      // Emit event to the room
+      // Emit event to the room 
       io.to(room).emit('playerJoined', socket.id);
 
       console.log(`${socket.id} joined room ${room}`);
       // socket.emit('Joined', players.get(room).length, GameMap, TileOwner);
       // Send the 20x50 array to the client who just joined
+
       if(players.get(room).length == maxPlayers){
         io.to(room).emit('Joined', players.get(room).length, GameMap, TileOwner);
         setTimeout(() => {
@@ -349,10 +353,21 @@ io.on('connection', (socket) => {
   });
 
   // Listen for overall score updates from the client
-  socket.on('updateScore', (score) => {
+  socket.on('updateScore', (score, room) => {
     // Update the player's overall score in the playerScores object
     playerScores[socket.id] = score;
-    // console.log(playerScores);
+    // players.get(room).find((player) => player.socketId === socket.id).score = score;
+    if (players.has(room)) {
+      const roomPlayers = players.get(room);
+      const playerToUpdate = roomPlayers.find((player) => player.socketId === socket.id);
+  
+      if (playerToUpdate) {
+        playerToUpdate.score = score;
+        // Optionally, you can emit an event to notify clients of the updated score
+        // io.to(room).emit('updateScore', { socketId, newScore });
+      }
+    }
+    // console.log(players);
   });
 
 });

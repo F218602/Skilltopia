@@ -26,10 +26,10 @@ export class ToolbarComponentComponent implements OnInit{
       this.updateRemainingTime();
     }, 1000);
 
-    this.socketIOService.gameOver().subscribe(([winner]) => {
-      console.log(winner);
-      this.pgd.winner = winner;
-      console.log(this.pgd.winner);
+    this.socketIOService.gameOver().subscribe(([rankedPlayers]) => {
+      console.log(rankedPlayers);
+      this.pgd.rankedPlayers = rankedPlayers;
+      console.log(this.pgd.rankedPlayers);
       this.socketIOService.Created = false;
       this.openPopup();
     });
@@ -49,7 +49,7 @@ updateRemainingTime(): void {
   const currentTime = new Date();
   const elapsedTimeInSeconds = (currentTime.getTime() - this.pgd.timeStart.getTime()) / 1000;
 
-  const remainingSeconds = 1 * 1 * 30 - elapsedTimeInSeconds;
+  const remainingSeconds = 3 * 60 * 60 - elapsedTimeInSeconds;
   if (remainingSeconds <= 0) {
     this.remainingTime = ''; // Game has ended
   } else {

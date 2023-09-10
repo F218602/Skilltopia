@@ -6,8 +6,7 @@
           <div
             class="table-cell"
             *ngFor="let value of row; let j= index"
-             (click)="setValue(i,j)"
-            
+            (click)="setValue(i,j)"
           >
           <app-cell class="aspect-w-1 aspect-h-1" [value]="value.image" [row] = "i" [column] = "j"></app-cell>
         </div>

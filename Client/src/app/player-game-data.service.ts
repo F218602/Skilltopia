@@ -1,5 +1,5 @@
 import {Injectable } from '@angular/core';
-import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm, EmptyTile, BuildingDetails, MaterialDetails } from './game-object.interface';
+import { Tile, Materials, BuildingTypes, TownCentre, Hospital, University, LumberCamp, Church, Dock, Market, MiningCamp, Factory, GoldRock, Pond, Forest, Settlement, Farm, EmptyTile, BuildingDetails, MaterialDetails, playerDetails } from './game-object.interface';
 import { Quiz } from './quizQuestion.interface';
 import { SocketIOService } from './socket-io.service';
 
@@ -16,7 +16,7 @@ export class PlayerGameDataService {
   numCols: number = 50;
 
   timeStart: Date = new Date('2023-09-01T12:00:00');
-  winner: number = 100;
+  rankedPlayers: playerDetails[] = [];
 
   selectedQuiz: Quiz = {
     moduleID: 999,
@@ -29,6 +29,7 @@ export class PlayerGameDataService {
 
   playerName: string = 'Player 1';
   playerID: number = 1;
+  roomName: string = 'null';
   score: number = 0;
   ageID: number = 0;
   age: string = 'Age';
@@ -105,7 +106,7 @@ export class PlayerGameDataService {
     "Factory"
 ];
 
-AgeList: string[] = ["Stone Age", "Bronze Age", "Iron Age", "Middle Ages", "Renaissance", "Industrial Age", "Modern Age"];
+AgeList: string[] = ["Stone Age", "Bronze Age", "Iron Age", "Classical Age", "Medieval Ages", "Renaissance", "Industrial Age", "Modern Age", "Information Age", "Contemporary Age"];
 
 
   buildingDetails: BuildingDetails[] = [{name:'Town Centre', count: this.buildingCount.townCentre}, 
@@ -222,7 +223,7 @@ AgeList: string[] = ["Stone Age", "Bronze Age", "Iron Age", "Middle Ages", "Rena
     this.score = 5*(this.safety + this.education + this.faith + this.business) 
       + 0.2*(this.materials.fish) + 2*(this.materials.food) + 0.2*(this.materials.vegetables) 
       + 0.2*(this.materials.stone) + 2*(this.materials.gold) + 2*(this.materials.people);
-    this.socketIOService.updateScore(this.score);
+    this.socketIOService.updateScore(this.score, this.roomName);
   }
   
 

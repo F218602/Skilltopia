@@ -1,6 +1,12 @@
 import { interval } from "rxjs";
 import { PlayerGameDataService } from "./player-game-data.service";
 
+export interface playerDetails{
+    socketId: string;
+    playerNumber: number;
+    score: number;
+}
+
 enum Build {
     TownCentre = "Town Centre",
     Hospital = "Hospital",
