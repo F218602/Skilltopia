@@ -2,7 +2,7 @@ const Express = require('express')();
 const Http = require('http').Server(Express);
 const io = require('socket.io')(Http, {
   cors: {
-    origins: [],
+    origins: ['*'],
     methods: ['GET', 'POST'],
   },
 });
