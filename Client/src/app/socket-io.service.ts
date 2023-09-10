@@ -14,7 +14,8 @@ export class SocketIOService {
 
   constructor() {
     // Connect to the server
-    this.socket = io('http://localhost:3000');
+    // this.socket = io('http://localhost:3000');
+    this.socket = io('https://skilltopia-server.vercel.app/');
   }
   getCreated () {
   return this.Created;
