@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 81,
+    "question": "What is 'batch normalization' in deep learning?",
+    "options": ["A technique for normalizing batches of data during training", "A technique for normalizing images", "A technique for normalizing text data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 82,
+    "question": "What is 'activation function' in neural networks?",
+    "options": ["A function that activates neural network layers", "A function that measures the speed of neural network training", "A function that determines the output of a neuron based on its inputs"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 83,
+    "question": "What is 'dropout' in deep learning?",
+    "options": ["A technique for dropping out data points from the dataset", "A regularization technique to prevent overfitting by randomly disabling neurons during training", "A method for optimizing model parameters"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 84,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["Testing the performance of a model on new, unseen data", "Testing the performance of a model on the training data", "Measuring data preprocessing performance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 85,
+    "question": "What is 'K-means clustering' used for in machine learning?",
+    "options": ["A method for classifying images", "A clustering algorithm used to group data points into clusters based on similarity", "A technique for text classification"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 86,
+    "question": "What is 'random forest' in machine learning?",
+    "options": ["A forest with random trees", "A type of ensemble learning model", "A type of supervised learning model"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 87,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 88,
+    "question": "What is 'word embedding' in natural language processing?",
+    "options": ["A way to embed text documents into images", "A method for converting words into numbers for NLP tasks", "A technique for translating words into different languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 89,
+    "question": "What is 'batch size' in deep learning?",
+    "options": ["The number of layers in a neural network", "The number of training examples used in each iteration of model training", "The size of a neural network's parameters"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 90,
+    "question": "What is 'bias' in artificial neural networks?",
+    "options": ["A measure of how biased the model is in favor of one class", "An extra term added to neuron inputs to shift the activation function", "A measure of model accuracy"],
+    "correctOption": 2
+  }
+]

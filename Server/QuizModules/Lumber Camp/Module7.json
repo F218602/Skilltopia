@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 71,
+    "question": "What is 'HTTP' status code 404 commonly used for in web development?",
+    "options": ["A successful request", "Server error indicating that the requested resource was not found", "Authentication error"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 72,
+    "question": "What is 'server-side rendering' (SSR) in web development?",
+    "options": ["Rendering images on the server side", "Rendering web pages on the client side", "Rendering web pages on the server side and sending them to the client"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 73,
+    "question": "What is the purpose of 'Nginx' in web development?",
+    "options": ["A type of database", "A web server and reverse proxy server", "A JavaScript framework"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 74,
+    "question": "What is 'dependency injection' in web development?",
+    "options": ["Injecting dependencies between web servers", "A design pattern where the dependencies of a class or function are provided from the outside", "Injecting JavaScript code into web pages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 75,
+    "question": "What is 'continuous deployment' (CD) in web development?",
+    "options": ["Deploying code changes to production frequently and automatically after passing automated tests", "Deploying code changes manually", "Deploying code changes only once a year"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 76,
+    "question": "What is 'responsive web design' in the context of CSS?",
+    "options": ["Designing websites that respond to user input", "Designing websites that adapt to different screen sizes and devices", "Creating web pages with a lot of animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 77,
+    "question": "What is 'serverless computing' in web development?",
+    "options": ["Hosting websites without servers", "Developing web applications without a back-end server", "Using extremely powerful servers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 78,
+    "question": "What does 'DOM' stand for in web development?",
+    "options": ["Document Object Model", "Digital Object Management", "Dynamic Object Mapping"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 79,
+    "question": "What is 'Scrum' in web development?",
+    "options": ["A type of web framework", "An agile project management framework for software development", "A programming language"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 80,
+    "question": "What is 'unit testing' in web development?",
+    "options": ["Testing the entire web application", "Testing individual units or components of a web application to ensure they work as expected", "Testing web server performance"],
+    "correctOption": 2
+  }
+]

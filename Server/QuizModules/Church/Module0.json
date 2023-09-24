@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is the primary benefit of using cloud computing?",
+    "options": ["Cost savings", "Data security", "Physical infrastructure"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 2,
+    "question": "Which IBM Cloud service allows you to build and deploy applications quickly?",
+    "options": ["IBM Watson", "IBM Cloud Functions", "IBM Blockchain"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 3,
+    "question": "What is the primary purpose of a virtual machine in cloud computing?",
+    "options": ["Running physical servers", "Running multiple operating systems on a single server", "Managing cloud security"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 4,
+    "question": "What is Kubernetes?",
+    "options": ["A cloud provider", "A container orchestration platform", "A database management system"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "In Kubernetes, what is a 'Pod'?",
+    "options": ["A group of containers sharing the same network namespace", "A Kubernetes cluster", "A virtual machine"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "What is the purpose of 'kubectl' in Kubernetes?",
+    "options": ["Managing virtual machines", "Managing Kubernetes clusters", "Creating databases"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 7,
+    "question": "What is the key advantage of using Infrastructure as Code (IaC) in cloud computing?",
+    "options": ["Reduced cost", "Automated provisioning and management", "Improved data security"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 8,
+    "question": "Which IBM Cloud service provides scalable and highly available database solutions?",
+    "options": ["IBM Cloud Functions", "IBM Cloud Databases", "IBM Cloud Storage"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 9,
+    "question": "What does 'SaaS' stand for in the context of cloud services?",
+    "options": ["Software as a Service", "Security as a Service", "Storage as a Service"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 10,
+    "question": "What is the term for a cloud deployment model that combines public and private clouds?",
+    "options": ["Hybrid cloud", "Multi-cloud", "Community cloud"],
+    "correctOption": 1
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 11,
+    "question": "What is the primary purpose of data preprocessing in data analysis?",
+    "options": ["To complicate data analysis", "To remove outliers from the data", "To clean and prepare data for analysis"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 12,
+    "question": "Which data visualization library in Python is commonly used for creating interactive plots?",
+    "options": ["Matplotlib", "Seaborn", "Plotly"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 13,
+    "question": "In machine learning, what is 'overfitting'?",
+    "options": ["When a model fits the training data too closely and performs poorly on new data", "When a model is undertrained and performs well on new data", "When a model perfectly fits all data points in the dataset"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 14,
+    "question": "What is 'cross-validation' in machine learning?",
+    "options": ["A technique for validating credit card transactions", "A method for splitting data into training and testing sets", "A technique for evaluating a model's performance using multiple subsets of the data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 15,
+    "question": "What is 'feature engineering' in data science?",
+    "options": ["Building physical engineering structures", "Creating new features from existing data to improve model performance", "Designing user interfaces for data visualization"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 16,
+    "question": "Which statistical test is commonly used to determine the correlation between two continuous variables?",
+    "options": ["Chi-squared test", "T-test", "Pearson correlation coefficient"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 17,
+    "question": "What is 'supervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't require training"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 18,
+    "question": "What is 'precision' in the context of classification models?",
+    "options": ["The ability of a model to correctly identify all positive instances", "The ability of a model to correctly identify negative instances", "The ability of a model to correctly identify positive instances among those it predicts as positive"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 19,
+    "question": "What is the purpose of 'feature scaling' in machine learning?",
+    "options": ["Scaling the size of the dataset", "Scaling the features to a standard range", "Scaling the model's performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 20,
+    "question": "In data science, what is 'A/B testing' used for?",
+    "options": ["Testing the performance of a rocket", "Testing the performance of a website or app by comparing two versions", "Testing the performance of a machine learning model"],
+    "correctOption": 2
+  }
+]

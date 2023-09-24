@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 91,
+    "question": "What is 'quantum volume' in the context of quantum computing?",
+    "options": ["The number of qubits in a quantum computer", "A metric that combines the number of qubits and their error rates to measure the overall capability of a quantum computer", "A measure of how quickly quantum computers can perform calculations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 92,
+    "question": "What is 'quantum cloud computing'?",
+    "options": ["A form of cloud computing that uses classical computers", "A type of cloud service that provides access to quantum computing resources over the internet", "A method for storing quantum information in the cloud"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 93,
+    "question": "What are 'quantum algorithms' and how do they differ from classical algorithms?",
+    "options": ["Quantum algorithms are classical algorithms optimized for quantum computers", "Quantum algorithms are algorithms designed to run on classical computers", "Quantum algorithms are algorithms that leverage quantum properties and can outperform classical algorithms for certain tasks"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 94,
+    "question": "What is 'quantum error correction' and why is it crucial for quantum computing?",
+    "options": ["A technique for correcting errors made by classical computers", "A technique for creating quantum error messages", "A set of methods and codes for correcting errors in quantum computations, allowing for reliable quantum computing"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 95,
+    "question": "What is 'quantum interference' in quantum computing?",
+    "options": ["The interaction of quantum particles in a chaotic manner", "The phenomenon where quantum states add constructively or destructively", "The interference of classical and quantum computers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 96,
+    "question": "What is 'quantum annealing' and how does it differ from gate-based quantum computing?",
+    "options": ["Quantum annealing is a form of quantum teleportation", "Quantum annealing is a quantum algorithm for solving optimization problems, while gate-based quantum computing uses quantum gates to perform computations", "Quantum annealing is a method for cloning qubits"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 97,
+    "question": "What is 'quantum cryptography' used for?",
+    "options": ["Classical cryptography", "Creating quantum teleportation devices", "Securing communication using quantum principles"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 98,
+    "question": "What is 'quantum tunneling' in quantum computing?",
+    "options": ["A method for creating tunnels in the quantum realm", "A phenomenon where particles pass through barriers they classically shouldn't", "A technique for transferring qubits between different quantum computers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 99,
+    "question": "What is 'quantum parallelism' in quantum computing?",
+    "options": ["The ability of quantum computers to execute multiple calculations simultaneously", "The ability of quantum computers to run classical software", "A technique for creating parallel universes"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'quantum teleportation' in quantum computing?",
+    "options": ["Instantaneous transportation of physical objects", "The transfer of quantum information from one qubit to another", "A method for time travel"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is a 'zero-day exploit' in cybersecurity?",
+    "options": ["An exploit that takes zero days to execute", "An exploit that is known to everyone in the cybersecurity community", "An exploit that targets vulnerabilities that are not yet known to the software vendor or the public"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 22,
+    "question": "What is 'social engineering' in the context of cybersecurity?",
+    "options": ["A method for securing physical access to data centers", "A social gathering for cybersecurity professionals", "A manipulation technique where attackers use psychological tactics to deceive individuals into revealing sensitive information"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 23,
+    "question": "What does 'VPN' stand for in cybersecurity?",
+    "options": ["Virtual Private Network", "Very Private Network", "Virus Protection Network"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 24,
+    "question": "What is 'encryption' used for in cybersecurity?",
+    "options": ["A method to increase the speed of data transmission", "A process to make data unreadable without the correct decryption key", "A method for detecting malware"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 25,
+    "question": "What is 'network segmentation' in cybersecurity?",
+    "options": ["A method to divide a network into smaller, isolated segments", "A method for combining multiple networks into one", "A method for securing wireless networks"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 26,
+    "question": "What is a 'honeypot' in cybersecurity?",
+    "options": ["A type of malware", "A security measure to protect against phishing attacks", "A decoy system or network used to attract and monitor potential attackers"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 27,
+    "question": "What is a 'security incident response plan'?",
+    "options": ["A plan for securing physical access to data centers", "A plan for responding to cybersecurity incidents", "A plan for updating software applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'access control' in cybersecurity?",
+    "options": ["A type of physical barrier to protect computer systems", "A method for securing wireless networks", "A system for managing and restricting access to computer systems and data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 29,
+    "question": "What is 'malware analysis' in cybersecurity?",
+    "options": ["A method for analyzing malware to understand its behavior and purpose", "A method for encrypting malware", "A method for securing IoT devices"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'cyber threat intelligence'?",
+    "options": ["A type of malware", "Information about potential cyber threats and vulnerabilities", "A method for securing network communications"],
+    "correctOption": 2
+  }
+]

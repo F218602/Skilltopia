@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is 'ransomware' in cybersecurity?",
+    "options": ["A type of encryption used to protect sensitive data", "A type of security software", "A malicious software that encrypts a victim's files and demands a ransom for decryption"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 62,
+    "question": "What is 'penetration testing' in cybersecurity?",
+    "options": ["A type of encryption used to secure network traffic", "A security measure to prevent data breaches", "A simulated attack on a computer system to evaluate its vulnerabilities"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 63,
+    "question": "What is 'cybersecurity governance'?",
+    "options": ["The process of creating cyber weapons", "The management and oversight of an organization's cybersecurity policies and practices", "The use of cyber tactics for political purposes"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 64,
+    "question": "What is a 'security incident' in cybersecurity?",
+    "options": ["A routine security check", "A violation of a security policy or breach of security controls", "A regular software update"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 65,
+    "question": "What is 'multi-factor authentication' (MFA) used for in cybersecurity?",
+    "options": ["A security measure that uses multiple layers of encryption", "A method to secure network infrastructure", "An authentication method that requires multiple forms of identification, typically something you know, something you have, and something you are"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 66,
+    "question": "What is 'security awareness training' in cybersecurity?",
+    "options": ["Training individuals to become cybersecurity professionals", "Training employees and users to recognize and respond to security threats", "Training on how to physically secure a data center"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 67,
+    "question": "What is 'security patching' in cybersecurity?",
+    "options": ["A method for removing security software", "The process of applying updates and fixes to software or systems to address known vulnerabilities", "A way to secure physical access to a data center"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 68,
+    "question": "What is 'incident response' in cybersecurity?",
+    "options": ["A plan for responding to cybersecurity incidents", "A method for preventing incidents from occurring", "A type of cybersecurity software"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 69,
+    "question": "What is 'security risk assessment' in cybersecurity?",
+    "options": ["A process for assessing the risk of earthquakes", "A method for assessing the risk of cyberattacks and vulnerabilities within an organization", "A type of security certification"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 70,
+    "question": "What is 'security policy' in cybersecurity?",
+    "options": ["A document outlining an organization's approach to cybersecurity", "A physical barrier to protect computer systems", "A type of malware"],
+    "correctOption": 1
+  }
+]

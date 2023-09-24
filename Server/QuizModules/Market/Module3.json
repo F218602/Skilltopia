@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 31,
+    "question": "What is 'context variable' in chatbot development?",
+    "options": ["A variable that changes the chatbot's location", "A variable that stores information for the duration of a conversation", "A variable used for encryption"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 32,
+    "question": "What is the purpose of 'fallback responses' in chatbot design?",
+    "options": ["To make the chatbot fall back to sleep", "To provide responses when the chatbot doesn't understand user messages", "To initiate unexpected conversations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 33,
+    "question": "What are 'entities' in chatbot development?",
+    "options": ["Characters in a novel", "Important pieces of information extracted from user messages", "Chatbot avatars"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 34,
+    "question": "What is 'Watson Discovery' used for in chatbot development?",
+    "options": ["Discovering new chatbot technologies", "Helping chatbots find relevant information in large volumes of data", "Finding hidden chatbot talents"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 35,
+    "question": "What is 'intent confidence' in chatbot interactions?",
+    "options": ["The chatbot's confidence in its own intentions", "A measure of how likely the detected intent matches the actual user intent", "The user's confidence in the chatbot's abilities"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 36,
+    "question": "What is 'speech synthesis' in chatbot interactions?",
+    "options": ["Synthesizing chatbot responses into spoken words", "Analyzing the tone of chatbot voices", "Creating musical tones in chatbot responses"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 37,
+    "question": "What is the 'dialog flow' in chatbot design?",
+    "options": ["A type of dance routine for chatbots", "The sequence of interactions between a chatbot and a user", "A method for blocking user access to a chatbot"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 38,
+    "question": "What is 'disambiguation' in chatbot development?",
+    "options": ["A method for making chatbot responses more ambiguous", "A process for resolving conflicts between chatbot intents", "A way to add humor to chatbot interactions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 39,
+    "question": "What is 'entity recognition' used for in chatbot development?",
+    "options": ["Identifying important entities in a conversation, such as dates or locations", "Recognizing the chatbot's identity", "Translating user messages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 40,
+    "question": "What is 'context management' in chatbot design?",
+    "options": ["Managing the chatbot's social media accounts", "Managing the chatbot's emotional state", "Managing information and context throughout a conversation"],
+    "correctOption": 3
+  }
+]

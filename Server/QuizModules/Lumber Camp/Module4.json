@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 41,
+    "question": "What is the role of a 'front-end framework' in web development?",
+    "options": ["To manage server hardware", "To organize and simplify the process of building user interfaces", "To design web pages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 42,
+    "question": "What is 'state management' in the context of front-end development?",
+    "options": ["Managing the physical location of web servers", "Managing the data and behavior of a web application's user interface", "Managing DNS settings"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 43,
+    "question": "What does 'CI/CD' stand for in the context of web development?",
+    "options": ["Computer Information and Data Center", "Continuous Integration and Continuous Deployment/Delivery", "Customer Interface and Development Center"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 44,
+    "question": "What is 'dependency injection' in web development?",
+    "options": ["Injecting dependencies between web servers", "A design pattern where the dependencies of a class or function are provided from the outside", "Injecting JavaScript code into web pages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 45,
+    "question": "What is 'JWT' (JSON Web Token) used for in web development?",
+    "options": ["A JavaScript library for web animations", "A method for securely transmitting information between parties as a JSON object", "A programming language for building web applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 46,
+    "question": "What is 'server-side rendering' (SSR) in web development?",
+    "options": ["Rendering images on the server side", "Rendering web pages on the client side", "Rendering web pages on the server side and sending them to the client"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 47,
+    "question": "What is 'responsive typography' in web design?",
+    "options": ["Designing text that responds to user input", "Designing text that adapts to different screen sizes and devices", "Creating fonts with varying colors"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 48,
+    "question": "What does 'API' stand for in web development?",
+    "options": ["Application Programming Interface", "Active Programming Integration", "Automated Process Integration"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 49,
+    "question": "What is 'LAMP' stack in web development?",
+    "options": ["A stack of paper used for web design", "A popular web development stack consisting of Linux, Apache, MySQL, and PHP/Python/Perl", "A stack of web development books"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 50,
+    "question": "What is 'responsive web design' in the context of CSS?",
+    "options": ["Designing websites that respond to user input", "Designing websites that adapt to different screen sizes and devices", "Creating web pages with a lot of animations"],
+    "correctOption": 2
+  }
+]

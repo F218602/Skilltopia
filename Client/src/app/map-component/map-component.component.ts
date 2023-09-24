@@ -19,7 +19,7 @@ export class MapComponentComponent implements OnInit{
       console.log('Received 20x50 array:', arrayData);
       // this.socketIOService.Created = true;
       // this.map = arrayData;
-      this.pgd.playerID = playerID;
+      // this.pgd.playerID = playerID;
       this.pgd.mapTileId = arrayData;
       this.pgd.tileOwner = tileOwner;
       this.pgd.age = this.pgd.AgeList[this.pgd.ageID];

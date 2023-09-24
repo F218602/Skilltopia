@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 11,
+    "question": "What is 'quantum interference' in quantum computing?",
+    "options": ["The interaction of quantum particles in a chaotic manner", "The phenomenon where quantum states add constructively or destructively", "The interference of classical and quantum computers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 12,
+    "question": "What is 'quantum annealing' used for in quantum computing?",
+    "options": ["Simulating quantum states", "Solving complex optimization problems", "Creating quantum teleportation devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 13,
+    "question": "What is the 'No-Cloning Theorem' in quantum computing?",
+    "options": ["A theorem that states you cannot create a copy of an arbitrary unknown quantum state", "A theorem that proves the existence of quantum clones", "A theorem that prevents quantum computers from cloning classical data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 14,
+    "question": "What is 'quantum cryptography' used for?",
+    "options": ["Classical cryptography", "Creating quantum teleportation devices", "Securing communication using quantum principles"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 15,
+    "question": "What is 'quantum tunneling' in quantum computing?",
+    "options": ["A method for creating tunnels in the quantum realm", "A phenomenon where particles pass through barriers they classically shouldn't", "A technique for transferring qubits between different quantum computers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 16,
+    "question": "What is 'quantum parallelism' in quantum computing?",
+    "options": ["The ability of quantum computers to execute multiple calculations simultaneously", "The ability of quantum computers to run classical software", "A technique for creating parallel universes"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 17,
+    "question": "What is 'quantum teleportation' in quantum computing?",
+    "options": ["Instantaneous transportation of physical objects", "The transfer of quantum information from one qubit to another", "A method for time travel"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 18,
+    "question": "What is 'Shor's algorithm' used for in quantum computing?",
+    "options": ["Factoring large numbers efficiently, posing a threat to classical encryption methods", "Creating quantum teleportation devices", "Simulating quantum states"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 19,
+    "question": "What is 'quantum supremacy'?",
+    "options": ["The ability of quantum computers to perform calculations faster than classical computers", "A state of quantum excellence", "A form of quantum resistance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 20,
+    "question": "What is 'quantum error correction' used for in quantum computing?",
+    "options": ["Correcting errors made by classical computers", "Correcting errors in quantum computations due to qubit decoherence", "Creating fault-tolerant quantum algorithms"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is 'Gaussian Naive Bayes' used for in machine learning?",
+    "options": ["A type of clustering algorithm", "A type of classification algorithm based on probability", "A method for cleaning data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 52,
+    "question": "What is 'mean squared error' (MSE) used for in regression analysis?",
+    "options": ["A measure of model complexity", "A loss function used to evaluate the performance of regression models", "A metric for measuring data quality"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 53,
+    "question": "What is 'batch size' in deep learning?",
+    "options": ["The number of layers in a neural network", "The number of training examples used in each iteration of model training", "The size of a neural network's parameters"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 54,
+    "question": "What is 'bias' in artificial neural networks?",
+    "options": ["A measure of how biased the model is in favor of one class", "An extra term added to neuron inputs to shift the activation function", "A measure of model accuracy"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 55,
+    "question": "What is 'data preprocessing' in machine learning?",
+    "options": ["Cleaning and transforming raw data into a suitable format for model training", "Converting data into binary format", "Visualizing data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 56,
+    "question": "What is 'overfitting' in machine learning?",
+    "options": ["A model that fits the data well", "A model that generalizes well to unseen data", "A model that performs poorly on unseen data because it has learned noise in the training data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 58,
+    "question": "What is 'convolutional neural network' (CNN) commonly used for?",
+    "options": ["Natural language processing", "Image recognition and computer vision tasks", "Predicting stock market trends"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 59,
+    "question": "What is 'word embedding' in natural language processing (NLP)?",
+    "options": ["A technique for embedding words in documents", "A method for transforming words into numbers for NLP tasks", "A way to encrypt text data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 60,
+    "question": "What is 'cross-sectional data'?",
+    "options": ["Data collected over time", "Data collected from different sources", "Data collected at a single point in time"],
+    "correctOption": 3
+  }
+]

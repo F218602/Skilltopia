@@ -31,6 +31,12 @@ export class LobbyComponent {
       console.log(`Room is full`);
     });
 
+    this.socketIOService.sendPlayerNo().subscribe(([playerID])=> {
+      // this.socketIOService.Created = true;
+      this.pgd.playerID = playerID;
+      console.log(`Game Started!`);
+    });
+
   }
   joinGame() {
    console.log(this.userName, this.roomName);

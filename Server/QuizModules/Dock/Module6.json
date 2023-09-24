@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is 'R' in the context of data analysis and statistics?",
+    "options": ["A programming language for data analysis", "A programming language for robotics", "A programming language for web development"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 62,
+    "question": "In data analysis, what does 'EDA' stand for?",
+    "options": ["Exploratory Data Analysis", "Electronic Data Analysis", "Effective Data Aggregation"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 63,
+    "question": "What is the purpose of 'data visualization' in data analysis?",
+    "options": ["To make data look appealing", "To summarize data visually and aid in understanding", "To hide data from viewers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 64,
+    "question": "What does 'Python' provide for data analysis and machine learning?",
+    "options": ["A snake", "A programming language with libraries for data analysis and machine learning", "A type of pie"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 65,
+    "question": "What is 'pandas' used for in data analysis with Python?",
+    "options": ["Handling and manipulating data", "Creating data visualizations", "Writing Python code"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 66,
+    "question": "What is 'Numpy' in Python used for?",
+    "options": ["Creating web applications", "Scientific computing and numerical operations", "Analyzing natural language"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 67,
+    "question": "What is 'matplotlib' in Python used for?",
+    "options": ["Creating machine learning models", "Data visualization and creating plots", "Web scraping"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 68,
+    "question": "What is 'Seaborn' in Python used for?",
+    "options": ["Building web applications", "Data visualization with a focus on aesthetics", "Performing statistical analysis"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 69,
+    "question": "What does 'Jupyter Notebook' provide for data analysis in Python?",
+    "options": ["A notebook for taking written notes", "A platform for creating and sharing documents with live code, equations, and visualizations", "A chat application for data scientists"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 70,
+    "question": "What is the purpose of 'data cleaning' in data analysis?",
+    "options": ["Removing data from the dataset", "Cleaning physical data storage devices", "Preparing data for analysis by handling missing or inconsistent values"],
+    "correctOption": 3
+  }
+]

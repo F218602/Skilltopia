@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 41,
+    "question": "What is the purpose of 'resampling' in data analysis?",
+    "options": ["Creating new data samples", "Changing the sample rate of data", "Balancing imbalanced datasets"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 42,
+    "question": "In machine learning, what is 'over-sampling'?",
+    "options": ["Creating more data samples from the majority class", "Creating fewer data samples from the minority class", "Creating random data samples"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 43,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't require training"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 44,
+    "question": "What is 'cross-join' used for in SQL?",
+    "options": ["Combining rows from two tables based on a related column", "Filtering rows in a table", "Sorting rows in a table"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 45,
+    "question": "What is 'natural language processing' (NLP) used for in data science?",
+    "options": ["Processing natural foods", "Analyzing and understanding human language by computers", "Studying natural phenomena"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 46,
+    "question": "What is 'bias' in machine learning models?",
+    "options": ["An unbiased model", "A measure of accuracy", "A systematic error that prevents a model from making accurate predictions"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 47,
+    "question": "What is 'hyperparameter tuning' in machine learning?",
+    "options": ["Adjusting the learning rate of a model", "Fine-tuning the parameters that are not learned from the data", "Tuning the data preprocessing steps"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 48,
+    "question": "What is 'cross-domain analysis' in data science?",
+    "options": ["Analyzing data from multiple domains (fields)", "Analyzing data with complex domains", "Analyzing data in a cross-shaped format"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 49,
+    "question": "What does 'SQL' stand for in database management?",
+    "options": ["Structured Query Language", "Standard Query Language", "Systematic Query Language"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 50,
+    "question": "What is 'ensemble learning' in machine learning?",
+    "options": ["A type of learning that only uses one model", "A type of learning that combines multiple models to improve performance", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  }
+]

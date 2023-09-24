@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 71,
+    "question": "What is 'blockchain for digital voting' used for?",
+    "options": ["Counting physical ballots in elections", "Facilitating secure and transparent voting processes using blockchain technology", "A type of cryptocurrency for political campaigns"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 72,
+    "question": "What is a 'permissionless blockchain'?",
+    "options": ["A blockchain that requires permission from a central authority to access", "A blockchain that allows anyone to join and participate without restrictions", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 73,
+    "question": "What is 'blockchain token economics'?",
+    "options": ["The study of physical tokens", "The economic and financial aspects of cryptocurrencies, including their creation, distribution, and use within a blockchain ecosystem", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 74,
+    "question": "What is 'blockchain for provenance tracking' used for?",
+    "options": ["Tracking the provenance of rare stamps", "Ensuring transparency and traceability of the origin and history of products using blockchain technology", "A type of cryptocurrency for collecting historical items"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 75,
+    "question": "What is 'gas limit' in the Ethereum blockchain?",
+    "options": ["A measure of how much gas is left in a car", "The maximum amount of gas that can be spent on an Ethereum transaction", "A type of cryptocurrency for fueling vehicles"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 76,
+    "question": "What is a 'blockchain oracle' used for?",
+    "options": ["A tool for predicting the future using blockchain data", "A service that provides external data to smart contracts on the blockchain", "A type of cryptocurrency wallet for fortune-telling"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 77,
+    "question": "What is 'cross-chain interoperability' in blockchain?",
+    "options": ["The ability to communicate between different chains in a blockchain network", "A type of cryptocurrency used for international transactions", "A measure of blockchain security"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 78,
+    "question": "What is 'blockchain asset tokenization'?",
+    "options": ["A process of turning physical assets into blockchain tokens", "A method to tokenize blockchain nodes", "A type of cryptocurrency wallet for assets"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 79,
+    "question": "What is 'blockchain for music royalties' used for?",
+    "options": ["Tracking the sale of vinyl records", "Ensuring fair and transparent distribution of music royalties to artists using blockchain technology", "A type of cryptocurrency for music lovers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 80,
+    "question": "What is 'decentralized finance' (DeFi) lending in blockchain?",
+    "options": ["Lending physical assets using blockchain", "A financial ecosystem that allows users to lend and borrow cryptocurrencies without intermediaries", "A type of cryptocurrency wallet for lending purposes"],
+    "correctOption": 2
+  }
+]

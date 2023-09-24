@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is 'quantum circuit' in quantum computing?",
+    "options": ["A diagram depicting quantum states", "A set of quantum gates arranged in a sequence to perform computations", "A type of quantum error correction"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 22,
+    "question": "What is 'quantum supremacy' and why is it significant?",
+    "options": ["The ability of quantum computers to control classical computers", "The ability of quantum computers to perform calculations faster than classical computers, marking a milestone in quantum technology", "The ability of quantum computers to surpass human intelligence"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 23,
+    "question": "What is 'quantum annealing' and how does it differ from gate-based quantum computing?",
+    "options": ["Quantum annealing is a form of quantum teleportation", "Quantum annealing is a quantum algorithm for solving optimization problems, while gate-based quantum computing uses quantum gates to perform computations", "Quantum annealing is a method for cloning qubits"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 24,
+    "question": "What is 'quantum teleportation' and what is its significance in quantum communication?",
+    "options": ["Quantum teleportation is the transfer of physical objects using quantum technology", "Quantum teleportation is the instantaneous transfer of quantum information from one location to another, a key component of quantum communication and cryptography", "Quantum teleportation is a method for creating entangled qubits"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 25,
+    "question": "What is the 'quantum supremacy experiment' and what results did it achieve?",
+    "options": ["A scientific experiment involving quantum teleportation", "An experiment demonstrating the ability of a quantum computer to perform a specific task faster than the most advanced classical supercomputers", "An experiment to prove that quantum computers can travel faster than the speed of light"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 26,
+    "question": "What is 'quantum key distribution' (QKD) and how does it enhance security in communication?",
+    "options": ["A method for distributing quantum information between distant parties, ensuring the security of encryption keys", "A technique for enhancing the speed of classical encryption algorithms", "A method for cloning quantum information"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 27,
+    "question": "What is 'quantum machine learning' (QML) and what advantages does it offer over classical machine learning?",
+    "options": ["Quantum machine learning is the use of classical computers to enhance machine learning models", "Quantum machine learning is the application of quantum computing principles to solve complex machine learning problems, potentially offering exponential speedup", "Quantum machine learning is the use of classical machine learning models in quantum computing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'quantum entanglement' and how does it enable secure quantum communication?",
+    "options": ["Quantum entanglement is a form of quantum teleportation", "Quantum entanglement is the phenomenon where quantum states of two particles are linked, allowing for secure communication as any interference is immediately detected", "Quantum entanglement is a method for quantum cloning"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "What is 'decoherence' in quantum computing and how does it impact quantum systems?",
+    "options": ["Decoherence is the process of quantum particles becoming more coherent", "Decoherence is the process of quantum systems losing their quantum properties and becoming classical due to interactions with the environment, limiting the reliability of quantum computations", "Decoherence is a quantum error correction technique"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 30,
+    "question": "What are 'quantum gates' and how are they used in quantum circuits?",
+    "options": ["Quantum gates are physical gates that allow entry into a quantum computer", "Quantum gates are fundamental quantum operations that manipulate qubits, and they are used in quantum circuits to perform computations", "Quantum gates are used for quantum teleportation"],
+    "correctOption": 2
+  }
+]

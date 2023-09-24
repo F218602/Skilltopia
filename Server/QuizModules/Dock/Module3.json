@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 31,
+    "question": "What is 'bias-variance tradeoff' in machine learning?",
+    "options": ["A tradeoff between biased and unbiased data", "A tradeoff between model complexity and prediction error", "A tradeoff between data preprocessing techniques"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 32,
+    "question": "What does 'EDA' stand for in data science?",
+    "options": ["Electronic Data Analysis", "Exploratory Data Analysis", "Effective Data Aggregation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 33,
+    "question": "What is 'one-hot encoding' used for in data preprocessing?",
+    "options": ["Creating binary representations of data", "Encoding text data", "Encoding categorical variables as binary vectors"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 34,
+    "question": "In machine learning, what is a 'decision tree'?",
+    "options": ["A tree used for making decisions in real life", "A graphical representation of a decision-making process", "A type of model used for classification and regression tasks"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 35,
+    "question": "What is 'bagging' in ensemble learning?",
+    "options": ["A method for carrying groceries", "A technique for combining the predictions of multiple models", "A form of data augmentation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 36,
+    "question": "In data analysis, what is the purpose of 'correlation'?",
+    "options": ["Determining causation between variables", "Measuring the strength and direction of a linear relationship between two variables", "Finding outliers in the data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 37,
+    "question": "What is 'logistic regression' used for in machine learning?",
+    "options": ["Predicting numerical values", "Predicting categorical outcomes", "Creating scatter plots"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 38,
+    "question": "What is 'PCA' (Principal Component Analysis) used for in data analysis?",
+    "options": ["Performing hypothesis testing", "Dimensionality reduction", "Data visualization"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 39,
+    "question": "What is 'ROC curve' used for in binary classification?",
+    "options": ["Plotting receiver operating characteristic", "Measuring data preprocessing performance", "Determining feature importance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 40,
+    "question": "In data science, what is 'cross-sectional data'?",
+    "options": ["Data collected over time", "Data collected from different sources", "Data collected at a single point in time"],
+    "correctOption": 3
+  }
+]

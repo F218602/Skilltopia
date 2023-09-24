@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 31,
+    "question": "What is 'IoT architecture'?",
+    "options": ["The physical structure of IoT devices", "The framework that defines how IoT devices and components interact", "A type of smart home design"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 32,
+    "question": "What does 'IoT connectivity' refer to?",
+    "options": ["The process of disconnecting IoT devices", "The ability of IoT devices to communicate with each other and with other systems", "The speed at which IoT devices transmit data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 33,
+    "question": "What is 'IoT data security'?",
+    "options": ["A method for hiding IoT data", "Measures to protect IoT data from unauthorized access and breaches", "A type of data compression for IoT data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 34,
+    "question": "Which IoT technology is used for tracking the real-time location of assets or objects?",
+    "options": ["RFID (Radio-Frequency Identification)", "NFC (Near Field Communication)", "Bluetooth"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 35,
+    "question": "What is 'IoT predictive analytics' used for?",
+    "options": ["Predicting future trends in IoT technology", "Predicting equipment failures or events based on IoT data", "Predicting the number of IoT devices in use"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 36,
+    "question": "What is 'IoT device provisioning'?",
+    "options": ["Giving IoT devices a proper name", "The process of onboarding and configuring IoT devices for use", "Turning off IoT devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 37,
+    "question": "What is the 'IoT ecosystem'?",
+    "options": ["A protected natural habitat for IoT devices", "The interconnected network of IoT devices, software, and services", "A type of IoT-friendly gardening technique"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 38,
+    "question": "What is 'IoT edge computing'?",
+    "options": ["Computing at the center of the network", "Computing at the IoT devices themselves", "Computing in the cloud"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 39,
+    "question": "What is 'IoT firmware'?",
+    "options": ["A wearable IoT device", "Software that is embedded in IoT devices to control their functions", "A cloud-based IoT service"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 40,
+    "question": "What is 'IoT protocol optimization' used for?",
+    "options": ["Reducing the number of IoT devices in a network", "Improving the efficiency of communication between IoT devices", "Enhancing the physical appearance of IoT devices"],
+    "correctOption": 2
+  }
+]

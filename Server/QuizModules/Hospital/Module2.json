@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is a 'hard fork' in blockchain?",
+    "options": ["A type of cryptocurrency wallet", "A permanent and irreparable split in the blockchain, resulting in two separate chains", "A software upgrade that improves blockchain security"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 22,
+    "question": "What is 'consensus' in blockchain?",
+    "options": ["A state of disagreement among blockchain participants", "A process by which participants in a blockchain network agree on the validity of transactions", "A type of smart contract"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 23,
+    "question": "What is 'decentralized finance' (DeFi) in blockchain?",
+    "options": ["A type of cryptocurrency", "A movement that aims to create an open and accessible financial system using blockchain technology", "A government-regulated blockchain initiative"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 24,
+    "question": "What is a 'blockchain wallet' used for?",
+    "options": ["A wallet for storing physical cash", "A digital wallet for storing cryptocurrencies and managing transactions", "A wallet for securing blockchain nodes"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 25,
+    "question": "What is a 'smart contract' used for in blockchain?",
+    "options": ["A contract signed by humans to buy and sell cryptocurrencies", "A self-executing contract with predefined rules and automated enforcement on the blockchain", "A contract for physical goods and services"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 26,
+    "question": "What is 'token standard' in the context of Ethereum-based tokens?",
+    "options": ["A set of rules and conventions that define how tokens should behave on the Ethereum blockchain", "A standard for physical token production", "A type of cryptocurrency wallet"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 27,
+    "question": "What is a 'block explorer'?",
+    "options": ["A tool for mining cryptocurrencies", "A type of blockchain node", "A web-based tool that allows users to view and search blockchain transactions and data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'immutable ledger' in blockchain?",
+    "options": ["A ledger that can be easily altered or changed", "A ledger that is resistant to modification and tampering once data is recorded", "A type of blockchain consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "What is 'tokenomics' in the context of blockchain and cryptocurrencies?",
+    "options": ["The study of physical tokens", "The economic and financial aspects of cryptocurrencies, including their creation, distribution, and use", "The science of encryption"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'hash rate' in blockchain mining?",
+    "options": ["A measure of how quickly a miner can solve complex mathematical puzzles", "A type of cryptocurrency wallet", "A measure of the value of a cryptocurrency"],
+    "correctOption": 1
+  }
+]

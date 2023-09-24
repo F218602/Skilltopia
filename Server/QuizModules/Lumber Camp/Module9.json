@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 91,
+    "question": "What is 'responsive typography' in web design?",
+    "options": ["Designing text that responds to user input", "Designing text that adapts to different screen sizes and devices", "Creating fonts with varying colors"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 92,
+    "question": "What is 'Docker' used for in web development?",
+    "options": ["A type of web container", "A method for creating web animations", "A platform for building, shipping, and running applications in containers"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 93,
+    "question": "What is 'serverless computing' in web development?",
+    "options": ["Hosting websites without servers", "Developing web applications without a back-end server", "Using extremely powerful servers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 94,
+    "question": "What does 'DOM' stand for in web development?",
+    "options": ["Document Object Model", "Digital Object Management", "Dynamic Object Mapping"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 95,
+    "question": "What is 'Scrum' in web development?",
+    "options": ["A type of web framework", "An agile project management framework for software development", "A programming language"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 96,
+    "question": "What is 'unit testing' in web development?",
+    "options": ["Testing the entire web application", "Testing individual units or components of a web application to ensure they work as expected", "Testing web server performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 97,
+    "question": "What is 'GraphQL' in web development?",
+    "options": ["A type of web server", "A query language for your API, and a runtime for executing those queries by your server", "A JavaScript library for web animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 98,
+    "question": "What is 'agile development' in web development?",
+    "options": ["A methodology for software development that emphasizes collaboration, customer feedback, and iterative progress", "A type of server architecture", "A design approach for creating static web pages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 99,
+    "question": "What is 'LAMP' stack in web development?",
+    "options": ["A stack of paper used for web design", "A popular web development stack consisting of Linux, Apache, MySQL, and PHP/Python/Perl", "A stack of web development books"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'JWT' (JSON Web Token) used for in web development?",
+    "options": ["A JavaScript library for web animations", "A method for securely transmitting information between parties as a JSON object", "A programming language for building web applications"],
+    "correctOption": 2
+  }
+]

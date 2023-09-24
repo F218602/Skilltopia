@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is 'context expiration' in chatbot interactions?",
+    "options": ["The chatbot's ability to forget previous conversations", "The removal of chatbot context after a certain time", "The chatbot's tendency to get tired"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 52,
+    "question": "What is 'tone adaptation' in chatbot design?",
+    "options": ["Adapting chatbot responses to different languages", "Adapting chatbot tone to match user emotions", "Adapting chatbot style to match user preferences"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 53,
+    "question": "What is 'intent chaining' in chatbot interactions?",
+    "options": ["Chaining different chatbot intents together", "Chaining different chatbot conversations together", "Chaining user intents together to form a complex query"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 54,
+    "question": "What is 'voice cloning' in chatbot technology?",
+    "options": ["Creating a chatbot that can mimic famous voices", "Creating a chatbot with a robotic voice", "Creating chatbot voices that adapt to user preferences"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 55,
+    "question": "What is 'chatbot monitoring' used for?",
+    "options": ["Monitoring user activities outside of chatbot interactions", "Monitoring chatbot behavior to ensure it aligns with user expectations", "Monitoring chatbot usage for advertising purposes"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 56,
+    "question": "What is 'fallback intent' in chatbot development?",
+    "options": ["An intent used when chatbot developers fall back in their work", "An intent used when chatbots fail to understand user messages", "An intent used for humorous chatbot responses"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'user profiling' in chatbot interactions?",
+    "options": ["Profiling chatbot users based on their behavior", "Profiling chatbots based on their responses", "Profiling chatbot developers based on their skills"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 58,
+    "question": "What is the purpose of 'chatbot analytics'?",
+    "options": ["To analyze chatbot developers' writing styles", "To analyze user preferences for chatbot voices", "To gather insights into chatbot performance and user interactions"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 59,
+    "question": "What is 'user segmentation' in chatbot interactions?",
+    "options": ["Segmenting chatbot messages into categories", "Segmenting chatbot users into groups based on shared characteristics", "Segmenting chatbot conversations into paragraphs"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 60,
+    "question": "What is 'multi-language support' in chatbot design?",
+    "options": ["Supporting multiple chatbots in one application", "Supporting chatbot interactions in multiple languages", "Supporting chatbots in different regions"],
+    "correctOption": 2
+  }
+]

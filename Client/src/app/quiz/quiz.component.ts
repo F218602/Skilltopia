@@ -24,13 +24,18 @@ export class QuizComponent {
   };
 
   selectedDifficulty: string = 'Default';
+  selectedBuilding: string = 'House';
+  selectedLevel: number = 2000;
   
   constructor(private dialogRef: MatDialogRef<QuizComponent>, private dialog: MatDialog, public socketIOService: SocketIOService, public pgd: PlayerGameDataService) {}
 
 
   ngOnInit() {
     this.selectedDifficulty = this.pgd.difficulty;
-    this.socketIOService.getQuiz(this.selectedDifficulty);
+    this.selectedBuilding = this.pgd.quizBuilding;
+    this.selectedLevel = this.pgd.quizLevel;
+
+    this.socketIOService.getQuiz(this.selectedDifficulty, this.selectedBuilding, this.selectedLevel);
 
     this.socketIOService.returnQuiz().subscribe(([sM]) => {
       console.log(`Quiz Data: ${sM}`);

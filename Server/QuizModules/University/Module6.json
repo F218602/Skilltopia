@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is the purpose of 'IoT data aggregation'?",
+    "options": ["Collecting data from IoT devices and storing it in a central location", "Aggregating IoT devices into a single network", "Reducing the number of IoT devices"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 62,
+    "question": "Which of the following is a key challenge in IoT device management?",
+    "options": ["Device connectivity", "Device security", "Device color"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 63,
+    "question": "What does 'IoT platform' refer to?",
+    "options": ["A physical platform for IoT devices", "A software platform that connects and manages IoT devices and data", "A platform for testing IoT devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 64,
+    "question": "Which IoT communication protocol is known for its lightweight and efficient communication for constrained devices?",
+    "options": ["HTTP", "MQTT", "TCP/IP"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 65,
+    "question": "What is 'IoT sensor fusion' used for?",
+    "options": ["Combining data from multiple sensors to make more accurate observations or measurements", "Fusing IoT sensors into a single device", "Using sensors to create art"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 66,
+    "question": "What is 'IoT privacy' concerned with?",
+    "options": ["Keeping IoT devices hidden from view", "Protecting the personal data collected by IoT devices", "Reducing the cost of IoT devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 67,
+    "question": "What is the 'IoT data lake'?",
+    "options": ["A physical lake where IoT data is stored", "A central repository for storing and processing large volumes of IoT data", "A data visualization tool for IoT data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 68,
+    "question": "What does 'IoT interoperability' refer to?",
+    "options": ["The ability of IoT devices from different manufacturers to work together", "The ability of IoT devices to operate without electricity", "The ability of IoT devices to understand human languages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 69,
+    "question": "What is 'IoT predictive maintenance'?",
+    "options": ["Predicting the weather using IoT data", "Predicting equipment failures or events based on IoT data", "Predicting the future of IoT technology"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 70,
+    "question": "What is 'IoT data visualization' used for?",
+    "options": ["Creating art using IoT data", "Visualizing and understanding IoT data patterns and trends", "Measuring the physical size of IoT devices"],
+    "correctOption": 2
+  }
+]

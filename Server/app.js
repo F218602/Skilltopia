@@ -11,19 +11,19 @@ const fs = require('fs');
 const questionsData = require('./quiz-questions.json'); // Replace with your JSON file path if necessary
 // Module name
 const moduleMapping = {
-  0: 'AI',
-  1: 'Cloud', 
-  2: 'Agile',
-  3: 'Machine Learning'
+  Hospital: 'AI',
+  Church: 'Cloud',
+  Dock: 'Agile',
+  'Lumber Camp': 'sbdjsdhd',
   // ... add more mappings as needed
 };
 
-function getQuizPath(moduleID, difficulty) {
+function getQuizPath(moduleID, difficulty, quizBuilding, quizLevel) {
   if(difficulty === 'easy'){
-  return `./QuizModules/Module${moduleID}.json`;
+  return `./QuizModules/${quizBuilding}/Module${quizLevel%10}.json`;
   }
   else {
-    return `./HardQuizModules/Module${moduleID}.json`;  
+    return `./HardQuizModules/Module${quizLevel}.json`;  
   }
 }
 
@@ -32,10 +32,10 @@ function getRandomQuestion(questions) {
   return questions[randomIndex];
 }
 
-function getFormattedQuiz(moduleID, questions) {
-  const moduleName = moduleMapping[moduleID];
+function getFormattedQuiz(quizLevel, quizBuilding, questions) {
+  const moduleName = moduleMapping[quizBuilding];
   return {
-    moduleID,
+    quizLevel,
     moduleName,
     questionCount: questions.length,
     questions
@@ -277,13 +277,12 @@ io.on('connection', (socket) => {
 
       console.log(`${socket.id} joined room ${room}`);
       // socket.emit('Joined', players.get(room).length, GameMap, TileOwner);
-      // Send the 20x50 array to the client who just joined
-
+      socket.emit('sendPlayerNo', players.get(room).length);
       if(players.get(room).length == maxPlayers){
         io.to(room).emit('Joined', players.get(room).length, GameMap, TileOwner);
         setTimeout(() => {
           determineWinner();
-        }, 1 * 1 * 30 * 1000);
+        }, 3 * 60 * 60 * 1000);
         console.log(players, playerScores);
       }
     } else {
@@ -342,13 +341,13 @@ io.on('connection', (socket) => {
   //   io.emit('returnQuestion', randomQuestion);
   // });
 
-  socket.on("getQuiz", (difficulty) => {
+  socket.on("getQuiz", (difficulty, quizBuilding, quizLevel) => {
     // Get a random question from the questionsData
     const moduleID = Math.floor(Math.random() * 4);
-    const quizPath = getQuizPath(moduleID, difficulty);
+    const quizPath = getQuizPath(moduleID, difficulty, quizBuilding, quizLevel);
     const jsonData = fs.readFileSync(quizPath, 'utf-8');
     const questions = JSON.parse(jsonData);
-    const quiz = getFormattedQuiz(moduleID, questions);
+    const quiz = getFormattedQuiz(quizLevel, quizBuilding, questions);
     io.emit('returnQuiz', quiz);
   });
 

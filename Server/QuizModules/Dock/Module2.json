@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is 'feature selection' in machine learning?",
+    "options": ["Choosing the most relevant features from the dataset", "Selecting the best machine learning algorithm", "Randomly picking features for analysis"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 22,
+    "question": "In data analysis, what does 'normalization' refer to?",
+    "options": ["Making data conform to a standard format", "Describing data using statistical measures", "Performing calculations on data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 23,
+    "question": "What is 'Big Data'?",
+    "options": ["Data that is physically large in size", "Data that is too complex to analyze", "Extremely large and complex datasets that require specialized tools and techniques"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 24,
+    "question": "What is the primary goal of 'time series analysis' in data science?",
+    "options": ["Predicting future stock prices", "Analyzing data with timestamps", "Summarizing categorical data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 25,
+    "question": "In machine learning, what is a 'hyperparameter'?",
+    "options": ["A parameter that is learned from the data", "A parameter that is set before training the model", "A parameter that describes the distribution of data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 26,
+    "question": "What is 'data imputation' used for in data analysis?",
+    "options": ["Creating new datasets", "Replacing missing or incomplete data with estimated values", "Reducing the size of data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 27,
+    "question": "Which Python library is commonly used for machine learning and deep learning?",
+    "options": ["NumPy", "Pandas", "TensorFlow"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'cross-entropy' loss function used for in machine learning?",
+    "options": ["To calculate the accuracy of a model", "To measure the dissimilarity between predicted and actual values", "To perform dimensionality reduction"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "In data analysis, what is 'ANOVA'?",
+    "options": ["A statistical test for comparing means of multiple groups", "A data visualization technique", "A machine learning algorithm"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["To combine two different datasets", "To evaluate a model's performance using multiple subsets of the data", "To transform data into a different format"],
+    "correctOption": 2
+  }
+]

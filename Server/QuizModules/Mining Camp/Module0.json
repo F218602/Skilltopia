@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is a 'quantum bit' or 'qubit' in quantum computing?",
+    "options": ["A classical bit", "A unit of quantum information that can be in a superposition of states", "A measurement of quantum speed"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 2,
+    "question": "What is 'superposition' in quantum computing?",
+    "options": ["A state of confusion", "The principle that quantum bits can exist in multiple states simultaneously", "A state of classical bits"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 3,
+    "question": "What is 'entanglement' in quantum physics and computing?",
+    "options": ["A form of encryption", "A phenomenon where the quantum states of two or more particles are correlated", "A type of quantum error correction"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 4,
+    "question": "What is the 'quantum gate' in quantum computing?",
+    "options": ["A physical gate that leads to quantum realms", "A fundamental quantum operation that manipulates qubits", "A password for quantum computers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "What is 'quantum entanglement' used for in quantum computing?",
+    "options": ["Secure communication", "Quantum teleportation", "Creating classical bits"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 6,
+    "question": "What is 'quantum teleportation' in quantum computing?",
+    "options": ["Instantaneous transportation of physical objects", "The transfer of quantum information from one qubit to another", "A method for time travel"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 7,
+    "question": "What is 'Grover's algorithm' in quantum computing?",
+    "options": ["A quantum algorithm for searching unsorted databases", "A classical algorithm for sorting data", "A quantum encryption technique"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 8,
+    "question": "What is 'quantum supremacy'?",
+    "options": ["The ability of quantum computers to perform calculations faster than classical computers", "A state of quantum excellence", "A form of quantum resistance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 9,
+    "question": "What is 'quantum annealing' used for in quantum computing?",
+    "options": ["Solving optimization problems", "Creating quantum networks", "Simulating classical algorithms"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 10,
+    "question": "What is 'quantum machine learning'?",
+    "options": ["Machine learning using classical computers", "Machine learning algorithms that utilize quantum computing concepts", "Machine learning on quantum teleportation devices"],
+    "correctOption": 2
+  }
+]

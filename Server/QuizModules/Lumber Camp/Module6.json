@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is 'CI' in the context of CI/CD in web development?",
+    "options": ["Continuous Implementation", "Continuous Integration, a practice of frequently integrating code changes into a shared repository", "Complete Installation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 62,
+    "question": "What is 'code refactoring' in web development?",
+    "options": ["A process of writing code from scratch", "A practice of improving code quality and maintainability without changing its external behavior", "A method for compressing images in web development"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 63,
+    "question": "What is 'MERN' stack in web development?",
+    "options": ["A popular web development stack consisting of Microsoft, Express.js, React, and Node.js", "A stack of web development books", "A type of web server"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 64,
+    "question": "What is 'SEO' in web development?",
+    "options": ["A type of web server", "Search Engine Optimization, a process of improving a website's visibility in search engine results", "A JavaScript library for web animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 65,
+    "question": "What is 'responsive typography' in web design?",
+    "options": ["Designing text that responds to user input", "Designing text that adapts to different screen sizes and devices", "Creating fonts with varying colors"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 66,
+    "question": "What does 'HTTP' stand for in web development?",
+    "options": ["HyperText Transfer Protocol", "Highly Technical Text Processing", "Hyper Transfer and Text Processing"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 67,
+    "question": "What is 'Docker' used for in web development?",
+    "options": ["A type of web container", "A method for creating web animations", "A platform for building, shipping, and running applications in containers"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 68,
+    "question": "What is the primary role of 'frontend frameworks' like React or Angular in web development?",
+    "options": ["To manage server hardware", "To organize and simplify the process of building user interfaces", "To design web pages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 69,
+    "question": "What is 'GraphQL' in web development?",
+    "options": ["A type of web server", "A query language for your API, and a runtime for executing those queries by your server", "A JavaScript library for web animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 70,
+    "question": "What is 'AJAX' used for in web development?",
+    "options": ["Loading web pages more slowly", "Creating responsive web designs", "Fetching data from a server and updating parts of a web page without a full page reload"],
+    "correctOption": 3
+  }
+]

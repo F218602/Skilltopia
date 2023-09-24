@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is 'feature extraction' in data analysis?",
+    "options": ["Selecting relevant features for analysis", "Transforming raw data into a lower-dimensional representation", "Encoding categorical variables"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 52,
+    "question": "In machine learning, what is a 'support vector machine' (SVM)?",
+    "options": ["A machine that provides support for data storage", "A type of model used for classification and regression tasks", "A machine that supports multiple users simultaneously"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 53,
+    "question": "What is 'web scraping' used for in data collection?",
+    "options": ["Collecting data from websites", "Creating web applications", "Analyzing data from the web"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 54,
+    "question": "What is the 'Curse of Dimensionality' in data science?",
+    "options": ["A term used to describe highly complex datasets", "A phenomenon where increasing the number of dimensions leads to data sparsity", "A measure of data quality"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 55,
+    "question": "What is 'AUC-ROC' used for in machine learning?",
+    "options": ["A technique for data visualization", "A metric for evaluating binary classification models", "A method for dimensionality reduction"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 56,
+    "question": "In data analysis, what is 'time series data'?",
+    "options": ["Data collected over time intervals", "Data collected at a specific point in time", "Data collected from multiple sources"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'feature scaling' used for in machine learning?",
+    "options": ["Scaling the size of features", "Scaling the number of features", "Scaling the range of feature values"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 58,
+    "question": "What does 'SQL JOIN' do in database queries?",
+    "options": ["Performs calculations on data", "Combines rows from multiple tables based on related columns", "Filters data based on a specified condition"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 59,
+    "question": "What is 'bag-of-words' (BoW) in natural language processing?",
+    "options": ["A technique for storing text data in bags", "A method for counting the frequency of words in a document", "A way to encrypt text data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 60,
+    "question": "What is the 'F1 score' used for in machine learning?",
+    "options": ["Measuring the accuracy of a model", "Measuring the performance of regression models", "Measuring the balance between precision and recall in binary classification"],
+    "correctOption": 3
+  }
+]

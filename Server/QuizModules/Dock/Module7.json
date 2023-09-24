@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 71,
+    "question": "What is 'regression analysis' used for in data science?",
+    "options": ["Classifying data into different groups", "Making predictions based on data relationships", "Cleaning and preprocessing data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 72,
+    "question": "What is 'random forest' in machine learning?",
+    "options": ["A forest with random trees", "A type of ensemble learning model", "A type of supervised learning model"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 73,
+    "question": "What is 'cluster analysis' used for in data science?",
+    "options": ["Analyzing data from a single source", "Identifying groups or clusters of similar data points", "Creating data visualizations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 74,
+    "question": "What is 'A/B testing' used for in data analysis?",
+    "options": ["Testing the performance of a website or app by comparing two versions", "Testing the performance of a rocket", "Testing the performance of a machine learning model"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 75,
+    "question": "What is 'outlier detection' in data analysis?",
+    "options": ["Detecting errors in code", "Identifying data points that deviate significantly from the norm", "Detecting missing data points"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 76,
+    "question": "What is 'time series forecasting' used for?",
+    "options": ["Predicting future data points based on historical time-stamped data", "Analyzing text data", "Creating bar charts"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 77,
+    "question": "What is 'k-means clustering' in data analysis?",
+    "options": ["A clustering technique that determines the optimal number of clusters", "A method for clustering data into k groups based on similarity", "A statistical test for correlation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 78,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["Testing the performance of a model on new, unseen data", "Testing the performance of a model on the training data", "Measuring data preprocessing performance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 79,
+    "question": "What is 'feature engineering' in machine learning?",
+    "options": ["Designing user interfaces for data visualization", "Creating new features from existing data to improve model performance", "Using external data sources"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 80,
+    "question": "What is 'logistic regression' used for in data science?",
+    "options": ["Predicting numerical values", "Predicting categorical outcomes", "Creating data visualizations"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 41,
+    "question": "What is 'zero trust' in cybersecurity?",
+    "options": ["A security model that trusts everything inside and outside the network perimeter", "A security model that trusts nothing and verifies everything, regardless of location", "A security model that only trusts internal users"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 42,
+    "question": "What is 'packet filtering' in cybersecurity?",
+    "options": ["A method for filtering emails", "A method for filtering data packets based on certain criteria", "A method for filtering physical access to data centers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 43,
+    "question": "What is 'vulnerability management' in cybersecurity?",
+    "options": ["A method for managing physical vulnerabilities", "A process for identifying, prioritizing, and mitigating security vulnerabilities in an organization's systems and software", "A method for managing network traffic"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 44,
+    "question": "What is 'digital forensics' in cybersecurity?",
+    "options": ["A method for predicting future cyberattacks", "The process of collecting, analyzing, and preserving electronic evidence to investigate and prevent cybercrimes", "A method for securing IoT devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 45,
+    "question": "What is 'threat intelligence' in cybersecurity?",
+    "options": ["Information about potential cybersecurity threats and vulnerabilities", "A method for encrypting threat data", "A method for securing network communications"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 46,
+    "question": "What is a 'security incident response plan'?",
+    "options": ["A plan for securing physical access to data centers", "A plan for responding to cybersecurity incidents", "A plan for updating software applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 47,
+    "question": "What is 'malware analysis' in cybersecurity?",
+    "options": ["A method for analyzing malware to understand its behavior and purpose", "A method for encrypting malware", "A method for securing IoT devices"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 48,
+    "question": "What is 'security risk assessment' in cybersecurity?",
+    "options": ["A process for assessing the risk of earthquakes", "A method for assessing the risk of cyberattacks and vulnerabilities within an organization", "A type of security certification"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 49,
+    "question": "What is 'security policy' in cybersecurity?",
+    "options": ["A document outlining an organization's approach to cybersecurity", "A physical barrier to protect computer systems", "A type of malware"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 50,
+    "question": "What is 'access control' in cybersecurity?",
+    "options": ["A type of physical barrier to protect computer systems", "A method for securing wireless networks", "A system for managing and restricting access to computer systems and data"],
+    "correctOption": 3
+  }
+]

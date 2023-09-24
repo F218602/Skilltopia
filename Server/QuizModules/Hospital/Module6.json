@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is 'blockchain scalability'?",
+    "options": ["The ability to shrink the blockchain", "The capability of a blockchain network to handle a larger number of transactions and data without compromising performance", "A type of cryptocurrency mining algorithm"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 62,
+    "question": "What is 'blockchain as a ledger' used for?",
+    "options": ["Recording and tracking financial transactions", "Storing books and novels on the blockchain", "Creating digital artwork on the blockchain"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 63,
+    "question": "What is 'blockchain for intellectual property' used for?",
+    "options": ["Protecting and managing copyrights, patents, and creative works on the blockchain", "Storing physical books on the blockchain", "A type of cryptocurrency for artists"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 64,
+    "question": "What is 'blockchain tokenization of assets'?",
+    "options": ["A process of turning physical assets into digital tokens on the blockchain", "A method to create new cryptocurrencies", "A type of cryptocurrency wallet"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 65,
+    "question": "What is 'blockchain in supply chain' used for?",
+    "options": ["Tracking the supply of physical blocks", "Enhancing transparency and traceability in the production and distribution of goods using blockchain", "A type of cryptocurrency for logistics"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 66,
+    "question": "What is 'token utility' in blockchain?",
+    "options": ["The value of a cryptocurrency", "The purpose and functionality of a token within a blockchain ecosystem", "A type of cryptocurrency mining equipment"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 67,
+    "question": "What is 'blockchain in education' used for?",
+    "options": ["Storing textbooks on the blockchain", "Verifying and securing academic credentials and certificates", "A type of cryptocurrency for students"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 68,
+    "question": "What is 'sidechain' in blockchain technology?",
+    "options": ["A chain of restaurants that accept cryptocurrency payments", "An independent blockchain that is interoperable with a parent blockchain, often used for specific purposes", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 69,
+    "question": "What is 'blockchain identity verification' used for?",
+    "options": ["Verifying the identity of people using blockchain technology", "Securing passports on the blockchain", "A type of cryptocurrency for identification purposes"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 70,
+    "question": "What is a 'blockchain transaction fee'?",
+    "options": ["A fee paid to access the blockchain network", "A fee paid to miners for processing and confirming transactions on the blockchain", "A type of cryptocurrency used for transactions"],
+    "correctOption": 2
+  }
+]

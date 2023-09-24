@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 71,
+    "question": "What is 'serverless architecture' in cloud computing?",
+    "options": ["A type of computing that doesn't use servers", "A computing model where cloud providers automatically manage server resources", "A form of distributed computing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 72,
+    "question": "What is 'PCA' in data science?",
+    "options": ["Principal Component Analysis, a dimensionality reduction technique", "A programming language", "A method for automating data analysis"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 73,
+    "question": "What is 'phishing' in cybersecurity?",
+    "options": ["A method for catching cybercriminals", "A fraudulent attempt to obtain sensitive information by posing as a trustworthy entity", "A type of secure communication protocol"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 74,
+    "question": "What is a 'fork' in blockchain technology?",
+    "options": ["A type of encryption used in blockchain transactions", "A type of update or divergence in the blockchain, creating two separate chains", "A method for selecting the next block in a blockchain"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 75,
+    "question": "What is 'AJAX' in web development?",
+    "options": ["A programming language", "Asynchronous JavaScript and XML, a technology for asynchronous data exchange", "A cloud storage service"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 76,
+    "question": "What is 'recommendation systems' used for in data science?",
+    "options": ["Creating financial reports", "Analyzing supply chain data", "Providing personalized recommendations to users based on their preferences and behavior"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 77,
+    "question": "What is 'quantum superposition' in quantum computing?",
+    "options": ["A quantum computing programming language", "A phenomenon where quantum bits can exist in multiple states simultaneously", "A method for optimizing quantum algorithms"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 78,
+    "question": "What does 'IDS' stand for in cybersecurity?",
+    "options": ["Internet Data Security", "Intrusion Detection System", "Intelligent Data Storage"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 79,
+    "question": "What is 'feature scaling' in data science?",
+    "options": ["A technique for adding more features to a dataset", "A technique for scaling physical objects", "A process of standardizing the range of independent variables or features of data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 80,
+    "question": "What is 'Sprint' in software development?",
+    "options": ["A type of software testing", "A time-boxed development period in Scrum, typically 2-4 weeks long", "A cloud computing platform"],
+    "correctOption": 2
+  }
+]

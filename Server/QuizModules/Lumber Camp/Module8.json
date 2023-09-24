@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 81,
+    "question": "What is 'JWT' (JSON Web Token) used for in web development?",
+    "options": ["A JavaScript library for web animations", "A method for securely transmitting information between parties as a JSON object", "A programming language for building web applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 82,
+    "question": "What is 'MVC' architecture in web development?",
+    "options": ["Model-View-Control architecture, a design pattern for organizing code", "Media, Video, and Content architecture", "Machine Vision and Control architecture"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 83,
+    "question": "What is 'GraphQL' in web development?",
+    "options": ["A type of web server", "A query language for your API, and a runtime for executing those queries by your server", "A JavaScript library for web animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 84,
+    "question": "What is 'agile development' in web development?",
+    "options": ["A methodology for software development that emphasizes collaboration, customer feedback, and iterative progress", "A type of server architecture", "A design approach for creating static web pages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 85,
+    "question": "What is the primary role of 'frontend frameworks' like React or Angular in web development?",
+    "options": ["To manage server hardware", "To organize and simplify the process of building user interfaces", "To design web pages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 86,
+    "question": "What is 'CI' in the context of CI/CD in web development?",
+    "options": ["Continuous Implementation", "Continuous Integration, a practice of frequently integrating code changes into a shared repository", "Complete Installation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 87,
+    "question": "What is 'code refactoring' in web development?",
+    "options": ["A process of writing code from scratch", "A practice of improving code quality and maintainability without changing its external behavior", "A method for compressing images in web development"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 88,
+    "question": "What is 'LAMP' stack in web development?",
+    "options": ["A stack of paper used for web design", "A popular web development stack consisting of Linux, Apache, MySQL, and PHP/Python/Perl", "A stack of web development books"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 89,
+    "question": "What is 'unit testing' in web development?",
+    "options": ["Testing the entire web application", "Testing individual units or components of a web application to ensure they work as expected", "Testing web server performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 90,
+    "question": "What is 'Scrum' in web development?",
+    "options": ["A type of web framework", "An agile project management framework for software development", "A programming language"],
+    "correctOption": 2
+  }
+]

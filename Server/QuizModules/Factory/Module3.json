@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 31,
+    "question": "What is 'dropout' in deep learning?",
+    "options": ["A technique for dropping out data points from the dataset", "A regularization technique to prevent overfitting by randomly disabling neurons during training", "A method for optimizing model parameters"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 32,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["Testing the performance of a model on new, unseen data", "Testing the performance of a model on the training data", "Measuring data preprocessing performance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 33,
+    "question": "What is 'K-means clustering' used for in machine learning?",
+    "options": ["A method for classifying images", "A clustering algorithm used to group data points into clusters based on similarity", "A technique for text classification"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 34,
+    "question": "What is 'random forest' in machine learning?",
+    "options": ["A forest with random trees", "A type of ensemble learning model", "A type of supervised learning model"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 35,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 36,
+    "question": "What is 'PCA' in dimensionality reduction?",
+    "options": ["Principal Component Analysis", "Principle Cluster Analysis", "Predictive Component Analysis"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 37,
+    "question": "What is 'grid search' used for in machine learning?",
+    "options": ["Searching for the best hyperparameters for a model by testing a range of values", "Searching for data outliers", "Searching for patterns in textual data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 38,
+    "question": "What is 'LSTM' in deep learning?",
+    "options": ["Long Short-Term Memory, a type of recurrent neural network", "A programming language for deep learning", "A type of image processing technique"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 39,
+    "question": "What is 'convolutional neural network' (CNN) commonly used for?",
+    "options": ["Natural language processing", "Image recognition and computer vision tasks", "Predicting stock market trends"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 40,
+    "question": "What is 'batch normalization' in deep learning?",
+    "options": ["A technique for normalizing batches of data during training", "A technique for normalizing images", "A technique for normalizing text data"],
+    "correctOption": 1
+  }
+]

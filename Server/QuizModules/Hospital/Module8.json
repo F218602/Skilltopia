@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 81,
+    "question": "What is 'blockchain for real estate' used for?",
+    "options": ["Tracking real estate agents", "Facilitating transparent and secure property transactions and ownership records using blockchain technology", "A type of cryptocurrency for real estate purchases"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 82,
+    "question": "What is 'blockchain for supply chain finance'?",
+    "options": ["Financing the production of physical goods using blockchain", "Using blockchain to enhance transparency and efficiency in supply chain financing", "A type of cryptocurrency for supply chain transactions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 83,
+    "question": "What is 'cross-border payments' in blockchain?",
+    "options": ["Payments made within a single country using blockchain", "Payments involving multiple currencies and countries facilitated by blockchain technology", "A type of cryptocurrency for international trade"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 84,
+    "question": "What is 'blockchain for art provenance' used for?",
+    "options": ["Proving the authenticity of famous paintings", "Tracking the history and ownership of artworks on the blockchain", "A type of cryptocurrency for art collectors"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 85,
+    "question": "What is 'blockchain token standards' in the context of Ethereum-based tokens?",
+    "options": ["A set of rules and conventions that define how tokens should behave on the Ethereum blockchain", "A standard for creating physical tokens", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 86,
+    "question": "What is 'blockchain governance'?",
+    "options": ["A process of managing and making decisions about the blockchain's rules and protocols", "A type of cryptocurrency wallet", "A government-regulated blockchain initiative"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 87,
+    "question": "What is 'decentralized exchange' (DEX) in blockchain?",
+    "options": ["A type of cryptocurrency wallet for decentralized use", "A platform for trading cryptocurrencies directly from wallets without the need for a centralized intermediary", "A process of creating decentralized organizations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 88,
+    "question": "What is 'blockchain as a service' (BaaS) provider?",
+    "options": ["A service that provides physical blocks for blockchain", "A cloud-based service that allows users to develop, host, and use blockchain applications", "A type of cryptocurrency wallet for developers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 89,
+    "question": "What is 'blockchain data structure'?",
+    "options": ["A type of cryptocurrency ledger", "The way data is organized and stored in a blockchain, typically in blocks and chains", "A measure of blockchain security"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 90,
+    "question": "What is 'blockchain for food safety' used for?",
+    "options": ["Tracking the sale of fast food", "Ensuring transparency and traceability in the food supply chain to enhance safety using blockchain technology", "A type of cryptocurrency for grocery shopping"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 91,
+    "question": "What is 'auto-scaling' in cloud computing?",
+    "options": ["A method for resizing images", "A feature that automatically adjusts the number of resources allocated to an application based on demand", "A technique for distributing cloud resources"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 92,
+    "question": "What is 'A/B testing' used for in data science?",
+    "options": ["A method for encrypting data", "A technique for comparing two versions of a webpage or application to determine which performs better", "A technique for data visualization"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 93,
+    "question": "What is 'malware' in cybersecurity?",
+    "options": ["A software designed to improve computer performance", "A type of software that enhances user experience", "Malicious software designed to harm or exploit computer systems"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 94,
+    "question": "What is 'PoW' in blockchain technology?",
+    "options": ["Power of Work, a method for generating electricity", "Proof of Work, a consensus mechanism used in many cryptocurrencies", "A type of encryption used in blockchain transactions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 95,
+    "question": "What is 'DOM' in web development?",
+    "options": ["Document Object Model, a representation of the structure of a web page", "A scripting language for web applications", "A database management system"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 96,
+    "question": "What is 'NLP' used for in AI?",
+    "options": ["Nuclear Launch Protocol", "Natural Language Processing, the field of computer science that focuses on the interaction between computers and human languages", "Network Link Protocol"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 97,
+    "question": "What is 'quantum cryptography' used for in quantum computing?",
+    "options": ["A method for securing communication channels using the principles of quantum mechanics", "A method for encrypting quantum data", "A method for quantum teleportation"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 98,
+    "question": "What does 'BYOD' stand for in cybersecurity?",
+    "options": ["Bring Your Own Device", "Buy Your Own Devices", "Bring Your Own Data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 99,
+    "question": "What is 'feature engineering' in data science?",
+    "options": ["A process of generating new data", "A process of creating new input features from existing ones to improve model performance", "A method for visualizing data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'Jenkins' used for in software development?",
+    "options": ["A continuous integration and continuous delivery (CI/CD) tool", "A programming language for machine learning", "A cloud computing platform"],
+    "correctOption": 1
+  }
+]

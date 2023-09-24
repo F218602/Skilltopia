@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 31,
+    "question": "What is the primary advantage of using containers in cloud computing?",
+    "options": ["Easier hardware management", "Faster application deployment", "Improved network security"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 32,
+    "question": "Which service in IBM Cloud allows you to automate the deployment of applications and infrastructure?",
+    "options": ["IBM Kubernetes Service", "IBM Cloud Functions", "IBM Automation"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 33,
+    "question": "In Kubernetes, what is a 'ConfigMap' used for?",
+    "options": ["Storing container images", "Managing cloud networking", "Storing configuration data separately from pods"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 34,
+    "question": "What is the primary role of 'Ingress' in Kubernetes?",
+    "options": ["Managing container storage", "Exposing HTTP and HTTPS routes to services", "Scaling container replicas"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 35,
+    "question": "Which cloud deployment model provides dedicated infrastructure for a single organization?",
+    "options": ["Public cloud", "Private cloud", "Hybrid cloud"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 36,
+    "question": "What is 'Function as a Service' (FaaS) in cloud computing?",
+    "options": ["A serverless computing model", "A cloud database service", "A virtualization platform"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 37,
+    "question": "In cloud services, what is 'SLA' an abbreviation for?",
+    "options": ["Service Level Agreement", "Security and Logging Access", "Software Licensing Agreement"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 38,
+    "question": "What is the purpose of 'CDN caching' in Content Delivery Networks (CDNs)?",
+    "options": ["Optimizing network latency", "Managing user access permissions", "Storing confidential data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 39,
+    "question": "What is the main responsibility of a 'Network Security Group' (NSG) in cloud computing?",
+    "options": ["Managing cloud storage", "Ensuring data privacy", "Controlling inbound and outbound traffic"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 40,
+    "question": "Which cloud service model provides ready-to-use software applications over the internet?",
+    "options": ["IaaS (Infrastructure as a Service)", "PaaS (Platform as a Service)", "SaaS (Software as a Service)"],
+    "correctOption": 3
+  }
+]

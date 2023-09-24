@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 41,
+    "question": "What is 'blockchain consensus' in the context of distributed ledgers?",
+    "options": ["A decision-making process within a single organization", "The process by which multiple nodes in a blockchain network agree on the state of the ledger", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 42,
+    "question": "What is a 'blockchain explorer' used for?",
+    "options": ["A tool for navigating physical blockchains", "A platform for trading cryptocurrencies", "A web-based tool to view and analyze transactions on the blockchain"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 43,
+    "question": "What is 'cryptographic hashing' in blockchain?",
+    "options": ["A method for converting cryptocurrency to physical cash", "A process of securely storing private keys", "A technique to generate a fixed-size string of characters from data of arbitrary size, ensuring data integrity and security"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 44,
+    "question": "What is 'Byzantine Fault Tolerance' (BFT) in blockchain?",
+    "options": ["A method to secure blockchain data", "A consensus mechanism that ensures a blockchain can operate correctly even when some nodes are malicious or faulty", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 45,
+    "question": "What is 'token standard' in the context of Ethereum?",
+    "options": ["A set of rules and conventions that define how tokens should behave on the Ethereum blockchain", "A standard for physical token production", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 46,
+    "question": "What is 'blockchain for identity verification' used for?",
+    "options": ["Storing passport photos on the blockchain", "Verifying and managing digital identities in a secure and decentralized manner", "A type of cryptocurrency for online identification"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 47,
+    "question": "What is 'cryptocurrency mining'?",
+    "options": ["The process of creating physical coins", "The process of validating transactions and adding them to the blockchain while competing to solve complex mathematical puzzles", "A method to secure blockchain nodes"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 48,
+    "question": "What is a 'blockchain oracle'?",
+    "options": ["A blockchain-based prediction market", "A tool for fortune-telling using blockchain data", "A service that provides external data to smart contracts on the blockchain"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 49,
+    "question": "What is 'blockchain privacy'?",
+    "options": ["The ability to make all blockchain transactions public", "The ability to keep certain transaction details confidential and visible only to authorized parties", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 50,
+    "question": "What is 'scaling solutions' in blockchain technology?",
+    "options": ["Solutions to improve blockchain security", "Solutions to increase the physical size of blockchain nodes", "Solutions to address the challenge of high transaction throughput and scalability in blockchain networks"],
+    "correctOption": 3
+  }
+]

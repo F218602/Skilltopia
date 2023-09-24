@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is the primary goal of cybersecurity?",
+    "options": ["To make computer systems run faster", "To prevent unauthorized access, data breaches, and protect against cyber threats", "To increase the complexity of software applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 2,
+    "question": "What is a 'firewall' in the context of cybersecurity?",
+    "options": ["A security protocol used for encryption", "A physical barrier to protect computer systems from physical damage", "A network security device that filters and monitors incoming and outgoing traffic"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 3,
+    "question": "What is 'phishing' in cybersecurity?",
+    "options": ["A method of catching computer viruses", "A type of cybersecurity software", "A social engineering attack where attackers impersonate trusted entities to deceive individuals into revealing sensitive information"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 4,
+    "question": "What does 'DDoS' stand for in cybersecurity?",
+    "options": ["Data Download and Storage", "Distributed Denial of Service", "Digital Defense of Systems"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "What is 'two-factor authentication' (2FA) used for in cybersecurity?",
+    "options": ["A method of securing physical access to data centers", "A security policy that requires employees to authenticate twice", "An authentication method that requires two forms of identification, typically a password and a one-time code"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 6,
+    "question": "What is a 'vulnerability assessment' in cybersecurity?",
+    "options": ["A test to identify weaknesses in a system or network", "A method to encrypt sensitive data", "A process to block all incoming network traffic"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 7,
+    "question": "What is 'malware' in cybersecurity?",
+    "options": ["A type of secure encryption", "A software designed to harm or gain unauthorized access to computer systems", "A method for securely deleting files"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 8,
+    "question": "What is 'encryption' used for in cybersecurity?",
+    "options": ["A method to increase the speed of data transmission", "A process to make data unreadable without the correct decryption key", "A method for detecting malware"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 9,
+    "question": "What is a 'zero-day vulnerability' in cybersecurity?",
+    "options": ["A vulnerability that has been known for zero days", "A vulnerability that is difficult to patch", "A vulnerability that is exploited by attackers before a patch is available"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 10,
+    "question": "What is 'social engineering' in cybersecurity?",
+    "options": ["A method for securing physical access to data centers", "A social gathering for cybersecurity professionals", "A manipulation technique where attackers use psychological tactics to deceive individuals into revealing sensitive information"],
+    "correctOption": 3
+  }
+]

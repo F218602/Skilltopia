@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 31,
+    "question": "What is 'responsive web design' in the context of CSS?",
+    "options": ["Designing websites that respond to user input", "Designing websites that adapt to different screen sizes and devices", "Creating web pages with a lot of animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 32,
+    "question": "What does 'API' stand for in web development?",
+    "options": ["Application Programming Interface", "Active Programming Integration", "Automated Process Integration"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 33,
+    "question": "What is the primary role of 'webpack' in modern web development?",
+    "options": ["Creating web animations", "Bundling and managing project assets like JavaScript, CSS, and images", "Handling server-side logic"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 34,
+    "question": "What is 'responsive typography' in web design?",
+    "options": ["Designing text that responds to user input", "Designing text that adapts to different screen sizes and devices", "Creating fonts with varying colors"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 35,
+    "question": "What is 'cross-site scripting (XSS)' and why is it a security concern in web development?",
+    "options": ["A technique for improving website loading speed", "A security vulnerability where an attacker injects malicious scripts into web pages viewed by other users", "A method for encrypting data transmission"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 36,
+    "question": "What is 'Docker' used for in web development?",
+    "options": ["A type of web container", "A method for creating web animations", "A platform for building, shipping, and running applications in containers"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 37,
+    "question": "What is 'serverless computing' in web development?",
+    "options": ["Hosting websites without servers", "Developing web applications without a back-end server", "Using extremely powerful servers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 38,
+    "question": "What is 'Progressive Web App' (PWA) in web development?",
+    "options": ["A type of app that only works on iOS devices", "A type of app that works on any device and progressively enhances its capabilities", "A type of app for web development beginners"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 39,
+    "question": "What is the purpose of 'AJAX' in web development?",
+    "options": ["Loading web pages more slowly", "Creating responsive web designs", "Fetching data from a server and updating parts of a web page without a full page reload"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 40,
+    "question": "What is 'Nginx' used for in web development?",
+    "options": ["A type of database", "A web server and reverse proxy server", "A JavaScript framework"],
+    "correctOption": 2
+  }
+]

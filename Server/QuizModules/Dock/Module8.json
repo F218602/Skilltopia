@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 81,
+    "question": "What is 'PCA' in dimensionality reduction?",
+    "options": ["Principle Component Analysis", "Principal Component Analysis", "Principle Cluster Analysis"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 82,
+    "question": "What is 'confusion matrix' used for in machine learning?",
+    "options": ["A matrix used for confusing data", "Evaluating the performance of a classification model", "Creating scatter plots"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 83,
+    "question": "What is 'Naive Bayes' used for in machine learning?",
+    "options": ["A type of clustering algorithm", "A type of classification algorithm based on probability", "A method for cleaning data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 84,
+    "question": "What is 'Hadoop' used for in big data analytics?",
+    "options": ["A programming language for data analysis", "A distributed storage and processing framework for big data", "A data visualization library"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 85,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 86,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["To combine two different datasets", "To evaluate a model's performance using multiple subsets of the data", "To transform data into a different format"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 87,
+    "question": "What is 'data imputation' used for in data analysis?",
+    "options": ["Creating new datasets", "Replacing missing or incomplete data with estimated values", "Reducing the size of data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 88,
+    "question": "What is 'word embedding' in natural language processing (NLP)?",
+    "options": ["A technique for embedding words in documents", "A method for transforming words into numbers for NLP tasks", "A way to encrypt text data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 89,
+    "question": "What is 'log loss' used for in machine learning?",
+    "options": ["A measure of model complexity", "A loss function used for binary classification problems", "A metric for measuring data quality"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 90,
+    "question": "What is 'cross-sectional data'?",
+    "options": ["Data collected over time", "Data collected from different sources", "Data collected at a single point in time"],
+    "correctOption": 3
+  }
+]

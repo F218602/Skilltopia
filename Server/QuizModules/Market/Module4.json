@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 41,
+    "question": "What is 'natural language understanding' (NLU) in chatbot development?",
+    "options": ["Understanding chatbots' feelings", "Understanding user messages using NLP techniques", "Understanding chatbot intentions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 42,
+    "question": "What is 'slot filling' in chatbot interactions?",
+    "options": ["Filling slots in a chatbot game", "Filling gaps in user messages with missing information", "Filling chatbot dialog with humor"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 43,
+    "question": "What is 'hyper-personalization' in chatbot experiences?",
+    "options": ["Making chatbots more robotic", "Creating customized and highly personalized interactions for users", "Hyperlinking chatbot responses"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 44,
+    "question": "What is the role of 'context variables' in chatbot development?",
+    "options": ["They keep track of chatbot's location", "They store and manage information specific to a conversation", "They determine the chatbot's emotional state"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 45,
+    "question": "What is 'intent escalation' in chatbot interactions?",
+    "options": ["Escalating user issues to a higher authority", "Escalating the chatbot's performance", "Escalating the complexity of chatbot responses"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 46,
+    "question": "What is 'continuous integration' (CI) in chatbot development?",
+    "options": ["Continuous interaction with chatbots", "A development practice where code changes are frequently integrated and tested", "A process of ignoring code changes"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 47,
+    "question": "What is 'intent resolution' in chatbot interactions?",
+    "options": ["Resolving conflicts between user intents", "Resolving conflicts between chatbot and user intentions", "Resolving conflicts within chatbot development teams"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 48,
+    "question": "What is the primary goal of 'tone analysis' in chatbot interactions?",
+    "options": ["To add background music to chatbot conversations", "To identify the chatbot's emotions", "To evaluate the emotional tone of user messages"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 49,
+    "question": "What is 'response generation' in chatbot design?",
+    "options": ["The process of generating random chatbot responses", "The process of creating automatic replies for chatbots", "The process of translating chatbot responses into different languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 50,
+    "question": "What is 'multimodal interaction' in chatbots?",
+    "options": ["Interactions between chatbots of different modes", "Interactions between chatbots and humans using multiple communication modes like text, voice, and visuals", "Interactions between chatbots and chat rooms"],
+    "correctOption": 2
+  }
+]

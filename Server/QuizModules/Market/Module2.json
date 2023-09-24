@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is 'tone synthesis' in chatbot interactions?",
+    "options": ["Generating musical tones in responses", "Synthesizing text-to-speech with emotional tone", "Creating chatbot animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 22,
+    "question": "How can chatbots handle multi-turn conversations effectively?",
+    "options": ["By responding with random answers", "By maintaining context and remembering previous messages", "By ending conversations after one turn"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 23,
+    "question": "What is the significance of 'user feedback' in chatbot development?",
+    "options": ["It has no impact on chatbot improvement", "It helps identify areas for improvement and refine chatbot responses", "It is used for rating the chatbot's appearance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 24,
+    "question": "What is 'IBM Watson Studio' used for?",
+    "options": ["Creating music compositions", "Building chatbots", "Data preparation and machine learning model development"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 25,
+    "question": "What is 'sentiment analysis' in chatbot interactions?",
+    "options": ["Analyzing the sentiment of a chatbot's voice", "Evaluating the sentiment of user messages (positive, negative, neutral)", "Measuring the sentiment of chatbot users"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 26,
+    "question": "What is 'continuous learning' for chatbots?",
+    "options": ["Chatbots that never stop talking", "Chatbots that learn new languages continuously", "Chatbots that improve their performance over time with user interactions"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 27,
+    "question": "What is the primary use of 'entity recognition' in chatbot development?",
+    "options": ["Identifying important entities in a conversation, such as dates or locations", "Recognizing the chatbot's identity", "Translating user messages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'user authentication' in chatbot security?",
+    "options": ["The process of verifying the chatbot's identity", "The process of verifying the user's identity", "The process of locking the chatbot's responses"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "What is 'intent classification' in chatbot development?",
+    "options": ["Classifying user intents and goals in their messages", "Classifying the chatbot's intents", "Classifying the user's emotions"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'multi-modal chatbot' technology?",
+    "options": ["Chatbots that speak multiple languages", "Chatbots that use multiple modes of communication, such as text and voice", "Chatbots with multiple personalities"],
+    "correctOption": 2
+  }
+]

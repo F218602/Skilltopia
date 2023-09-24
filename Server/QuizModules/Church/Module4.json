@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 41,
+    "question": "What is the purpose of 'VNET' (Virtual Network) in cloud computing?",
+    "options": ["Managing server hardware", "Isolating network resources in the cloud", "Monitoring application performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 42,
+    "question": "In Kubernetes, what is 'RBAC' short for?",
+    "options": ["Role-Based Access Control", "Resource-Based Authorization Configuration", "Remote Binary Application Control"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 43,
+    "question": "What is the primary advantage of using 'microservices' architecture in cloud applications?",
+    "options": ["Simplified application design", "Easier hardware management", "Scalability and flexibility"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 44,
+    "question": "Which IBM Cloud service allows you to store and manage large volumes of unstructured data?",
+    "options": ["IBM Cloud Databases", "IBM Cloud Object Storage", "IBM Cloud Functions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 45,
+    "question": "In Kubernetes, what is a 'Deployment' used for?",
+    "options": ["Managing container images", "Scaling and updating application instances", "Managing network resources"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 46,
+    "question": "What is the main advantage of using 'serverless databases' in the cloud?",
+    "options": ["Full control over database administration", "Elimination of database server management", "Enhanced data encryption"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 47,
+    "question": "In cloud computing, what is 'BYOD' an abbreviation for?",
+    "options": ["Bring Your Own Device", "Backup Your Own Data", "Build Your Own Database"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 48,
+    "question": "What does 'ECS' stand for in the context of container orchestration in the cloud?",
+    "options": ["Elastic Container Service", "Enterprise Cloud Security", "Event-Driven Computing Service"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 49,
+    "question": "What is the purpose of 'load balancers' in cloud architectures?",
+    "options": ["Ensuring data privacy", "Distributing traffic across multiple servers", "Managing cloud billing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 50,
+    "question": "Which cloud service model provides the lowest level of control but the highest level of convenience for users?",
+    "options": ["SaaS (Software as a Service)", "IaaS (Infrastructure as a Service)", "PaaS (Platform as a Service)"],
+    "correctOption": 1
+  }
+]

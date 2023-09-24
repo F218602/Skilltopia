@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is 'timestamping' in blockchain?",
+    "options": ["A process of adding timestamps to blockchain transactions", "A type of cryptocurrency mining", "A consensus mechanism in blockchain"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 52,
+    "question": "What is 'blockchain wallet security'?",
+    "options": ["The ability to lock blockchain wallets permanently", "The measures and techniques used to protect the security of blockchain wallet keys", "A type of blockchain consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 53,
+    "question": "What is a 'private key' in blockchain?",
+    "options": ["A key that opens a private door", "A cryptographic key known only to the owner and used to access their cryptocurrency", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 54,
+    "question": "What is 'smart contract auditing' in blockchain development?",
+    "options": ["The process of writing a smart contract", "The process of reviewing and analyzing smart contracts to identify vulnerabilities and ensure security", "A method to transfer cryptocurrencies"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 55,
+    "question": "What is a 'block reward' in blockchain mining?",
+    "options": ["A reward for the fastest blockchain node", "A reward given to miners for successfully adding a new block to the blockchain", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 56,
+    "question": "What is 'token staking' in blockchain?",
+    "options": ["A process of printing physical tokens", "A process of holding cryptocurrency tokens in a wallet to support the network's operations and earn rewards", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'blockchain in healthcare' used for?",
+    "options": ["Tracking the sale of pharmaceuticals", "Securing and managing healthcare records, ensuring data integrity and privacy", "A type of cryptocurrency for healthcare transactions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 58,
+    "question": "What is 'decentralized autonomous organization' (DAO) in blockchain?",
+    "options": ["A type of cryptocurrency wallet", "An organization represented by code and run by smart contracts on the blockchain, with decisions made by token holders", "A government-regulated blockchain initiative"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 59,
+    "question": "What is 'blockchain as a solution' in business?",
+    "options": ["A type of cryptocurrency used for business transactions", "A strategic approach to solving business problems by leveraging blockchain technology", "A type of blockchain consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 60,
+    "question": "What is 'blockchain for voting' used for?",
+    "options": ["Counting physical ballots", "Enabling secure and transparent voting processes using blockchain technology", "A type of cryptocurrency for political campaigns"],
+    "correctOption": 2
+  }
+]

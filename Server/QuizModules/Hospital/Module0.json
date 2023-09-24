@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is a blockchain?",
+    "options": ["A chain of blocks used for securing physical assets", "A digital ledger that records transactions across multiple computers in a tamper-resistant way", "A secure method for encrypting emails"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 2,
+    "question": "What is the primary purpose of a blockchain?",
+    "options": ["To centralize data storage", "To provide a tamper-resistant and decentralized ledger of transactions", "To improve internet speed"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 3,
+    "question": "What is a 'smart contract' in the context of blockchain?",
+    "options": ["An intelligent computer program that predicts blockchain prices", "A self-executing contract with the terms of the agreement directly written into code", "A contract that can only be executed by a human lawyer"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 4,
+    "question": "What consensus mechanism is commonly used in public blockchains like Bitcoin and Ethereum?",
+    "options": ["Proof of Work (PoW)", "Proof of Stake (PoS)", "Proof of Concept (PoC)"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 5,
+    "question": "What is 'Hyperledger Fabric' in blockchain technology?",
+    "options": ["A type of cryptocurrency", "An open-source enterprise-grade blockchain framework", "A blockchain for hyper-fast transactions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 6,
+    "question": "What is 'cryptocurrency' in the context of blockchain?",
+    "options": ["A cryptographic technique used to secure blockchain data", "Digital or virtual currency that uses cryptography for security", "A secure communication protocol for blockchains"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 7,
+    "question": "What is 'decentralization' in the context of blockchain?",
+    "options": ["The process of centralizing data on a single server", "The distribution of data and control across a network of computers, reducing the reliance on a single authority", "A way to increase transaction speed on blockchains"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 8,
+    "question": "What is a 'block' in a blockchain?",
+    "options": ["A digital container that stores information about a single transaction", "A user account in a blockchain network", "A type of cryptocurrency"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 9,
+    "question": "What is 'immutability' in the context of blockchain?",
+    "options": ["The ability to change or modify data on a blockchain", "The characteristic of data on a blockchain being tamper-resistant and unchangeable once recorded", "A type of blockchain consensus algorithm"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 10,
+    "question": "What is 'mining' in the context of blockchain?",
+    "options": ["The process of extracting minerals from the Earth", "The process of validating and adding transactions to a blockchain, often involving complex mathematical puzzles", "A way to create new cryptocurrencies"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is data science?",
+    "options": ["The study of computer algorithms", "The process of extracting insights from data", "A programming language"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 2,
+    "question": "Which programming language is commonly used for data analytics and machine learning?",
+    "options": ["Java", "Python", "C++"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 3,
+    "question": "What is the goal of exploratory data analysis (EDA) in data science?",
+    "options": ["To make predictions", "To summarize and visualize data", "To create machine learning models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 4,
+    "question": "In data analytics, what is 'pandas'?",
+    "options": ["A species of bear", "A Python library for data manipulation", "A statistical measure"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "What is the primary role of a data scientist?",
+    "options": ["Managing IT infrastructure", "Developing mobile applications", "Analyzing and interpreting data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 6,
+    "question": "What does the term 'data wrangling' refer to in data science?",
+    "options": ["Raising cattle on a farm", "Cleaning and organizing messy data", "Statistical hypothesis testing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 7,
+    "question": "Which step in the data science process involves building predictive models?",
+    "options": ["Data collection", "Data cleaning", "Modeling"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 8,
+    "question": "What is 'k-means clustering' used for in data analysis?",
+    "options": ["Predicting future trends", "Classifying data into clusters based on similarity", "Storing large datasets"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 9,
+    "question": "What is the significance of 'machine learning' in data science?",
+    "options": ["It is a programming language", "It is a data visualization tool", "It enables computers to learn from data and make predictions"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 10,
+    "question": "What is the purpose of a 'confusion matrix' in machine learning?",
+    "options": ["To confuse data analysts", "To evaluate the performance of a classification model", "To generate random numbers"],
+    "correctOption": 2
+  }
+]

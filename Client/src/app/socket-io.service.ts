@@ -14,8 +14,8 @@ export class SocketIOService {
 
   constructor() {
     // Connect to the server
-    // this.socket = io('http://localhost:3000');
-    this.socket = io('https://skilltopia-server.vercel.app');
+    this.socket = io('http://localhost:3000');
+    // this.socket = io('https://skilltopia-server.vercel.app');
   }
   getCreated () {
   return this.Created;
@@ -38,8 +38,8 @@ export class SocketIOService {
   //   this.socket.emit('getQuestion');
   // }
 
-  getQuiz(difficulty: string) {
-    this.socket.emit('getQuiz', difficulty);
+  getQuiz(difficulty: string, quizBuilding: string, quizLevel: number) {
+    this.socket.emit('getQuiz', difficulty, quizBuilding, quizLevel);
   }
   updateScore(score: number, room: string) {
     this.socket.emit('updateScore', score, room);
@@ -60,6 +60,14 @@ export class SocketIOService {
       });
     });
   }
+  sendPlayerNo() : Observable<[number]> {
+    return new Observable<[number]>((observer) => {
+      this.socket.on('sendPlayerNo', (playerID: number) => {
+        observer.next([playerID]);
+      });
+    });
+  }
+
   playerLeft() : Observable<[string]> {
     return new Observable<[string]>((observer) => {
       this.socket.on('playerLeft', (playerId: string) => {

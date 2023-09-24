@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is 'quantum interference' in quantum computing?",
+    "options": ["The interaction of quantum particles in a chaotic manner", "The phenomenon where quantum states add constructively or destructively", "The interference of classical and quantum computers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 52,
+    "question": "What is 'quantum annealing' and how does it differ from gate-based quantum computing?",
+    "options": ["Quantum annealing is a form of quantum teleportation", "Quantum annealing is a quantum algorithm for solving optimization problems, while gate-based quantum computing uses quantum gates to perform computations", "Quantum annealing is a method for cloning qubits"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 53,
+    "question": "What is 'quantum cryptography' used for?",
+    "options": ["Classical cryptography", "Creating quantum teleportation devices", "Securing communication using quantum principles"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 54,
+    "question": "What is 'quantum tunneling' in quantum computing?",
+    "options": ["A method for creating tunnels in the quantum realm", "A phenomenon where particles pass through barriers they classically shouldn't", "A technique for transferring qubits between different quantum computers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 55,
+    "question": "What is 'quantum parallelism' in quantum computing?",
+    "options": ["The ability of quantum computers to execute multiple calculations simultaneously", "The ability of quantum computers to run classical software", "A technique for creating parallel universes"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 56,
+    "question": "What is 'quantum teleportation' in quantum computing?",
+    "options": ["Instantaneous transportation of physical objects", "The transfer of quantum information from one qubit to another", "A method for time travel"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'Shor's algorithm' used for in quantum computing?",
+    "options": ["Factoring large numbers efficiently, posing a threat to classical encryption methods", "Creating quantum teleportation devices", "Simulating quantum states"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 58,
+    "question": "What is 'quantum supremacy'?",
+    "options": ["The ability of quantum computers to perform calculations faster than classical computers", "A state of quantum excellence", "A form of quantum resistance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 59,
+    "question": "What is 'quantum annealing' used for in quantum computing?",
+    "options": ["Solving optimization problems", "Creating quantum networks", "Simulating classical algorithms"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 60,
+    "question": "What is 'quantum machine learning'?",
+    "options": ["Machine learning using classical computers", "Machine learning algorithms that utilize quantum computing concepts", "Machine learning on quantum teleportation devices"],
+    "correctOption": 2
+  }
+]

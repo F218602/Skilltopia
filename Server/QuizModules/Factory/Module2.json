@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is 'hyperparameter tuning' in machine learning?",
+    "options": ["The process of finding the best parameters for a machine learning model", "The process of fine-tuning the learning rate of a model", "The process of adjusting the model architecture"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 22,
+    "question": "What is 'batch normalization' in deep learning?",
+    "options": ["A technique for normalizing batches of data during training", "A technique for normalizing images", "A technique for normalizing text data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 23,
+    "question": "What is the 'bias' of a machine learning model?",
+    "options": ["A measure of how biased the model is in favor of one class", "A measure of the model's accuracy", "An error introduced by approximating a real-world problem with a simplified model"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 24,
+    "question": "What is 'natural language processing' (NLP) used for in AI?",
+    "options": ["Processing images and videos", "Processing and understanding human language", "Processing natural landscapes"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 25,
+    "question": "What is 'transfer learning' in the context of deep learning?",
+    "options": ["Transferring data between different neural networks", "Using a pre-trained model as a starting point for a new task", "Transferring data between different machine learning models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 26,
+    "question": "What is the purpose of 'early stopping' in deep learning?",
+    "options": ["To stop training a model when it reaches a certain number of epochs", "To stop training a model when it starts overfitting", "To stop training a model when it encounters an error"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 27,
+    "question": "What is 'fine-tuning' in deep learning?",
+    "options": ["Tuning the model's learning rate", "Tuning the model's batch size", "Adapting a pre-trained model to a new task by adjusting its parameters"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'XOR' a commonly used example of in machine learning?",
+    "options": ["A logical AND operation", "A simple problem that cannot be solved by a single-layer perceptron", "A type of image classification task"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "What is 'word embedding' in natural language processing?",
+    "options": ["A way to embed text documents into images", "A method for converting words into numbers for NLP tasks", "A technique for translating words into different languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'bias-variance trade-off' in machine learning?",
+    "options": ["A trade-off between choosing a biased model or a high-variance model", "A trade-off between data bias and model bias", "A trade-off between model complexity and model simplicity"],
+    "correctOption": 1
+  }
+]

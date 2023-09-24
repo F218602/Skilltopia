@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is 'SEO' in web development?",
+    "options": ["A type of web server", "Search Engine Optimization, a process of improving a website's visibility in search engine results", "A JavaScript library for web animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 52,
+    "question": "What does 'SPA' stand for in web development?",
+    "options": ["Single Page Application, a web application that loads a single HTML page and dynamically updates the content as the user interacts with it", "Server Performance Analyzer, a tool for measuring server performance", "Simple Programming Algorithm, a coding technique for beginners"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 53,
+    "question": "What is 'frontend' and 'backend' in web development?",
+    "options": ["The same as 'server' and 'client' respectively", "Frontend refers to the user interface, while backend refers to the server-side logic and database", "Frontend is the code written by the front-end developer, and backend is the code written by the back-end developer"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 54,
+    "question": "What is 'user authentication' in web development?",
+    "options": ["Creating user interfaces for web applications", "A process of verifying the identity of users before granting access to a web application", "A method for compressing web pages to reduce loading times"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 55,
+    "question": "What is 'agile development' in web development?",
+    "options": ["A methodology for software development that emphasizes collaboration, customer feedback, and iterative progress", "A type of server architecture", "A design approach for creating static web pages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 56,
+    "question": "What is 'unit testing' in web development?",
+    "options": ["Testing the entire web application", "Testing individual units or components of a web application to ensure they work as expected", "Testing web server performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'Scrum' in web development?",
+    "options": ["A type of web framework", "An agile project management framework for software development", "A programming language"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 58,
+    "question": "What is the 'DOM' (Document Object Model) in web development?",
+    "options": ["A web server", "A JavaScript library", "A programming language for creating web pages"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 59,
+    "question": "What is 'Git' used for in web development?",
+    "options": ["A content delivery network (CDN)", "A version control system for tracking changes in code", "A database management system"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 60,
+    "question": "What is the purpose of 'Webpack' in modern web development?",
+    "options": ["Creating web animations", "Bundling and managing project assets like JavaScript, CSS, and images", "Handling server-side logic"],
+    "correctOption": 2
+  }
+]

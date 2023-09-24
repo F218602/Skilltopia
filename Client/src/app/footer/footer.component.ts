@@ -52,6 +52,8 @@ ngOnInit(): void {
   openPopup( difficulty: string = 'easy') {
     // Open the popup when the button is clicked
     this.pgd.difficulty = difficulty;
+    this.pgd.quizBuilding = this.cellInterSer.selected.name;
+    this.pgd.quizLevel = this.getLevel();
     this.dialog.open(QuizComponent);
   }
   

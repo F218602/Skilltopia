@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 71,
+    "question": "What is the purpose of 'Network Address Translation' (NAT) in cloud networking?",
+    "options": ["Optimizing database performance", "Mapping private IP addresses to a public IP address", "Managing server hardware"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 72,
+    "question": "In Kubernetes, what is a 'DaemonSet' used for?",
+    "options": ["Managing container images", "Ensuring that a pod runs on every node in a cluster", "Controlling access to cluster resources"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 73,
+    "question": "What is the main advantage of using 'immutable infrastructure' in cloud deployments?",
+    "options": ["Real-time data processing", "Enhanced data encryption", "Consistency and reliability"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 74,
+    "question": "Which IBM Cloud service provides a serverless event-driven computing platform?",
+    "options": ["IBM Cloud Functions", "IBM Cloud Databases", "IBM Kubernetes Service"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 75,
+    "question": "In Kubernetes, what is a 'Namespace' used for?",
+    "options": ["Grouping nodes in a cluster", "Isolating resources within a cluster", "Managing cloud networking"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 76,
+    "question": "What is 'CDN caching' in Content Delivery Networks (CDNs)?",
+    "options": ["Optimizing network latency", "Managing user access permissions", "Storing confidential data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 77,
+    "question": "In cloud computing, what does 'CI/CD' stand for?",
+    "options": ["Continuous Integration/Continuous Delivery", "Cloud Infrastructure/Cloud Deployment", "Content Integration/Content Distribution"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 78,
+    "question": "What is the role of 'Service Mesh' in container orchestration in the cloud?",
+    "options": ["Managing server hardware", "Enabling secure communication between microservices", "Optimizing database performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 79,
+    "question": "What is the purpose of 'Network Security Groups' (NSGs) in cloud computing?",
+    "options": ["Managing cloud storage", "Ensuring data privacy", "Controlling inbound and outbound traffic"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 80,
+    "question": "Which cloud service model provides a pre-configured development environment for building applications?",
+    "options": ["SaaS (Software as a Service)", "IaaS (Infrastructure as a Service)", "PaaS (Platform as a Service)"],
+    "correctOption": 3
+  }
+]

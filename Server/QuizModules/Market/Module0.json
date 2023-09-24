@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is IBM Watson?",
+    "options": ["A computer programming language", "An artificial intelligence platform by IBM", "A natural language processing tool"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 2,
+    "question": "What is the primary purpose of IBM Watson?",
+    "options": ["To play video games", "To provide customer support", "To assist with data analysis and decision-making"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 3,
+    "question": "What is natural language processing (NLP) used for in IBM Watson?",
+    "options": ["Detecting spam emails", "Analyzing and understanding human language", "Creating chatbots"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 4,
+    "question": "What is a chatbot?",
+    "options": ["A robot that chats with humans", "A computer program that simulates conversation with human users", "A chatroom for developers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "What is IBM Watson Assistant used for?",
+    "options": ["Assisting with cooking", "Building and deploying chatbots", "Analyzing financial data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 6,
+    "question": "How does IBM Watson Assistant interact with users?",
+    "options": ["Through voice commands only", "Through text-based conversations", "Through video conferencing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 7,
+    "question": "What is a 'dialog skill' in the context of IBM Watson Assistant?",
+    "options": ["A skill for solving puzzles", "A skill for managing human resources", "A skill that defines a chatbot's conversational abilities"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 8,
+    "question": "What programming languages can be used to build chatbots with IBM Watson Assistant?",
+    "options": ["Python only", "Any programming language", "JavaScript and Python"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 9,
+    "question": "What is 'intent' in the context of chatbots?",
+    "options": ["A strong desire to chat", "A user's purpose or goal expressed in a message", "A type of programming language"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 10,
+    "question": "What is 'entity recognition' in chatbot development?",
+    "options": ["Identifying important entities in a conversation, such as dates or locations", "Recognizing the chatbot's identity", "Measuring the performance of a chatbot"],
+    "correctOption": 1
+  }
+]

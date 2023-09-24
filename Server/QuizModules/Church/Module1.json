@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 11,
+    "question": "What is the purpose of auto-scaling in cloud computing?",
+    "options": ["Ensuring data security", "Automatically adjusting resources based on demand", "Managing virtual machines"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 12,
+    "question": "Which IBM Cloud service provides a managed Kubernetes service for container orchestration?",
+    "options": ["IBM Watson", "IBM Cloud Functions", "IBM Kubernetes Service"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 13,
+    "question": "In Kubernetes, what is a 'Namespace' used for?",
+    "options": ["Grouping nodes in a cluster", "Isolating resources within a cluster", "Managing cloud networking"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 14,
+    "question": "What is the role of 'Helm' in Kubernetes?",
+    "options": ["Managing databases", "Package manager for Kubernetes applications", "Monitoring cloud security"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 15,
+    "question": "What are the three main categories of cloud service models?",
+    "options": ["Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS)", "Public cloud, Private cloud, Hybrid cloud", "Virtualization, Networking, Storage"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 16,
+    "question": "Which IBM Cloud offering provides tools and services for building and deploying AI models?",
+    "options": ["IBM Cloud Functions", "IBM Watson", "IBM Cloud Databases"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 17,
+    "question": "What is the primary advantage of serverless computing in the cloud?",
+    "options": ["Full control over server resources", "Elimination of server management tasks", "Lower cost of virtual machines"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 18,
+    "question": "What does 'CDN' stand for in the context of cloud services?",
+    "options": ["Cloud Deployment Network", "Content Delivery Network", "Cloud Data Node"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 19,
+    "question": "What is the purpose of a 'VPC' (Virtual Private Cloud) in cloud computing?",
+    "options": ["Running serverless functions", "Isolating network resources in the cloud", "Managing container orchestration"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 20,
+    "question": "What are the key components of a cloud computing stack?",
+    "options": ["Operating system, Network hardware, Physical servers", "Infrastructure, Platform, Software", "Database, Application, Storage"],
+    "correctOption": 2
+  }
+]

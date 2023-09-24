@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 91,
+    "question": "What is 'contextual sensitivity' in chatbot interactions?",
+    "options": ["Chatbots that are easily offended", "The chatbot's ability to understand the context and nuances of user messages", "Chatbots that change their behavior based on user emotions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 92,
+    "question": "What is 'intent conflict' in chatbot interactions?",
+    "options": ["Chatbots fighting over user intents", "A situation where multiple intents are detected in a single user message", "A conflict between chatbot developers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 93,
+    "question": "What is 'bias mitigation' in chatbot development?",
+    "options": ["Reducing bias in chatbot responses and decision-making", "Introducing bias intentionally into chatbot responses", "Ignoring bias in chatbot interactions"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 94,
+    "question": "What is 'user engagement' in chatbot interactions?",
+    "options": ["How often users engage in debates with chatbots", "The level of interaction and interest users have in chatbot conversations", "Chatbots engaging in conversations with other chatbots"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 95,
+    "question": "What is 'A/B testing' in chatbot development?",
+    "options": ["Testing chatbots in different languages", "A testing method where two or more chatbot versions are compared to determine which performs better", "A method for chatbots to communicate with each other"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 96,
+    "question": "What is 'intent confusion' in chatbot interactions?",
+    "options": ["Chatbots being confused about their own intents", "A situation where user intents are difficult to distinguish or understand", "A common problem in chatbot development"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 97,
+    "question": "What is 'multi-turn design' in chatbot interactions?",
+    "options": ["Designing chatbots with multiple personalities", "Designing chatbot interactions that span multiple turns or messages", "Designing chatbots for multiple languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 98,
+    "question": "What is 'conversation branching' in chatbot design?",
+    "options": ["Chatbots that refuse to follow a conversation", "Designing chatbot conversations that can take different paths based on user input", "Chatbots that generate branching narratives"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 99,
+    "question": "What is 'authentication token' in chatbot security?",
+    "options": ["A token that verifies the chatbot's identity", "A token that verifies the user's identity", "A token used for chatbot encryption"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'contextual adaptation' in chatbot design?",
+    "options": ["Adapting chatbot personalities to different contexts", "Adapting to chatbot conversations without any context", "Adapting chatbot code to different programming languages"],
+    "correctOption": 1
+  }
+]

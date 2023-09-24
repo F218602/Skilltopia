@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 91,
+    "question": "What is 'data augmentation' in deep learning?",
+    "options": ["A technique for augmenting the size of a dataset by generating new data samples", "A technique for reducing data dimensionality", "A technique for preprocessing data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 92,
+    "question": "What is 'bagging' in ensemble learning?",
+    "options": ["A method for carrying groceries", "A technique for combining the predictions of multiple models", "A form of data augmentation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 93,
+    "question": "What is 'hyperparameter tuning' in machine learning?",
+    "options": ["The process of finding the best parameters for a machine learning model", "The process of fine-tuning the learning rate of a model", "The process of adjusting the model architecture"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 94,
+    "question": "What is 'mean squared error' (MSE) used for in regression analysis?",
+    "options": ["A measure of model complexity", "A loss function used to evaluate the performance of regression models", "A metric for measuring data quality"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 95,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["Testing the performance of a model on new, unseen data", "Testing the performance of a model on the training data", "Measuring data preprocessing performance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 96,
+    "question": "What is 'K-means clustering' used for in machine learning?",
+    "options": ["A method for classifying images", "A clustering algorithm used to group data points into clusters based on similarity", "A technique for text classification"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 97,
+    "question": "What is 'random forest' in machine learning?",
+    "options": ["A forest with random trees", "A type of ensemble learning model", "A type of supervised learning model"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 98,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 99,
+    "question": "What is 'word embedding' in natural language processing (NLP)?",
+    "options": ["A way to embed text documents into images", "A method for converting words into numbers for NLP tasks", "A technique for translating words into different languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'cross-sectional data'?",
+    "options": ["Data collected over time", "Data collected from different sources", "Data collected at a single point in time"],
+    "correctOption": 3
+  }
+]

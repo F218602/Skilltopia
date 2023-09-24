@@ -612,7 +612,7 @@ export class Dock implements Building{
     }
     updateLevel() {
         this.progressStart = true;
-        this.subscription = interval(1000) // Every second
+        this.subscription = interval(1000)
             .subscribe(() => {
                 this.incrementLevelProgress();
         });

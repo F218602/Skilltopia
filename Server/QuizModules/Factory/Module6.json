@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is 'bagging' in ensemble learning?",
+    "options": ["A method for carrying groceries", "A technique for combining the predictions of multiple models", "A form of data augmentation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 62,
+    "question": "What is 'hyperparameter tuning' in machine learning?",
+    "options": ["The process of finding the best parameters for a machine learning model", "The process of fine-tuning the learning rate of a model", "The process of adjusting the model architecture"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 63,
+    "question": "What is the 'bias' of a machine learning model?",
+    "options": ["A measure of how biased the model is in favor of one class", "A measure of the model's accuracy", "An error introduced by approximating a real-world problem with a simplified model"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 64,
+    "question": "What is 'fine-tuning' in deep learning?",
+    "options": ["Tuning the model's learning rate", "Tuning the model's batch size", "Adapting a pre-trained model to a new task by adjusting its parameters"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 65,
+    "question": "What is 'word embedding' in natural language processing?",
+    "options": ["A way to embed text documents into images", "A method for converting words into numbers for NLP tasks", "A technique for translating words into different languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 66,
+    "question": "What is 'bag-of-words' (BoW) in natural language processing?",
+    "options": ["A method for organizing bags", "A technique for representing text data as a collection of individual words", "A method for translating text to binary code"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 67,
+    "question": "What is 'accuracy' in the context of machine learning classification?",
+    "options": ["A measure of how precise a model's predictions are", "A measure of how well a model separates classes", "A measure of the percentage of correctly classified instances"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 68,
+    "question": "What is 'cross-entropy loss' used for in machine learning?",
+    "options": ["A measure of model complexity", "A loss function used for binary classification problems", "A metric for measuring data quality"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 69,
+    "question": "What is 'reinforcement learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that focuses on learning from interactions with an environment and receiving rewards"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 70,
+    "question": "What is 'data augmentation' in deep learning?",
+    "options": ["A technique for augmenting the size of a dataset by generating new data samples", "A technique for reducing data dimensionality", "A technique for preprocessing data"],
+    "correctOption": 1
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 71,
+    "question": "What is 'conversational AI' in the context of chatbots?",
+    "options": ["AI that loves to chat", "AI technology that enables natural and dynamic conversations with users", "AI used for computer gaming"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 72,
+    "question": "What is the role of 'synthetic data' in chatbot development?",
+    "options": ["Creating artificial chatbot personas", "Generating fake user messages", "Creating training data for chatbots using artificial examples"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 73,
+    "question": "What is 'voice authentication' in chatbot security?",
+    "options": ["Determining the chatbot's voice quality", "Authenticating user identities based on their voice", "Authenticating chatbots based on their responses"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 74,
+    "question": "What is 'contextual memory' in chatbot interactions?",
+    "options": ["The chatbot's ability to remember past conversations", "The chatbot's knowledge of historical events", "The chatbot's memory of user emotions"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 75,
+    "question": "What is 'chatbot debugging' used for?",
+    "options": ["Debugging chatbot emotions", "Identifying and fixing issues or errors in chatbot behavior", "Debugging user messages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 76,
+    "question": "What is 'multi-modal input' in chatbot interactions?",
+    "options": ["Input from multiple chatbots", "Input from multiple users at the same time", "Input in various forms, such as text, voice, and images"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 77,
+    "question": "What is 'contextual reinforcement learning' in chatbot development?",
+    "options": ["Reinforcing chatbot responses with humor", "A type of machine learning where chatbots learn from user interactions in specific contexts", "Teaching chatbots to play video games"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 78,
+    "question": "What is 'intent optimization' in chatbot interactions?",
+    "options": ["Optimizing chatbot intents for maximum efficiency", "Optimizing user intents to be more complex", "Optimizing chatbot behavior to annoy users"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 79,
+    "question": "What is 'response time' in chatbot performance?",
+    "options": ["The time it takes for a chatbot to generate a response", "The time it takes for a user to respond to a chatbot", "The time it takes for chatbots to learn from user interactions"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 80,
+    "question": "What is 'data privacy' in chatbot security?",
+    "options": ["Ensuring chatbot privacy", "Protecting user data and information during chatbot interactions", "Keeping chatbot data secret from developers"],
+    "correctOption": 2
+  }
+]

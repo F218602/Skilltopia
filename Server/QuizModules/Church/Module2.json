@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is the purpose of load balancing in cloud computing?",
+    "options": ["Optimizing database performance", "Distributing network traffic evenly across servers", "Managing cloud security policies"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 22,
+    "question": "Which IBM Cloud service provides a serverless computing platform for running code in response to events?",
+    "options": ["IBM Watson", "IBM Cloud Functions", "IBM Kubernetes Service"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 23,
+    "question": "In Kubernetes, what is a 'Service' used for?",
+    "options": ["Managing container images", "Exposing a set of pods as a network service", "Storing data in the cloud"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 24,
+    "question": "What is the significance of 'etcd' in a Kubernetes cluster?",
+    "options": ["A container orchestration tool", "A distributed key-value store for cluster configuration", "A Kubernetes dashboard"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 25,
+    "question": "Which cloud deployment model allows multiple organizations to share a common cloud infrastructure?",
+    "options": ["Public cloud", "Private cloud", "Community cloud"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 26,
+    "question": "What is the primary benefit of using 'serverless' computing in the cloud?",
+    "options": ["Full control over server hardware", "Elimination of server provisioning and management", "Enhanced data security"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 27,
+    "question": "In cloud computing, what does 'PaaS' stand for?",
+    "options": ["Platform as a Service", "Private as a Service", "Performance as a Service"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 28,
+    "question": "What is the primary role of a Content Delivery Network (CDN) in cloud services?",
+    "options": ["Ensuring data privacy", "Optimizing network latency", "Managing virtual servers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "What is the purpose of 'IAM' (Identity and Access Management) in cloud computing?",
+    "options": ["Managing internet connections", "Controlling access to cloud resources", "Optimizing container orchestration"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 30,
+    "question": "Which cloud service model offers the highest level of control and customization for users?",
+    "options": ["SaaS (Software as a Service)", "IaaS (Infrastructure as a Service)", "PaaS (Platform as a Service)"],
+    "correctOption": 2
+  }
+]

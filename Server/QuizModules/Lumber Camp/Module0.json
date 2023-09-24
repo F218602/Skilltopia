@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What is the primary focus of a front-end web developer?",
+    "options": ["Server-side programming", "Designing user interfaces and user experiences", "Database management"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 2,
+    "question": "What does HTML stand for in web development?",
+    "options": ["HyperText Markup Language", "Highly Textual Multilayer Language", "Hypertext Transfer Language"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 3,
+    "question": "Which programming language is primarily used for front-end web development?",
+    "options": ["Python", "Java", "JavaScript"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 4,
+    "question": "What is the purpose of CSS in web development?",
+    "options": ["Creating and managing databases", "Styling and formatting web pages", "Handling server-side logic"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 5,
+    "question": "What is the role of a full-stack developer?",
+    "options": ["Developing only the front-end of web applications", "Developing both the front-end and back-end of web applications", "Designing user interfaces"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 6,
+    "question": "Which of the following is a server-side programming language often used in full-stack development?",
+    "options": ["HTML", "CSS", "Python"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 7,
+    "question": "What is the purpose of a version control system like Git in web development?",
+    "options": ["Managing databases", "Tracking changes to code and collaborating with others", "Creating web page layouts"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 8,
+    "question": "What does the term 'responsive web design' refer to?",
+    "options": ["Designing web pages that react to user input", "Designing web pages that adapt to different screen sizes and devices", "Creating interactive web applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 9,
+    "question": "What is the purpose of JavaScript frameworks like React and Angular in web development?",
+    "options": ["Managing databases", "Styling web pages", "Building interactive user interfaces"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 10,
+    "question": "What is the back-end of a web application responsible for?",
+    "options": ["Managing user interfaces", "Handling server-side logic and database operations", "Styling web pages"],
+    "correctOption": 2
+  }
+]

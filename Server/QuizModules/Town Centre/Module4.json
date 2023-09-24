@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 41,
+    "question": "What is 'microservices architecture' in cloud computing?",
+    "options": ["A type of cloud service for managing small files", "A software architecture that structures an application as a collection of loosely coupled services", "A form of serverless computing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 42,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["To combine two different datasets", "To evaluate a model's performance using multiple subsets of the data", "To transform data into a different format"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 43,
+    "question": "What is 'phishing' in cybersecurity?",
+    "options": ["A method for catching cybercriminals", "A fraudulent attempt to obtain sensitive information by posing as a trustworthy entity", "A type of encryption used in secure communications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 44,
+    "question": "What is a 'smart contract' in blockchain technology?",
+    "options": ["A contract signed by a computer scientist", "A legally binding contract with advanced terms and conditions", "A self-executing contract with code that enforces the terms of the agreement"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 45,
+    "question": "What is 'React' in web development?",
+    "options": ["A web hosting service", "A JavaScript library for building user interfaces", "A database management system"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 46,
+    "question": "What is 'natural language processing' (NLP) used for in AI?",
+    "options": ["Understanding the nuances of human language, including context and meaning", "Translating languages automatically", "Analyzing the sound of human speech"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 47,
+    "question": "What is 'quantum entanglement' in quantum computing?",
+    "options": ["A form of data encryption", "A phenomenon where particles become correlated in a way that their quantum states are interconnected", "A method for optimizing quantum algorithms"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 48,
+    "question": "What does 'endpoint security' focus on in cybersecurity?",
+    "options": ["Securing the physical location of network endpoints", "Securing the data center's endpoints", "Securing individual devices and their access points"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 49,
+    "question": "What is 'data preprocessing' in data science?",
+    "options": ["The process of generating new data", "The process of cleaning, transforming, and organizing raw data into a suitable format for analysis", "The process of visualizing data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 50,
+    "question": "What is 'DevOps' in software development?",
+    "options": ["A programming language", "A set of practices that combine software development (Dev) and IT operations (Ops)", "A cloud computing platform"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 91,
+    "question": "What is 'smart contract' in the context of blockchain?",
+    "options": ["A legally binding agreement between two parties", "A self-executing contract with the terms of the agreement directly written into code on the blockchain", "A type of cryptocurrency contract"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 92,
+    "question": "What is 'double-spending' in blockchain?",
+    "options": ["A situation where a cryptocurrency transaction is executed twice", "Spending money on two different items", "A type of cryptocurrency scam"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 93,
+    "question": "What is a '51% attack' in blockchain security?",
+    "options": ["An attack where 51% of all cryptocurrency is stolen", "An attack where a single entity gains control of over 50% of a blockchain network's mining power, potentially enabling malicious activities", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 94,
+    "question": "What is 'immutable ledger' in blockchain?",
+    "options": ["A ledger that can be easily changed or modified", "A ledger that cannot be altered once data is recorded, providing a permanent and unchangeable record", "A type of cryptocurrency ledger"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 95,
+    "question": "What is 'token burning' in blockchain?",
+    "options": ["A process of destroying cryptocurrency tokens", "A method for creating new tokens", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 96,
+    "question": "What is 'proof of stake' (PoS) in blockchain?",
+    "options": ["A way to prove ownership of cryptocurrency tokens", "A consensus mechanism where validators are chosen to create new blocks and validate transactions based on the number of tokens they hold and are willing to 'stake' as collateral", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 97,
+    "question": "What is 'blockchain for non-fungible tokens' (NFTs) used for?",
+    "options": ["Creating interchangeable digital assets", "Representing ownership and uniqueness of digital or physical items using blockchain technology", "A type of cryptocurrency for collectors"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 98,
+    "question": "What is a 'consortium blockchain'?",
+    "options": ["A blockchain controlled by a single entity", "A blockchain governed by a consortium or group of organizations, often used for private or permissioned networks", "A type of cryptocurrency consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 99,
+    "question": "What is 'blockchain as a service' (BaaS) pricing model?",
+    "options": ["A fixed monthly subscription fee", "A pay-as-you-go pricing model based on usage and resources consumed", "A type of cryptocurrency wallet pricing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'blockchain for intellectual property' used for?",
+    "options": ["Tracking the sale of patents", "Protecting and managing copyrights, patents, and creative works on the blockchain", "A type of cryptocurrency for artists"],
+    "correctOption": 2
+  }
+]

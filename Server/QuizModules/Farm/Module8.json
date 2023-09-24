@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 81,
+    "question": "What is 'data classification' in cybersecurity?",
+    "options": ["A method for classifying data as public or private", "A process for encrypting data in transit", "A method for classifying cybersecurity incidents"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 82,
+    "question": "What is 'end-to-end encryption' in cybersecurity?",
+    "options": ["A method for securing physical access to data centers", "A method for encrypting data at rest", "A method for encrypting data in a way that it remains encrypted from the sender to the recipient, with only the recipient able to decrypt it"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 83,
+    "question": "What is 'phishing' in cybersecurity?",
+    "options": ["A method for securing wireless networks", "A social engineering attack where attackers impersonate trusted entities to deceive individuals into revealing sensitive information", "A type of firewall"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 84,
+    "question": "What is 'secure socket layer' (SSL) used for in cybersecurity?",
+    "options": ["A method for secure data backup", "A protocol for securing data transmission over the internet", "A method for securing physical access to data centers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 85,
+    "question": "What is a 'security audit' in cybersecurity?",
+    "options": ["A test to identify weaknesses in a system or network", "A process for securing data in storage", "A method for securing IoT devices"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 86,
+    "question": "What is 'biometric authentication' in cybersecurity?",
+    "options": ["A method for encrypting network traffic", "A method for securing physical access to data centers", "An authentication method that uses unique physical or behavioral characteristics, such as fingerprints or facial recognition, to verify a user's identity"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 87,
+    "question": "What is 'security risk assessment' in cybersecurity?",
+    "options": ["A process for assessing the risk of earthquakes", "A method for assessing the risk of cyberattacks and vulnerabilities within an organization", "A type of security certification"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 88,
+    "question": "What is 'security policy' in cybersecurity?",
+    "options": ["A document outlining an organization's approach to cybersecurity", "A type of physical barrier to protect computer systems", "A method for securing network communications"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 89,
+    "question": "What is 'security awareness training' in cybersecurity?",
+    "options": ["Training individuals to become cybersecurity professionals", "Training employees and users to recognize and respond to security threats", "Training on how to physically secure a data center"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 90,
+    "question": "What is 'incident classification' in cybersecurity?",
+    "options": ["A classification of security incidents as minor or major", "A classification of hardware vulnerabilities", "A classification of software licenses"],
+    "correctOption": 1
+  }
+]

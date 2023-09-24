@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 81,
+    "question": "What is 'intent ranking' in chatbot development?",
+    "options": ["Ranking chatbot intents based on their popularity", "Ranking user intents based on their complexity", "Ranking detected intents by their likelihood of matching user intentions"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 82,
+    "question": "What is 'contextual generation' in chatbot design?",
+    "options": ["Generating random chatbot responses", "Generating responses that are contextually relevant to the conversation", "Generating responses without considering the conversation context"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 83,
+    "question": "What is 'conversational design' in chatbot development?",
+    "options": ["Designing chatbots with colorful conversation bubbles", "Designing chatbot user interfaces", "Designing the flow and user experience of chatbot conversations"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 84,
+    "question": "What is 'utterance' in chatbot interactions?",
+    "options": ["A chatbot's expression of frustration", "A user's spoken or written input to a chatbot", "A chatbot's way of greeting users"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 85,
+    "question": "What is 'fallback policy' in chatbot design?",
+    "options": ["A policy for chatbots to take a break", "A policy for handling user messages when the chatbot doesn't understand", "A policy for chatbot user authentication"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 86,
+    "question": "What is 'session management' in chatbot interactions?",
+    "options": ["Managing chatbot developers' sessions", "Managing chatbot users' login sessions", "Managing the context and state of a conversation with a user"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 87,
+    "question": "What is 'integrated voice response' (IVR) in chatbot technology?",
+    "options": ["A chatbot's ability to respond using voice", "A system that interacts with users through automated voice menus", "A chatbot that integrates with video calls"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 88,
+    "question": "What is 'persona adaptation' in chatbot design?",
+    "options": ["Chatbots adapting their personalities over time", "Chatbots adapting to user preferences and personas", "Chatbots adapting to different languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 89,
+    "question": "What is 'language understanding' in chatbot development?",
+    "options": ["Chatbots learning new languages", "The chatbot's ability to understand and process user messages in natural language", "Chatbots translating user messages into other languages"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 90,
+    "question": "What is 'intent co-training' in chatbot development?",
+    "options": ["Chatbots co-training with humans", "A method where chatbots train each other on different intents", "A technique where chatbots improve their performance through collaboration"],
+    "correctOption": 3
+  }
+]

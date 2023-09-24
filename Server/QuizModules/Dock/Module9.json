@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 91,
+    "question": "What is 'overfitting' in machine learning?",
+    "options": ["A model that fits the data well", "A model that generalizes well to unseen data", "A model that performs poorly on unseen data because it has learned noise in the training data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 92,
+    "question": "What is 'precision' in the context of binary classification?",
+    "options": ["A metric that measures the ratio of true positives to all actual positives", "A metric that measures the ratio of true positives to true positives plus false negatives", "A metric that measures the ratio of true positives to true positives plus false positives"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 93,
+    "question": "What is 'recall' in the context of binary classification?",
+    "options": ["A metric that measures the ratio of true positives to all actual positives", "A metric that measures the ratio of true positives to true positives plus false negatives", "A metric that measures the ratio of true positives to true positives plus false positives"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 94,
+    "question": "What is 'bagging' in ensemble learning?",
+    "options": ["A method for carrying groceries", "A technique for combining the predictions of multiple models", "A form of data augmentation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 95,
+    "question": "What is 'grid search' used for in machine learning?",
+    "options": ["Searching for the best hyperparameters for a model by testing a range of values", "Searching for data outliers", "Searching for patterns in textual data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 96,
+    "question": "What is 'cross-validation' used for in machine learning?",
+    "options": ["To combine two different datasets", "To evaluate a model's performance using multiple subsets of the data", "To transform data into a different format"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 97,
+    "question": "What is 'R-squared' (R2) used for in regression analysis?",
+    "options": ["A measure of how well a model fits the data", "A measure of the number of predictors in a model", "A measure of data variance"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 98,
+    "question": "What is 'p-value' in statistics?",
+    "options": ["A measure of the strength of a statistical relationship", "A measure of data preprocessing performance", "A measure of evidence against a null hypothesis"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 99,
+    "question": "What is 'k-fold cross-validation'?",
+    "options": ["A method for validating data in k different ways", "A technique for splitting data into k subsets and training/testing on them iteratively", "A method for clustering data into k groups"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is the role of a 'Gateway' in cloud architecture?",
+    "options": ["Managing server hardware", "Enabling secure communication between networks", "Optimizing database performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 52,
+    "question": "In Kubernetes, what is a 'StatefulSet' used for?",
+    "options": ["Scaling and updating application instances", "Managing container images", "Managing cloud security policies"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 53,
+    "question": "What is the primary advantage of using 'serverless computing' for event-driven applications?",
+    "options": ["Lower cost of virtual machines", "Elimination of server management tasks", "Improved network latency"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 54,
+    "question": "Which IBM Cloud service provides a fully managed database service with automatic scaling?",
+    "options": ["IBM Cloud Functions", "IBM Cloud Databases", "IBM Watson"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 55,
+    "question": "In Kubernetes, what is the 'Master Node' responsible for?",
+    "options": ["Running application workloads", "Scheduling pods to worker nodes", "Managing DNS resolution"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 56,
+    "question": "What is the primary advantage of using 'object storage' in the cloud?",
+    "options": ["Real-time data processing", "Highly structured data storage", "Scalable and cost-effective storage for unstructured data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 57,
+    "question": "In cloud services, what is 'SLI' an abbreviation for?",
+    "options": ["Service Level Indicator", "Security and Logging Integration", "Software Licensing Inventory"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 58,
+    "question": "What is 'Knative' in the context of serverless computing?",
+    "options": ["A serverless database service", "An open-source platform for building serverless applications", "A container orchestration tool"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 59,
+    "question": "What is the purpose of 'Encryption at Rest' in cloud storage?",
+    "options": ["Optimizing network latency", "Ensuring data privacy by encrypting stored data", "Scaling virtual machines"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 60,
+    "question": "Which cloud service model provides the most control and responsibility for users?",
+    "options": ["SaaS (Software as a Service)", "IaaS (Infrastructure as a Service)", "PaaS (Platform as a Service)"],
+    "correctOption": 2
+  }
+]

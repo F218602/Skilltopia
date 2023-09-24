@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 11,
+    "question": "What is the 'smart home' concept in IoT?",
+    "options": ["A home with no technology", "A home equipped with devices and systems that can be controlled remotely and automated", "A home without electricity"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 12,
+    "question": "Which IoT communication protocol is commonly used for home automation?",
+    "options": ["MQTT", "LoRaWAN", "HTTP"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 13,
+    "question": "What does 'IoT security' primarily focus on?",
+    "options": ["Ensuring all devices are connected to the internet", "Protecting IoT devices and networks from cybersecurity threats", "Improving IoT device performance"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 14,
+    "question": "Which IoT component is responsible for controlling and managing other IoT devices?",
+    "options": ["IoT sensors", "IoT actuators", "IoT cloud services"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 15,
+    "question": "What is the 'Internet of Medical Things' (IoMT)?",
+    "options": ["A medical condition caused by IoT devices", "A network of medical devices and applications connected through IoT", "A medical treatment for IoT-related illnesses"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 16,
+    "question": "What is 'predictive maintenance' in industrial IoT (IIoT)?",
+    "options": ["Performing maintenance tasks on IoT devices before they fail", "Performing maintenance tasks on IoT devices after they fail", "Ignoring maintenance on IoT devices"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 17,
+    "question": "Which IoT application area focuses on optimizing the use of energy resources?",
+    "options": ["Agriculture", "Smart cities", "Energy management"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 18,
+    "question": "What is 'IoT interoperability'?",
+    "options": ["The ability of IoT devices from different manufacturers to work together", "The ability of IoT devices to operate without electricity", "The ability of IoT devices to understand human languages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 19,
+    "question": "What is 'sensor fusion' in IoT?",
+    "options": ["Combining data from multiple sensors to make more accurate observations or measurements", "Fusing IoT devices into a single device", "Using sensors to create art"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 20,
+    "question": "What is the 'IoT protocol stack'?",
+    "options": ["A stack of IoT devices", "A set of communication protocols and standards for IoT", "A stack of pancakes served in IoT-themed restaurants"],
+    "correctOption": 2
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 11,
+    "question": "What is a 'static website' in web development?",
+    "options": ["A website that doesn't load images", "A website that doesn't use any JavaScript", "A website that serves pre-rendered HTML pages"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 12,
+    "question": "What is the purpose of a 'RESTful API' in web development?",
+    "options": ["Rendering web pages", "Providing a way for different software systems to communicate over the internet", "Creating responsive web designs"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 13,
+    "question": "Which technology is used to store and retrieve data on the client side in web development?",
+    "options": ["Server-side scripting", "Cookies", "Local Storage and Session Storage"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 14,
+    "question": "What does 'HTTP' stand for in the context of web development?",
+    "options": ["HyperText Transfer Protocol", "Highly Technical Text Processing", "Hyper Transfer and Text Processing"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 15,
+    "question": "What is 'responsive design' in web development?",
+    "options": ["Designing websites that always look the same on all devices", "Designing websites that adapt to different screen sizes and devices", "Creating websites with a lot of images and animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 16,
+    "question": "Which database system is often used in full-stack web development?",
+    "options": ["NoSQL", "XML", "JSON"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 17,
+    "question": "What is the purpose of 'middleware' in web development?",
+    "options": ["Handling user authentication", "Managing server hardware", "Styling web pages"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 18,
+    "question": "What is the role of 'npm' (Node Package Manager) in web development?",
+    "options": ["Managing server hardware", "Managing project dependencies and packages", "Creating web page layouts"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 19,
+    "question": "What does 'AJAX' stand for in web development?",
+    "options": ["Asynchronous JavaScript and XML", "Active JavaScript and XML", "Automated JavaScript and XML"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 20,
+    "question": "What is 'serverless computing' in web development?",
+    "options": ["Hosting websites without servers", "Developing web applications without a back-end server", "Using extremely powerful servers"],
+    "correctOption": 2
+  }
+]

@@ -26,6 +26,8 @@ export class PlayerGameDataService {
   };
   selectedQuestion = 0;
   difficulty: string = 'easy';
+  quizBuilding: string ='home';
+  quizLevel: number = 1000;
 
   playerName: string = 'Player 1';
   playerID: number = 1;

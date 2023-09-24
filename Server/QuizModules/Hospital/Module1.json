@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 11,
+    "question": "What is a 'private blockchain'?",
+    "options": ["A blockchain that is only accessible to a single user", "A blockchain that is publicly accessible and transparent", "A blockchain that restricts access to a specific group of participants or entities"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 12,
+    "question": "What is a 'blockchain node'?",
+    "options": ["A physical device used to mine cryptocurrencies", "A participant in the blockchain network that stores a copy of the blockchain and participates in consensus", "A type of cryptocurrency wallet"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 13,
+    "question": "What is a 'fork' in the context of blockchain?",
+    "options": ["A utensil used for eating", "A split in the blockchain, resulting in two separate chains with different rules", "A type of smart contract"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 14,
+    "question": "What is 'tokenization' in blockchain?",
+    "options": ["The process of converting physical assets into digital tokens on a blockchain", "A method for securing blockchain transactions", "A type of cryptocurrency wallet"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 15,
+    "question": "What is a 'public key' in blockchain cryptography?",
+    "options": ["A secret key used for encrypting blockchain data", "A key used for signing transactions and known to all participants", "A type of blockchain consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 16,
+    "question": "What is 'permissioned blockchain'?",
+    "options": ["A blockchain that requires permission from a central authority to access", "A blockchain that anyone can join without any restrictions", "A blockchain that is not secure"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 17,
+    "question": "What is 'double-spending' in the context of blockchain?",
+    "options": ["Spending the same cryptocurrency twice in two different transactions", "Spending cryptocurrency twice with the same transaction", "A feature of blockchain to increase transaction speed"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 18,
+    "question": "What is a 'genesis block' in a blockchain?",
+    "options": ["The final block in a blockchain", "The first block in a blockchain that serves as the foundation", "A block used for testing purposes in blockchain development"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 19,
+    "question": "What is a 'hash' in blockchain?",
+    "options": ["A type of blockchain wallet", "A unique alphanumeric string generated from data that serves as a digital fingerprint", "A type of blockchain consensus mechanism"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 20,
+    "question": "What is 'gas' in the Ethereum blockchain?",
+    "options": ["A type of cryptocurrency", "A unit of measurement for the computational work required to execute transactions and smart contracts", "A type of blockchain node"],
+    "correctOption": 2
+  }
+]

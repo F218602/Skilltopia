@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 1,
+    "question": "What does 'IoT' stand for in technology?",
+    "options": ["Internet of Things", "Internet of Theories", "Internet of Trends"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 2,
+    "question": "Which of the following is a key component of an IoT system?",
+    "options": ["Cloud computing", "Quantum computing", "Blockchain"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 3,
+    "question": "What is the primary purpose of IoT sensors in an IoT system?",
+    "options": ["To process data", "To collect data from the environment", "To create data visualizations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 4,
+    "question": "Which wireless communication technology is commonly used for IoT devices with low power requirements?",
+    "options": ["4G", "Bluetooth", "LoRaWAN"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 5,
+    "question": "What is 'edge computing' in the context of IoT?",
+    "options": ["Computing at the center of the network", "Computing at the IoT devices themselves", "Computing in the cloud"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 6,
+    "question": "Which IoT protocol is known for its lightweight and efficient communication for constrained devices?",
+    "options": ["HTTP", "MQTT", "TCP/IP"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 7,
+    "question": "What is 'data analytics' in the context of IoT?",
+    "options": ["Analyzing the cost of IoT devices", "Analyzing data collected from IoT devices to derive insights", "Analyzing the speed of IoT data transmission"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 8,
+    "question": "Which IoT security measure is crucial to prevent unauthorized access to IoT devices?",
+    "options": ["Encryption", "Device overclocking", "Data compression"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 9,
+    "question": "What is the role of a 'gateway' in an IoT architecture?",
+    "options": ["To store data from IoT devices", "To block incoming data from IoT devices", "To connect IoT devices to the internet and process data"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 10,
+    "question": "What does 'IoT ecosystem' refer to?",
+    "options": ["A protected natural habitat for IoT devices", "The interconnected network of IoT devices, software, and services", "A type of IoT-friendly gardening technique"],
+    "correctOption": 2
+  }
+]

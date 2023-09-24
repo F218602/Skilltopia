@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is the purpose of 'routing' in web development?",
+    "options": ["Finding the quickest route to a web server", "Navigating through different parts of a web application without page reloads", "Optimizing web page loading speed"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 22,
+    "question": "What is 'asynchronous programming' in JavaScript used for?",
+    "options": ["Running multiple instances of JavaScript simultaneously", "Executing code sequentially", "Handling operations that may take some time to complete without blocking the main thread"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 23,
+    "question": "What is 'middleware' in the context of Express.js, a popular web framework for Node.js?",
+    "options": ["A software component that manages server hardware", "A function that processes HTTP requests and responses", "A tool for creating front-end animations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 24,
+    "question": "What is the purpose of 'CORS' in web development?",
+    "options": ["A security feature to prevent unauthorized access to websites", "A method for compressing web pages to reduce loading times", "A design pattern for creating responsive web designs"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 25,
+    "question": "What is 'SQL injection' and why is it a security concern in web development?",
+    "options": ["A method for improving SQL database performance", "A security vulnerability where an attacker can manipulate database queries through user input", "A method for encrypting SQL databases"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 26,
+    "question": "What is 'MVC' architecture in web development?",
+    "options": ["Model-View-Control architecture, a design pattern for organizing code", "Media, Video, and Content architecture", "Machine Vision and Control architecture"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 27,
+    "question": "What is 'JWT' (JSON Web Token) used for in web development?",
+    "options": ["A JavaScript library for web animations", "A method for securely transmitting information between parties as a JSON object", "A programming language for building web applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'server-side rendering' (SSR) in web development?",
+    "options": ["Rendering images on the server side", "Rendering web pages on the client side", "Rendering web pages on the server side and sending them to the client"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 29,
+    "question": "What does 'DOM' stand for in web development?",
+    "options": ["Document Object Model", "Digital Object Management", "Dynamic Object Mapping"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'WebSockets' used for in web development?",
+    "options": ["Creating web pages", "Real-time communication between a client and a server", "Optimizing image loading on web pages"],
+    "correctOption": 2
+  }
+]

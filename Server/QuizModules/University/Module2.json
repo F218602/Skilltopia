@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 21,
+    "question": "What is 'IoT data analytics' used for?",
+    "options": ["Measuring the physical size of IoT devices", "Analyzing data collected from IoT devices to extract valuable insights", "Predicting the lifespan of IoT devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 22,
+    "question": "Which of the following is an example of an IoT application in agriculture?",
+    "options": ["Weather forecasting", "IoT-controlled traffic lights", "Precision farming with IoT sensors"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 23,
+    "question": "What is 'LPWAN' in the context of IoT communication?",
+    "options": ["Low-Performance Wide Area Network", "Low-Power Wide Area Network", "Low-Price Wide Area Network"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 24,
+    "question": "What is 'IoT cloud computing' used for?",
+    "options": ["Processing data at IoT devices", "Storing and analyzing IoT data in the cloud", "Broadcasting IoT data on television"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 25,
+    "question": "What does 'IoT firmware' refer to?",
+    "options": ["A wearable IoT device", "Software that is embedded in IoT devices to control their functions", "A cloud-based IoT service"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 26,
+    "question": "What is 'IoT protocol optimization' used for?",
+    "options": ["Reducing the number of IoT devices in a network", "Improving the efficiency of communication between IoT devices", "Enhancing the physical appearance of IoT devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 27,
+    "question": "What is 'IoT standards and regulations' aimed at?",
+    "options": ["Limiting the use of IoT devices", "Defining guidelines and rules for the design and use of IoT devices", "Promoting IoT devices with higher prices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 28,
+    "question": "What is the 'IoT supply chain'?",
+    "options": ["The chain of supply stores that sell IoT devices", "The sequence of processes involved in designing, manufacturing, and delivering IoT devices", "A chain used to lock IoT devices"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "What is 'IoT edge analytics' used for?",
+    "options": ["Analyzing data at the center of the network", "Analyzing data at the edge of the network, closer to the IoT devices", "Analyzing data on a separate network"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'IoT device management' focused on?",
+    "options": ["Managing IoT devices' finances", "Managing the physical location of IoT devices", "Managing the lifecycle, connectivity, and security of IoT devices"],
+    "correctOption": 3
+  }
+]

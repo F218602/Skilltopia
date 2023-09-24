@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is the purpose of 'serverless containers' in cloud computing?",
+    "options": ["Running traditional server-based applications", "Simplifying application deployment with containerization", "Eliminating the need for servers altogether"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 62,
+    "question": "Which IBM Cloud service provides tools for managing and automating IT infrastructure?",
+    "options": ["IBM Cloud Functions", "IBM Cloud Automation Manager", "IBM Kubernetes Service"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 63,
+    "question": "In Kubernetes, what is a 'Service Account' used for?",
+    "options": ["Managing cloud billing", "Controlling access to cluster resources", "Creating container images"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 64,
+    "question": "What is the primary role of 'Prometheus' in Kubernetes?",
+    "options": ["Monitoring and alerting for containerized applications", "Scaling container replicas", "Managing container storage"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 65,
+    "question": "Which cloud deployment model is characterized by a combination of public and private cloud resources?",
+    "options": ["Public cloud", "Private cloud", "Hybrid cloud"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 66,
+    "question": "What is 'NoSQL' in the context of cloud databases?",
+    "options": ["A database management language", "A relational database technology", "A non-relational database technology"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 67,
+    "question": "In cloud services, what does 'API' stand for?",
+    "options": ["Advanced Programming Interface", "Application Programming Interface", "All-Purpose Integration"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 68,
+    "question": "What is the purpose of 'Elastic Load Balancing' in cloud architectures?",
+    "options": ["Ensuring data privacy", "Distributing incoming application traffic across multiple targets", "Managing virtual machine resources"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 69,
+    "question": "What is 'Serverless Security' in the context of serverless computing?",
+    "options": ["A serverless computing framework", "A security measure for serverless applications", "A cloud storage solution"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 70,
+    "question": "Which cloud service model provides a complete application environment, including the underlying infrastructure?",
+    "options": ["SaaS (Software as a Service)", "IaaS (Infrastructure as a Service)", "PaaS (Platform as a Service)"],
+    "correctOption": 3
+  }
+]
