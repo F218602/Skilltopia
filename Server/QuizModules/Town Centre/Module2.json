@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 21,
-    "question": "What is 'intent recognition' in chatbots and AI?",
-    "options": ["Determining the intention behind a user's message or query", "Detecting spam messages", "Identifying the user's location"],
-    "correctOption": 1
+    "question": "What is 'waterfall methodology' in project management?",
+    "options": ["A project management approach that prioritizes adaptability and flexibility", "A project management approach that follows a sequential, linear process", "A project management approach that emphasizes teamwork"],
+    "correctOption": 2
   },
   {
     "questionNo": 22,
-    "question": "What is a 'quantum gate' in quantum computing?",
-    "options": ["A gate used to control access to quantum computers", "A fundamental building block of quantum circuits", "A physical gate at the entrance to a quantum data center"],
-    "correctOption": 2
+    "question": "What is 'stakeholder analysis' in project management?",
+    "options": ["A technique for assessing the interests and influence of project stakeholders", "A method for ignoring project stakeholders", "A type of risk assessment"],
+    "correctOption": 1
   },
   {
     "questionNo": 23,
-    "question": "What does 'edge computing' involve in IoT (Internet of Things)?",
-    "options": ["Processing data at a centralized cloud server", "Processing data at the network's edge, closer to where it's generated", "Sending data to a remote data center for processing"],
-    "correctOption": 2
+    "question": "What does 'CPI' stand for in earned value analysis?",
+    "options": ["Cost Performance Indicator", "Critical Project Information", "Customer Performance Index"],
+    "correctOption": 1
   },
   {
     "questionNo": 24,
-    "question": "What is 'natural language understanding' (NLU) used for in AI?",
-    "options": ["Understanding the nuances of human language, including context and meaning", "Translating languages automatically", "Analyzing the sound of human speech"],
-    "correctOption": 1
+    "question": "What is 'change control' in project management?",
+    "options": ["A process for preventing any changes in the project", "A process for managing changes to project requirements and scope", "A process for controlling project expenses"],
+    "correctOption": 2
   },
   {
     "questionNo": 25,
-    "question": "What is 'API' in web development?",
-    "options": ["Application Programming Interface", "Advanced Programming Instruction", "Automated Process Integration"],
-    "correctOption": 1
+    "question": "What is 'agile project management' often used for?",
+    "options": ["Projects with a fixed scope and requirements", "Projects with changing or evolving requirements", "Projects with no deadlines"],
+    "correctOption": 2
   },
   {
     "questionNo": 26,
-    "question": "What is 'serverless computing' in cloud computing?",
-    "options": ["A type of computing that doesn't use servers", "A computing model where cloud providers automatically manage server resources", "A form of peer-to-peer computing"],
+    "question": "What is 'Pareto analysis' used for in project management?",
+    "options": ["A method for selecting project team members", "A technique for prioritizing issues or factors by their impact", "A method for tracking project expenses"],
     "correctOption": 2
   },
   {
     "questionNo": 27,
-    "question": "What is 'gradient descent' used for in machine learning?",
-    "options": ["A technique for coloring images", "An optimization algorithm used to adjust model parameters during training", "A method for clustering data"],
+    "question": "What is 'risk mitigation' in project management?",
+    "options": ["A method for increasing project risks", "A strategy for reducing the impact of potential risks", "A method for ignoring project risks"],
     "correctOption": 2
   },
   {
     "questionNo": 28,
-    "question": "What is 'penetration testing' in cybersecurity?",
-    "options": ["Testing the strength of physical objects", "Testing a system or network for vulnerabilities by simulating attacks", "Testing the performance of network cables"],
-    "correctOption": 2
+    "question": "What is 'burn-up chart' used for in Agile project management?",
+    "options": ["A chart that displays the number of project tasks completed", "A chart that tracks project spending", "A chart that displays project burnout rates"],
+    "correctOption": 1
   },
   {
     "questionNo": 29,
-    "question": "What is a 'smart contract' in blockchain technology?",
-    "options": ["A contract signed by a computer scientist", "A legally binding contract with advanced terms and conditions", "A self-executing contract with code that enforces the terms of the agreement"],
-    "correctOption": 3
+    "question": "What is 'velocity' in Scrum?",
+    "options": ["A measurement of the speed of project team members", "A measure of the rate at which the team delivers work", "A measure of project complexity"],
+    "correctOption": 2
   },
   {
     "questionNo": 30,
-    "question": "What is 'responsive web design' in web development?",
-    "options": ["Designing websites that respond to user feedback", "Designing websites that adapt and display well on various devices and screen sizes", "Creating websites that are always available and responsive to user requests"],
+    "question": "What is 'agile product owner' role in Agile project management?",
+    "options": ["A role responsible for team motivation", "A role responsible for defining and prioritizing the product backlog", "A role responsible for coding and programming"],
     "correctOption": 2
-  }  
+  }
 ]

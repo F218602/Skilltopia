@@ -1,62 +1,62 @@
 [
   {
-    "questionNo": 1,
-    "question": "Which member of BTS is known for his amazing dance skills and his stage name J-Hope?",
-    "options": ["Jin", "Suga", "J-Hope"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 2,
-    "question": "BTS debuted under which entertainment company?",
-    "options": ["YG Entertainment", "SM Entertainment", "Big Hit Entertainment"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 3,
-    "question": "What is the name of BTS's fandom?",
-    "options": ["ARMY", "EXO-L", "ONCE"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 4,
-    "question": "Which BTS member is known for his deep and melodic voice, and his real name is Kim Namjoon?",
-    "options": ["V", "RM", "Jungkook"],
+    "questionNo": 31,
+    "question": "What is 'serverless computing' in cloud computing?",
+    "options": ["A type of computing that doesn't use servers", "A computing model where cloud providers automatically manage server resources", "A form of peer-to-peer computing"],
     "correctOption": 2
   },
   {
-    "questionNo": 5,
-    "question": "BTS's 2013 debut single album is titled?",
-    "options": ["2 Cool 4 Skool", "Dark & Wild", "Love Yourself: Her"],
+    "questionNo": 32,
+    "question": "What is 'unsupervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 33,
+    "question": "What is 'firewall' used for in cybersecurity?",
+    "options": ["A device used to regulate internet speed", "A security measure that monitors and filters network traffic", "A tool for creating strong passwords"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 34,
+    "question": "What is a 'genesis block' in blockchain technology?",
+    "options": ["The last block in a blockchain", "The first block in a blockchain, used as a reference point", "A type of encryption used in blockchain transactions"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 35,
+    "question": "What is 'JavaScript' primarily used for in web development?",
+    "options": ["Creating databases", "Adding interactivity and functionality to websites", "Storing user credentials"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 36,
+    "question": "What is 'natural language understanding' (NLU) used for in AI?",
+    "options": ["Understanding the nuances of human language, including context and meaning", "Translating languages automatically", "Analyzing the sound of human speech"],
     "correctOption": 1
   },
   {
-    "questionNo": 6,
-    "question": "What is the name of BTS's leader and main rapper, known for his intelligent lyrics?",
-    "options": ["Suga", "J-Hope", "RM"],
-    "correctOption": 3
+    "questionNo": 37,
+    "question": "What is 'quantum entanglement' in quantum computing?",
+    "options": ["A form of data encryption", "A phenomenon where particles become correlated in a way that their quantum states are interconnected", "A method for optimizing quantum algorithms"],
+    "correctOption": 2
   },
   {
-    "questionNo": 7,
-    "question": "Which BTS member is known for his boxy smile, cute personality, and his real name is Park Jimin?",
-    "options": ["Jimin", "Jin", "Jungkook"],
+    "questionNo": 38,
+    "question": "What is 'IoT security' concerned with in IoT (Internet of Things)?",
+    "options": ["Securing internet connections", "Securing physical devices connected to the internet", "Securing data centers"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 39,
+    "question": "What is 'Python' known for in the field of data science?",
+    "options": ["A programming language used for creating mobile apps", "A language used for machine learning and data analysis", "A scripting language for web development"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 40,
+    "question": "What is 'agile development' in software development?",
+    "options": ["A project management methodology focused on flexibility and collaboration", "A software testing approach", "A programming language for AI"],
     "correctOption": 1
-  },
-  {
-    "questionNo": 8,
-    "question": "BTS's first English-language single, released in 2020, is titled?",
-    "options": ["Dynamite", "Butter", "DNA"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 9,
-    "question": "How many members are there in BTS?",
-    "options": ["5", "6", "7"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 10,
-    "question": "BTS's 2020 album that explores themes of uncertainty and growth is called?",
-    "options": ["Map of the Soul: Persona", "Love Yourself: Tear", "Map of the Soul: 7"],
-    "correctOption": 3
   }
 ]

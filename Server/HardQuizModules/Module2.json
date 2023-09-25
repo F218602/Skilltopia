@@ -1,62 +1,62 @@
 [
   {
-    "questionNo": 1,
-    "question": "What letter comes after 'B'?",
-    "options": ["A", "C", "D"],
+    "questionNo": 21,
+    "question": "What is 'intent recognition' in chatbots and AI?",
+    "options": ["Determining the intention behind a user's message or query", "Detecting spam messages", "Identifying the user's location"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 22,
+    "question": "What is a 'quantum gate' in quantum computing?",
+    "options": ["A gate used to control access to quantum computers", "A fundamental building block of quantum circuits", "A physical gate at the entrance to a quantum data center"],
     "correctOption": 2
   },
   {
-    "questionNo": 2,
-    "question": "Which letter is a vowel?",
-    "options": ["B", "C", "A"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 3,
-    "question": "Which letter is often used to represent a number?",
-    "options": ["N", "Z", "X"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 4,
-    "question": "What letter is the first letter in the word 'Apple'?",
-    "options": ["A", "B", "C"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 5,
-    "question": "What letter is the last letter in the word 'Jump'?",
-    "options": ["P", "M", "J"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 6,
-    "question": "Which letter is the 15th letter of the English alphabet?",
-    "options": ["O", "M", "P"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 7,
-    "question": "What letter comes before 'F'?",
-    "options": ["E", "G", "H"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 8,
-    "question": "Which letter is a consonant?",
-    "options": ["A", "I", "K"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 9,
-    "question": "What letter is the second letter in the word 'Yellow'?",
-    "options": ["E", "L", "W"],
+    "questionNo": 23,
+    "question": "What does 'edge computing' involve in IoT (Internet of Things)?",
+    "options": ["Processing data at a centralized cloud server", "Processing data at the network's edge, closer to where it's generated", "Sending data to a remote data center for processing"],
     "correctOption": 2
   },
   {
-    "questionNo": 10,
-    "question": "What letter comes after 'R'?",
-    "options": ["S", "Q", "T"],
+    "questionNo": 24,
+    "question": "What is 'natural language understanding' (NLU) used for in AI?",
+    "options": ["Understanding the nuances of human language, including context and meaning", "Translating languages automatically", "Analyzing the sound of human speech"],
     "correctOption": 1
-  }
+  },
+  {
+    "questionNo": 25,
+    "question": "What is 'API' in web development?",
+    "options": ["Application Programming Interface", "Advanced Programming Instruction", "Automated Process Integration"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 26,
+    "question": "What is 'serverless computing' in cloud computing?",
+    "options": ["A type of computing that doesn't use servers", "A computing model where cloud providers automatically manage server resources", "A form of peer-to-peer computing"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 27,
+    "question": "What is 'gradient descent' used for in machine learning?",
+    "options": ["A technique for coloring images", "An optimization algorithm used to adjust model parameters during training", "A method for clustering data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 28,
+    "question": "What is 'penetration testing' in cybersecurity?",
+    "options": ["Testing the strength of physical objects", "Testing a system or network for vulnerabilities by simulating attacks", "Testing the performance of network cables"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 29,
+    "question": "What is a 'smart contract' in blockchain technology?",
+    "options": ["A contract signed by a computer scientist", "A legally binding contract with advanced terms and conditions", "A self-executing contract with code that enforces the terms of the agreement"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 30,
+    "question": "What is 'responsive web design' in web development?",
+    "options": ["Designing websites that respond to user feedback", "Designing websites that adapt and display well on various devices and screen sizes", "Creating websites that are always available and responsive to user requests"],
+    "correctOption": 2
+  }  
 ]

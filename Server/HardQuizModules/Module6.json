@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 61,
+    "question": "What is 'containerization' in cloud computing?",
+    "options": ["A method for virtualizing physical servers", "A practice of encapsulating applications and their dependencies in lightweight containers", "A process of connecting cloud servers together"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 62,
+    "question": "What is 'overfitting' in machine learning?",
+    "options": ["A process of fitting a model too well to the training data, capturing noise and not generalizing well", "A process of underutilizing data", "A technique for handling missing data"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 63,
+    "question": "What is 'DDoS' in cybersecurity?",
+    "options": ["Distributed Data Storage", "Distributed Denial of Service, a cyberattack that floods a target system with traffic", "Data Depletion and Overwriting System"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 64,
+    "question": "What is 'consensus mechanism' in blockchain technology?",
+    "options": ["A mechanism for achieving agreement among nodes in a distributed network", "A method for encrypting blockchain data", "A process for mining cryptocurrencies"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 65,
+    "question": "What is 'JavaScript' used for in web development?",
+    "options": ["Creating databases", "Adding interactivity and functionality to websites", "Securing network connections"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 66,
+    "question": "What is 'natural language generation' (NLG) used for in AI?",
+    "options": ["Generating human-like speech in robots", "Generating natural language text or speech from structured data", "Translating languages automatically"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 67,
+    "question": "What is a 'quantum circuit' in quantum computing?",
+    "options": ["A type of electrical circuit used in quantum computers", "A circuit made of quantum gates used to perform quantum operations", "A method for transferring quantum data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 68,
+    "question": "What is 'firewall' used for in cybersecurity?",
+    "options": ["A device for controlling temperature in data centers", "A security measure that monitors and filters network traffic", "A tool for coding web applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 69,
+    "question": "What is 'data cleansing' in data science?",
+    "options": ["A process of making data intentionally dirty", "A process of removing anomalies and inaccuracies from a dataset", "A method for visualizing data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 70,
+    "question": "What is 'Scrum' in software development?",
+    "options": ["A type of software bug", "A project management framework that emphasizes iterative development and collaboration", "A programming language for machine learning"],
+    "correctOption": 2
+  }
+]

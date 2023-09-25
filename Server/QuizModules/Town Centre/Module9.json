@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 91,
-    "question": "What is 'auto-scaling' in cloud computing?",
-    "options": ["A method for resizing images", "A feature that automatically adjusts the number of resources allocated to an application based on demand", "A technique for distributing cloud resources"],
+    "question": "What is 'project integration management' in project management?",
+    "options": ["A management style that integrates various project teams", "The process of coordinating all project components and processes", "A type of project scheduling"],
     "correctOption": 2
   },
   {
     "questionNo": 92,
-    "question": "What is 'A/B testing' used for in data science?",
-    "options": ["A method for encrypting data", "A technique for comparing two versions of a webpage or application to determine which performs better", "A technique for data visualization"],
+    "question": "What is 'project schedule' used for in project management?",
+    "options": ["A document that lists all project team members", "A document that outlines the project's planned activities and timelines", "A type of project cost analysis"],
     "correctOption": 2
   },
   {
     "questionNo": 93,
-    "question": "What is 'malware' in cybersecurity?",
-    "options": ["A software designed to improve computer performance", "A type of software that enhances user experience", "Malicious software designed to harm or exploit computer systems"],
-    "correctOption": 3
+    "question": "What is 'change control board' in project management?",
+    "options": ["A group responsible for rejecting all change requests", "A group responsible for approving or rejecting changes to a project", "A project team subcommittee responsible for change requests"],
+    "correctOption": 2
   },
   {
     "questionNo": 94,
-    "question": "What is 'PoW' in blockchain technology?",
-    "options": ["Power of Work, a method for generating electricity", "Proof of Work, a consensus mechanism used in many cryptocurrencies", "A type of encryption used in blockchain transactions"],
+    "question": "What is 'PERT analysis' used for in project management?",
+    "options": ["A method for evaluating project personnel", "A technique for estimating the duration of project tasks", "A type of stakeholder analysis"],
     "correctOption": 2
   },
   {
     "questionNo": 95,
-    "question": "What is 'DOM' in web development?",
-    "options": ["Document Object Model, a representation of the structure of a web page", "A scripting language for web applications", "A database management system"],
-    "correctOption": 1
+    "question": "What is 'scope creep' in project management?",
+    "options": ["A method for expanding the project's boundaries", "A term for uncontrolled changes or continuous growth in project scope", "A project management software tool"],
+    "correctOption": 2
   },
   {
     "questionNo": 96,
-    "question": "What is 'NLP' used for in AI?",
-    "options": ["Nuclear Launch Protocol", "Natural Language Processing, the field of computer science that focuses on the interaction between computers and human languages", "Network Link Protocol"],
+    "question": "What is 'earned value analysis' used for in project management?",
+    "options": ["A method for evaluating the value of project deliverables", "A method for tracking project performance and cost", "A method for assigning value to project stakeholders"],
     "correctOption": 2
   },
   {
     "questionNo": 97,
-    "question": "What is 'quantum cryptography' used for in quantum computing?",
-    "options": ["A method for securing communication channels using the principles of quantum mechanics", "A method for encrypting quantum data", "A method for quantum teleportation"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 98,
-    "question": "What does 'BYOD' stand for in cybersecurity?",
-    "options": ["Bring Your Own Device", "Buy Your Own Devices", "Bring Your Own Data"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 99,
-    "question": "What is 'feature engineering' in data science?",
-    "options": ["A process of generating new data", "A process of creating new input features from existing ones to improve model performance", "A method for visualizing data"],
+    "question": "What is 'business case' in project management?",
+    "options": ["A case study of a successful business", "A justification for a project, including its expected benefits", "A legal document for project management"],
     "correctOption": 2
   },
   {
-    "questionNo": 100,
-    "question": "What is 'Jenkins' used for in software development?",
-    "options": ["A continuous integration and continuous delivery (CI/CD) tool", "A programming language for machine learning", "A cloud computing platform"],
+    "questionNo": 98,
+    "question": "What is 'change request' in project management?",
+    "options": ["A request for changing the project manager", "A formal proposal to modify a project's scope, schedule, or resources", "A request for more project stakeholders"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 99,
+    "question": "What does 'KPI' stand for in project management?",
+    "options": ["Key Performance Indicator", "Key Project Information", "Knowledge and Process Integration"],
     "correctOption": 1
+  },
+  {
+    "questionNo": 100,
+    "question": "What is 'stakeholder communication' in project management?",
+    "options": ["A method for limiting communication with stakeholders", "A process for effectively communicating with project stakeholders", "A type of risk management"],
+    "correctOption": 2
   }
 ]

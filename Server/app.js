@@ -11,10 +11,17 @@ const fs = require('fs');
 const questionsData = require('./quiz-questions.json'); // Replace with your JSON file path if necessary
 // Module name
 const moduleMapping = {
-  Hospital: 'AI',
-  Church: 'Cloud',
-  Dock: 'Agile',
-  'Lumber Camp': 'sbdjsdhd',
+  Church: 'Cloud Computing and IBM Cloud Services',
+  Dock: 'Data Science and Analytics',
+  Factory: 'Artificial Intelligence and Machine Learning',
+  Farm: 'Cybersecurity',
+  Hospital: 'Blockchain Technology',
+  'Lumber Camp': 'Web Development and Full-Stack Development',
+  Market: 'IBM Watson and Cognitive Technologies',
+  'Mining Camp': 'Quantum Computing',
+  'Town Centre': 'Business and Project Management',
+  University: 'IoT (Internet of Things)'
+
   // ... add more mappings as needed
 };
 

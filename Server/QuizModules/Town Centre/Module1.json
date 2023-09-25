@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 11,
-    "question": "What is 'natural language processing' (NLP) used for in data science?",
-    "options": ["Processing natural foods", "Analyzing and understanding human language by computers", "Studying natural phenomena"],
+    "question": "What is 'scope creep' in project management?",
+    "options": ["A type of insect found on construction sites", "The unauthorized expansion of a project's scope", "A project management methodology"],
     "correctOption": 2
   },
   {
     "questionNo": 12,
-    "question": "What is 'bagging' in ensemble learning?",
-    "options": ["A method for carrying groceries", "A technique for combining the predictions of multiple models", "A form of data augmentation"],
+    "question": "What is the primary role of a 'project manager'?",
+    "options": ["To complete all project tasks personally", "To lead the project team and ensure project success", "To provide financial resources for the project"],
     "correctOption": 2
   },
   {
     "questionNo": 13,
-    "question": "What is the primary purpose of 'Principal Component Analysis' (PCA) in data analysis?",
-    "options": ["To sort data based on importance", "To reduce the dimensionality of data while preserving information", "To categorize data into clusters"],
-    "correctOption": 2
+    "question": "What does 'ROI' stand for in project management?",
+    "options": ["Return on Investment", "Revised Operations and Instructions", "Resource Optimization and Integration"],
+    "correctOption": 1
   },
   {
     "questionNo": 14,
-    "question": "What is 'cross-sectional data'?",
-    "options": ["Data collected over time", "Data collected from different sources", "Data collected at a single point in time"],
-    "correctOption": 3
+    "question": "What is 'change management' in project management?",
+    "options": ["A process for managing changes to project requirements", "A change in project management software", "A type of management consulting"],
+    "correctOption": 1
   },
   {
     "questionNo": 15,
-    "question": "What is 'word embedding' in natural language processing (NLP)?",
-    "options": ["A technique for storing text data in bags", "A method for counting the frequency of words in a document", "A way to encrypt text data"],
+    "question": "What is 'Gantt chart' used for in project management?",
+    "options": ["Creating visual art for the project", "Visualizing project tasks and their dependencies over time", "A type of project report"],
     "correctOption": 2
   },
   {
     "questionNo": 16,
-    "question": "What is 'k-means clustering' used for in data analysis?",
-    "options": ["A clustering technique that determines the optimal number of clusters", "A method for clustering data into k groups based on similarity", "A statistical test for correlation"],
-    "correctOption": 2
+    "question": "What does 'PMO' stand for in project management?",
+    "options": ["Project Management Office", "Private Management Operations", "Project Monitoring and Oversight"],
+    "correctOption": 1
   },
   {
     "questionNo": 17,
-    "question": "What is 'encryption' used for in cybersecurity?",
-    "options": ["Hiding data from users", "Protecting data by converting it into a coded format", "Creating data visualizations"],
+    "question": "What is 'earned value analysis' used for in project management?",
+    "options": ["A method for evaluating the value of project deliverables", "A method for tracking project performance and cost", "A method for assigning value to project stakeholders"],
     "correctOption": 2
   },
   {
     "questionNo": 18,
-    "question": "What is 'supervised learning' in machine learning?",
-    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
-    "correctOption": 1
+    "question": "What is 'stakeholder engagement' in project management?",
+    "options": ["Ignoring project stakeholders", "Actively involving and communicating with project stakeholders", "Assigning tasks to project stakeholders"],
+    "correctOption": 2
   },
   {
     "questionNo": 19,
-    "question": "What is 'Smart Contracts' in blockchain technology?",
-    "options": ["Legally binding contracts drafted by lawyers", "Self-executing contracts with the terms of the agreement directly written into code", "Contracts signed with electronic signatures"],
-    "correctOption": 2
+    "question": "What is 'agile manifesto' in Agile project management?",
+    "options": ["A set of guiding values and principles for Agile development", "A legal document for Agile projects", "A type of Agile software"],
+    "correctOption": 1
   },
   {
     "questionNo": 20,
-    "question": "What is 'server-side scripting' in web development?",
-    "options": ["A technique for scripting client computers", "Code executed on the web server to generate dynamic web pages", "A method for securing web servers"],
-    "correctOption": 2
+    "question": "What is a 'product backlog' in Scrum?",
+    "options": ["A list of products to be purchased for the project", "A list of all project requirements and tasks", "A list of high-priority work items for the development team"],
+    "correctOption": 3
   }
 ]

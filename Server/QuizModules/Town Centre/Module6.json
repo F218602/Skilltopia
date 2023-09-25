@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 61,
-    "question": "What is 'containerization' in cloud computing?",
-    "options": ["A method for virtualizing physical servers", "A practice of encapsulating applications and their dependencies in lightweight containers", "A process of connecting cloud servers together"],
-    "correctOption": 2
-  },
-  {
-    "questionNo": 62,
-    "question": "What is 'overfitting' in machine learning?",
-    "options": ["A process of fitting a model too well to the training data, capturing noise and not generalizing well", "A process of underutilizing data", "A technique for handling missing data"],
+    "question": "What is 'feasibility study' in project management?",
+    "options": ["A study to determine if a project is financially viable and achievable", "A study to determine the project's completion date", "A study to determine the best project team members"],
     "correctOption": 1
   },
   {
+    "questionNo": 62,
+    "question": "What is 'cost baseline' in project management?",
+    "options": ["A baseline for project team salaries", "A baseline for project costs, used to measure and manage cost performance", "A financial report for project stakeholders"],
+    "correctOption": 2
+  },
+  {
     "questionNo": 63,
-    "question": "What is 'DDoS' in cybersecurity?",
-    "options": ["Distributed Data Storage", "Distributed Denial of Service, a cyberattack that floods a target system with traffic", "Data Depletion and Overwriting System"],
+    "question": "What is 'project stakeholder analysis' used for?",
+    "options": ["To ignore project stakeholders", "To identify, assess, and prioritize project stakeholders", "To create project schedules"],
     "correctOption": 2
   },
   {
     "questionNo": 64,
-    "question": "What is 'consensus mechanism' in blockchain technology?",
-    "options": ["A mechanism for achieving agreement among nodes in a distributed network", "A method for encrypting blockchain data", "A process for mining cryptocurrencies"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 65,
-    "question": "What is 'JavaScript' used for in web development?",
-    "options": ["Creating databases", "Adding interactivity and functionality to websites", "Securing network connections"],
+    "question": "What is 'issue log' used for in project management?",
+    "options": ["A log of project team achievements", "A record of project issues and their status", "A type of project schedule"],
     "correctOption": 2
   },
   {
+    "questionNo": 65,
+    "question": "What does 'SOW' stand for in project management?",
+    "options": ["Statement of Work", "Status of Workers", "Schedule of Work"],
+    "correctOption": 1
+  },
+  {
     "questionNo": 66,
-    "question": "What is 'natural language generation' (NLG) used for in AI?",
-    "options": ["Generating human-like speech in robots", "Generating natural language text or speech from structured data", "Translating languages automatically"],
+    "question": "What is 'change order' in project management?",
+    "options": ["An order to change project managers", "An order for additional work or a change to the project's scope, schedule, or resources", "An order to change the project's location"],
     "correctOption": 2
   },
   {
     "questionNo": 67,
-    "question": "What is a 'quantum circuit' in quantum computing?",
-    "options": ["A type of electrical circuit used in quantum computers", "A circuit made of quantum gates used to perform quantum operations", "A method for transferring quantum data"],
+    "question": "What is 'cost benefit analysis' used for in project management?",
+    "options": ["To assess the benefits of finishing a project on time", "To compare the costs and benefits of a project or project component", "To create project budgets"],
     "correctOption": 2
   },
   {
     "questionNo": 68,
-    "question": "What is 'firewall' used for in cybersecurity?",
-    "options": ["A device for controlling temperature in data centers", "A security measure that monitors and filters network traffic", "A tool for coding web applications"],
-    "correctOption": 2
+    "question": "What is 'lessons learned' in project management?",
+    "options": ["A documentation of what went wrong in a project", "A record of project team members' achievements", "A record of what was learned during the project for future reference"],
+    "correctOption": 3
   },
   {
     "questionNo": 69,
-    "question": "What is 'data cleansing' in data science?",
-    "options": ["A process of making data intentionally dirty", "A process of removing anomalies and inaccuracies from a dataset", "A method for visualizing data"],
+    "question": "What is 'project closeout' in project management?",
+    "options": ["The point in time when a project is abandoned", "The process of finalizing all project activities and officially closing it", "The process of ignoring project issues"],
     "correctOption": 2
   },
   {
     "questionNo": 70,
-    "question": "What is 'Scrum' in software development?",
-    "options": ["A type of software bug", "A project management framework that emphasizes iterative development and collaboration", "A programming language for machine learning"],
+    "question": "What is 'stakeholder communication plan' in project management?",
+    "options": ["A plan for avoiding communication with project stakeholders", "A plan for how project communication will be conducted with stakeholders", "A type of financial plan"],
     "correctOption": 2
   }
 ]

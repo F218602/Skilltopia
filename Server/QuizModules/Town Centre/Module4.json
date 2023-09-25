@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 41,
-    "question": "What is 'microservices architecture' in cloud computing?",
-    "options": ["A type of cloud service for managing small files", "A software architecture that structures an application as a collection of loosely coupled services", "A form of serverless computing"],
+    "question": "What is 'change request' in project management?",
+    "options": ["A request for changing the project manager", "A formal proposal to modify a project's scope, schedule, or resources", "A request for more project stakeholders"],
     "correctOption": 2
   },
   {
     "questionNo": 42,
-    "question": "What is 'cross-validation' used for in machine learning?",
-    "options": ["To combine two different datasets", "To evaluate a model's performance using multiple subsets of the data", "To transform data into a different format"],
-    "correctOption": 2
+    "question": "What does 'KPI' stand for in project management?",
+    "options": ["Key Performance Indicator", "Key Project Information", "Knowledge and Process Integration"],
+    "correctOption": 1
   },
   {
     "questionNo": 43,
-    "question": "What is 'phishing' in cybersecurity?",
-    "options": ["A method for catching cybercriminals", "A fraudulent attempt to obtain sensitive information by posing as a trustworthy entity", "A type of encryption used in secure communications"],
+    "question": "What is 'Risks and Issues Log' used for in project management?",
+    "options": ["A record of project team members' performance", "A document for tracking and managing project risks and issues", "A type of financial report"],
     "correctOption": 2
   },
   {
     "questionNo": 44,
-    "question": "What is a 'smart contract' in blockchain technology?",
-    "options": ["A contract signed by a computer scientist", "A legally binding contract with advanced terms and conditions", "A self-executing contract with code that enforces the terms of the agreement"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 45,
-    "question": "What is 'React' in web development?",
-    "options": ["A web hosting service", "A JavaScript library for building user interfaces", "A database management system"],
+    "question": "What is 'change control board' in project management?",
+    "options": ["A group responsible for rejecting all change requests", "A group responsible for approving or rejecting changes to a project", "A project team subcommittee responsible for change requests"],
     "correctOption": 2
   },
   {
+    "questionNo": 45,
+    "question": "What is 'stakeholder register' in project management?",
+    "options": ["A list of project stakeholders and their roles", "A register of all project expenses", "A type of project schedule"],
+    "correctOption": 1
+  },
+  {
     "questionNo": 46,
-    "question": "What is 'natural language processing' (NLP) used for in AI?",
-    "options": ["Understanding the nuances of human language, including context and meaning", "Translating languages automatically", "Analyzing the sound of human speech"],
+    "question": "What is 'procurement management plan' in project management?",
+    "options": ["A plan for purchasing project resources", "A plan for managing project communications", "A type of stakeholder communication"],
     "correctOption": 1
   },
   {
     "questionNo": 47,
-    "question": "What is 'quantum entanglement' in quantum computing?",
-    "options": ["A form of data encryption", "A phenomenon where particles become correlated in a way that their quantum states are interconnected", "A method for optimizing quantum algorithms"],
+    "question": "What is 'scrum master' in Agile project management?",
+    "options": ["The leader of a rugby team", "A role responsible for facilitating and coaching the Scrum team", "A type of project management software"],
     "correctOption": 2
   },
   {
     "questionNo": 48,
-    "question": "What does 'endpoint security' focus on in cybersecurity?",
-    "options": ["Securing the physical location of network endpoints", "Securing the data center's endpoints", "Securing individual devices and their access points"],
+    "question": "What is 'burn-down chart' used for in Agile project management?",
+    "options": ["A chart that visualizes project spending", "A chart that tracks project team burnout rates", "A chart that displays the amount of work remaining in a sprint"],
     "correctOption": 3
   },
   {
     "questionNo": 49,
-    "question": "What is 'data preprocessing' in data science?",
-    "options": ["The process of generating new data", "The process of cleaning, transforming, and organizing raw data into a suitable format for analysis", "The process of visualizing data"],
+    "question": "What is 'change log' in project management?",
+    "options": ["A log of climate changes affecting the project", "A record of all project changes and their status", "A type of project scheduling tool"],
     "correctOption": 2
   },
   {
     "questionNo": 50,
-    "question": "What is 'DevOps' in software development?",
-    "options": ["A programming language", "A set of practices that combine software development (Dev) and IT operations (Ops)", "A cloud computing platform"],
+    "question": "What is 'Agile team' in Agile project management?",
+    "options": ["A team that never changes its approach", "A small, cross-functional team that works together to deliver product increments", "A type of software development team"],
     "correctOption": 2
   }
 ]

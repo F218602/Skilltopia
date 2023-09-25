@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 51,
+    "question": "What is 'multicloud strategy' in cloud computing?",
+    "options": ["Using multiple cloud services from different providers for redundancy", "Using a single cloud service for all computing needs", "A strategy for using multiple on-premises servers"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 52,
+    "question": "What is 'feature engineering' in machine learning?",
+    "options": ["A process of designing new software features", "The process of selecting the most important features in a dataset", "The process of creating new input features from existing ones to improve model performance"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 53,
+    "question": "What is 'malware' in cybersecurity?",
+    "options": ["A software designed to improve computer performance", "A type of software that enhances user experience", "Malicious software designed to harm or exploit computer systems"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 54,
+    "question": "What is a 'smart contract' in blockchain technology?",
+    "options": ["A contract signed by a computer scientist", "A legally binding contract with advanced terms and conditions", "A self-executing contract with code that enforces the terms of the agreement"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 55,
+    "question": "What is 'CSS' in web development?",
+    "options": ["Cascading Style Sheets used for adding interactivity to websites", "A programming language for machine learning", "A cloud storage system"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 56,
+    "question": "What is 'transfer learning' in machine learning?",
+    "options": ["Transferring data between different cloud services", "Using knowledge from one task to improve learning in another task", "Transferring control of a process to a different operator"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'quantum cryptography' used for in quantum computing?",
+    "options": ["A method for securing communication channels using the principles of quantum mechanics", "A method for encrypting text data", "A type of quantum gate"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 58,
+    "question": "What does 'SIEM' stand for in cybersecurity?",
+    "options": ["Security Information and Event Management", "Software Inventory and Event Monitoring", "Systematic Incident and Event Management"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 59,
+    "question": "What is 'data augmentation' in data science?",
+    "options": ["A process of generating new data", "A process of removing outliers from a dataset", "A process of increasing the size of a dataset by applying various transformations"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 60,
+    "question": "What is 'continuous integration' (CI) in software development?",
+    "options": ["A methodology for infrequent software updates", "A practice of frequently integrating code changes into a shared repository and testing automatically", "A method for encrypting data in transit"],
+    "correctOption": 2
+  }
+]

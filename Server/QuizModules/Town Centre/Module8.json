@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 81,
-    "question": "What is 'load balancing' in cloud computing?",
-    "options": ["A method for loading data into cloud storage", "A technique for distributing network traffic across multiple servers to ensure optimal performance", "A way to reduce the amount of data transferred in cloud environments"],
-    "correctOption": 2
+    "question": "What is 'procurement management' in project management?",
+    "options": ["A process for purchasing project resources", "A process for scheduling project tasks", "A type of project team management"],
+    "correctOption": 1
   },
   {
     "questionNo": 82,
-    "question": "What is 'logistic regression' used for in data science?",
-    "options": ["A method for solving complex mathematical equations", "A technique for classifying data into two or more categories based on input features", "A method for creating bar charts"],
+    "question": "What is 'quality management' in project management?",
+    "options": ["A method for reducing project quality", "The process of ensuring that a project meets its intended outcomes and performance requirements", "A way to ignore project quality altogether"],
     "correctOption": 2
   },
   {
     "questionNo": 83,
-    "question": "What is 'firewall' used for in cybersecurity?",
-    "options": ["A device for controlling temperature in data centers", "A security measure that monitors and filters network traffic", "A tool for coding web applications"],
+    "question": "What is 'change request' in project management?",
+    "options": ["A request for changing the project manager", "A formal proposal to modify a project's scope, schedule, or resources", "A request for more project stakeholders"],
     "correctOption": 2
   },
   {
     "questionNo": 84,
-    "question": "What is 'consensus mechanism' in blockchain technology?",
-    "options": ["A mechanism for achieving agreement among nodes in a distributed network", "A method for encrypting blockchain data", "A process for mining cryptocurrencies"],
+    "question": "What is 'KPI' in project management?",
+    "options": ["Key Performance Indicator", "Key Project Information", "Knowledge and Process Integration"],
     "correctOption": 1
   },
   {
     "questionNo": 85,
-    "question": "What is 'SQL' used for in web development?",
-    "options": ["A scripting language for web applications", "A programming language for machine learning", "A language for managing and querying relational databases"],
-    "correctOption": 3
+    "question": "What is 'contract management' in project management?",
+    "options": ["A process for selecting project team members", "A process for managing project contracts and agreements", "A type of project communication"],
+    "correctOption": 2
   },
   {
     "questionNo": 86,
-    "question": "What is 'chatbot' used for in AI?",
-    "options": ["A tool for generating chat messages", "A computer program designed to simulate conversation with human users, especially over the internet", "A method for analyzing chat logs"],
+    "question": "What is 'change control' in project management?",
+    "options": ["A process for preventing any changes in the project", "A process for managing changes to project requirements and scope", "A process for controlling project expenses"],
     "correctOption": 2
   },
   {
     "questionNo": 87,
-    "question": "What is 'quantum teleportation' in quantum computing?",
-    "options": ["A method for teleporting physical objects", "A phenomenon where quantum information can be transmitted from one location to another with the help of two entangled particles", "A method for optimizing quantum algorithms"],
-    "correctOption": 2
-  },
-  {
-    "questionNo": 88,
-    "question": "What does 'VPN' stand for in cybersecurity?",
-    "options": ["Virtual Private Network", "Virtual Public Network", "Visual Private Network"],
+    "question": "What is 'SOW' in project management?",
+    "options": ["Statement of Work", "Status of Workers", "Schedule of Work"],
     "correctOption": 1
   },
   {
+    "questionNo": 88,
+    "question": "What is 'risk analysis' used for in project management?",
+    "options": ["A technique for analyzing project teams", "An assessment of project risks and their potential impact", "A method for ignoring project risks"],
+    "correctOption": 2
+  },
+  {
     "questionNo": 89,
-    "question": "What is 'data preprocessing' in data science?",
-    "options": ["A process of making data intentionally dirty", "A process of removing anomalies and inaccuracies from a dataset", "A method for visualizing data"],
+    "question": "What is 'stakeholder engagement' in project management?",
+    "options": ["Ignoring project stakeholders", "Actively involving and communicating with project stakeholders", "Assigning tasks to project stakeholders"],
     "correctOption": 2
   },
   {
     "questionNo": 90,
-    "question": "What is 'Git' used for in software development?",
-    "options": ["A type of programming language", "A version control system for tracking changes in code and collaborating with others", "A cloud computing platform"],
-    "correctOption": 2
+    "question": "What is 'resource leveling' used for in project management?",
+    "options": ["A way to find balance between project scope and schedule", "A process for reducing the project team's work hours", "A method for selecting project resources"],
+    "correctOption": 1
   }
 ]

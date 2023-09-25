@@ -1,62 +1,62 @@
 [
   {
-    "questionNo": 1,
-    "question": "Which shape has four equal sides and four right angles?",
-    "options": ["Circle", "Triangle", "Rectangle"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 2,
-    "question": "Which shape has three sides?",
-    "options": ["Pentagon", "Hexagon", "Triangle"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 3,
-    "question": "Which shape has no sides or corners?",
-    "options": ["Circle", "Square", "Octagon"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 4,
-    "question": "Which shape has five sides?",
-    "options": ["Rectangle", "Triangle", "Pentagon"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 5,
-    "question": "Which shape has six sides?",
-    "options": ["Hexagon", "Octagon", "Square"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 6,
-    "question": "Which shape has eight sides?",
-    "options": ["Triangle", "Hexagon", "Octagon"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 7,
-    "question": "Which shape has all sides of equal length and all angles of equal measure?",
-    "options": ["Rectangle", "Square", "Rhombus"],
+    "questionNo": 11,
+    "question": "What is 'natural language processing' (NLP) used for in data science?",
+    "options": ["Processing natural foods", "Analyzing and understanding human language by computers", "Studying natural phenomena"],
     "correctOption": 2
   },
   {
-    "questionNo": 8,
-    "question": "Which shape has ten sides?",
-    "options": ["Decagon", "Hexagon", "Pentagon"],
+    "questionNo": 12,
+    "question": "What is 'bagging' in ensemble learning?",
+    "options": ["A method for carrying groceries", "A technique for combining the predictions of multiple models", "A form of data augmentation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 13,
+    "question": "What is the primary purpose of 'Principal Component Analysis' (PCA) in data analysis?",
+    "options": ["To sort data based on importance", "To reduce the dimensionality of data while preserving information", "To categorize data into clusters"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 14,
+    "question": "What is 'cross-sectional data'?",
+    "options": ["Data collected over time", "Data collected from different sources", "Data collected at a single point in time"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 15,
+    "question": "What is 'word embedding' in natural language processing (NLP)?",
+    "options": ["A technique for storing text data in bags", "A method for counting the frequency of words in a document", "A way to encrypt text data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 16,
+    "question": "What is 'k-means clustering' used for in data analysis?",
+    "options": ["A clustering technique that determines the optimal number of clusters", "A method for clustering data into k groups based on similarity", "A statistical test for correlation"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 17,
+    "question": "What is 'encryption' used for in cybersecurity?",
+    "options": ["Hiding data from users", "Protecting data by converting it into a coded format", "Creating data visualizations"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 18,
+    "question": "What is 'supervised learning' in machine learning?",
+    "options": ["A type of learning where the model learns from labeled data", "A type of learning where the model learns from unlabeled data", "A type of learning that doesn't involve models"],
     "correctOption": 1
   },
   {
-    "questionNo": 9,
-    "question": "Which shape has three sides, including one right angle?",
-    "options": ["Triangle", "Square", "Circle"],
-    "correctOption": 1
+    "questionNo": 19,
+    "question": "What is 'Smart Contracts' in blockchain technology?",
+    "options": ["Legally binding contracts drafted by lawyers", "Self-executing contracts with the terms of the agreement directly written into code", "Contracts signed with electronic signatures"],
+    "correctOption": 2
   },
   {
-    "questionNo": 10,
-    "question": "Which shape has four sides and only one pair of parallel sides?",
-    "options": ["Parallelogram", "Rectangle", "Square"],
-    "correctOption": 1
+    "questionNo": 20,
+    "question": "What is 'server-side scripting' in web development?",
+    "options": ["A technique for scripting client computers", "Code executed on the web server to generate dynamic web pages", "A method for securing web servers"],
+    "correctOption": 2
   }
 ]

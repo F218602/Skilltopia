@@ -1,0 +1,62 @@
+[
+  {
+    "questionNo": 81,
+    "question": "What is 'load balancing' in cloud computing?",
+    "options": ["A method for loading data into cloud storage", "A technique for distributing network traffic across multiple servers to ensure optimal performance", "A way to reduce the amount of data transferred in cloud environments"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 82,
+    "question": "What is 'logistic regression' used for in data science?",
+    "options": ["A method for solving complex mathematical equations", "A technique for classifying data into two or more categories based on input features", "A method for creating bar charts"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 83,
+    "question": "What is 'firewall' used for in cybersecurity?",
+    "options": ["A device for controlling temperature in data centers", "A security measure that monitors and filters network traffic", "A tool for coding web applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 84,
+    "question": "What is 'consensus mechanism' in blockchain technology?",
+    "options": ["A mechanism for achieving agreement among nodes in a distributed network", "A method for encrypting blockchain data", "A process for mining cryptocurrencies"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 85,
+    "question": "What is 'SQL' used for in web development?",
+    "options": ["A scripting language for web applications", "A programming language for machine learning", "A language for managing and querying relational databases"],
+    "correctOption": 3
+  },
+  {
+    "questionNo": 86,
+    "question": "What is 'chatbot' used for in AI?",
+    "options": ["A tool for generating chat messages", "A computer program designed to simulate conversation with human users, especially over the internet", "A method for analyzing chat logs"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 87,
+    "question": "What is 'quantum teleportation' in quantum computing?",
+    "options": ["A method for teleporting physical objects", "A phenomenon where quantum information can be transmitted from one location to another with the help of two entangled particles", "A method for optimizing quantum algorithms"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 88,
+    "question": "What does 'VPN' stand for in cybersecurity?",
+    "options": ["Virtual Private Network", "Virtual Public Network", "Visual Private Network"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 89,
+    "question": "What is 'data preprocessing' in data science?",
+    "options": ["A process of making data intentionally dirty", "A process of removing anomalies and inaccuracies from a dataset", "A method for visualizing data"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 90,
+    "question": "What is 'Git' used for in software development?",
+    "options": ["A type of programming language", "A version control system for tracking changes in code and collaborating with others", "A cloud computing platform"],
+    "correctOption": 2
+  }
+]

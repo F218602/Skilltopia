@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 51,
-    "question": "What is 'multicloud strategy' in cloud computing?",
-    "options": ["Using multiple cloud services from different providers for redundancy", "Using a single cloud service for all computing needs", "A strategy for using multiple on-premises servers"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 52,
-    "question": "What is 'feature engineering' in machine learning?",
-    "options": ["A process of designing new software features", "The process of selecting the most important features in a dataset", "The process of creating new input features from existing ones to improve model performance"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 53,
-    "question": "What is 'malware' in cybersecurity?",
-    "options": ["A software designed to improve computer performance", "A type of software that enhances user experience", "Malicious software designed to harm or exploit computer systems"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 54,
-    "question": "What is a 'smart contract' in blockchain technology?",
-    "options": ["A contract signed by a computer scientist", "A legally binding contract with advanced terms and conditions", "A self-executing contract with code that enforces the terms of the agreement"],
-    "correctOption": 3
-  },
-  {
-    "questionNo": 55,
-    "question": "What is 'CSS' in web development?",
-    "options": ["Cascading Style Sheets used for adding interactivity to websites", "A programming language for machine learning", "A cloud storage system"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 56,
-    "question": "What is 'transfer learning' in machine learning?",
-    "options": ["Transferring data between different cloud services", "Using knowledge from one task to improve learning in another task", "Transferring control of a process to a different operator"],
+    "question": "What is 'project management software' used for?",
+    "options": ["For ordering project supplies", "For tracking and managing project tasks and resources", "For conducting project stakeholder meetings"],
     "correctOption": 2
   },
   {
-    "questionNo": 57,
-    "question": "What is 'quantum cryptography' used for in quantum computing?",
-    "options": ["A method for securing communication channels using the principles of quantum mechanics", "A method for encrypting text data", "A type of quantum gate"],
+    "questionNo": 52,
+    "question": "What is 'project scope statement' in project management?",
+    "options": ["A statement outlining project goals and objectives", "A statement declaring the end of a project", "A statement describing the project manager's qualifications"],
     "correctOption": 1
+  },
+  {
+    "questionNo": 53,
+    "question": "What is 'contract management' in project management?",
+    "options": ["A process for selecting project team members", "A process for managing project contracts and agreements", "A type of project communication"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 54,
+    "question": "What is 'quality assurance' in project management?",
+    "options": ["A process for ensuring project quality by preventing defects", "A process for assigning blame for project defects", "A process for tracking project schedules"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 55,
+    "question": "What is 'change management plan' used for in project management?",
+    "options": ["A plan for managing changes to project team members", "A plan for managing changes to project requirements and scope", "A plan for ignoring project changes"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 56,
+    "question": "What is 'PMBOK' in project management?",
+    "options": ["Project Management Body of Knowledge", "Personal Management by Objective and Key Results", "Project Monitoring and Business Oversight Knowledge"],
+    "correctOption": 1
+  },
+  {
+    "questionNo": 57,
+    "question": "What is 'Agile framework' used for in project management?",
+    "options": ["A framework for managing rigid project schedules", "A framework for adapting to changing project requirements", "A framework for managing project costs"],
+    "correctOption": 2
   },
   {
     "questionNo": 58,
-    "question": "What does 'SIEM' stand for in cybersecurity?",
-    "options": ["Security Information and Event Management", "Software Inventory and Event Monitoring", "Systematic Incident and Event Management"],
-    "correctOption": 1
+    "question": "What is 'SWOT analysis' used for in project management?",
+    "options": ["A method for assessing project stakeholders", "A strategic planning tool for identifying project strengths, weaknesses, opportunities, and threats", "A type of project scheduling tool"],
+    "correctOption": 2
   },
   {
     "questionNo": 59,
-    "question": "What is 'data augmentation' in data science?",
-    "options": ["A process of generating new data", "A process of removing outliers from a dataset", "A process of increasing the size of a dataset by applying various transformations"],
-    "correctOption": 3
+    "question": "What is 'earned value analysis' used for in project management?",
+    "options": ["A method for evaluating the value of project deliverables", "A method for tracking project performance and cost", "A method for assigning value to project stakeholders"],
+    "correctOption": 2
   },
   {
     "questionNo": 60,
-    "question": "What is 'continuous integration' (CI) in software development?",
-    "options": ["A methodology for infrequent software updates", "A practice of frequently integrating code changes into a shared repository and testing automatically", "A method for encrypting data in transit"],
+    "question": "What is 'stakeholder engagement' in project management?",
+    "options": ["Ignoring project stakeholders", "Actively involving and communicating with project stakeholders", "Assigning tasks to project stakeholders"],
     "correctOption": 2
   }
 ]

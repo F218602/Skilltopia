@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 71,
-    "question": "What is 'serverless architecture' in cloud computing?",
-    "options": ["A type of computing that doesn't use servers", "A computing model where cloud providers automatically manage server resources", "A form of distributed computing"],
-    "correctOption": 2
-  },
-  {
-    "questionNo": 72,
-    "question": "What is 'PCA' in data science?",
-    "options": ["Principal Component Analysis, a dimensionality reduction technique", "A programming language", "A method for automating data analysis"],
+    "question": "What is 'project portfolio management' in project management?",
+    "options": ["A method for managing a collection of related projects", "A way to manage project budgets", "A type of project scheduling"],
     "correctOption": 1
   },
   {
+    "questionNo": 72,
+    "question": "What is 'resource allocation' in project management?",
+    "options": ["A method for allocating project resources randomly", "A method for assigning the right people to the right tasks", "A way to reduce project resources"],
+    "correctOption": 2
+  },
+  {
     "questionNo": 73,
-    "question": "What is 'phishing' in cybersecurity?",
-    "options": ["A method for catching cybercriminals", "A fraudulent attempt to obtain sensitive information by posing as a trustworthy entity", "A type of secure communication protocol"],
+    "question": "What is 'slack time' in project management?",
+    "options": ["Free time for project team members to relax", "Extra time available for project tasks without delaying the project", "A type of project software"],
     "correctOption": 2
   },
   {
     "questionNo": 74,
-    "question": "What is a 'fork' in blockchain technology?",
-    "options": ["A type of encryption used in blockchain transactions", "A type of update or divergence in the blockchain, creating two separate chains", "A method for selecting the next block in a blockchain"],
+    "question": "What is 'risk register' used for in project management?",
+    "options": ["A register of project stakeholders' risks", "A document to identify, assess, and track project risks", "A way to register project schedules"],
     "correctOption": 2
   },
   {
     "questionNo": 75,
-    "question": "What is 'AJAX' in web development?",
-    "options": ["A programming language", "Asynchronous JavaScript and XML, a technology for asynchronous data exchange", "A cloud storage service"],
-    "correctOption": 2
-  },
-  {
-    "questionNo": 76,
-    "question": "What is 'recommendation systems' used for in data science?",
-    "options": ["Creating financial reports", "Analyzing supply chain data", "Providing personalized recommendations to users based on their preferences and behavior"],
+    "question": "What is 'kick-off meeting' in project management?",
+    "options": ["A meeting to discuss project delays", "A meeting to celebrate the project's end", "A meeting to initiate a project, discuss roles, and set expectations"],
     "correctOption": 3
   },
   {
-    "questionNo": 77,
-    "question": "What is 'quantum superposition' in quantum computing?",
-    "options": ["A quantum computing programming language", "A phenomenon where quantum bits can exist in multiple states simultaneously", "A method for optimizing quantum algorithms"],
+    "questionNo": 76,
+    "question": "What is 'resource constraint' in project management?",
+    "options": ["A constraint that limits the project team's creativity", "A limitation on the availability of project resources, such as time or budget", "A constraint on project scope"],
     "correctOption": 2
   },
   {
+    "questionNo": 77,
+    "question": "What is 'stakeholder register' used for in project management?",
+    "options": ["A list of project stakeholders and their roles", "A register of project expenses", "A type of project schedule"],
+    "correctOption": 1
+  },
+  {
     "questionNo": 78,
-    "question": "What does 'IDS' stand for in cybersecurity?",
-    "options": ["Internet Data Security", "Intrusion Detection System", "Intelligent Data Storage"],
+    "question": "What is 'issue resolution' in project management?",
+    "options": ["A process for creating more issues in a project", "A process for resolving and closing project issues", "A way to document project issues without taking action"],
     "correctOption": 2
   },
   {
     "questionNo": 79,
-    "question": "What is 'feature scaling' in data science?",
-    "options": ["A technique for adding more features to a dataset", "A technique for scaling physical objects", "A process of standardizing the range of independent variables or features of data"],
+    "question": "What is 'lessons learned report' used for in project management?",
+    "options": ["A report on what went wrong in the project", "A report on the project team's achievements", "A report on what was learned during the project for future projects"],
     "correctOption": 3
   },
   {
     "questionNo": 80,
-    "question": "What is 'Sprint' in software development?",
-    "options": ["A type of software testing", "A time-boxed development period in Scrum, typically 2-4 weeks long", "A cloud computing platform"],
+    "question": "What is 'stakeholder engagement plan' in project management?",
+    "options": ["A plan to annoy project stakeholders", "A plan for how to engage and communicate with project stakeholders", "A plan for project team member engagement"],
     "correctOption": 2
   }
 ]

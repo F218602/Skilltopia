@@ -1,62 +1,62 @@
 [
   {
     "questionNo": 1,
-    "question": "What is 8 - 3?",
-    "options": ["5", "3", "6"],
-    "correctOption": 1
+    "question": "What is the primary goal of IBM Cloud Essentials training?",
+    "options": ["To teach advanced Kubernetes concepts", "To provide an introduction to cloud computing and IBM Cloud", "To dive deep into blockchain technology"],
+    "correctOption": 2
   },
   {
     "questionNo": 2,
-    "question": "What is 12 - 5?",
-    "options": ["7", "6", "8"],
-    "correctOption": 1
+    "question": "What is exploratory data analysis (EDA) in data science?",
+    "options": ["A method to securely store data", "A technique for summarizing data and discovering patterns", "A type of supervised machine learning"],
+    "correctOption": 2
   },
   {
     "questionNo": 3,
-    "question": "What is 15 - 7?",
-    "options": ["8", "9", "6"],
-    "correctOption": 1
+    "question": "What is the main objective of machine learning?",
+    "options": ["To automate tasks using rule-based systems", "To enable computers to learn and make predictions from data", "To create human-like robots"],
+    "correctOption": 2
   },
   {
     "questionNo": 4,
-    "question": "What is 10 - 2?",
-    "options": ["7", "8", "6"],
+    "question": "What does the term 'vulnerability' mean in the context of cybersecurity?",
+    "options": ["A software bug that enhances system performance", "A weakness in a system that can be exploited by threats", "A strong security measure"],
     "correctOption": 2
   },
   {
     "questionNo": 5,
-    "question": "What is 9 - 4?",
-    "options": ["5", "3", "6"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 6,
-    "question": "What is 20 - 6?",
-    "options": ["14", "15", "13"],
-    "correctOption": 1
-  },
-  {
-    "questionNo": 7,
-    "question": "What is 14 - 3?",
-    "options": ["10", "11", "9"],
+    "question": "What is the fundamental concept behind blockchain technology?",
+    "options": ["Centralized control of data", "Distributed and immutable ledger", "Frequent data updates"],
     "correctOption": 2
   },
   {
-    "questionNo": 8,
-    "question": "What is 18 - 9?",
-    "options": ["7", "8", "9"],
+    "questionNo": 6,
+    "question": "What is the primary responsibility of a front-end web developer?",
+    "options": ["Managing databases", "Designing user interfaces and user experience", "Building server-side applications"],
+    "correctOption": 2
+  },
+  {
+    "questionNo": 7,
+    "question": "What is IBM Watson primarily known for?",
+    "options": ["Creating mobile applications", "Building blockchain networks", "Artificial intelligence and cognitive computing"],
     "correctOption": 3
   },
   {
+    "questionNo": 8,
+    "question": "What is a quantum bit (qubit) in quantum computing?",
+    "options": ["A classical bit used for binary computation", "A unit of quantum information that can exist in multiple states simultaneously", "A measurement unit for quantum computing performance"],
+    "correctOption": 2
+  },
+  {
     "questionNo": 9,
-    "question": "What is 25 - 12?",
-    "options": ["12", "13", "14"],
+    "question": "What is the Internet of Things (IoT) primarily about?",
+    "options": ["Building artificial intelligence models", "Connecting physical objects to the internet to collect and exchange data", "Developing web applications"],
     "correctOption": 2
   },
   {
     "questionNo": 10,
-    "question": "What is 16 - 7?",
-    "options": ["9", "10", "8"],
-    "correctOption": 1
+    "question": "What is the purpose of 'one-hot encoding' in machine learning?",
+    "options": ["Encoding numerical data", "Encoding categorical data into binary vectors", "Encoding audio data"],
+    "correctOption": 2
   }
 ]
