@@ -1,6 +1,6 @@
 <div class="bg-red-800 h-full flex justify-center items-center">
   <div class="bg-orange-200 rounded-lg p-6 shadow-md">
-    <h1 class="text-2xl mb-4 font-semibold">Question {{ selectedQuestion.questionNo }}</h1>
+    <!-- <h1 class="text-2xl mb-4 font-semibold">Question {{ selectedQuestion.questionNo }}</h1> -->
     <p class="text-lg mb-4">{{ selectedQuestion.question }}</p>
   
     <div class="flex flex-col space-y-2">
@@ -10,9 +10,9 @@
       </label>
     </div>
     
-    <!-- <div class="text-slate-500 mt-4">
-      No Of Questions Answered: {{ this.pgd.map[this.cellInterSer.selX][this.cellInterSer.selY].noOfQuestionsAnswered }}
-    </div> -->
+    <div class="text-slate-500 mt-4">
+      <a href="https://keyskill-clms.comprehend.ibm.com/" target="_blank">Click here to learn more from IBM Skill Build</a>
+    </div>
     
     <div class="flex justify-center mt-6">
       <button mat-raised-button color="primary" class="px-6 py-2 mr-4 bg-slate-500 hover:bg-slate-600" (click)="checkAnswer()">

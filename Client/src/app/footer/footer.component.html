@@ -2,7 +2,6 @@
   <div class="flex">
     <!-- column 1 -->
     <div class="square-box w-30 h-20 ml-10">
-      <div>{{pgd.playerID}} + {{getOwnerID()}}</div>
       <div *ngIf="cellInterSer.selected?.type === 'Building' && pgd.playerID === getOwnerID()" class = "text-center mt-6">
         Player: {{getOwnerID()}} <br>
       </div>

@@ -2,7 +2,7 @@ const Express = require('express')();
 const Http = require('http').Server(Express);
 const io = require('socket.io')(Http, {
   cors: {
-    origins: ['*'],
+    origins: ['http://localhost:*', 'https://skilltopia.vercel.app'],
     methods: ['GET', 'POST'],
   },
 });

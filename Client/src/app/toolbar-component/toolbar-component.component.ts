@@ -6,6 +6,7 @@ import { PlayerGameDataService } from '../player-game-data.service';
 import { SocketIOService } from '../socket-io.service';
 import { EndGamePopUpComponent } from '../end-game-pop-up/end-game-pop-up.component';
 import { MatDialog } from '@angular/material/dialog';
+import { HelpDialogComponent } from '../help-dialog/help-dialog.component';
 @Component({
   selector: 'app-toolbar-component',
   templateUrl: './toolbar-component.component.html',
@@ -60,6 +61,16 @@ updateRemainingTime(): void {
     // Format the remaining time as "HH:mm:ss"
     this.remainingTime = `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
   }
+}
+openHelpDialog(): void {
+  const dialogRef = this.dialog.open(HelpDialogComponent, {
+    width: '70vw',
+    height: '70vh',
+  });
+
+  dialogRef.afterClosed().subscribe((result) => {
+    console.log('The dialog was closed');
+  });
 }
 
 }
